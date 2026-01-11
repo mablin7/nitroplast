@@ -1011,6 +1011,7 @@ dependencies = [
     { name = "pandas" },
     { name = "pyopa" },
     { name = "seaborn" },
+    { name = "squarify" },
     { name = "tqdm" },
 ]
 
@@ -1024,6 +1025,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "pyopa", specifier = ">=0.8.4" },
     { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "squarify", specifier = ">=0.4.4" },
     { name = "tqdm", specifier = ">=4.67.0" },
 ]
 
@@ -1602,6 +1604,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d7/ce/fbaeed4f9fb8b2daa961f90591662df6a86c1abf25c548329a86920aedfb/soupsieve-2.6.tar.gz", hash = "sha256:e2e68417777af359ec65daac1057404a3c8a5455bb8abc36f1a9866ab1a51abb", size = 101569 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl", hash = "sha256:e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9", size = 36186 },
+]
+
+[[package]]
+name = "squarify"
+version = "0.4.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0d/01/1753243870dff9fa786c9712fdc8dffb56f356c46c77d7468cb12f6d8398/squarify-0.4.4.tar.gz", hash = "sha256:b8a110c8dc5f1cd1402ca12d79764a081e90bfc445346cfa166df929753ecb46", size = 5514 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/3c/eedbe9fb07cc20fd9a8423da14b03bc270d0570b3ba9174a4497156a2152/squarify-0.4.4-py3-none-any.whl", hash = "sha256:d7597724e29d48aa14fd2f551060d6b09e1f0a67e4cd3ea329fe03b4c9a56f11", size = 4082 },
 ]
 
 [[package]]
