@@ -20,77 +20,124 @@ Can the mature domain of a protein predict which uTP variant (motif combination)
 
 We compared three variant grouping strategies to maximize statistical power:
 
-| Strategy | N | Classes | Accuracy | Chance | **vs Chance** | p-value |
-|----------|---|---------|----------|--------|---------------|---------|
-| **Terminal Motif** | **182** | 4 | **50.9%** | 25.0% | **2.04×** | **0.002** ✓✓ |
-| **Fine-Grained (≥5)** | 135 | 8 | **52.6%** | 12.5% | **4.21×** | **0.002** ✓✓ |
-| Original (≥10) | 109 | 4 | 36.9% | 25.0% | 1.48× | 0.012 ✓ |
+| Strategy              | N       | Classes | Accuracy  | Chance | **vs Chance** | p-value      |
+| --------------------- | ------- | ------- | --------- | ------ | ------------- | ------------ |
+| **Terminal Motif**    | **182** | 4       | **50.9%** | 25.0%  | **2.04×**     | **0.002** ✓✓ |
+| **Fine-Grained (≥5)** | 135     | 8       | **52.6%** | 12.5%  | **4.21×**     | **0.002** ✓✓ |
+| Original (≥10)        | 109     | 4       | 36.9%     | 25.0%  | 1.48×         | 0.012 ✓      |
 
 **All strategies are statistically significant (p < 0.05)**
 
 #### Strategy Descriptions
 
-1. **Terminal Motif Grouping** (Recommended): Groups variants by their terminal motif (4, 5, 7, or 9)
-   - Most biologically interpretable
-   - Uses all 182 proteins with valid motif patterns
+1. **Terminal Motif Grouping**: Groups variants by their terminal motif (4, 5, 7, or 9)
+
+   - Uses 182 proteins with valid motif patterns
    - Classes: terminal_4 (87), terminal_7 (54), terminal_5 (25), terminal_9 (16)
 
 2. **Fine-Grained (MIN_COUNT≥5)**: Keeps exact motif patterns with ≥5 samples
-   - 8 distinct variant classes
-   - Achieves remarkable **4.21× chance performance**
-   - Best for understanding fine-grained variant specificity
 
-3. **Original (MIN_COUNT≥10)**: Strict filtering loses 47% of data
-   - Only 109 proteins retained
-   - Lower power due to data loss
+   - 8 distinct variant classes
+   - 135 proteins retained
+
+3. **Original (MIN_COUNT≥10)**: Strict filtering
+   - 109 proteins retained
+   - 4 variant classes
 
 ### Dataset Summary
 
-| Metric | Original | Terminal Motif | Fine-Grained |
-|--------|----------|----------------|--------------|
-| Total proteins | 206 | 182 | 135 |
-| Variant classes | 4 | 4 | 8 |
-| Min class size | 18 | 16 | 5 |
-| Data utilization | 53% | **88%** | 65% |
+| Metric           | Original | Terminal Motif | Fine-Grained |
+| ---------------- | -------- | -------------- | ------------ |
+| Total proteins   | 206      | 182            | 135          |
+| Variant classes  | 4        | 4              | 8            |
+| Min class size   | 18       | 16             | 5            |
+| Data utilization | 53%      | **88%**        | 65%          |
 
 ### Terminal Motif Class Distribution
 
-| Class | Terminal Motif | Count | Example Variants |
-|-------|----------------|-------|------------------|
-| terminal_4 | ends with motif_4 | 87 | 2+1+3+4, 2+1+6+3+4, 2+1+10+4 |
-| terminal_7 | ends with motif_7 | 54 | 2+1+3+5+7, 2+1+6+3+5+7 |
-| terminal_5 | ends with motif_5 | 25 | 2+1+3+5, 2+1+10+5 |
-| terminal_9 | ends with motif_9 | 16 | 2+1+3+5+9, 2+1+10+5+9 |
+| Class      | Terminal Motif    | Count | Example Variants             |
+| ---------- | ----------------- | ----- | ---------------------------- |
+| terminal_4 | ends with motif_4 | 87    | 2+1+3+4, 2+1+6+3+4, 2+1+10+4 |
+| terminal_7 | ends with motif_7 | 54    | 2+1+3+5+7, 2+1+6+3+5+7       |
+| terminal_5 | ends with motif_5 | 25    | 2+1+3+5, 2+1+10+5            |
+| terminal_9 | ends with motif_9 | 16    | 2+1+3+5+9, 2+1+10+5+9        |
 
 ### Fine-Grained Class Distribution (8 classes)
 
-| Variant | Motif Pattern | Count |
-|---------|---------------|-------|
-| 2+1+3+4 | motif_2 → 1 → 3 → 4 | 43 |
-| 2+1+6+3+4 | motif_2 → 1 → 6 → 3 → 4 | 29 |
-| 2+1+3+5 | motif_2 → 1 → 3 → 5 | 19 |
-| 2+1+3+5+7 | motif_2 → 1 → 3 → 5 → 7 | 18 |
-| 2+1+3+7 | motif_2 → 1 → 3 → 7 | 9 |
-| 2+1+10+5+9 | motif_2 → 1 → 10 → 5 → 9 | 6 |
-| 2+1+10+5+7 | motif_2 → 1 → 10 → 5 → 7 | 6 |
-| 2+1+6+3+5+7 | motif_2 → 1 → 6 → 3 → 5 → 7 | 5 |
+| Variant     | Motif Pattern               | Count |
+| ----------- | --------------------------- | ----- |
+| 2+1+3+4     | motif_2 → 1 → 3 → 4         | 43    |
+| 2+1+6+3+4   | motif_2 → 1 → 6 → 3 → 4     | 29    |
+| 2+1+3+5     | motif_2 → 1 → 3 → 5         | 19    |
+| 2+1+3+5+7   | motif_2 → 1 → 3 → 5 → 7     | 18    |
+| 2+1+3+7     | motif_2 → 1 → 3 → 7         | 9     |
+| 2+1+10+5+9  | motif_2 → 1 → 10 → 5 → 9    | 6     |
+| 2+1+10+5+7  | motif_2 → 1 → 10 → 5 → 7    | 6     |
+| 2+1+6+3+5+7 | motif_2 → 1 → 6 → 3 → 5 → 7 | 5     |
 
 ### Biochemical Property Differences
 
-| Property | KW p-value | Significant |
-|----------|------------|-------------|
-| fraction_helix | 0.033 | ✓ |
-| fraction_coil | 0.049 | ✓ |
-| gravy | 0.054 | borderline |
+| Property       | KW p-value | Significant |
+| -------------- | ---------- | ----------- |
+| fraction_helix | 0.033      | ✓           |
+| fraction_coil  | 0.049      | ✓           |
+| gravy          | 0.054      | -           |
 
-Secondary structure composition differs significantly between variants.
+### Functional Annotation Correlation
 
+Functional annotations were analyzed using a two-stage approach to control for baseline uTP enrichment.
 
-### Limitations
+#### Annotation Coverage
 
-1. **Class imbalance**: terminal_4 (87) vs terminal_9 (16) creates some asymmetry
-2. **Annotation coverage**: Low GO term coverage limits functional enrichment
-3. **Correlation vs causation**: We detect association, not mechanism
+| Annotation Type | Coverage        |
+| --------------- | --------------- |
+| COG categories  | 130/182 (71.4%) |
+| GO terms        | 34/182 (18.7%)  |
+| KEGG KO         | 81/182 (44.5%)  |
+| KEGG Pathway    | 46/182 (25.3%)  |
+
+#### Stage 1: uTP vs Transcriptome Background
+
+Comparison of 182 uTP proteins against 19,395 non-uTP transcriptome proteins.
+
+| COG Category             | OR   | 95% CI       | log2 FE | q-value | Direction |
+| ------------------------ | ---- | ------------ | ------- | ------- | --------- |
+| K: Transcription         | 0.11 | [0.02, 0.55] | -2.90   | 0.026   | depleted  |
+| U: Intracellular traffic | 0.11 | [0.02, 0.55] | -2.92   | 0.026   | depleted  |
+| Z: Cytoskeleton          | 0.00 | [0.06, 16.1] | -5.13   | 0.026   | depleted  |
+
+uTP proteins are significantly depleted (not enriched) for transcription, trafficking, and cytoskeleton functions compared to transcriptome background. No COG categories are significantly enriched in uTP proteins.
+
+#### Stage 2: Terminal Motif Specificity (uTP-corrected)
+
+Comparison of each terminal motif class against other uTP proteins (controlling for uTP baseline).
+
+**Result**: 0 significant terminal-specific enrichments after FDR correction (q < 0.1).
+
+The chi-square tests (below) detect overall heterogeneity, but individual pairwise enrichments do not survive multiple testing correction.
+
+#### Overall Association Tests (Chi-square)
+
+| Annotation Type | χ²     | df   | p-value |
+| --------------- | ------ | ---- | ------- |
+| COG categories  | 93.6   | 54   | 0.0007  |
+| KEGG KO         | 310.0  | 210  | <0.0001 |
+| KEGG Pathway    | 760.8  | 615  | 0.0001  |
+| GO terms        | 3484.3 | 3513 | 0.63    |
+
+#### COG Category Distribution by Terminal Motif (%)
+
+| COG Category               | T4 (n=87) | T5 (n=25) | T7 (n=54) | T9 (n=16) |
+| -------------------------- | --------- | --------- | --------- | --------- |
+| C: Energy production       | 11.5      | 0.0       | 1.9       | 12.5      |
+| E: Amino acid metabolism   | 0.0       | 8.0       | 0.0       | 0.0       |
+| G: Carbohydrate metabolism | 13.8      | 4.0       | 11.1      | 0.0       |
+| H: Coenzyme metabolism     | 1.1       | 4.0       | 0.0       | 12.5      |
+| L: Replication/repair      | 6.9       | 4.0       | 16.7      | 6.2       |
+| M: Cell wall/membrane      | 4.6       | 8.0       | 5.6       | 0.0       |
+| O: PTM/chaperones          | 6.9       | 8.0       | 13.0      | 6.2       |
+| S: Unknown function        | 24.1      | 32.0      | 16.7      | 25.0      |
+| T: Signal transduction     | 0.0       | 4.0       | 11.1      | 0.0       |
 
 ---
 
@@ -154,6 +201,12 @@ uv run python experiments/utp_variant_classifier/05_interpretability.py
 # Step 6: Compare grouping strategies (Terminal Motif vs Fine-Grained)
 uv run python experiments/utp_variant_classifier/compute_additional_embeddings.py  # Compute embeddings for all proteins
 uv run python experiments/utp_variant_classifier/compare_groupings.py              # Compare strategies
+
+# Step 7: Functional annotation correlation analysis
+uv run python experiments/utp_variant_classifier/analyze_functional_correlations.py
+
+# Step 8: Relative enrichment analysis (controlling for uTP baseline)
+uv run python experiments/utp_variant_classifier/analyze_relative_enrichment.py
 ```
 
 ## Data Sources
@@ -182,6 +235,19 @@ output/
 │   ├── strategy_comparison.csv         # Comparison metrics
 │   ├── strategy_comparison.svg         # Comparison visualization
 │   └── strategy_comparison.png
+├── functional_analysis/                # Functional annotation analysis
+│   ├── variant_annotation_summary.csv  # Summary by terminal motif
+│   ├── cog_enrichment_results.csv      # COG Fisher's exact tests
+│   ├── go_enrichment_results.csv       # GO Fisher's exact tests
+│   ├── kegg_enrichment_results.csv     # KEGG Fisher's exact tests
+│   ├── chi_square_results.csv          # Overall association tests
+│   ├── cog_by_terminal_motif.svg       # COG distribution heatmap
+│   └── kegg_by_terminal_motif.svg      # KEGG distribution heatmap
+├── relative_enrichment/                # Baseline-corrected enrichment
+│   ├── stage1_utp_vs_background.csv    # uTP vs transcriptome
+│   ├── stage2_terminal_specificity.csv # Terminal-specific (corrected)
+│   ├── stage1_utp_vs_background.svg    # Stage 1 visualization
+│   └── stage2_terminal_specificity.svg # Stage 2 heatmap
 ├── statistics/
 │   ├── classification_report.csv       # Per-class metrics
 │   ├── permutation_test_results.csv    # Permutation test results
@@ -208,66 +274,43 @@ output/
     └── go_enrichment_heatmap.svg       # GO enrichment visualization
 ```
 
-## Interpretation Guide
+## Summary of Results
 
 ### Classification Performance
 
-| Accuracy | Interpretation          |
-| -------- | ----------------------- |
-| < 25%    | Random (for 4+ classes) |
-| 25-40%   | Weak signal             |
-| 40-60%   | Moderate signal         |
-| > 60%    | Strong signal           |
+| Strategy                   | Accuracy | Chance | Ratio | p-value |
+| -------------------------- | -------- | ------ | ----- | ------- |
+| Terminal Motif (4 classes) | 50.9%    | 25.0%  | 2.04× | 0.002   |
+| Fine-Grained (8 classes)   | 52.6%    | 12.5%  | 4.21× | 0.002   |
+| Original (4 classes)       | 36.9%    | 25.0%  | 1.48× | 0.012   |
 
-### Biological Significance
+### Biochemical Properties
 
-Even moderate classification accuracy is biologically meaningful if:
+Kruskal-Wallis tests identified significant differences in secondary structure composition between terminal motif classes:
 
-- Certain variants are highly predictable (asymmetric confusion matrix)
-- Functional enrichment differs between variants
-- Biochemical properties cluster by variant
+- fraction_helix: p = 0.033
+- fraction_coil: p = 0.049
 
-## Conclusions
+### Functional Annotations
 
-### Summary
+Two-stage analysis controlling for uTP baseline:
 
-This rigorous experiment found **strong evidence** that mature domain sequences encode information about which uTP variant they receive:
+**Stage 1 (uTP vs transcriptome)**: uTP proteins are depleted for:
 
-- **Terminal Motif strategy: 2.04× above chance** (50.9% vs 25.0%, p = 0.002)
-- **Fine-Grained strategy: 4.21× above chance** (52.6% vs 12.5%, p = 0.002)
-- **Significant biochemical property differences** between variants (secondary structure)
+- K: Transcription (OR=0.11, q=0.026)
+- U: Intracellular trafficking (OR=0.11, q=0.026)
+- Z: Cytoskeleton (OR=0.00, q=0.026)
 
-### Scientific Implications
+**Stage 2 (Terminal-specific vs other uTP)**: 0 significant enrichments after FDR correction.
 
-1. **Strong signal**: The results provide **statistically significant evidence** for a **bipartite targeting model** where mature domains influence uTP variant selection.
+Chi-square tests detect overall heterogeneity (COG p=0.0007) but individual comparisons do not survive multiple testing correction.
 
-2. **Not random**: Random assignment would yield 12.5-25% accuracy; we observe 51-53%, demonstrating non-random processes govern variant assignment.
+### Limitations
 
-3. **Terminal motif specificity**: The terminal motif (4, 5, 7, or 9) appears to be the key differentiator, potentially encoding:
-   - Sub-organellar targeting information
-   - Import pathway selection
-   - Post-import processing signals
-
-4. **Hierarchical structure**: uTP variants have a conserved core (motif 2+1) with variable terminal elements, suggesting a modular targeting system.
-
-### Recommended Strategy
-
-**Use Terminal Motif grouping** for future analyses:
-- Maximizes data utilization (182/206 = 88%)
-- Statistically significant (p = 0.002)
-- Biologically interpretable (4 distinct terminal classes)
-- Balanced trade-off between granularity and power
-
-### Next Steps
-
-1. ✅ ~~Expand dataset~~: **DONE** - Now using 182 proteins (was 109)
-2. **Functional investigation**: Examine whether terminal motif correlates with:
-   - Protein function (metabolic pathways)
-   - Expression timing (day/night)
-   - Localization within UCYN-A
-3. **Experimental validation**: Test synthetic uTPs with different terminal motifs
-4. **Cross-strain comparison**: Test if terminal motif classification holds in UCYN-A1
-5. **Structural analysis**: Examine 3D structure differences between terminal motif classes
+1. Class imbalance: terminal_4 (87) vs terminal_9 (16)
+2. Low GO term coverage (18.7%)
+3. No terminal-specific functional enrichments survive FDR correction when controlling for uTP baseline
+4. Chi-square tests detect heterogeneity but individual comparisons are underpowered
 
 ## References
 
@@ -277,4 +320,4 @@ This rigorous experiment found **strong evidence** that mature domain sequences 
 
 ---
 
-_Last updated: 2026-01-12 (with grouping strategy comparison)_
+_Last updated: 2026-01-12_
