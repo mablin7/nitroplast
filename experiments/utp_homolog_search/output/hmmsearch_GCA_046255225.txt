@@ -1,0 +1,116 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# target sequence database:        /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_046255225.1/protein.faa
+# output directed to file:         /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_046255225.txt
+# per-dom hits tabular output:     /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_046255225.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       good-c-term  [M=713]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+     0.0021   16.4   2.6     0.0051   15.1   2.6    1.7  1  KAL3918012.1  MAG: hypothetical protein SGPRY_006174 [Prymnes
+     0.0051   15.1   0.6     0.0062   14.9   0.6    1.0  1  KAL3894458.1  MAG: hypothetical protein SGPRY_013804, partial
+  ------ inclusion threshold ------
+      0.096   10.9   0.0       0.12   10.6   0.0    1.1  1  KAL3915262.1  MAG: hypothetical protein SGPRY_007300 [Prymnes
+        3.7    5.7  20.7        5.3    5.2  20.7    1.2  1  KAL3930580.1  MAG: hypothetical protein SGPRY_001478 [Prymnes
+        4.8    5.3  17.2        5.9    5.0  17.2    1.2  1  KAL3923068.1  MAG: hypothetical protein SGPRY_004343, partial
+
+
+Domain annotation for each sequence (and alignments):
+>> KAL3918012.1  MAG: hypothetical protein SGPRY_006174 [Prymnesium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   2.6   1.7e-06    0.0051     431     546 ..     105     217 ..      30     234 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.7e-06
+   good-c-term 431 fshGdGpapsercsllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfm 527
+                     h    a  +   l+ a lll l    af  l  +ld  +  h+    a   +   r+   + l+  +lp l   l a  i  e + prw+ +l+ 
+  KAL3918012.1 105 NEHAPSAAYVQGQNLVGAALLLVLGEEEAFWLLSLVLDEFLPDHYTAPMAGVIR-DARV--LNSLMSDQLPALAKQLHALEIPAEVLAPRWFLSLWS 198
+                   55666666677778999****************************999887765.4554..4689******************************** PP
+
+   good-c-term 528 stlsldtaarlwdcylrdG 546
+                   s l  d+  r++d  +  G
+  KAL3918012.1 199 SHLPPDALLRVYDALFTLG 217
+                   *************877655 PP
+
+>> KAL3894458.1  MAG: hypothetical protein SGPRY_013804, partial [Prymnesium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.6     2e-06    0.0062      72     239 ..     130     295 ..      90     303 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 2e-06
+   good-c-term  72 ewleda.gae.llpdfpelalppiprllpslee.qslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvydd 165
+                   e+ +++ +++ +l +f+   +pp+pr +p+++  +   ++  l+ s+ e++    + k++k +i++  ++ +++  ++ +ad+++ ++  e+f  + 
+  KAL3894458.1 130 EGERSRtKDNnKLGEFNLTGIPPMPRGVPQIDVtFDIDANGMLNVSALEKS----TGKENKITITNDKSRLSKEDVEKMTADAEKYAKEDEAFKKKV 222
+                   44333323443599999999*********8854455555445555544443....445566777777777777777778888888888999999999 PP
+
+   good-c-term 166 iiqtgmefdnislgelvellrqgsvfkkyahsrieskrchscrlwladnqlrylnlsgrhkpekavqlsaieqv 239
+                   +++ g e  + s+++ +   + +  +++  +s+   +  +++  wl++nql   +  +++++e ++  s i q 
+  KAL3894458.1 223 EAKNGLENYCYSMKNSLGDDKLKDKISEADRSK-VYQAIEEALSWLEKNQLGEKEEFEHKQKEVESVCSPIMQA 295
+                   9*************9888877766666555554.4556778899******998877777777777666666665 PP
+
+>> KAL3915262.1  MAG: hypothetical protein SGPRY_007300 [Prymnesium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   3.9e-05      0.12     493     541 ..      33      80 ..      27      99 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3.9e-05
+   good-c-term 493 eklldrelpellchlrahsiele..hfiprwlttlfmstlsldtaarlwdc 541
+                    kl + e  ell  lr h+ e+    f p     l ++t s+d++a+lwd 
+  KAL3915262.1  33 AKLWNSETGELLHTLRGHATEIVclSFDPH---GLVVATGSMDSTAKLWDV 80 
+                   699999*************99862245665...6789*************6 PP
+
+>> KAL3930580.1  MAG: hypothetical protein SGPRY_001478 [Prymnesium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.2  20.7    0.0017       5.3      43     232 ..     282     378 ..     212     415 .. 0.35
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.0017
+   good-c-term  43 srlelaleallgergvaaasrrraaevgcewledagaellpdfpelalppiprllpsleeqslvsaedlhgspaeqeavdakakagkrrilgavraf 139
+                   ++l  a ++++++   + +++ r+++v+++ ++        ++p+ ++p+  + +p                                         
+  KAL3930580.1 282 AKLTPAQMQAQHQ--LQMQAQMRQQQVQMQQRRM-----QMQMPQQQMPQ--QQMP----------------------------------------- 328
+                   1111111111110..0000011111111111110.....11112222211..1111......................................... PP
+
+   good-c-term 140 lspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsrieskrchscrlwladnqlrylnlsgrhkpekavq 232
+                           ++++++++ +++++ +++++q+                                    +++ ++++ q+r l++++++++++++q
+  KAL3930580.1 329 --------QQQMQQQQMQQQQMQQQQMQQQQ-----------------------------------MQQQQMQQMQMRQLQMQQMQQQQMQQQ 378
+                   ........11111111111111111111111...................................111111111111111111111111111 PP
+
+>> KAL3923068.1  MAG: hypothetical protein SGPRY_004343, partial [Prymnesium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0  17.2     0.002       5.9     139     223 ..     242     324 ..     136     335 .] 0.36
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.002
+   good-c-term 139 flspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsrieskrchscrlwladnqlrylnlsg 223
+                    +s+fr+ +++++++++++++++  ++  +   + ++   ++  +  +q++ +kk++++++++k++++++ ++++++++  ++++
+  KAL3923068.1 242 PASRFRQRKRKKKKKKKKKKKKKQKKKKKKK--KKKQKQKQKQKQKQKQKQKQKKQQQKKQKKKKMMKKKKKKKKKKKKKKKKKK 324
+                   2333332222222222211111111111111..1111111111111111111111111111111111111111111111111111 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (713 nodes)
+Target sequences:                      15075  (5206961 residues searched)
+Passed MSV filter:                      1439  (0.0954561); expected 301.5 (0.02)
+Passed bias filter:                      334  (0.0221559); expected 301.5 (0.02)
+Passed Vit filter:                        49  (0.00325041); expected 15.1 (0.001)
+Passed Fwd filter:                        10  (0.00066335); expected 0.2 (1e-05)
+Initial search space (Z):              15075  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.15u 0.00s 00:00:00.15 Elapsed: 00:00:00.08
+# Mc/sec: 46125.77
+//
+[ok]

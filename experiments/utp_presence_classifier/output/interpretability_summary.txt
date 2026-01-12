@@ -1,0 +1,27 @@
+Interpretability Analysis Summary
+==================================================
+
+Statistical Parameters:
+  - Significance level (α): 0.05
+  - Bonferroni-corrected α: 0.0063
+  - Number of properties tested: 8
+
+Embedding Visualization:
+  - t-SNE perplexity: 30
+  - UMAP n_neighbors: 15
+  - UMAP min_dist: 0.1
+  - Random seeds: [42, 123, 456]
+
+Silhouette Scores:
+  TSNE: 0.226 ± 0.003
+  UMAP: 0.282 ± 0.014
+
+Significant Properties (Bonferroni-corrected):
+  length: r=-0.004, d=-0.008, p=1.27e-03
+  molecular_weight: r=0.010, d=0.021, p=1.13e-04
+  isoelectric_point: r=-0.406, d=-0.895, p=2.89e-47
+  gravy: r=0.218, d=0.449, p=1.25e-19
+  instability_index: r=-0.372, d=-0.808, p=1.07e-58
+  fraction_helix: r=0.092, d=0.185, p=1.09e-05
+  fraction_sheet: r=-0.108, d=-0.218, p=3.27e-03
+  fraction_coil: r=0.464, d=1.054, p=5.19e-78

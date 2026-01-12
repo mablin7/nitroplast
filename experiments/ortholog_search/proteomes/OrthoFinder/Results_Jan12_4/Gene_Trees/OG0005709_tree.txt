@@ -1,0 +1,1 @@
+(Emiliania_huxleyi_EOD28295.1:0.160543,(Emiliania_huxleyi_EOD03887.1:0.030186,(Emiliania_huxleyi_EOD11312.1:0.406747,(Emiliania_huxleyi_EOD27482.1:0.197948,(Emiliania_huxleyi_EOD04380.1:0.301806,Emiliania_huxleyi_EOD10911.1:0.317549):0.412294):0.158032):0.0558686):0.160543);

@@ -1,0 +1,1 @@
+(Braarudosphaera_bigelowii_KC1-P2_N4_k43_Locus_3920_Transcript_3_1:0.000501705,((Braarudosphaera_bigelowii_KC1-P2_N2_k25_Locus_1984_Transcript_4_1:0.0979518,Braarudosphaera_bigelowii_KC1-P2_N3_k31_Locus_2643_Transcript_4_1:0.0182273):0.0814982,Braarudosphaera_bigelowii_KC1-P2_N3_k69_Locus_2822_Transcript_3_1:0.0382356):0.000501705);

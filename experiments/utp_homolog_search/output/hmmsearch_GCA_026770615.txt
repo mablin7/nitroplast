@@ -1,0 +1,131 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# target sequence database:        /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_026770615.1/protein.faa
+# output directed to file:         /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_026770615.txt
+# per-dom hits tabular output:     /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_026770615.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       good-c-term  [M=713]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.5e-16   60.6   2.9    1.8e-16   60.4   2.9    1.0  1  KAJ1629283.1  hypothetical protein T492DRAFT_122706 [Pavloval
+    0.00013   21.2   0.2     0.0002   20.6   0.2    1.2  1  KAJ1622593.1  rab-GTPase-TBC domain-containing protein [Pavlo
+    0.00014   21.1   3.7    0.00074   18.7   3.7    1.9  1  KAJ1625317.1  rab-GTPase-TBC domain-containing protein [Pavlo
+  ------ inclusion threshold ------
+      0.092   11.8   0.4       0.13   11.3   0.4    1.1  1  KAJ1621538.1  rab-GTPase-TBC domain-containing protein, parti
+        0.3   10.1   0.1       0.44    9.5   0.1    1.1  1  KAJ1634223.1  rab-GTPase-TBC domain-containing protein [Pavlo
+        9.6    5.1  14.7      0.089   11.8   6.9    1.5  2  KAJ1632668.1  rab-GTPase-TBC domain-containing protein [Pavlo
+
+
+Domain annotation for each sequence (and alignments):
+>> KAJ1629283.1  hypothetical protein T492DRAFT_122706 [Pavlovales sp. CCMP2436]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   60.4   2.9   4.2e-20   1.8e-16     318     480 ..       2     173 ..       1     185 [. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 60.4 bits;  conditional E-value: 4.2e-20
+   good-c-term 318 enatqlwcdeilphweenrslprtqmlwweGvpsalrpqlwplaiGdalqlGeGGytkwaaaaqpadreaarclleeeivqa......edlppe... 405
+                   e at+ w  +ilp w e r   +t++lwweG+ps+ r ++w   +G++ + Ge G    a a     r  a    eee v++      e+lp e   
+  KAJ1629283.1   2 ELATKEWSTNILPNWTEMRHAEQTRLLWWEGIPSSERGRVWLCVLGETEK-GEKGGELSADANLVGGRAKAGS-KEEEAVRTagewldEQLPSEhae 96 
+                   789*******************************************9866.6666555566666666666655.56666653255555889987333 PP
+
+   good-c-term 406 l.nmftalesplrGslllllsavh....affshGdGpa..psercsllaamlllyleparafcclcamldahffkhfvkGGa 480
+                   l ++++a +sp+r   + ll+++      +  hG       +    l+a mll++lep  a+  l a++     kh v G +
+  KAJ1629283.1  97 LsQLYAAANSPFRSDAVSLLASLQlqlqGLSQHGKVHIreCAPTAPLIAGMLLIHLEPPLAYAALKALV-----KHHVPGAT 173
+                   3358999******988877776541111556677654311334567******************99986.....55555555 PP
+
+>> KAJ1622593.1  rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.6   0.2   4.6e-08    0.0002     458     548 ..     228     314 ..     217     318 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 20.6 bits;  conditional E-value: 4.6e-08
+   good-c-term 458 rafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGea 548
+                    +f cl  +l+     h+        +  +rl    + +dr    l  hl    i++  f  rw+  l+m  l l   +r+wd yl +G a
+  KAJ1622593.1 228 DSFWCLSKLLNV-VQDHYTFAQPGIQRMVFRLKEIVQRIDRP---LHAHLALQGIQFIQFAFRWMNCLLMRELGLPMITRMWDTYLAEGAA 314
+                   566677666664.33454444444445567777776777775...568***************************************9987 PP
+
+>> KAJ1625317.1  rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   3.7   1.7e-07   0.00074     493     570 ..     223     300 ..      58     315 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 1.7e-07
+   good-c-term 493 eklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleckq 570
+                    ++ld  lp l  hl    +  e +  +wl   +++++ ++t  r+wd  + dG+   +r +l  l     a+l  ++
+  KAJ1625317.1 223 AQILDEHLPRLGAHLDNCGVLPEVYSTKWLLCAYVTAMPVETVLRVWDALFADGNCALFRVALAFLHSHEKALLAMHD 300
+                   479************************************************************999988888776655 PP
+
+>> KAJ1621538.1  rab-GTPase-TBC domain-containing protein, partial [Pavlovales sp. CCMP2436]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.4   2.9e-05      0.13     494     571 ..     152     229 ..     145     239 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 2.9e-05
+   good-c-term 494 klldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleckqr 571
+                   +l+   +pe+   l    +  e ++ +w+  l +  l + +   +++ +l +G  f ++ +l ++r  + a+l ck  
+  KAJ1621538.1 152 RLVTEHFPEVAQLLEKAGLAAEAYVSKWFVGLCLHVLPFRALFSFYEQFLTEGAIFLFKFSLSLVRHTSSALLACKHT 229
+                   56677889999999999999********************************************************86 PP
+
+>> KAJ1634223.1  rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.5   0.1    0.0001      0.44     495     549 ..     541     595 ..     534     600 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 0.0001
+   good-c-term 495 lldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeaf 549
+                   ll r  pel  h+ +  +  + +  rw+t l    + l    r+wd ++ d + f
+  KAJ1634223.1 541 LLLRADPELHAHMASEGVSPQFYSFRWITLLVSQEFDLPDVLRIWDSFFSDEKRF 595
+                   788999*******************************************998776 PP
+
+>> KAJ1632668.1  rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.8   0.9       1.1   4.7e+03     324     360 ..     116     155 ..     103     160 .. 0.70
+   2 ?   11.8   6.9   2.1e-05     0.089     448     561 ..     247     359 ..     221     386 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -3.8 bits;  conditional E-value: 1.1
+   good-c-term 324 wcdeilphweenrslprtqmlw...weGvpsalrpqlwpl 360
+                   w   + p w      pr  +l      G+p a+r   w l
+  KAJ1632668.1 116 WLSMLGPRWRSWTLAPRRLLLKrrvRRGIPNAVRAHAWDL 155
+                   6666677777777777777775222468888888888876 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 2.1e-05
+   good-c-term 448 amlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylr 544
+                    +ll++    ra+c l a+l    ++     G   p     +   + l+   lp+l  hl    +e   +  rw+ tlf+  l ++++ r  dc   
+  KAJ1632668.1 247 GLLLMFHTEERALCLLLALLGRCGLRECYLPGL--PGLRAAIEAFDGLVAGSLPKLHAHLEKEMVEPSLYCTRWFMTLFIGCLPFEASLRALDCICF 341
+                   577888888888888888888877777666664..5555667888999999******************************************9776 PP
+
+   good-c-term 545 dGe.afawratleilrll 561
+                   d +    +r  l +l l 
+  KAJ1632668.1 342 DRDpKVLFRLGLAVLSLH 359
+                   654134577777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (713 nodes)
+Target sequences:                      26002  (7216544 residues searched)
+Passed MSV filter:                      1958  (0.0753019); expected 520.0 (0.02)
+Passed bias filter:                      541  (0.0208061); expected 520.0 (0.02)
+Passed Vit filter:                        85  (0.00326898); expected 26.0 (0.001)
+Passed Fwd filter:                        21  (0.00080763); expected 0.3 (1e-05)
+Initial search space (Z):              26002  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.08
+# Mc/sec: 58796.94
+//
+[ok]

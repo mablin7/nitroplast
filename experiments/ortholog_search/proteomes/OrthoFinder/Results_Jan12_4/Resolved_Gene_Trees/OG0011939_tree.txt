@@ -1,0 +1,1 @@
+(Prymnesium_parvum_KAL1518714.1:0.682308,(Emiliania_huxleyi_EOD05646.1:0.164289,(Emiliania_huxleyi_EOD07816.1:0.053272,Emiliania_huxleyi_EOD36564.1:0.145333)n2:0.0302515)n1:0.682308)n0;

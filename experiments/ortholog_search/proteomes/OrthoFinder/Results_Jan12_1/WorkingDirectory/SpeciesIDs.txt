@@ -1,0 +1,5 @@
+0: Braarudosphaera_bigelowii.faa
+1: Chrysochromulina_tobinii.faa
+2: Emiliania_huxleyi.faa
+3: Prymnesium_parvum.faa
+4: Prymnesium_sp.faa

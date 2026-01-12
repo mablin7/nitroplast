@@ -1,0 +1,1 @@
+(Chrysochromulina_tobinii_KOO24698.1:0.302701,(Braarudosphaera_bigelowii_KC1-P2_N2_CL5459Contig1_1:1.05062,(Emiliania_huxleyi_EOD03938.1:0.0666748,Emiliania_huxleyi_EOD36231.1:0.0290443)n2:0.701632)n1:0.302701)n0;

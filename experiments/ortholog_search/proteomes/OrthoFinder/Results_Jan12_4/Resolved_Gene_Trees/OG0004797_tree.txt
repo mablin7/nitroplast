@@ -1,0 +1,1 @@
+(Chrysochromulina_tobinii_KOO32954.1:0.172257,(Braarudosphaera_bigelowii_KC1-P2-N_k49_Locus_22659_Transcript_1_1:0.259483,((Prymnesium_parvum_KAL1519911.1:0.14351,Prymnesium_sp_KAL3904201.1:0.586867)n3:0.171617,(Emiliania_huxleyi_EOD11994.1:0.0163169,Emiliania_huxleyi_EOD39692.1:0.0187501)n4:0.306632)n2:0.0509063)n1:0.172257)n0;

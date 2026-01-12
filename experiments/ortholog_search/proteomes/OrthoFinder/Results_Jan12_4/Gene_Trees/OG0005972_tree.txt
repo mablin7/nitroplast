@@ -1,0 +1,1 @@
+(Braarudosphaera_bigelowii_KC1-P2_N1_CL43Contig1_1:0.256901,((Braarudosphaera_bigelowii_KC1-P2_N3_CL24Contig3_1:0.0263013,Braarudosphaera_bigelowii_KC1-P2_N1_k65_Locus_7551_Transcript_7_1:0.0954617):0.178288,(Braarudosphaera_bigelowii_KC1-P2_N4_k31_Locus_14966_Transcript_3_1:0.460334,Braarudosphaera_bigelowii_KC1-P2-N_CL3Contig65_1:1.74961e-06):0.488648):0.256901);

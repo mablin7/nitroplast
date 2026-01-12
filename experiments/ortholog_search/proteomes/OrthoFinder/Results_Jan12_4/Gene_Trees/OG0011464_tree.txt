@@ -1,0 +1,1 @@
+(Chrysochromulina_tobinii_KOO25202.1:0.643154,((Chrysochromulina_tobinii_KOO24295.1:1.38119,Chrysochromulina_tobinii_KOO23932.1:0.687022):0.3019,Chrysochromulina_tobinii_KOO22662.1:0.507315):0.643154);

@@ -1,0 +1,1 @@
+(Braarudosphaera_bigelowii_KC1-P2-N_CL6264Contig1_1:0.53641,(Prymnesium_sp_KAL3902489.1:0.47756,(Prymnesium_parvum_KAL1523165.1:0.689859,Prymnesium_parvum_KAL1524474.1:0.928133)n2:0.103126)n1:0.332718)n0;

@@ -1,0 +1,882 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<mast version="5.5.5" release="Thu Sep 14 08:48:04 2023 +1000">
+	<command_line><arg>mast</arg><arg>-o</arg><arg>/Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_GCA_041296205.1</arg><arg>-ev</arg><arg>10.0</arg><arg>-nostatus</arg><arg>/Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml</arg><arg>/Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_041296205.1/protein.faa</arg></command_line>
+	<settings strand_handling="unstranded" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="Protein" like="protein">
+		<letter id="A" symbol="A" name="Alanine" colour="0000CC"/>
+		<letter id="C" symbol="C" name="Cysteine" colour="0000CC"/>
+		<letter id="D" symbol="D" name="Aspartic acid" colour="FF00FF"/>
+		<letter id="E" symbol="E" name="Glutamic acid" colour="FF00FF"/>
+		<letter id="F" symbol="F" name="Phenylalanine" colour="0000CC"/>
+		<letter id="G" symbol="G" name="Glycine" colour="FFB300"/>
+		<letter id="H" symbol="H" name="Histidine" colour="FFCCCC"/>
+		<letter id="I" symbol="I" name="Isoleucine" colour="0000CC"/>
+		<letter id="K" symbol="K" name="Lysine" colour="CC0000"/>
+		<letter id="L" symbol="L" name="Leucine" colour="0000CC"/>
+		<letter id="M" symbol="M" name="Methionine" colour="0000CC"/>
+		<letter id="N" symbol="N" name="Asparagine" colour="008000"/>
+		<letter id="P" symbol="P" name="Proline" colour="FFFF00"/>
+		<letter id="Q" symbol="Q" name="Glutamine" colour="008000"/>
+		<letter id="R" symbol="R" name="Arginine" colour="CC0000"/>
+		<letter id="S" symbol="S" name="Serine" colour="008000"/>
+		<letter id="T" symbol="T" name="Threonine" colour="008000"/>
+		<letter id="V" symbol="V" name="Valine" colour="0000CC"/>
+		<letter id="W" symbol="W" name="Tryptophan" colour="0000CC"/>
+		<letter id="Y" symbol="Y" name="Tyrosine" colour="33E6CC"/>
+		<letter id="X" symbol="X" aliases="*." equals="ACDEFGHIKLMNPQRSTVWY" name="Any amino acid"/>
+		<letter id="B" symbol="B" equals="DN" name="Asparagine or Aspartic acid"/>
+		<letter id="Z" symbol="Z" equals="EQ" name="Glutamine or Glutamic acid"/>
+		<letter id="J" symbol="J" equals="IL" name="Leucine or Isoleucine"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.0730919" C="0.0181455" D="0.051688" E="0.0622785" F="0.0402434" G="0.0692596" H="0.0224055" I="0.056227" K="0.058435" L="0.0916218" M="0.0230443" N="0.0460321" P="0.0506238" Q="0.0407153" R="0.0518462" S="0.073729" T="0.0593523" V="0.0642985" W="0.0133282" Y="0.0326497"/>
+	<motif_dbs>
+		<motif_db source="/Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml" last_mod_date="Sun Jan 11 23:47:16 2026">
+			<background A="0.117913" C="0.0311774" D="0.0356741" E="0.0632537" F="0.0379724" G="0.0852374" H="0.0184868" I="0.0188865" K="0.0157888" L="0.145893" M="0.016888" N="0.011492" P="0.111918" Q="0.0453669" R="0.0634535" S="0.0575579" T="0.0316771" V="0.0281796" W="0.0566586" Y="0.00652567"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="TQTQLGACMGALGLHLGSRLD" alt="MEME-1" length="21" nsites="181" evalue="2.1e-087">
+			<pos A="-197" C="-659" D="-146" E="-104" F="-175" G="-364" H="123" I="-68" K="-180" L="-116" M="38" N="68" P="-414" Q="-62" R="-297" S="86" T="391" V="-200" W="-182" Y="388"/>
+			<pos A="-123" C="-752" D="-238" E="-472" F="-688" G="-375" H="-67" I="-512" K="98" L="-716" M="-517" N="13" P="-755" Q="381" R="154" S="-100" T="-85" V="-512" W="-337" Y="-383"/>
+			<pos A="26" C="-674" D="167" E="66" F="-267" G="33" H="-147" I="-422" K="72" L="-356" M="-57" N="69" P="-326" Q="31" R="-222" S="130" T="269" V="-31" W="-807" Y="-9"/>
+			<pos A="-70" C="-674" D="-59" E="21" F="-176" G="96" H="-63" I="-158" K="141" L="-304" M="-57" N="179" P="-662" Q="321" R="-66" S="-93" T="-11" V="-416" W="-807" Y="-293"/>
+			<pos A="-176" C="-583" D="-634" E="-615" F="9" G="-722" H="-520" I="64" K="-148" L="241" M="206" N="-429" P="-723" Q="-533" R="-344" S="-568" T="-438" V="22" W="-729" Y="-291"/>
+			<pos A="-173" C="-674" D="-144" E="-163" F="-267" G="259" H="-63" I="-422" K="-3" L="-436" M="-431" N="134" P="-413" Q="205" R="28" S="-16" T="-123" V="-204" W="-807" Y="-294"/>
+			<pos A="154" C="-674" D="-95" E="-162" F="-176" G="81" H="84" I="-422" K="-63" L="-436" M="-146" N="293" P="-233" Q="-170" R="-222" S="183" T="67" V="-416" W="-807" Y="-9"/>
+			<pos A="-1077" C="500" D="-960" E="-1086" F="-1024" G="-993" H="-932" I="-918" K="-891" L="-1131" M="-996" N="-840" P="-1107" Q="-1059" R="-1047" S="-1013" T="-922" V="-969" W="-1191" Y="-803"/>
+			<pos A="-60" C="-555" D="-675" E="-665" F="120" G="-681" H="-532" I="131" K="-441" L="112" M="433" N="-420" P="-781" Q="-610" R="-644" S="-224" T="-13" V="140" W="-332" Y="-5"/>
+			<pos A="-98" C="-643" D="-248" E="-567" F="-665" G="327" H="-513" I="-517" K="-140" L="-478" M="-553" N="-3" P="-440" Q="-308" R="-571" S="-37" T="-68" V="-147" W="-804" Y="-395"/>
+			<pos A="299" C="-657" D="-845" E="-904" F="-120" G="-285" H="-815" I="-707" K="-729" L="-944" M="-734" N="-589" P="-881" Q="-831" R="-886" S="-99" T="-234" V="-584" W="-1083" Y="-667"/>
+			<pos A="-340" C="-770" D="-883" E="-865" F="165" G="-949" H="-744" I="-130" K="-653" L="251" M="-45" N="-671" P="-951" Q="-757" R="-821" S="-815" T="-643" V="-68" W="-883" Y="-461"/>
+			<pos A="80" C="-664" D="-816" E="-898" F="-867" G="280" H="-808" I="-719" K="-721" L="-956" M="-745" N="-101" P="-880" Q="-830" R="-350" S="157" T="-143" V="-225" W="-1086" Y="-669"/>
+			<pos A="-611" C="-584" D="-635" E="-616" F="-375" G="-254" H="-521" I="104" K="-404" L="256" M="15" N="-112" P="-725" Q="-535" R="-580" S="-570" T="-235" V="74" W="-730" Y="-292"/>
+			<pos A="-200" C="-562" D="-405" E="-252" F="-126" G="-614" H="540" I="-446" K="-381" L="-280" M="-394" N="-94" P="-678" Q="-196" R="-228" S="2" T="-9" V="-223" W="-647" Y="-27"/>
+			<pos A="-866" C="-816" D="-985" E="-971" F="-168" G="-1028" H="-825" I="269" K="-759" L="243" M="-133" N="-766" P="-1033" Q="-837" R="-920" S="-915" T="-701" V="135" W="-923" Y="-507"/>
+			<pos A="154" C="-664" D="-855" E="-917" F="-866" G="257" H="-822" I="-712" K="-742" L="-313" M="-160" N="-594" P="-882" Q="-837" R="-895" S="44" T="9" V="-74" W="-1092" Y="-674"/>
+			<pos A="-52" C="-626" D="-387" E="-134" F="-578" G="-82" H="-151" I="-420" K="-69" L="-438" M="-432" N="68" P="-661" Q="-2" R="-8" S="353" T="-58" V="-207" W="-803" Y="-295"/>
+			<pos A="-357" C="-492" D="-519" E="-289" F="-589" G="-579" H="-296" I="-382" K="195" L="-605" M="-193" N="-103" P="-617" Q="-133" R="378" S="-329" T="-424" V="-485" W="-639" Y="-310"/>
+			<pos A="-931" C="-856" D="-977" E="-1013" F="299" G="-1028" H="-648" I="-406" K="-780" L="217" M="2" N="-702" P="-434" Q="-854" R="-931" S="-909" T="-758" V="-537" W="-234" Y="7"/>
+			<pos A="-254" C="-608" D="394" E="208" F="-545" G="-188" H="-145" I="-408" K="-3" L="-422" M="-417" N="158" P="-603" Q="-60" R="-288" S="-197" T="-338" V="-120" W="-680" Y="-288"/>
+		</motif>
+		<motif db="0" id="WLEEWRERLECWW" alt="MEME-2" length="13" nsites="179" evalue="1.9e-079">
+			<pos A="-899" C="-830" D="-796" E="-875" F="40" G="-871" H="-624" I="-659" K="-655" L="-775" M="-675" N="-602" P="-983" Q="-803" R="-824" S="-335" T="-741" V="-673" W="405" Y="-208"/>
+			<pos A="-198" C="-566" D="-490" E="-144" F="154" G="-96" H="280" I="-265" K="-283" L="74" M="98" N="60" P="-711" Q="64" R="-117" S="-164" T="-128" V="54" W="-40" Y="449"/>
+			<pos A="70" C="-672" D="187" E="179" F="-582" G="-50" H="-9" I="-157" K="41" L="-354" M="-55" N="71" P="-661" Q="88" R="39" S="55" T="35" V="-68" W="-806" Y="-292"/>
+			<pos A="48" C="-673" D="65" E="291" F="-582" G="-361" H="-9" I="-69" K="-1" L="-354" M="-145" N="-51" P="-661" Q="68" R="-138" S="80" T="-38" V="-415" W="-806" Y="-292"/>
+			<pos A="-444" C="-506" D="-454" E="-521" F="-111" G="-553" H="-413" I="-341" K="-310" L="-427" M="-334" N="-284" P="-670" Q="-474" R="-485" S="-481" T="-411" V="-165" W="403" Y="87"/>
+			<pos A="-171" C="-672" D="-376" E="-101" F="-266" G="-6" H="223" I="-420" K="-61" L="-354" M="-55" N="71" P="-661" Q="236" R="237" S="45" T="53" V="-415" W="-806" Y="82"/>
+			<pos A="-40" C="-672" D="121" E="234" F="-582" G="-189" H="-9" I="-157" K="159" L="-632" M="-429" N="136" P="-661" Q="148" R="141" S="12" T="-122" V="-415" W="-806" Y="-7"/>
+			<pos A="-306" C="-496" D="-203" E="-230" F="-587" G="-271" H="-298" I="-382" K="133" L="-341" M="-452" N="23" P="-618" Q="-79" R="365" S="-65" T="-126" V="-479" W="-643" Y="-308"/>
+			<pos A="-434" C="-819" D="-1031" E="-1029" F="258" G="-1056" H="-874" I="345" K="-818" L="138" M="102" N="-805" P="-1078" Q="-889" R="-985" S="-955" T="-706" V="237" W="-950" Y="-532"/>
+			<pos A="-195" C="-673" D="187" E="256" F="-582" G="93" H="-62" I="-421" K="74" L="-632" M="0" N="136" P="-661" Q="-35" R="-138" S="101" T="-38" V="-120" W="-806" Y="-293"/>
+			<pos A="-171" C="445" D="65" E="-42" F="-583" G="-134" H="-62" I="-421" K="123" L="-633" M="-430" N="23" P="-411" Q="-237" R="-221" S="-153" T="-194" V="-120" W="-335" Y="-293"/>
+			<pos A="-900" C="-808" D="-798" E="-867" F="-227" G="-884" H="-534" I="-610" K="-639" L="-747" M="-638" N="-563" P="-981" Q="-769" R="-803" S="-779" T="-722" V="-638" W="410" Y="110"/>
+			<pos A="-437" C="-857" D="-913" E="-972" F="194" G="-982" H="-561" I="-70" K="-729" L="-167" M="-57" N="-627" P="-1050" Q="-828" R="-349" S="-847" T="-765" V="-613" W="360" Y="371"/>
+		</motif>
+		<motif db="0" id="AEPGCEWVEE" alt="MEME-3" length="10" nsites="146" evalue="2.8e-054">
+			<pos A="229" C="-366" D="-438" E="-217" F="-480" G="-93" H="-149" I="-301" K="-91" L="-248" M="-39" N="-62" P="-60" Q="-34" R="-136" S="-5" T="64" V="103" W="-715" Y="-284"/>
+			<pos A="-78" C="-773" D="109" E="332" F="-677" G="-258" H="-449" I="-493" K="5" L="-424" M="-505" N="-279" P="-148" Q="46" R="-156" S="-70" T="-55" V="-478" W="-899" Y="-382"/>
+			<pos A="56" C="-644" D="24" E="16" F="-554" G="-85" H="-117" I="-129" K="-33" L="-406" M="-401" N="-179" P="129" Q="141" R="-57" S="142" T="-10" V="-387" W="-778" Y="-264"/>
+			<pos A="-214" C="-618" D="-92" E="-64" F="-639" G="318" H="-65" I="-492" K="-31" L="-761" M="-528" N="260" P="-719" Q="-582" R="-233" S="-202" T="-222" V="-209" W="-779" Y="-370"/>
+			<pos A="-957" C="500" D="-891" E="-985" F="-934" G="-938" H="-859" I="-786" K="-807" L="-1032" M="-865" N="-754" P="-1048" Q="-976" R="-964" S="-916" T="-810" V="-854" W="-1132" Y="-730"/>
+			<pos A="-300" C="-953" D="134" E="361" F="-871" G="-132" H="-139" I="-634" K="-9" L="-848" M="-658" N="35" P="-795" Q="-159" R="-219" S="-144" T="-536" V="-599" W="-1090" Y="-541"/>
+			<pos A="-429" C="-485" D="-433" E="-500" F="-73" G="-395" H="-395" I="-320" K="-288" L="-359" M="-313" N="-264" P="-649" Q="-309" R="-464" S="-333" T="-390" V="-316" W="401" Y="-3"/>
+			<pos A="-236" C="-525" D="-645" E="-218" F="-435" G="-350" H="-502" I="328" K="-412" L="115" M="-96" N="-390" P="-752" Q="-580" R="-308" S="-277" T="-361" V="388" W="-724" Y="-252"/>
+			<pos A="-21" C="-644" D="129" E="192" F="-238" G="89" H="-33" I="-392" K="241" L="-406" M="-117" N="-179" P="-243" Q="46" R="-110" S="63" T="81" V="-2" W="-778" Y="-264"/>
+			<pos A="-21" C="-644" D="158" E="214" F="-146" G="12" H="-117" I="-392" K="102" L="-237" M="-401" N="-23" P="-633" Q="107" R="47" S="13" T="63" V="-40" W="-307" Y="-264"/>
+		</motif>
+		<motif db="0" id="LPDFPEPFSLPPIPRL" alt="MEME-4" length="16" nsites="78" evalue="1.5e-038">
+			<pos A="-514" C="-487" D="-538" E="-519" F="-68" G="-306" H="-424" I="14" K="-52" L="251" M="111" N="-333" P="-627" Q="-437" R="-483" S="-235" T="-342" V="-5" W="-253" Y="-195"/>
+			<pos A="-411" C="-573" D="-428" E="-468" F="-538" G="-274" H="-424" I="-368" K="-257" L="-259" M="-441" N="-295" P="300" Q="-182" R="-496" S="-114" T="-336" V="-363" W="-809" Y="-351"/>
+			<pos A="33" C="-590" D="332" E="157" F="-499" G="-478" H="-284" I="-333" K="-79" L="-192" M="-344" N="55" P="-42" Q="-278" R="-188" S="-9" T="72" V="-94" W="-723" Y="-209"/>
+			<pos A="-162" C="-394" D="-466" E="-289" F="440" G="-574" H="-34" I="-160" K="-337" L="-103" M="-228" N="-305" P="-234" Q="-542" R="-563" S="-385" T="-396" V="-229" W="-472" Y="92"/>
+			<pos A="-415" C="-577" D="-61" E="-472" F="-170" G="-544" H="-427" I="-372" K="-260" L="-579" M="-445" N="-298" P="303" Q="-445" R="-500" S="-368" T="-120" V="-367" W="-812" Y="-353"/>
+			<pos A="72" C="-562" D="233" E="187" F="-154" G="-458" H="-259" I="-309" K="110" L="-242" M="-318" N="61" P="-7" Q="-125" R="-325" S="111" T="-82" V="-91" W="-695" Y="-181"/>
+			<pos A="-274" C="-563" D="33" E="-470" F="22" G="-35" H="-422" I="-337" K="-258" L="-54" M="-53" N="-295" P="242" Q="-442" R="-231" S="-191" T="-36" V="70" W="-794" Y="-334"/>
+			<pos A="-280" C="-384" D="-80" E="-512" F="447" G="-567" H="-419" I="-55" K="-328" L="-303" M="-219" N="-297" P="-595" Q="-535" R="-556" S="-376" T="-191" V="-220" W="-74" Y="157"/>
+			<pos A="-22" C="-560" D="-264" E="53" F="-470" G="-115" H="-34" I="-308" K="186" L="-323" M="-33" N="134" P="-299" Q="114" R="108" S="157" T="231" V="82" W="-694" Y="-180"/>
+			<pos A="-320" C="-581" D="-655" E="-637" F="-56" G="-736" H="-533" I="-140" K="-425" L="248" M="-4" N="-448" P="-738" Q="-547" R="-598" S="-589" T="-443" V="205" W="-713" Y="-283"/>
+			<pos A="-274" C="-573" D="-433" E="-474" F="-542" G="-541" H="-429" I="-370" K="-262" L="-579" M="-54" N="-300" P="305" Q="-447" R="-501" S="-366" T="-339" V="-111" W="-813" Y="-356"/>
+			<pos A="-205" C="-573" D="-428" E="-469" F="-538" G="-274" H="-424" I="-368" K="-257" L="-137" M="-442" N="-296" P="292" Q="-442" R="-143" S="-365" T="-337" V="-364" W="-809" Y="-352"/>
+			<pos A="-739" C="-690" D="-900" E="-904" F="-443" G="-932" H="-765" I="503" K="-696" L="83" M="123" N="-678" P="-117" Q="-780" R="-872" S="-828" T="-576" V="6" W="-846" Y="-423"/>
+			<pos A="-416" C="-576" D="-434" E="-475" F="-543" G="-274" H="-430" I="-374" K="-263" L="-581" M="-447" N="-301" P="303" Q="-448" R="-143" S="-369" T="-341" V="-111" W="-814" Y="-357"/>
+			<pos A="-244" C="-419" D="-447" E="-305" F="-516" G="-258" H="-224" I="-310" K="41" L="-278" M="-127" N="-35" P="-545" Q="-100" R="373" S="-262" T="-352" V="-414" W="-302" Y="-238"/>
+			<pos A="-524" C="-500" D="-543" E="-531" F="-291" G="-209" H="-432" I="-86" K="-307" L="261" M="-104" N="-11" P="-641" Q="-449" R="-159" S="-481" T="-355" V="-179" W="-248" Y="-195"/>
+		</motif>
+		<motif db="0" id="LZLPDFPD" alt="MEME-5" length="8" nsites="67" evalue="8.1e-012" bad="y">
+			<pos A="-309" C="-472" D="-523" E="-504" F="-6" G="-291" H="20" I="120" K="-37" L="244" M="26" N="-318" P="-612" Q="-185" R="-467" S="-220" T="-327" V="-148" W="-618" Y="-180"/>
+			<pos A="-125" C="-541" D="148" E="105" F="-450" G="-95" H="70" I="-289" K="173" L="-500" M="-297" N="330" P="-193" Q="237" R="46" S="40" T="-62" V="-71" W="-674" Y="-160"/>
+			<pos A="-642" C="-605" D="-697" E="-679" F="-118" G="-771" H="-566" I="9" K="-467" L="263" M="141" N="-488" P="-773" Q="-580" R="-637" S="-631" T="-473" V="-265" W="-725" Y="-299"/>
+			<pos A="-1006" C="-928" D="-839" E="-995" F="-927" G="-862" H="-815" I="-896" K="-776" L="-1043" M="-973" N="-736" P="315" Q="-946" R="-938" S="-911" T="-852" V="-901" W="-1065" Y="-687"/>
+			<pos A="-2" C="-754" D="380" E="169" F="-654" G="-570" H="-405" I="-445" K="24" L="-658" M="-461" N="-222" P="-194" Q="4" R="-197" S="-35" T="-95" V="-422" W="-874" Y="-350"/>
+			<pos A="-533" C="-437" D="-507" E="-564" F="460" G="-615" H="-404" I="-39" K="-375" L="-356" M="-271" N="-334" P="-646" Q="-568" R="-594" S="-428" T="-437" V="-272" W="-486" Y="173"/>
+			<pos A="-1006" C="-928" D="-839" E="-995" F="-927" G="-862" H="-815" I="-896" K="-776" L="-1043" M="-973" N="-736" P="315" Q="-946" R="-938" S="-911" T="-852" V="-901" W="-1065" Y="-687"/>
+			<pos A="-128" C="-570" D="327" E="194" F="-480" G="-455" H="-17" I="-316" K="124" L="-528" M="-326" N="239" P="-193" Q="44" R="-93" S="83" T="-238" V="-310" W="-704" Y="-189"/>
+		</motif>
+		<motif db="0" id="AWRAALLGRAPPP" alt="MEME-6" length="13" nsites="25" evalue="2.3e-009">
+			<pos A="232" C="-392" D="-571" E="-639" F="-596" G="-388" H="-546" I="-447" K="-465" L="-684" M="-474" N="-317" P="-610" Q="-564" R="-620" S="275" T="-263" V="-325" W="-818" Y="-401"/>
+			<pos A="-476" C="-412" D="-360" E="-427" F="-76" G="-460" H="-317" I="-247" K="-216" L="-280" M="-241" N="-191" P="-577" Q="-380" R="-391" S="-388" T="-317" V="-243" W="396" Y="189"/>
+			<pos A="-440" C="-377" D="-402" E="-470" F="-473" G="-462" H="-182" I="-267" K="37" L="-491" M="-341" N="41" P="-502" Q="-270" R="384" S="-359" T="-309" V="-370" W="-524" Y="-194"/>
+			<pos A="287" C="-277" D="-429" E="-460" F="-425" G="-109" H="-414" I="-250" K="-273" L="-489" M="-290" N="-230" P="-589" Q="-452" R="-475" S="-23" T="-200" V="-140" W="-659" Y="-247"/>
+			<pos A="255" C="-191" D="-328" E="-349" F="-317" G="1" H="-314" I="-134" K="-156" L="-375" M="40" N="-152" P="-566" Q="-360" R="-152" S="-79" T="56" V="-31" W="-555" Y="160"/>
+			<pos A="91" C="-370" D="-509" E="-526" F="-343" G="-111" H="-417" I="-126" K="-318" L="199" M="211" N="-264" P="-578" Q="-457" R="-502" S="-41" T="-228" V="-159" W="-647" Y="-196"/>
+			<pos A="-213" C="-378" D="-438" E="-421" F="-186" G="-197" H="-321" I="26" K="-207" L="231" M="110" N="-226" P="-531" Q="-343" R="-56" S="-360" T="51" V="43" W="-533" Y="-89"/>
+			<pos A="-526" C="-630" D="-454" E="-588" F="-650" G="353" H="-510" I="-530" K="-379" L="-771" M="-572" N="-285" P="-720" Q="-614" R="-582" S="-471" T="-504" V="-520" W="-789" Y="-389"/>
+			<pos A="-431" C="-367" D="-394" E="-459" F="-464" G="-454" H="-35" I="-257" K="133" L="-480" M="-330" N="-134" P="-316" Q="-259" R="377" S="-349" T="-130" V="-360" W="-514" Y="-185"/>
+			<pos A="79" C="-422" D="-129" E="-127" F="-332" G="23" H="-122" I="-169" K="188" L="-382" M="-180" N="41" P="-75" Q="81" R="77" S="51" T="211" V="130" W="-557" Y="-44"/>
+			<pos A="-83" C="-451" D="-27" E="-335" F="-413" G="-152" H="-294" I="-243" K="101" L="-451" M="-314" N="-163" P="254" Q="29" R="-366" S="-68" T="3" V="11" W="-683" Y="-221"/>
+			<pos A="73" C="-423" D="-360" E="-402" F="-457" G="15" H="-353" I="-287" K="-193" L="-118" M="-355" N="-210" P="233" Q="-371" R="-426" S="-244" T="20" V="-262" W="-720" Y="-269"/>
+			<pos A="153" C="-370" D="-316" E="-87" F="-318" G="-399" H="-282" I="-100" K="-127" L="-184" M="96" N="-149" P="187" Q="-312" R="-364" S="-53" T="-177" V="54" W="-595" Y="-126"/>
+		</motif>
+		<motif db="0" id="PPJPRLLP" alt="MEME-7" length="8" nsites="44" evalue="1.4e-008">
+			<pos A="-373" C="-519" D="-400" E="-440" F="-451" G="-502" H="-393" I="-243" K="-229" L="50" M="-335" N="-264" P="265" Q="-411" R="-467" S="-330" T="-52" V="-33" W="-753" Y="-299"/>
+			<pos A="-140" C="-508" D="4" E="-160" F="-105" G="-209" H="-358" I="-301" K="-190" L="-509" M="-375" N="-229" P="284" Q="-375" R="-430" S="-299" T="-270" V="-46" W="-743" Y="-285"/>
+			<pos A="-677" C="-627" D="-833" E="-829" F="-59" G="-856" H="-667" I="468" K="-617" L="133" M="150" N="-605" P="-876" Q="-683" R="-780" S="-754" T="-514" V="133" W="-743" Y="-327"/>
+			<pos A="-886" C="-854" D="-761" E="-897" F="-851" G="-792" H="-739" I="-797" K="-680" L="-956" M="-873" N="-653" P="315" Q="-853" R="-856" S="-806" T="-755" V="-799" W="-999" Y="-616"/>
+			<pos A="-457" C="-396" D="-421" E="-483" F="-492" G="-481" H="-200" I="-285" K="22" L="-508" M="-357" N="-161" P="-521" Q="-54" R="382" S="-219" T="-325" V="-386" W="-543" Y="-213"/>
+			<pos A="-643" C="-600" D="-723" E="-708" F="-318" G="-781" H="-578" I="-126" K="-495" L="270" M="64" N="-511" P="-786" Q="-593" R="-661" S="-656" T="-476" V="-251" W="-706" Y="-286"/>
+			<pos A="-589" C="-550" D="-670" E="-660" F="-334" G="-743" H="-558" I="144" K="-449" L="253" M="-166" N="-463" P="-755" Q="-571" R="-628" S="-607" T="-423" V="168" W="-717" Y="-284"/>
+			<pos A="-886" C="-854" D="-761" E="-897" F="-851" G="-792" H="-739" I="-797" K="-680" L="-956" M="-873" N="-653" P="315" Q="-853" R="-856" S="-806" T="-755" V="-799" W="-999" Y="-616"/>
+		</motif>
+		<motif db="0" id="ALGKPPAA" alt="MEME-8" length="8" nsites="6" evalue="1.9e+000" bad="y">
+			<pos A="285" C="-197" D="-326" E="-361" F="-330" G="-225" H="-314" I="-150" K="-174" L="-393" M="-201" N="-139" P="-502" Q="-360" R="-379" S="-79" T="-122" V="-52" W="-562" Y="-144"/>
+			<pos A="-373" C="-341" D="-424" E="-407" F="-115" G="-500" H="-303" I="239" K="-194" L="240" M="60" N="-215" P="-509" Q="-319" R="-370" S="-354" T="-204" V="9" W="-484" Y="-49"/>
+			<pos A="-257" C="-395" D="-177" E="-313" F="-418" G="332" H="-258" I="-273" K="-108" L="-539" M="-309" N="192" P="-495" Q="-352" R="-324" S="-199" T="-244" V="-261" W="-561" Y="-146"/>
+			<pos A="-337" C="-414" D="-294" E="-224" F="-435" G="-373" H="-111" I="-185" K="496" L="-389" M="-205" N="-9" P="-477" Q="-95" R="254" S="-238" T="-159" V="-207" W="-534" Y="-83"/>
+			<pos A="-198" C="-355" D="-217" E="-259" F="-328" G="-324" H="-215" I="-157" K="-48" L="-367" M="-231" N="-81" P="278" Q="-234" R="-287" S="-152" T="111" V="-152" W="-597" Y="-139"/>
+			<pos A="-42" C="-337" D="-217" E="-256" F="-325" G="-309" H="-214" I="-153" K="-47" L="-364" M="-226" N="-77" P="266" Q="-231" R="-286" S="-140" T="113" V="-144" W="-594" Y="-136"/>
+			<pos A="247" C="-169" D="-300" E="-339" F="-320" G="-190" H="-293" I="-146" K="-154" L="-386" M="-187" N="-96" P="-454" Q="-327" R="-358" S="187" T="-77" V="-40" W="-554" Y="-135"/>
+			<pos A="264" C="-164" D="-251" E="-285" F="-275" G="-196" H="177" I="-107" K="-87" L="-347" M="-153" N="-67" P="-483" Q="-293" R="-310" S="-44" T="-91" V="-11" W="-516" Y="-71"/>
+		</motif>
+		<motif db="0" id="FPPIPRLP" alt="MEME-9" length="8" nsites="9" evalue="4.3e-004" bad="y">
+			<pos A="-408" C="-318" D="-383" E="-440" F="448" G="-490" H="-307" I="-82" K="-249" L="-235" M="-149" N="-215" P="-525" Q="-79" R="-472" S="-307" T="-315" V="-151" W="-379" Y="188"/>
+			<pos A="-230" C="-388" D="-246" E="-287" F="-346" G="-357" H="-241" I="-176" K="-75" L="-131" M="-250" N="-113" P="285" Q="-260" R="-314" S="-183" T="-155" V="-177" W="-619" Y="-160"/>
+			<pos A="-217" C="-379" D="-230" E="-270" F="-343" G="-345" H="-227" I="-173" K="175" L="-380" M="-246" N="-95" P="276" Q="-244" R="-295" S="-169" T="78" V="-169" W="-613" Y="-154"/>
+			<pos A="-423" C="-408" D="-435" E="-502" F="-299" G="-529" H="-437" I="550" K="-273" L="-209" M="-104" N="-255" P="-624" Q="-481" R="-511" S="-409" T="-250" V="115" W="-633" Y="-144"/>
+			<pos A="-343" C="-478" D="-346" E="-398" F="-450" G="-438" H="-339" I="-296" K="-187" L="-499" M="-371" N="-215" P="305" Q="-371" R="-419" S="-294" T="-264" V="-292" W="-689" Y="-250"/>
+			<pos A="-407" C="-348" D="-370" E="-424" F="-443" G="-431" H="-149" I="-235" K="136" L="-457" M="-305" N="-108" P="-472" Q="-230" R="380" S="-324" T="-272" V="-333" W="-495" Y="-161"/>
+			<pos A="-455" C="-422" D="-475" E="-481" F="-195" G="-538" H="-367" I="6" K="-267" L="264" M="-23" N="-283" P="-570" Q="-394" R="-440" S="-426" T="-289" V="-95" W="-554" Y="-117"/>
+			<pos A="-232" C="-390" D="-235" E="-286" F="-357" G="-352" H="-240" I="-190" K="-75" L="-397" M="-263" N="229" P="285" Q="-261" R="-316" S="-182" T="-156" V="-185" W="-624" Y="-164"/>
+		</motif>
+		<motif db="0" id="APPPPPKATEAECETLGE" alt="MEME-10" length="18" nsites="15" evalue="5.2e-002" bad="y">
+			<pos A="189" C="-295" D="-108" E="14" F="-272" G="-260" H="-102" I="-92" K="217" L="-140" M="234" N="231" P="-126" Q="-106" R="-165" S="-87" T="-58" V="-71" W="-506" Y="-9"/>
+			<pos A="41" C="-371" D="76" E="-104" F="-292" G="19" H="-100" I="-119" K="99" L="-55" M="-146" N="66" P="109" Q="124" R="-169" S="-111" T="99" V="-119" W="-526" Y="-18"/>
+			<pos A="-251" C="-413" D="-266" E="-305" F="-376" G="-379" H="-261" I="-206" K="-88" L="-414" M="-280" N="-132" P="285" Q="-17" R="-66" S="-204" T="-175" V="-202" W="-647" Y="-188"/>
+			<pos A="-111" C="-410" D="-265" E="-305" F="-375" G="-377" H="-261" I="-205" K="140" L="-412" M="-278" N="-132" P="279" Q="-279" R="-333" S="-27" T="-173" V="-201" W="-646" Y="-188"/>
+			<pos A="-42" C="-411" D="14" E="-301" F="-375" G="-377" H="-260" I="-205" K="140" L="-412" M="-278" N="-128" P="273" Q="-277" R="-332" S="-201" T="-173" V="-201" W="-646" Y="-188"/>
+			<pos A="113" C="-353" D="-323" E="-361" F="-401" G="-342" H="-312" I="-220" K="-153" L="-146" M="-290" N="-158" P="205" Q="-330" R="-385" S="11" T="170" V="-196" W="-663" Y="-208"/>
+			<pos A="-1" C="-369" D="-76" E="35" F="-278" G="-268" H="156" I="145" K="300" L="-133" M="-126" N="94" P="-23" Q="-71" R="10" S="103" T="107" V="-111" W="-504" Y="294"/>
+			<pos A="45" C="-368" D="84" E="-76" F="36" G="-60" H="-71" I="-114" K="132" L="-328" M="-127" N="250" P="33" Q="63" R="-137" S="103" T="107" V="100" W="-505" Y="8"/>
+			<pos A="43" C="-336" D="-110" E="-111" F="-263" G="18" H="-99" I="153" K="223" L="-311" M="158" N="241" P="-384" Q="-104" R="-166" S="104" T="286" V="-77" W="-503" Y="-2"/>
+			<pos A="-68" C="-376" D="209" E="175" F="-286" G="-59" H="-73" I="-124" K="300" L="-336" M="-133" N="251" P="-364" Q="64" R="9" S="36" T="-47" V="-119" W="-510" Y="4"/>
+			<pos A="115" C="-355" D="82" E="32" F="-281" G="20" H="-74" I="-119" K="130" L="-332" M="-129" N="247" P="-113" Q="-75" R="7" S="36" T="105" V="98" W="-506" Y="5"/>
+			<pos A="-82" C="-536" D="113" E="258" F="-447" G="36" H="-198" I="-253" K="17" L="-466" M="-268" N="6" P="-453" Q="140" R="-283" S="154" T="-169" V="-233" W="-669" Y="-144"/>
+			<pos A="-452" C="495" D="-475" E="-503" F="-471" G="-575" H="-435" I="-268" K="-354" L="-554" M="-347" N="-298" P="-663" Q="-526" R="-515" S="-441" T="-313" V="-354" W="-754" Y="-306"/>
+			<pos A="-303" C="-547" D="113" E="308" F="-459" G="-360" H="-204" I="-264" K="11" L="-476" M="-280" N="247" P="-459" Q="139" R="-8" S="16" T="-177" V="-243" W="-680" Y="-153"/>
+			<pos A="-68" C="-365" D="-80" E="-79" F="-276" G="-271" H="155" I="-108" K="238" L="-132" M="157" N="90" P="-363" Q="63" R="9" S="150" T="265" V="-106" W="-34" Y="8"/>
+			<pos A="-119" C="-292" D="-390" E="-377" F="-156" G="-424" H="-259" I="185" K="-158" L="195" M="169" N="-153" P="-490" Q="-311" R="-350" S="-34" T="-135" V="233" W="-475" Y="-15"/>
+			<pos A="-229" C="-253" D="60" E="-259" F="151" G="123" H="-181" I="73" K="-45" L="-14" M="-26" N="230" P="-444" Q="-231" R="-278" S="-183" T="187" V="269" W="-446" Y="31"/>
+			<pos A="-345" C="-587" D="240" E="296" F="-525" G="-351" H="-226" I="-329" K="206" L="-542" M="-352" N="259" P="-490" Q="-182" R="-356" S="105" T="-213" V="-302" W="-749" Y="-200"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.38"/>
+		<correlation idx_a="0" idx_b="2" value="0.31"/>
+		<correlation idx_a="1" idx_b="2" value="0.34"/>
+		<correlation idx_a="0" idx_b="3" value="0.36"/>
+		<correlation idx_a="1" idx_b="3" value="0.17"/>
+		<correlation idx_a="2" idx_b="3" value="0.17"/>
+		<correlation idx_a="0" idx_b="4" value="0.40"/>
+		<correlation idx_a="1" idx_b="4" value="0.24"/>
+		<correlation idx_a="2" idx_b="4" value="0.22"/>
+		<correlation idx_a="3" idx_b="4" value="0.62"/>
+		<correlation idx_a="0" idx_b="5" value="0.33"/>
+		<correlation idx_a="1" idx_b="5" value="0.22"/>
+		<correlation idx_a="2" idx_b="5" value="0.20"/>
+		<correlation idx_a="3" idx_b="5" value="0.25"/>
+		<correlation idx_a="4" idx_b="5" value="0.25"/>
+		<correlation idx_a="0" idx_b="6" value="0.29"/>
+		<correlation idx_a="1" idx_b="6" value="0.17"/>
+		<correlation idx_a="2" idx_b="6" value="0.21"/>
+		<correlation idx_a="3" idx_b="6" value="0.58"/>
+		<correlation idx_a="4" idx_b="6" value="0.41"/>
+		<correlation idx_a="5" idx_b="6" value="0.23"/>
+		<correlation idx_a="0" idx_b="7" value="0.46"/>
+		<correlation idx_a="1" idx_b="7" value="0.32"/>
+		<correlation idx_a="2" idx_b="7" value="0.26"/>
+		<correlation idx_a="3" idx_b="7" value="0.32"/>
+		<correlation idx_a="4" idx_b="7" value="0.31"/>
+		<correlation idx_a="5" idx_b="7" value="0.68"/>
+		<correlation idx_a="6" idx_b="7" value="0.21"/>
+		<correlation idx_a="0" idx_b="8" value="0.31"/>
+		<correlation idx_a="1" idx_b="8" value="0.19"/>
+		<correlation idx_a="2" idx_b="8" value="0.20"/>
+		<correlation idx_a="3" idx_b="8" value="0.67"/>
+		<correlation idx_a="4" idx_b="8" value="0.47"/>
+		<correlation idx_a="5" idx_b="8" value="0.28"/>
+		<correlation idx_a="6" idx_b="8" value="0.66"/>
+		<correlation idx_a="7" idx_b="8" value="0.36"/>
+		<correlation idx_a="0" idx_b="9" value="0.29"/>
+		<correlation idx_a="1" idx_b="9" value="0.31"/>
+		<correlation idx_a="2" idx_b="9" value="0.66"/>
+		<correlation idx_a="3" idx_b="9" value="0.33"/>
+		<correlation idx_a="4" idx_b="9" value="0.37"/>
+		<correlation idx_a="5" idx_b="9" value="0.31"/>
+		<correlation idx_a="6" idx_b="9" value="0.33"/>
+		<correlation idx_a="7" idx_b="9" value="0.49"/>
+		<correlation idx_a="8" idx_b="9" value="0.42"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="/Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_041296205.1/protein.faa" last_mod_date="Sun Jan 11 17:11:06 2026" seq_count="24907" residue_count="12707976"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="KAL1518698.1" comment="hypothetical protein AB1Y20_002985 [Prymnesium parvum]" length="585">
+			<score strand="both" combined_pvalue="3.22e-06" evalue="0.08"/>
+			<seg start="226">
+				<data>
+IISLGPIKFAAISMRAAAVFVLPSAAFDSYMYGKPVLAWLNILLYNRSAASGAGSQLYGVEPWYFYLINLTLNFN
+				</data>
+				<hit pos="251" idx="5" pvalue="3.0e-05" match="+   ++ ++ + +"/>
+			</seg>
+			<seg start="451">
+				<data>
+GKEWYRFPSSFFLPPTARLAFIRDGFDGLLPSHFTSPAPQGSRIVHSHFNDQNADEPSAYEKESNCDFIVDLELA
+				</data>
+				<hit pos="454" idx="3" pvalue="5.7e-06" match="   +++ + +++  ++"/>
+				<hit pos="512" idx="2" pvalue="4.3e-07" match=" +++++ + +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1523410.1" comment="hypothetical protein AB1Y20_018350 [Prymnesium parvum]" length="256">
+			<score strand="both" combined_pvalue="1.01e-05" evalue="0.25"/>
+			<seg start="1">
+				<data>
+MILPLLLLLHTTPRPTEPPLSSSPPPPPPFSAPSPPHAAANPAATNATTSSLPLPRLLPPHLSRLLSRLSSFRLS
+				</data>
+				<hit pos="23" idx="3" pvalue="2.1e-05" match=" +  + +++ +  +  "/>
+				<hit pos="52" idx="6" pvalue="1.0e-08" match="++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+DKRQLKRAYLTLAKRIHPDKTRDDRAAAAFDALRDAYELLLDPPRRRAHDEALRRAAAAARQTRARRAAAVRRAT
+LTVATTAGRAAWRHKRPTAALLVLLYLRFFL
+				</data>
+				<hit pos="215" idx="5" pvalue="2.7e-05" match="+ +++++ +++  "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1514871.1" comment="hypothetical protein AB1Y20_003954 [Prymnesium parvum]" length="384">
+			<score strand="both" combined_pvalue="2.91e-05" evalue="0.73"/>
+			<seg start="151">
+				<data>
+HRARASLCAGVLSEWRRATRAARRERQAAALAAWRRAAEREEVRWFVRTSTRLLRRWRAACAVAARRRLVVAAAA
+				</data>
+				<hit pos="168" idx="5" pvalue="6.3e-05" match="+ +++   ++ ++"/>
+			</seg>
+			<seg start="301">
+				<data>
+AFHSWRRVCLSRRKAHGVADAVGASPPRGSSTAEMHLAPFELREPPVPRLPPASTRAASILPECGDFSTSKLHKM
+				</data>
+				<hit pos="304" idx="5" pvalue="6.3e-05" match="+++   + ++++ "/>
+				<hit pos="345" idx="6" pvalue="1.0e-06" match="++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1496682.1" comment="hypothetical protein AB1Y20_014276 [Prymnesium parvum]" length="577">
+			<score strand="both" combined_pvalue="2.98e-05" evalue="0.74"/>
+			<seg start="1">
+				<data>
+MPSAQRLSLVEADEGEWEHNPPSPPPDPRTRRAFLLLVLLGASVLALSLPTSPASPTAPTSPASPASPRLQHPRD
+				</data>
+				<hit pos="47" idx="4" pvalue="7.1e-05" match="++++  + "/>
+			</seg>
+			<seg start="226">
+				<data>
+SGRRVECGAAEPSARLWVLSDGALIGKTAAARPSRAPHWKETICSHEVPQKLCFEVRDDAQATLLGGACASAALS
+				</data>
+				<hit pos="249" idx="7" pvalue="1.3e-05" match=" ++++ ++"/>
+			</seg>
+			<seg start="301">
+				<data>
+AAWAAAKESKHSLELDDGSKLEVHVSRAQPPSPPASPTPPLPPVPRLPARRTKAAIVALLNERFRKGAPSNDLES
+				</data>
+				<hit pos="341" idx="8" pvalue="4.0e-07" match=" +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1522943.1" comment="hypothetical protein AB1Y20_017907 [Prymnesium parvum]" length="237">
+			<score strand="both" combined_pvalue="5.48e-05" evalue="1.4"/>
+			<seg start="1">
+				<data>
+MAVAVLHTALLLLLPARELRPGLSGTARSFDQDGFVYIPSLLPSDAFDKVQRECRSYRSRLKPERNSIANGRLGH
+				</data>
+				<hit pos="36" idx="6" pvalue="1.8e-06" match="  ++ +++"/>
+			</seg>
+			<seg start="76">
+				<data>
+VLDSRSVAHQTFLTDTMSKRLQSLLGMDDPFVPSEFPIELRHYPHSSGMQWHQDDMLYTQPQCEFVFTVDNDSDS
+				</data>
+				<hit pos="134" idx="2" pvalue="8.6e-05" match="+++ ++ + +"/>
+			</seg>
+			<seg start="151">
+				<data>
+FTEWIDAQNCTSSVWTVPNSLLAIRAGATGPTHRVTPVTRGQRTILKFVYTTGGEKLPDFYAHIDSFPGHRASTK
+				</data>
+				<hit pos="173" idx="5" pvalue="4.4e-05" match="+ ++ +++ +  +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1528809.1" comment="hypothetical protein AB1Y20_010133 [Prymnesium parvum]" length="525">
+			<score strand="both" combined_pvalue="6.08e-05" evalue="1.5"/>
+			<seg start="1">
+				<data>
+MLWRRLHSSAPSRLCRQPTRSKSLPAWVDALRRSLDNVTSTPLDASLCMPQLYPFQHTAVQFALSRGGRVLLGHE
+				</data>
+				<hit pos="47" idx="6" pvalue="5.3e-05" match="+ ++ + +"/>
+			</seg>
+			<seg start="76">
+				<data>
+MGLGKTPIAVTVCAHYVHAEGPVLVVAPPVLLEQWAAEIVRWAPSVSPCEVQVIRKGSERPKDDAKFVLVSYAML
+				</data>
+				<hit pos="77" idx="7" pvalue="7.2e-06" match=" +++++ +"/>
+			</seg>
+			<seg start="301">
+				<data>
+LPLSAAELRHIKTSMENVAVSAEFPFDAPLPSVMAAFHASATAKARAVCEWLGEALFQGEKGNLAVSGKTLLFAH
+				</data>
+				<hit pos="345" idx="2" pvalue="7.8e-07" match="+ + ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1528810.1" comment="hypothetical protein AB1Y20_010133 [Prymnesium parvum]" length="535">
+			<score strand="both" combined_pvalue="6.80e-05" evalue="1.7"/>
+			<seg start="1">
+				<data>
+MSSWIDCARMMLWRRLHSSAPSRLCRQPTRSKSLPAWVDALRRSLDNVTSTPLDASLCMPQLYPFQHTAVQFALS
+				</data>
+				<hit pos="57" idx="6" pvalue="5.3e-05" match="+ ++ + +"/>
+			</seg>
+			<seg start="76">
+				<data>
+RGGRVLLGHEMGLGKTPIAVTVCAHYVHAEGPVLVVAPPVLLEQWAAEIVRWAPSVSPCEVQVIRKGSERPKDDA
+				</data>
+				<hit pos="87" idx="7" pvalue="7.2e-06" match=" +++++ +"/>
+			</seg>
+			<seg start="301">
+				<data>
+LPPKRRSRVALPLSAAELRHIKTSMENVAVSAEFPFDAPLPSVMAAFHASATAKARAVCEWLGEALFQGEKGNLA
+				</data>
+				<hit pos="355" idx="2" pvalue="7.8e-07" match="+ + ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1504650.1" comment="hypothetical protein AB1Y20_008431 [Prymnesium parvum]" length="701">
+			<score strand="both" combined_pvalue="8.46e-05" evalue="2.1"/>
+			<seg start="1">
+				<data>
+MLKGGVKAGGHVPPLPRLNKERHRQPSRQQPAGRWLWFAVIGLCALSSLCVKPARSGVALVFLHGTSPSAATPLI
+				</data>
+				<hit pos="12" idx="8" pvalue="2.7e-06" match=" ++ ++++"/>
+			</seg>
+			<seg start="451">
+				<data>
+TFRCTGCYHLFGVDLIADSSRQLRVIEVNIAPDLTLSTEGSACNAPAASAAGSNASTRESGELNSSRGCEGVSQS
+				</data>
+				<hit pos="515" idx="2" pvalue="6.9e-06" match="   +++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1520305.1" comment="hypothetical protein AB1Y20_021897 [Prymnesium parvum]" length="1216">
+			<score strand="both" combined_pvalue="8.70e-05" evalue="2.2"/>
+			<seg start="1">
+				<data>
+MEVRFLERAAADAVPPPTVLGDHAAAALSLARRAAAFGTASRAARADVSSRAAVEAPLPPRAPRAAAATFAAAEA
+				</data>
+				<hit pos="31" idx="5" pvalue="1.4e-05" match="+ ++++ + +  +"/>
+			</seg>
+			<seg start="451">
+				<data>
+AARKRRAVEEARLGPGRYFVNTELITKRVTGASFGSAASAVVRKRQSPPPTPGPGAYAPSAPAPPPRGGGAWPRA
+STGREAQPRAESSKGVEGGKGVGSGNGGEGGKGVEGGKGVEGGKREGGKAVERGKCMGKPSGGEEARLVVGRRGA
+				</data>
+				<hit pos="521" idx="5" pvalue="7.4e-05" match="++  + +++   +"/>
+			</seg>
+			<seg start="601">
+				<data>
+GPAFGSAPRYPPPAAGCGSGAPMYDVRHSLTERAVVGGAIGRPAASAPLRRPTGAAEARGVALLRRAQLEALLRG
+				</data>
+				<hit pos="639" idx="7" pvalue="1.6e-06" match="+++++ + "/>
+			</seg>
+			<seg start="826">
+				<data>
+EPRTPILRLPPFPPPPPLAVLLLLPRHVPSPPFAPRLHRPKPRVAPWDWAGLSSPPATLDAPPPQPLDHAAVERR
+				</data>
+				<hit pos="832" idx="4" pvalue="3.5e-06" match="++++ ++ "/>
+				<hit pos="847" idx="6" pvalue="4.8e-05" match="+ +++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1511540.1" comment="hypothetical protein AB1Y20_006334 [Prymnesium parvum]" length="929">
+			<score strand="both" combined_pvalue="9.62e-05" evalue="2.4"/>
+			<seg start="376">
+				<data>
+AETTSAALREALRVAEQAVLAAGKQEASEAKDPGAVVKTALERVRALIDQARPLQAHSSSLPDLVERACERVEEL
+				</data>
+				<hit pos="440" idx="2" pvalue="3.2e-06" match="++  ++ +++"/>
+			</seg>
+			<seg start="601">
+				<data>
+EAAEKARRLEAEATARARAKREAEAKARREAEEKEKARRAEAAARSARGAAGGKAAGGARRGRHRASSGGEGGGG
+				</data>
+				<hit pos="646" idx="5" pvalue="5.4e-05" match="+ + ++ +++ + "/>
+			</seg>
+			<seg start="676">
+				<data>
+EAEALPPPLAAEELPLVSSSQLERMVAAPPELPAVPPLPGAHLPQLNGELPAAQLPLAHLPAAQLPTPTLPLPLP
+				</data>
+				<hit pos="701" idx="3" pvalue="9.8e-05" match="+ + ++   +++++  "/>
+			</seg>
+			<seg start="751">
+				<data>
+ALPTPNGRHHPAGLPPPPVPRLSPVLADAPHASQPWGASWGSPPGPIGTPPLSSPPGPSPLAVSLLGAAGLPLLP
+				</data>
+				<hit pos="767" idx="6" pvalue="5.0e-07" match="++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1503898.1" comment="hypothetical protein AB1Y20_012360 [Prymnesium parvum]" length="174">
+			<score strand="both" combined_pvalue="1.22e-04" evalue="3"/>
+			<seg start="1">
+				<data>
+MNPLSDSEQISPDRNGHAPTDLSTLSPIPPIPKIAIAFPPFRRGHISTGTMPAALLLLLAPSALLLGSRPPTFSA
+VRMPHMVALADGEPMTGTCKWFNVEKGYGFIAVDESETDIFVHQSDIYAPGFRSLAEGEALEFRVQTDSKTGKLK
+				</data>
+				<hit pos="28" idx="8" pvalue="5.4e-06" match=" ++++++ "/>
+				<hit pos="66" idx="3" pvalue="4.7e-05" match="+   +  ++   ++  "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1512190.1" comment="hypothetical protein AB1Y20_005455 [Prymnesium parvum]" length="276">
+			<score strand="both" combined_pvalue="1.36e-04" evalue="3.4"/>
+			<seg start="1">
+				<data>
+MLTCTSVFPLLLASLLGQASAQCINDCLNWNADGECDDGGPGAEWASCPVGNDCADCGVRQAAPPPPPRYPVAEC
+VTSSSSSALAVQPEYFAPTIVGGSEVEFARQYYWLVSLQSTGESHFCGGTLISSTWVLSAAHCTFGTAASSIIVK
+				</data>
+				<hit pos="63" idx="9" pvalue="3.9e-06" match="++++++++  +++ +  +"/>
+			</seg>
+			<seg start="151">
+				<data>
+IGLHNRFDFSDRCVRKHTIKRIINHPQYSDNADAYDVSLLELNSPVDFPPISSLNEGAVADGTLLTVAGWGALSS
+				</data>
+				<hit pos="198" idx="8" pvalue="1.9e-06" match="++++  ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1499117.1" comment="hypothetical protein AB1Y20_013629 [Prymnesium parvum]" length="1281">
+			<score strand="both" combined_pvalue="1.45e-04" evalue="3.6"/>
+			<seg start="76">
+				<data>
+ERFLVLMMALLCRPALSSAAAACMLTAMRVNGAVTHGVLHAVAFFDLVKALRALLGGKAAAPKRGARKAGKAKRA
+				</data>
+				<hit pos="125" idx="5" pvalue="2.5e-06" match="+ ++ + +++ ++"/>
+			</seg>
+			<seg start="376">
+				<data>
+QTLWRLLVQHASDKAAGVRAKALTCLASLLALLHAQPERALLALVQQPLHLPPSPSAPATPSPPSGGEPRGEGLR
+				</data>
+				<hit pos="424" idx="4" pvalue="4.2e-05" match="++++  ++"/>
+			</seg>
+			<seg start="1201">
+				<data>
+QLSIPRLRRASLDGSGGRPSLPPVPRLPPAEQENRPDVVMASPFKEAPPPRQWNVCASPEKPHAASPALAKRPRG
+				</data>
+				<hit pos="1201" idx="8" pvalue="6.2e-05" match="   ++++ "/>
+				<hit pos="1221" idx="8" pvalue="4.0e-07" match=" +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1507217.1" comment="hypothetical protein AB1Y20_008067 [Prymnesium parvum]" length="374">
+			<score strand="both" combined_pvalue="1.52e-04" evalue="3.8"/>
+			<seg start="76">
+				<data>
+APSPRAPPAAGFGPPLGAGGHFAPAGYPQVMAHAPPLQMAQMAQMAHMQQMQQMQMMHAQPPQPPIPPMPPMLPS
+				</data>
+				<hit pos="142" idx="6" pvalue="1.6e-06" match="++++ +++"/>
+			</seg>
+			<seg start="226">
+				<data>
+TLLQQREVRDKFEPLQQPELPRGLPAREAPSAEVLAAIDEYYKGGKPPRPSRRRRRRSASPRRERRGGASMESDG
+				</data>
+				<hit pos="243" idx="6" pvalue="9.2e-06" match="+ +++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1515574.1" comment="hypothetical protein AB1Y20_002194 [Prymnesium parvum]" length="454">
+			<score strand="both" combined_pvalue="1.63e-04" evalue="4.1"/>
+			<seg start="1">
+				<data>
+MHDLGALQAYALGRANAHSLLPTLPTLSHATELYSTAGLHATQLPPNVSASIIPKHLFTFWSPPDEIPDFPAACI
+				</data>
+				<hit pos="6" idx="5" pvalue="4.4e-06" match="+  +++++++ + "/>
+				<hit pos="65" idx="4" pvalue="1.4e-05" match=" ++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1522684.1" comment="hypothetical protein AB1Y20_017660 [Prymnesium parvum]" length="803">
+			<score strand="both" combined_pvalue="1.80e-04" evalue="4.5"/>
+			<seg start="226">
+				<data>
+LWHRALESCSDTPRLMLKFVAWRTEPPVPRLPPPRWPLVDGEACDEPPRELLWLEQGEEDDDAPLAPSAAANRPT
+				</data>
+				<hit pos="251" idx="6" pvalue="1.0e-06" match="++++++ +"/>
+			</seg>
+			<seg start="376">
+				<data>
+RCCAEGEMPTSLLPAVLRWLEPRCSTVVRTALTAERRARVLSSRIHIWRHVWLWLHGATEPQPIPSLPASSPLPP
+PSALAGGTEARRLHAAYALAAAGESGALLGVLTDAARSTSERRTAAYGLVASSTSHRGGEAGLVAQLMQLSGGRR
+				</data>
+				<hit pos="439" idx="3" pvalue="1.5e-05" match="++  ++   +++   +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1520504.1" comment="hypothetical protein AB1Y20_022083 [Prymnesium parvum]" length="143">
+			<score strand="both" combined_pvalue="1.91e-04" evalue="4.8"/>
+			<seg start="1">
+				<data>
+MAAGRTNSAAPASVGSTVTSHAAGSPSAAPRTSASAAAATRPPPLPPGVPTVTRLFLLSNPELMFDPKKRASWAV
+				</data>
+				<hit pos="2" idx="7" pvalue="6.5e-05" match="+ +++ ++"/>
+				<hit pos="43" idx="6" pvalue="6.9e-05" match="++++  ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1526412.1" comment="hypothetical protein AB1Y20_015124 [Prymnesium parvum]" length="705">
+			<score strand="both" combined_pvalue="1.91e-04" evalue="4.8"/>
+			<seg start="301">
+				<data>
+RLHSARVCGAGGAPPAAGVPYEGRVLSGDALRAQLRCWREYGCVEPRGAEAMAAAADDAMADMRAHCVVCLGATS
+				</data>
+				<hit pos="327" idx="1" pvalue="7.7e-05" match="  ++ +  + ++ "/>
+			</seg>
+			<seg start="376">
+				<data>
+ALGPLRALLRQGATVVAVARGSPAVWRGLMEEARRAAGSLLLPTRAPLPQAATIDDIAAAAGCDLLTDTPEIAAW
+				</data>
+				<hit pos="434" idx="2" pvalue="8.9e-06" match="+ ++++ +++"/>
+			</seg>
+			<seg start="451">
+				<data>
+LEETIRTLALPTTIGVYAYLDGEDHVRVSVACDAVVRQLCAARGLGRLSLAYIQTPSLPYLIPADAHAASRAAYA
+				</data>
+				<hit pos="506" idx="6" pvalue="3.4e-06" match="+ ++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1504923.1" comment="hypothetical protein AB1Y20_008690 [Prymnesium parvum]" length="299">
+			<score strand="both" combined_pvalue="1.95e-04" evalue="4.9"/>
+		</sequence>
+		<sequence db="0" name="KAL1527882.1" comment="hypothetical protein AB1Y20_009258 [Prymnesium parvum]" length="1772">
+			<score strand="both" combined_pvalue="1.98e-04" evalue="4.9"/>
+			<seg start="226">
+				<data>
+AFKSFLKGLLTKDPKRRMGWPELMRHPFISASSNRRLTQRVAPHALKLRLLNPTEFLSVLPPVRLLPPMPAVCHI
+				</data>
+				<hit pos="282" idx="3" pvalue="8.1e-06" match="+   + +  +++++  "/>
+			</seg>
+			<seg start="676">
+				<data>
+ACGFSTPASGTRDMGGGRAASRFDGLAVAKLVLPESPDNAATPSRPPPASGQLGGSSVPPDGGGPPEEKAASLPW
+				</data>
+				<hit pos="706" idx="4" pvalue="6.1e-06" match="+ +++ ++"/>
+			</seg>
+			<seg start="901">
+				<data>
+GGEVTIRLVPEVLQALETPLRGVACADGESFPPISMLPSTGGGVGESSEYWLPTGWASKCISILAPQLPALLPKQ
+				</data>
+				<hit pos="931" idx="8" pvalue="1.1e-06" match="++++  ++"/>
+				<hit pos="966" idx="6" pvalue="8.7e-06" match="+ ++ +++"/>
+			</seg>
+			<seg start="976">
+				<data>
+ELQLAALRCMCTLFAAVPHLPPSAAHSHAVHGGGREMCVVAEHVQLVEALQHPGVIRALCDPMGQRHEFYVLAVL
+				</data>
+				<hit pos="989" idx="8" pvalue="5.1e-05" match="+  ++ ++"/>
+			</seg>
+			<seg start="1351">
+				<data>
+RASLPLLSATGTLSMVKAACEALGKHAHTSATLLDQRLLAAVCALVHTDELRALRDLPAARGGGCRAAATLLNGV
+				</data>
+				<hit pos="1366" idx="2" pvalue="7.1e-05" match="+++ ++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1523264.1" comment="hypothetical protein AB1Y20_018214 [Prymnesium parvum]" length="1205">
+			<score strand="both" combined_pvalue="1.98e-04" evalue="4.9"/>
+			<seg start="1">
+				<data>
+MYTFHRVVLLNALALHVMMVFAFAHASCKDRAEQTVPDQALSDERAAVFELCLRAELGTSWLLPRTLSTVALTHG
+				</data>
+				<hit pos="2" idx="0" pvalue="9.2e-05" match="+       ++++++++   + "/>
+			</seg>
+			<seg start="76">
+				<data>
+VLQLFHTFLRCLAEPLKNSPRLFVIVLLPALSHFVPWVFYTVESVRTNFVSGLSDAFVTVSFVYCLLWLFPLLQL
+				</data>
+				<hit pos="91" idx="3" pvalue="1.3e-05" match="+ + +  ++   ++ +"/>
+			</seg>
+			<seg start="526">
+				<data>
+TLMEGTSSNEQVILSDLFSILRHSGSLETEKLESSKMIISVLLSSFSTQNPGGEPQSTEAKRQLISFCNSLRNTA
+LGKAPSVRNMKSVTVLTPYYNEDVTHSEESLVQPKDGNTTFLEIVRAMHPDSWANMRERLNIHSSDVLVTTPQDA
+				</data>
+				<hit pos="600" idx="7" pvalue="9.8e-07" match="++++ ++ "/>
+			</seg>
+			<seg start="976">
+				<data>
+DMARFAHYVDLPRLLSFWCASSGFFISTVLAVYSAYFLAVTLMVLSMMNMEGYFDTPGSMHDLQFSQEEHEPNFG
+				</data>
+				<hit pos="984" idx="6" pvalue="2.1e-05" match="  +++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1521207.1" comment="hypothetical protein AB1Y20_022758 [Prymnesium parvum]" length="1059">
+			<score strand="both" combined_pvalue="2.03e-04" evalue="5.1"/>
+			<seg start="1">
+				<data>
+MVSPAIPRLAPLVHTRLSPQGGVLILRHLFAFGPLSPRSPALSSQPHRSAAAAALPTLPLTSLPRSSLPLPSPPP
+				</data>
+				<hit pos="4" idx="6" pvalue="6.7e-07" match="+ ++++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+VRDTTPAEMASDFFDPSENERRVQAYMQRVERINQLEDEIEELDDDALAAKTLSLRAAVRGGTPLDEVLEEAFAV
+				</data>
+				<hit pos="204" idx="5" pvalue="1.4e-05" match="+ +++  + ++  "/>
+			</seg>
+			<seg start="526">
+				<data>
+SMSGTALTEAEELATIYNLPVLAVPPVLPPQRRDLPAAVYKTVKGKSNAALNELMEMHRRRRPVLVGTTSVAASE
+				</data>
+				<hit pos="547" idx="6" pvalue="7.3e-05" match="+ ++  ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1522109.1" comment="hypothetical protein AB1Y20_021752 [Prymnesium parvum]" length="310">
+			<score strand="both" combined_pvalue="2.06e-04" evalue="5.1"/>
+			<seg start="76">
+				<data>
+RADEELARSLHAHEFQRSVLMMGGGMPPVPRGYPFGARRLFSGLQPSNAFRPELLLFDNTDVAWRSGAAMLPPPP
+				</data>
+				<hit pos="102" idx="6" pvalue="1.3e-05" match="+++++  +"/>
+				<hit pos="138" idx="5" pvalue="3.7e-05" match="+++  +    +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1522698.1" comment="hypothetical protein AB1Y20_017674 [Prymnesium parvum]" length="908">
+			<score strand="both" combined_pvalue="2.28e-04" evalue="5.7"/>
+			<seg start="1">
+				<data>
+MQRPPRRASLLGSTSLPSLPPAARVQAELAAVQLGLLLRQKTTPAPCTWERLPTPPKLPEPQSINAVVLPPLPEP
+				</data>
+				<hit pos="5" idx="5" pvalue="7.4e-05" match="  ++ +++ +  +"/>
+			</seg>
+			<seg start="76">
+				<data>
+VPQLKVVDVVPPVARSSRALPKERLTLRLPPTDIPLQRVCSTVSEGRPASAGAESGAAGSAAETELTVDAEGGAE
+				</data>
+				<hit pos="76" idx="3" pvalue="2.8e-05" match="++    + +++++ + "/>
+			</seg>
+			<seg start="751">
+				<data>
+RRAELFSRLLLDGKHPTCPRALFARWLEWTQARAYARAIVALSGTVKGQRLLQTCFNALAHSILKKRQTETVPRA
+				</data>
+				<hit pos="798" idx="0" pvalue="2.4e-06" match=" +  +++++++++ ++  +  "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1498999.1" comment="hypothetical protein AB1Y20_013518 [Prymnesium parvum]" length="300">
+			<score strand="both" combined_pvalue="2.34e-04" evalue="5.8"/>
+			<seg start="76">
+				<data>
+YDPSAPPRLRQNVRQLPQVHLHPVGVGGANRTACFSPPGATASERRGGACVRAQVLDIAHVLSRFEAVALLQLNC
+EWVAPRPRVHPFLPPRPFLSPYDSLLLSLLSLPATPDHSPNSPLPLLSSPPPTLPALSPSPSPSPSASASAGCER
+				</data>
+				<hit pos="146" idx="2" pvalue="9.2e-05" match=" + +++++  "/>
+				<hit pos="180" idx="4" pvalue="8.5e-06" match="+++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1529582.1" comment="hypothetical protein AB1Y20_000525 [Prymnesium parvum]" length="202">
+			<score strand="both" combined_pvalue="2.41e-04" evalue="6"/>
+			<seg start="76">
+				<data>
+QKGVDTLTLKEAYKKLAVESHPDRFQGKEREAAEVRFQAISEAFTVLSNETSRALYDEEMERATTAAARAAAMKK
+VKAQTWNTEVPDLQARLRAKQREDPPMNKHILTACLAFITVNFVLCFNWLAG
+				</data>
+				<hit pos="142" idx="5" pvalue="1.5e-05" match="+ +++++ ++++ "/>
+				<hit pos="178" idx="0" pvalue="6.0e-06" match="++  + +++    +     ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1520445.1" comment="hypothetical protein AB1Y20_022027 [Prymnesium parvum]" length="80">
+			<score strand="both" combined_pvalue="2.45e-04" evalue="6.1"/>
+			<seg start="1">
+				<data>
+MAAVQPPPAPPRVPPVAAVCAWVGDPHMPVAIPASHPLALGTAFLGWVAVVGAGPGAALVSLNTSQMLIKAKNYL
+				</data>
+				<hit pos="16" idx="2" pvalue="9.6e-06" match="+ + + ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1495371.1" comment="hypothetical protein AB1Y20_016740 [Prymnesium parvum]" length="184">
+			<score strand="both" combined_pvalue="2.81e-04" evalue="7"/>
+			<seg start="76">
+				<data>
+AAQHIPRLKVAQLKAVLSFRAVEYSKSAKKAELVQLVCDTLKLPMLNPLPDFPSNLPDVTSTAPAGSAPAAAAAP
+				</data>
+				<hit pos="122" idx="4" pvalue="2.9e-06" match="  ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1495377.1" comment="hypothetical protein AB1Y20_016746 [Prymnesium parvum]" length="184">
+			<score strand="both" combined_pvalue="2.81e-04" evalue="7"/>
+			<seg start="76">
+				<data>
+AAQHIPRLKVAQLKAVLSFRAVEYSKSAKKAELVQLVCDTLKLPMLNPLPDFPSNLPDVTSTAPAGSAPAAAAAP
+				</data>
+				<hit pos="122" idx="4" pvalue="2.9e-06" match="  ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1522683.1" comment="hypothetical protein AB1Y20_017660 [Prymnesium parvum]" length="778">
+			<score strand="both" combined_pvalue="2.93e-04" evalue="7.3"/>
+			<seg start="226">
+				<data>
+LWHRALESCSDTPRLMLKFVAWRTEPPVPRLPPPRWPLVDGEACDEPPRELLWLEQGEEDDDAPLAPSAAANRPT
+				</data>
+				<hit pos="251" idx="6" pvalue="1.0e-06" match="++++++ +"/>
+			</seg>
+			<seg start="376">
+				<data>
+RCCAEGEMPTSLLPAVLRWLEPRCSTVVRTALTAERRARVLSSRIHIWRHVWLWLHGATEPQPIPSLPASSPLPP
+PSALAGGTEARRLHAAYALAAAGESGALLGVLTDAARSTSERRTAAYGLVASSTSHRGGEAGLVAQLMQLSGGRR
+				</data>
+				<hit pos="439" idx="3" pvalue="1.5e-05" match="++  ++   +++   +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1510887.1" comment="hypothetical protein AB1Y20_005719 [Prymnesium parvum]" length="266">
+			<score strand="both" combined_pvalue="2.98e-04" evalue="7.4"/>
+			<seg start="76">
+				<data>
+DHCASCDCASCAFCASPLPTLPTLNALNTLPTLPLPRILPPRPAASPPPPPRPAASPPPPPPPPPPRVKPASHRP
+				</data>
+				<hit pos="108" idx="6" pvalue="1.3e-07" match="+++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1529102.1" comment="hypothetical protein AB1Y20_000062 [Prymnesium parvum]" length="560">
+			<score strand="both" combined_pvalue="3.05e-04" evalue="7.6"/>
+			<seg start="451">
+				<data>
+VLTYLLLRFEQRGLAAYNSWRAALLGLPPTPLEDVALERVELCMRRHEARPAHQSFRDCAASSPFEEHGTFGHPI
+				</data>
+				<hit pos="469" idx="5" pvalue="8.9e-10" match="++++++++  +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1526276.1" comment="hypothetical protein AB1Y20_014994 [Prymnesium parvum]" length="313">
+			<score strand="both" combined_pvalue="3.30e-04" evalue="8.2"/>
+			<seg start="151">
+				<data>
+VTCCYGYMFVDLKKAISETARVLKPGGSLVATYWVDVDLMRIGDRIMRAVLNEAEPPVPRMNPLSLADGRALEKA
+				</data>
+				<hit pos="206" idx="6" pvalue="7.1e-07" match="++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1511054.1" comment="hypothetical protein AB1Y20_005878 [Prymnesium parvum]" length="447">
+			<score strand="both" combined_pvalue="3.37e-04" evalue="8.4"/>
+			<seg start="151">
+				<data>
+FQFNEVWYIPSTLRGRACMRRRPVVLHCDEKYGQPVMDVNAQYVIMVSEAFSASPDCEWLAEHAEALAQALAFYE
+				</data>
+				<hit pos="203" idx="2" pvalue="3.1e-07" match="+ + ++++ +"/>
+			</seg>
+			<seg start="226">
+				<data>
+LYADVQGLVHEKPFGNWEDSLLYCGPRPFTNLMYLEALRRAAALLRALGRTPDARKYEAEAERIYEPVMRLISAQ
+				</data>
+				<hit pos="272" idx="7" pvalue="3.1e-06" match="++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1498680.1" comment="hypothetical protein AB1Y20_013992 [Prymnesium parvum]" length="267">
+			<score strand="both" combined_pvalue="3.50e-04" evalue="8.7"/>
+			<seg start="76">
+				<data>
+VFIPQFDEIGVLPPIGRWDPLKIREQGPERYRRFVEMEIKHGRMAMAAFLGVVTTYSGMRFPGYLSVAQDIKFSD
+				</data>
+				<hit pos="78" idx="3" pvalue="3.2e-07" match="++ + +  +++++ + "/>
+			</seg>
+			<seg start="226">
+				<data>
+LGKTWKLNAERNNGRAAMMGITGMVVHESLTGNPVFPIGESL
+				</data>
+				<hit pos="238" idx="5" pvalue="5.7e-05" match="  ++++++ +  +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1511340.1" comment="hypothetical protein AB1Y20_006143 [Prymnesium parvum]" length="322">
+			<score strand="both" combined_pvalue="3.57e-04" evalue="8.9"/>
+			<seg start="1">
+				<data>
+MGTWDAHYKIPHMPVDPSTLPPDDERYVKKELHDGEPIEQALQAAMAGLKSDILWGTLGMPMESSIEKLHQLEDE
+				</data>
+				<hit pos="7" idx="8" pvalue="9.9e-05" match="  +++  +"/>
+			</seg>
+			<seg start="76">
+				<data>
+RDEDKARAIRKEIRSYLELSVKQLEEMIEKGNFHNEYRIVVSAWYMMMLPSTKLGTPLLPPQEAQRAAWDWEERD
+				</data>
+				<hit pos="108" idx="1" pvalue="3.5e-07" match="++++++  ++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1510348.1" comment="hypothetical protein AB1Y20_006664 [Prymnesium parvum]" length="863">
+			<score strand="both" combined_pvalue="3.60e-04" evalue="9"/>
+			<seg start="1">
+				<data>
+MAPQLAATQRQGCGWAEGRTALQPGVLCDSLAKHGKQICEARYQLLADGTLGRCAFSLYHFHAECIAEVIYACSP
+				</data>
+				<hit pos="9" idx="2" pvalue="1.8e-05" match="  +++ + ++"/>
+			</seg>
+			<seg start="226">
+				<data>
+QSGCPPPLPPFPPSTPPSPPSLPPPLPPPEPPFEPPLPPSPPYHCGWHDAVGKRSTCHLSAGKPAKCIDTYEYFQ
+				</data>
+				<hit pos="272" idx="1" pvalue="7.3e-05" match="++++  ++  +  "/>
+			</seg>
+			<seg start="301">
+				<data>
+GELYRCKFLMDQNFACRRGSIIPRCLPAPPPPPLAPPSAPPPLPSSPPRPPPPSPPSPPFPPPSHPPPPPSPPVP
+SLPPPLPPTHVPHSVDRIQFSEVGPTSLALRMHQLDQRHVAAFRVRVTVNGFLVNELSFPFEPEGTQQRERIGDL
+				</data>
+				<hit pos="320" idx="6" pvalue="2.1e-05" match="  +++ ++"/>
+				<hit pos="372" idx="6" pvalue="1.4e-05" match="++++ + +"/>
+			</seg>
+			<seg start="601">
+				<data>
+DGSNCSIGPLVQFGSCFSLTPPPRKQDDAVLSFASLPQGAVHITAEVGVAAAAPPRGKARFEMRLINARGDVVVS
+				</data>
+				<hit pos="610" idx="3" pvalue="1.3e-05" match="+  + + +++ + ++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1528069.1" comment="hypothetical protein AB1Y20_009435 [Prymnesium parvum]" length="178">
+			<score strand="both" combined_pvalue="3.63e-04" evalue="9.1"/>
+			<seg start="1">
+				<data>
+MSRRPARVKPTYQRSDLPPGLYVADRRLVHKTLPGTSGVGTRVRMVRRLGTETDSFDYDILNMPRRLPPATLAPI
+PRYEDHIGEGNQIVSRPMPVWPGRLNRGAHDVPPPPRSLPRSLSTADIDGATPKSHANRILDRSMRRQFNSSLDG
+				</data>
+				<hit pos="63" idx="3" pvalue="2.6e-06" match="++    + ++ ++++ "/>
+				<hit pos="108" idx="6" pvalue="5.3e-05" match="++ ++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="KAL1507078.1" comment="hypothetical protein AB1Y20_007939 [Prymnesium parvum]" length="1608">
+			<score strand="both" combined_pvalue="3.68e-04" evalue="9.2"/>
+			<seg start="1">
+				<data>
+MSDAADDEPPPIPDLDDDEPPPIPPLDADDDDDGLPPIPSEEDFLSQLAEHRKRASLARPSAASKPPHDDAAEHA
+				</data>
+				<hit pos="26" idx="3" pvalue="8.6e-06" match="+ +  ++  +++++  "/>
+			</seg>
+			<seg start="301">
+				<data>
+SLDAPCTPRATSDDEGTSDDDEDYEKAHEQLIEKLRGNLEKQAGAVTRDVLVRLQKRGEVVSSDEDSDDGRGAHR
+				</data>
+				<hit pos="335" idx="0" pvalue="5.2e-05" match=" ++++    ++    +  ++ "/>
+			</seg>
+			<seg start="826">
+				<data>
+RSDENRFFDVIVDSTETRDMWIQSLPQPPSFAMAGWVIERYSLKGSYMLGSKRRRYAVFDMLQNTFSLYLSEESA
+LLGDKPPELRVKVKFAVRRPQKDPNTFDFAFSADDEEVEAGGFSNRFHEFTVEKESQQLGWLEALPPPREYTVQG
+				</data>
+				<hit pos="896" idx="5" pvalue="1.8e-05" match="+   ++++ +++ "/>
+			</seg>
+			<seg start="1501">
+				<data>
+PPPPPPAPRPPPTPAKASSQRSGDDSDPASALLKAIEARREKQEARARAIEAGQIAVEDPREKRLQEMKGVSRSP
+				</data>
+				<hit pos="1507" idx="9" pvalue="2.0e-06" match="++ +++++++++ ++ ++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="mablin-mac.local" when="Mon Jan 12 00:38:18 2026" cycles="1096330" seconds="1.096"/>
+</mast>

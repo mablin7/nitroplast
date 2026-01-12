@@ -1,0 +1,1 @@
+(Chrysochromulina_tobinii_KOO21446.1:0.163962,(Braarudosphaera_bigelowii_KC1-P2-N_k37_Locus_16768_Transcript_2_1:0.459014,(Prymnesium_parvum_KAL1528365.1:0.062678,Prymnesium_parvum_KAL1528364.1:1.12797e-06)n2:0.280098)n1:0.163962)n0;

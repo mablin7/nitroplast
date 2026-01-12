@@ -1,0 +1,1246 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE arabidopsis_proteome.fasta (peptide)
+	Last updated on Mon Jan 12 00:54:57 2026
+	Database contains 27448 sequences, 11102823 residues
+
+	MOTIFS meme_gb.xml (peptide)
+	MOTIF ID                    ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- --------------------- ------- ----- -------------------
+	    1 TQTQLGACMGALGLHLGSRLD MEME-1     21 TQTQLGNCMGALGLHIGSRFD
+	    2 WLEEWRERLECWW         MEME-2     13 WYDEWRERIECWY
+	    3 AEPGCEWVEE            MEME-3     10 AESGCEWVKE
+	    4 LPDFPEPFSLPPIPRL      MEME-4     16 LPDFPDPFTLPPIPRL
+	    5 LZLPDFPD              MEME-5      8 LNLPDFPD
+	    6 AWRAALLGRAPPP         MEME-6     13 SWRAAMLGRTPPP
+	    7 PPJPRLLP              MEME-7      8 PPIPRLLP
+	    8 ALGKPPAA              MEME-8      8 ALGKPPAA
+	    9 FPPIPRLP              MEME-9      8 FPPIPRLP
+	   10 APPPPPKATEAECETLGE    MEME-10    18 MQPPPPKNTKNECETVVE
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.38
+	   3   0.31  0.34
+	   4   0.36  0.17  0.17
+	   5   0.40  0.24  0.22  0.62
+	   6   0.33  0.22  0.20  0.25  0.25
+	   7   0.29  0.17  0.21  0.58  0.41  0.23
+	   8   0.46  0.32  0.26  0.32  0.31  0.68  0.21
+	   9   0.31  0.19  0.20  0.67  0.47  0.28  0.66  0.36
+	  10   0.29  0.31  0.66  0.33  0.37  0.31  0.33  0.49  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5, 8, 9 and 10 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 49 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+tr|Q570Y0|Q570Y0_ARATH             ECA1 gametogenesis related...    0.056    231
+sp|Q9STL0|C71AN_ARATH              Cytochrome P450 71A23 OS=A...     0.25    483
+sp|O49645|LTG33_ARATH              Non-specific lipid transfe...     0.33    140
+sp|Q3EBR4|Y2394_ARATH              Putative receptor-like pro...     0.42    453
+sp|Q9LXB8|PLPK1_ARATH              Protein PELPK1 OS=Arabidop...     0.43    370
+sp|Q9LEX8|Y3093_ARATH              Uncharacterized protein At...     0.63    798
+tr|F4J3U4|F4J3U4_ARATH             Homeodomain-like superfami...     0.76    165
+sp|Q9SG86|BZP28_ARATH              bZIP transcription factor ...     0.77    675
+sp|P93013|AGP30_ARATH              Non-classical arabinogalac...     0.96    239
+tr|Q9LFU8|Q9LFU8_ARATH             At5g15780 OS=Arabidopsis t...        1    401
+tr|Q9XIP3|Q9XIP3_ARATH             At2g27390 OS=Arabidopsis t...      1.1    134
+tr|A8MQ81|A8MQ81_ARATH             ECA1 gametogenesis related...      1.2    112
+tr|F4JF53|F4JF53_ARATH             serine C-palmitoyltransfer...      1.7    350
+sp|Q9C813|DEAHD_ARATH              ATP-dependent RNA helicase...      1.8   1237
+tr|O64693|O64693_ARATH             Uncharacterized protein At...      1.9    288
+tr|Q9FY96|Q9FY96_ARATH             Pollen Ole e 1 allergen an...        2    267
+tr|Q8H1F1|Q8H1F1_ARATH             AP-5 complex subunit zeta-...        2    562
+sp|Q9FY89|VP202_ARATH              Vacuolar protein sorting-a...      2.1    216
+tr|Q3EAM7|Q3EAM7_ARATH             Egg cell-secreted-like pro...      2.1    119
+sp|Q9LXB7|PLPK2_ARATH              Protein PELPK2 OS=Arabidop...      2.1    130
+sp|P29976|AROF_ARATH               Phospho-2-dehydro-3-deoxyh...      2.2    525
+tr|A8MS52|A8MS52_ARATH             ECA1 gametogenesis related...      2.5    118
+tr|F4I6H5|F4I6H5_ARATH             Plant transposase (Ptta/En...        3    390
+tr|Q9LT52|Q9LT52_ARATH             At5g49640 OS=Arabidopsis t...      3.4     70
+sp|O23553|BAM3_ARATH               Beta-amylase 3, chloroplas...      3.6    548
+tr|A8MQ86|A8MQ86_ARATH             ECA1 gametogenesis related...      3.7    115
+tr|Q1G3S6|Q1G3S6_ARATH             Transmembrane protein OS=A...      3.7    108
+tr|Q9FN10|Q9FN10_ARATH             Acyl-CoA N-acyltransferase...        4    386
+tr|Q42139|Q42139_ARATH             AT4g32260/F10M6_100 OS=Ara...      4.1    219
+tr|Q9SZK8|Q9SZK8_ARATH             At4g38080 OS=Arabidopsis t...      4.5    128
+tr|F4I4V4|F4I4V4_ARATH             Cyclin/Brf1-like TBP-bindi...      4.8    254
+sp|P93758|RMR42_ARATH              Remorin 4.2 OS=Arabidopsis...      5.2    274
+tr|F4K2Z6|F4K2Z6_ARATH             ECA1 gametogenesis related...      5.5    122
+sp|O82376|FBK38_ARATH              Putative F-box/kelch-repea...      5.7    414
+tr|Q0WUQ7|Q0WUQ7_ARATH             Xaa-Pro dipeptidase OS=Ara...      5.9    486
+tr|F4JQL6|F4JQL6_ARATH             Cytochrome P450 superfamil...      5.9    113
+sp|Q9M9E2|PPR45_ARATH              Pentatricopeptide repeat-c...      6.5    866
+tr|A8MRF5|A8MRF5_ARATH             ECA1 gametogenesis related...      6.8    118
+tr|F4JK17|F4JK17_ARATH             Cofactor-independent phosp...      7.2    492
+sp|Q9T0K0|C71AJ_ARATH              Cytochrome P450 71A19 OS=A...      7.2    490
+sp|O24616|PSA7B_ARATH              Proteasome subunit alpha t...      7.4    250
+tr|Q1PFY7|Q1PFY7_ARATH             CCT motif family protein O...      8.2    386
+tr|F4I8Y6|F4I8Y6_ARATH             F-box associated ubiquitin...      8.2     84
+sp|F4JMI7|WTR34_ARATH              WAT1-related protein At4g1...      8.3    359
+tr|A8MRQ2|A8MRQ2_ARATH             ECA1 gametogenesis related...      8.4    118
+tr|A0A1I9LRZ7|A0A1I9LRZ7_ARATH     Uncharacterized protein OS...      8.7    122
+sp|Q8W4E6|HPAT1_ARATH              Hydroxyproline O-arabinosy...        9    366
+tr|F4K390|F4K390_ARATH             Phosphoglycolate phosphata...      9.2    517
+sp|Q9SXE1|GSOX3_ARATH              Flavin-containing monooxyg...      9.9    462
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+tr|Q570Y0|Q570Y0_ARATH                0.056  78-[9]-4-[9]-10-[9]-4-[4]-95
+sp|Q9STL0|C71AN_ARATH                  0.25  26-[4]-309-[7]-124
+sp|O49645|LTG33_ARATH                  0.33  30-[7]-102
+sp|Q3EBR4|Y2394_ARATH                  0.42  179-[6]-125-[7]-59-[4]-53
+sp|Q9LXB8|PLPK1_ARATH                  0.43  41-[9]-7-[5]-3-[5]-2-[9]-15-[5]-[5]-6-[5]-14-[5]-[5]-3-[5]-28-[5]-10-[4]-5-[5]-10-[4]-10-[5]-17-[5]-5-[9]-29-[5]-5
+sp|Q9LEX8|Y3093_ARATH                  0.63  68-[5]-130-[7]-42-[9]-77-[3]-447
+tr|F4J3U4|F4J3U4_ARATH                 0.76  63-[5]-17-[7]-69
+sp|Q9SG86|BZP28_ARATH                  0.77  11-[7]-270-[7]-161-<6>-204
+sp|P93013|AGP30_ARATH                  0.96  47-[5]-4-[5]-9-[4]-147
+tr|Q9LFU8|Q9LFU8_ARATH                    1  188-[4]-4-[9]-6-[7]-58-[4]-5-[9]-6-[4]-[7]-2-[4]-4-[9]-8-[7]-8
+tr|Q9XIP3|Q9XIP3_ARATH                  1.1  56-[7]-18-[7]-44
+tr|A8MQ81|A8MQ81_ARATH                  1.2  88-[9]-16
+tr|F4JF53|F4JF53_ARATH                  1.7  21-[8]-257-[9]-56
+sp|Q9C813|DEAHD_ARATH                   1.8  252-[8]-28-[6]-135-[9]-280-[6]-360-[2]-32-[1]-49-[2]-12
+tr|O64693|O64693_ARATH                  1.9  114-[8]-40-[5]-91-[1]-6
+tr|Q9FY96|Q9FY96_ARATH                    2  212-[4]-39
+tr|Q8H1F1|Q8H1F1_ARATH                    2  121-[3]-6-[7]-37-[9]-172-[4]-184
+sp|Q9FY89|VP202_ARATH                   2.1  185-[5]-23
+tr|Q3EAM7|Q3EAM7_ARATH                  2.1  29-[7]-61-[9]-13
+sp|Q9LXB7|PLPK2_ARATH                   2.1  40-[5]-6-[5]-[5]-16-[4]-1-[9]-9-[5]-2
+sp|P29976|AROF_ARATH                    2.2  85-[5]-252-[1]-159
+tr|A8MS52|A8MS52_ARATH                  2.5  20-[5]-7-[9]-45-[9]-22
+tr|F4I6H5|F4I6H5_ARATH                    3  326-[1]-25-[9]-10
+tr|Q9LT52|Q9LT52_ARATH                  3.4  36-[4]-18
+sp|O23553|BAM3_ARATH                    3.6  11-[10]-201-[2]-16-[5]-62-[2]-206
+tr|A8MQ86|A8MQ86_ARATH                  3.7  20-[5]-7-[9]-45-[9]-19
+tr|Q1G3S6|Q1G3S6_ARATH                  3.7  50-[9]-23-[9]-19
+tr|Q9FN10|Q9FN10_ARATH                    4  279-[5]-99
+tr|Q42139|Q42139_ARATH                  4.1  30-[5]-181
+tr|Q9SZK8|Q9SZK8_ARATH                  4.5  44-[9]-[9]-10-[4]-9-[9]-25
+tr|F4I4V4|F4I4V4_ARATH                  4.8  182-[10]-4-[3]-40
+sp|P93758|RMR42_ARATH                   5.2  191-[2]-55-[8]-7
+tr|F4K2Z6|F4K2Z6_ARATH                  5.5  27-[5]-7-[9]-45-[9]-19
+sp|O82376|FBK38_ARATH                   5.7  56-[7]-350
+tr|Q0WUQ7|Q0WUQ7_ARATH                  5.9  87-[9]-313-[3]-68
+tr|F4JQL6|F4JQL6_ARATH                  5.9  87-[7]-18
+sp|Q9M9E2|PPR45_ARATH                   6.5  115-[1]-1-[2]-305-[9]-268-[3]-125
+tr|A8MRF5|A8MRF5_ARATH                  6.8  20-[5]-7-[9]-45-[9]-22
+tr|F4JK17|F4JK17_ARATH                  7.2  135-[5]-139-[1]-189
+sp|Q9T0K0|C71AJ_ARATH                   7.2  30-[4]-143-[8]-158-[7]-127
+sp|O24616|PSA7B_ARATH                   7.4  136-[9]-12-[6]-81
+tr|Q1PFY7|Q1PFY7_ARATH                  8.2  46-[3]-134-[1]-175
+tr|F4I8Y6|F4I8Y6_ARATH                  8.2  10-[5]-53-[7]-5
+sp|F4JMI7|WTR34_ARATH                   8.3  106-[7]-92-[4]-45-<6>-47-[3]-22
+tr|A8MRQ2|A8MRQ2_ARATH                  8.4  20-[5]-7-[9]-45-[9]-22
+tr|A0A1I9LRZ7|A0A1I9LRZ7_ARATH          8.7  79-[4]-27
+sp|Q8W4E6|HPAT1_ARATH                     9  79-[2]-72-[4]-186
+tr|F4K390|F4K390_ARATH                  9.2  426-[8]-83
+sp|Q9SXE1|GSOX3_ARATH                   9.9  356-[2]-28-[3]-55
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+tr|Q570Y0|Q570Y0_ARATH
+  ECA1 gametogenesis related family protein OS=Arabidopsis thaliana OX=3702 
+  GN=At1g44222 PE=1 SV=1
+  LENGTH = 231  COMBINED P-VALUE = 2.03e-06  E-VALUE =    0.056
+  DIAGRAM: 78-[9]-4-[9]-10-[9]-4-[4]-95
+
+        [9]         [9]               [9]         [4]
+        1.4e-06     1.2e-05           5.6e-07     2.5e-07
+        FPPIPRLP    FPPIPRLP          FPPIPRLP    LPDFPDPFTLPPIPRL
+        ++ ++ ++     + ++ ++           + +++++    +++ +   +++ +++
+76   LPGFPSIPWLPNIPGIPIIPSLPNIPSLPTIPEIPNIPRIPNIPGLPNIPGLPNLPSIPRIPGLPPLPWVKSEVV
+
+
+sp|Q9STL0|C71AN_ARATH
+  Cytochrome P450 71A23 OS=Arabidopsis thaliana OX=3702 GN=CYP71A23 PE=2 SV=1
+  LENGTH = 483  COMBINED P-VALUE = 9.23e-06  E-VALUE =     0.25
+  DIAGRAM: 26-[4]-309-[7]-124
+
+                               [4]
+                               1.4e-07
+                               LPDFPDPFTLPPIPRL
+                               + +++++ +++ +  +
+1    MILFLCLIILFIITILFFKKHKTVNKIINFPSPPRLPLIGNLHQLSQHPHRSLCYLSHRYGPLMLLHFGSVPVIV
+
+                                                        [7]
+                                                        2.5e-06
+                                                        PPIPRLLP
+                                                        ++++ +++
+301  EMTELLRHPTCLKKLQEEVRTICKGKSSVSEDDIQGMEYLKAVVKEALRLHPPVPLMVPHQSTQDVRLRDNHIPA
+
+
+sp|O49645|LTG33_ARATH
+  Non-specific lipid transfer protein GPI-anchored 33 OS=Arabidopsis thaliana 
+  OX=3702 GN=LTPG33 PE=2 SV=1
+  LENGTH = 140  COMBINED P-VALUE = 1.21e-05  E-VALUE =     0.33
+  DIAGRAM: 30-[7]-102
+
+                                   [7]
+                                   1.7e-05
+                                   PPIPRLLP
+                                   +++++  +
+1    MAYTNKVTISAAVATMMLFLAVTIVDAQSMPPMPKFNPVCALADLPNIVQLCYFNLDLTPSEECCNDLKSSSTIQ
+
+
+sp|Q3EBR4|Y2394_ARATH
+  Putative receptor-like protein kinase At2g30940 OS=Arabidopsis thaliana 
+  OX=3702 GN=At2g30940 PE=3 SV=2
+  LENGTH = 453  COMBINED P-VALUE = 1.54e-05  E-VALUE =     0.42
+  DIAGRAM: 179-[6]-125-[7]-59-[4]-53
+
+                                  [6]
+                                  1.9e-05
+                                  SWRAAMLGRTPPP
+                                   ++  +++ ++ +
+151  FNVFTFMEIKNVTDSFADDNVITKGDSSTVYRGILMGTVTVAVKRFLPSNSRYEDKDFITKAEMIANVRHKNVVR
+
+                      [7]
+                      4.7e-06
+                      PPIPRLLP
+                        ++ +++
+301  LDYQWNPKILDVGFIGHSDIPTLIPSPGNMDEKIDVYSFGNMIMELVSGRVSVDQSSPHVRVYLVDWIKEMVANH
+
+              [4]
+              1.6e-06
+              LPDFPDPFTLPPIPRL
+              +++++   ++  +
+376  MIVDVLDPSLPEFPTIKELKRIVLISLRCVDPELKERPKMGDVIHMLQPHDLLLNNNAIQKAQKITRSHEVSAIS
+
+
+sp|Q9LXB8|PLPK1_ARATH
+  Protein PELPK1 OS=Arabidopsis thaliana OX=3702 GN=PELPK1 PE=2 SV=1
+  LENGTH = 370  COMBINED P-VALUE = 1.56e-05  E-VALUE =     0.43
+  DIAGRAM: 41-[9]-7-[5]-3-[5]-2-[9]-15-[5]-[5]-6-[5]-14-[5]-[5]-3-[5]-28-[5]-10-[4]-5-[5]-10-[4]-10-[5]-17-[5]-5-[9]-29-[5]-5
+
+                                              [9]            [5]        [5]
+                                              3.6e-06        4.4e-06    4.4e-06
+                                              FPPIPRLP       LNLPDFPD   LNLPDFPD
+                                               + +++++        +++++++    +++++++
+1    MALMKKSLSAALLSSPLLIICLIALLADPFSVGARRLLEDPKPEIPKLPELPKFEVPKLPEFPKPELPKLPEFPK
+
+       [9]                    [5]     [5]           [5]                   [5]
+       2.7e-05                4.7e-06 9.4e-08       5.6e-05               5.6e-0
+       FPPIPRLP               LNLPDFPDLNLPDFPD      LNLPDFPD              LNLPDF
+        ++++ ++                ++++ ++++++++++       ++++ ++               ++++
+76   PELPKIPEIPKPELPKVPEIPKPEETKLPDIPKLELPKFPEIPKPELPKMPEIPKPELPKVPEIQKPELPKMPEI
+
+       [5]        [5]                                 [5]               [4]
+     5 7.9e-06    6.5e-06                             8.3e-05           3.3e-06
+     PDLNLPDFPD   LNLPDFPD                            LNLPDFPD          LPDFPDPF
+     ++ +++++++    +++++++                             ++++ ++           ++ ++
+151  PKPELPKFPEIPKPDLPKFPENSKPEVPKLMETEKPEAPKVPEIPKPELPKLPEVPKLEAPKVPEIQKPELPKMP
+
+                  [5]               [4]                       [5]
+                  8.3e-05           3.3e-06                   9.3e-05
+     TLPPIPRL     LNLPDFPD          LPDFPDPFTLPPIPRL          LNLPDFPD
+     +++ ++        ++++ ++           ++ ++  +++ ++            ++ ++ ++
+226  ELPKMPEIQKPELPKLPEVPKLEAPKVPEIQKPELPKMPELPKMPEIQKPELPKMPEIQKPELPKVPEVPKPELP
+
+            [5]          [9]                                  [5]
+            6.3e-05      4.5e-05                              4.4e-06
+            LNLPDFPD     FPPIPRLP                             LNLPDFPD
+             + +++++      ++++  +                              +++++++
+301  TVPEVPKSEAPKFPEIPKPELPKIPEVPKPELPKVPEITKPAVPEIPKPELPTMPQLPKLPEFPKVPGTP
+
+
+sp|Q9LEX8|Y3093_ARATH
+  Uncharacterized protein At3g60930, chloroplastic OS=Arabidopsis thaliana 
+  OX=3702 GN=At3g60930 PE=1 SV=1
+  LENGTH = 798  COMBINED P-VALUE = 2.29e-05  E-VALUE =     0.63
+  DIAGRAM: 68-[5]-130-[7]-42-[9]-77-[3]-447
+
+                                                                         [5]
+                                                                         2.0e-06
+                                                                         LNLPDFP
+                                                                         +++++ +
+1    MSSSQSPSTPSASLVDSSDSKHPDDLPQIYKRRSVWTSSEDAVSSSNSPEQTTPFTVREDTNADIARELDLPDDP
+
+     
+     
+     D
+     +
+76   EPHLVRRSSAPMVDEAGTSNWQDASEPLMPTVKIEDFLYFGPNETEDILRLNEQKAFEKAEKKKRKKKKKAVMPN
+
+                                                             [7]
+                                                             2.8e-06
+                                                             PPIPRLLP
+                                                             +++++++
+151  PPGSSMCTEQSLSDLKARFGLGAVTLRVPSPEERADSPPAGFYTLYEGFFYGCLLWLPIPRLVLEYVTSYQIALS
+
+                                    [9]
+                                    7.4e-05
+                                    FPPIPRLP
+                                    +  + + +
+226  QITMRSLRHLLGILIRSYESETEITLAHLRNFLEIRRVPKSEVDRYYISPAKGKKIIDGFPSKDEPYTDHFFFVA
+
+                                              [3]
+                                              1.1e-05
+                                              AESGCEWVKE
+                                                  +++++
+301  IEDAIHEDLLGTVLTRWGILERTLKFLEPIPDDFLSAFHALSARKCDWLKHFSRERVECALRLLHGVSCPTSSES
+
+
+tr|F4J3U4|F4J3U4_ARATH
+  Homeodomain-like superfamily protein OS=Arabidopsis thaliana OX=3702 
+  GN=At3g10585 PE=4 SV=1
+  LENGTH = 165  COMBINED P-VALUE = 2.76e-05  E-VALUE =     0.76
+  DIAGRAM: 63-[5]-17-[7]-69
+
+                                                                    [5]
+                                                                    1.2e-05
+                                                                    LNLPDFPD
+                                                                      ++++++
+1    MALIPPWTRDNDKRFELALVIFPEGSPYFLEYIAEFLQKPLEEVKYYYDAILVYDVVLIESGKYALPKYPEAYYV
+
+                  [7]
+                  4.7e-06
+                  PPIPRLLP
+                    +++ ++
+76   SLTEATESKHGETNQIPRIIPWTEEEHREFVTSTQVASHAQKYDKRQKLDSKKRKRWSVLDITLESTKGKSDFGD
+
+
+sp|Q9SG86|BZP28_ARATH
+  bZIP transcription factor 28 OS=Arabidopsis thaliana OX=3702 GN=BZIP28 PE=1 
+  SV=1
+  LENGTH = 675  COMBINED P-VALUE = 2.79e-05  E-VALUE =     0.77
+  DIAGRAM: 11-[7]-270-[7]-161-<6>-204
+
+                [7]
+                5.0e-06
+                PPIPRLLP
+                + ++ + +
+1    MTESTSVVAPPPEIPNLNPSMFSESDLFSIPPLDPLFLSDSDPISMDAPISDLDFLLDDENGDFADFDFSFDNSD
+
+                                                                     [7]
+                                                                     1.1e-06
+                                                                     PPIPRLLP
+                                                                      +++++ +
+226  NATIAELNGKIAYVMAENVALRQQMAVASGAPPMNPYMAAPPLPYQWMPYPPYPVRGYGSQTPLVPIPKLNPKPV
+
+             <6>
+             1.0e-04
+             SWRAAMLGRTPPP
+             + ++  ++++
+451  LIIHSVLASEKARGLGKKNITETVKTKEPDLTIPGALSSALAVPGVRGNAAMLPHSTALSSEGKRLHQWFHEGGS
+
+
+sp|P93013|AGP30_ARATH
+  Non-classical arabinogalactan protein 30 OS=Arabidopsis thaliana OX=3702 
+  GN=AGP30 PE=2 SV=1
+  LENGTH = 239  COMBINED P-VALUE = 3.49e-05  E-VALUE =     0.96
+  DIAGRAM: 47-[5]-4-[5]-9-[4]-147
+
+                                                    [5]         [5]
+                                                    6.7e-05     5.3e-06
+                                                    LNLPDFPD    LNLPDFPD
+                                                    ++++  +     +++++++
+1    MGIIGKSVSLTLFALLCFTSSVFTLGVNQPGSSDPFHSLPQHLPLPPIKLPTLPPAKAPIKLPAYPPAKAPIKLP
+
+      [4]
+      2.8e-06
+      LPDFPDPFTLPPIPRL
+      ++   ++ +++ ++
+76   TLPPAKAPIKLPTLPPIKPPVLPPVYPPKYNKTLVAVRGVVYCKACKYAGVNNVQGAKPVKDAVVRLVCKNKKNS
+
+
+tr|Q9LFU8|Q9LFU8_ARATH
+  At5g15780 OS=Arabidopsis thaliana OX=3702 GN=At5g15780 PE=1 SV=1
+  LENGTH = 401  COMBINED P-VALUE = 3.78e-05  E-VALUE =        1
+  DIAGRAM: 188-[4]-4-[9]-6-[7]-58-[4]-5-[9]-6-[4]-[7]-2-[4]-4-[9]-8-[7]-8
+
+                                           [4]                 [9]           [7]
+                                           8.6e-06             1.7e-05       2.0
+                                           LPDFPDPFTLPPIPRL    FPPIPRLP      PPI
+                                           + + +++  ++ ++        ++++++      + +
+151  SAGFFTFRPENQPEICSQKPINLRGSKPLLPDPSFPPPLQDPPNPSPLPNLPIVPPLPNLPVPKLPVPDLPLPLV
+
+                                                                    [4]
+     e-05                                                           1.7e-07
+     PRLLP                                                          LPDFPDPFTLPP
+     + +++                                                           +  +++ ++++
+226  PPLLPPGPQKSASLHNKKSDSLKDKKTEALKPNFFFPPNPLNPPSIIPPNPLIPSIPTPTLPPNPLIPSPPSLPP
+
+              [9]           [4]             [7]       [4]                 [9]
+              1.3e-05       4.5e-07         4.3e-05   2.0e-05             7.8e-0
+     IPRL     FPPIPRLP      LPDFPDPFTLPPIPRLPPIPRLLP  LPDFPDPFTLPPIPRL    FPPIPR
+     ++        ++++ ++      ++  +   ++++++ +++++   +  ++  +  + ++  +       ++++
+301  IPLIPTPPTLPTIPLLPTPPTPTLPPIPTIPTLPPLPVLPPVPIVNPPSLPPPPPSFPVPLPPVPGLPGIPPVPL
+
+               [7]
+     5         4.3e-05
+     LP        PPIPRLLP
+     ++        + ++ + +
+376  IPGIPPAPLIPGIPPLSPSFSSHHQP
+
+
+tr|Q9XIP3|Q9XIP3_ARATH
+  At2g27390 OS=Arabidopsis thaliana OX=3702 GN=At2g27390 PE=2 SV=1
+  LENGTH = 134  COMBINED P-VALUE = 4.04e-05  E-VALUE =      1.1
+  DIAGRAM: 56-[7]-18-[7]-44
+
+                                                             [7]
+                                                             1.5e-05
+                                                             PPIPRLLP
+                                                             ++ + + +
+1    MKMNNTKEYSIRTPSLGNLPPGTTGTCCPPPLVFPLLPLSPPPSPPPSPSSPPRLPPPFPALFPPEPPLPPRFEL
+
+            [7]
+            1.0e-06
+            PPIPRLLP
+            ++++++ +
+76   PPPLFPPPPLPRLPPPLLPPPEEPPREPPPPPPPPEEPPPPASCLRTKSPENGIVSTVK
+
+
+tr|A8MQ81|A8MQ81_ARATH
+  ECA1 gametogenesis related family protein OS=Arabidopsis thaliana OX=3702 
+  GN=At5g60945 PE=1 SV=1
+  LENGTH = 112  COMBINED P-VALUE = 4.54e-05  E-VALUE =      1.2
+  DIAGRAM: 88-[9]-16
+
+                  [9]
+                  7.2e-06
+                  FPPIPRLP
+                   ++++  +
+76   YCCKAYLHTKDYCLPKIPYMPKFPSFIRNHCKKVVRK
+
+
+tr|F4JF53|F4JF53_ARATH
+  serine C-palmitoyltransferase OS=Arabidopsis thaliana OX=3702 GN=At3g48790 
+  PE=3 SV=1
+  LENGTH = 350  COMBINED P-VALUE = 6.10e-05  E-VALUE =      1.7
+  DIAGRAM: 21-[8]-257-[9]-56
+
+                          [8]
+                          7.4e-05
+                          ALGKPPAA
+                           ++++ +
+1    MLFLLSGTTAVHGELEECVAKFVGKPAAVVFGMGYLTNSAIISVLIGKGGLIISDSLNHTSIINGARGSGATIRV
+
+                                                                  [9]
+                                                                  4.4e-06
+                                                                  FPPIPRLP
+                                                                  +++++ +
+226  LKLARIRENSNFFRAELQKMGFKVLGVYDSPIMPIMLYNPAKIAAFSRECLRENLAIVVVSFPPIPLLLARARIC
+
+
+sp|Q9C813|DEAHD_ARATH
+  ATP-dependent RNA helicase DEAH13 OS=Arabidopsis thaliana OX=3702 GN=FAS4 
+  PE=2 SV=1
+  LENGTH = 1237  COMBINED P-VALUE = 6.64e-05  E-VALUE =      1.8
+  DIAGRAM: 252-[8]-28-[6]-135-[9]-280-[6]-360-[2]-32-[1]-49-[2]-12
+
+                                [8]                                 [6]
+                                1.3e-05                             4.9e-05
+                                ALGKPPAA                            SWRAAMLGRTPP
+                                ++++ ++                             + +   ++ +++
+226  VHVSRPAEVEETRKDLPIVMMEQEIMEAINRHPAVIISGQTGCGKTTQVPQFLYEAGFGSKQFSSRSGIIGITQP
+
+     
+     
+     P
+     
+301  RRVAVLATAKRVAFELGVRLGKEVGFQVRYDKKIGENSSIKFMTDGILLREIQNDFLLRRYSVIILDEAHERSLN
+
+                                                                  [9]
+                                                                  1.2e-05
+                                                                  FPPIPRLP
+                                                                  ++ ++ +
+376  TDILIGMLTRVIKIRQEYYEEQQKSLQSGGTVTSECQITPLKLILMSATLRVEDFVSGKRLFPNIPPLIEVPTRQ
+
+                                                      [6]
+                                                      2.7e-05
+                                                      SWRAAMLGRTPPP
+                                                      + ++   +++ +
+676  VVATNVAETSLTIPGIKYVVDTGRVKVKNYDSKTGMESYEVDWISQASASQRAGRAGRTGPGHCYRLYSSAVFSN
+
+                                                    [2]
+                                                    6.5e-05
+                                                    WYDEWRERIECWY
+                                                     +++  +++ ++
+1051 PELLVYSELLLTNRPYMHGATRVRPEWLVKHAKSLCVFSAPLKDPKPYYSSEEDRVLCWVVPSFGPHNWELPAHS
+
+                      [1]
+                      4.9e-06
+                      TQTQLGNCMGALGLHIGSRFD
+                       ++++ +++  +   ++ + +
+1126 VAITEDRDRAAAFGCALLQGEVLTCLKSFRALLAGKPETLLEREAWGLERVGSLVMVLTEKKIDTLESLRKNWEQ
+
+                 [2]
+                 7.9e-06
+                 WYDEWRERIECWY
+                 ++++ + ++++ +
+1201 NPNVLYSEIEVWFQKKFRHRVKDLWQTMLKEAHVRRS
+
+
+tr|O64693|O64693_ARATH
+  Uncharacterized protein At2g34540 OS=Arabidopsis thaliana OX=3702 
+  GN=At2g34540 PE=4 SV=1
+  LENGTH = 288  COMBINED P-VALUE = 6.95e-05  E-VALUE =      1.9
+  DIAGRAM: 114-[8]-40-[5]-91-[1]-6
+
+                                            [8]
+                                            2.3e-05
+                                            ALGKPPAA
+                                              ++++++
+76   MAAGASLALACAISIFGFKINNMSYTAAAAAYPSSADMIISGKPTSAASATSGIYPFPAKFALRSLFEVSSMLAS
+
+                 [5]
+                 2.8e-05
+                 LNLPDFPD
+                 ++++  ++
+151  AKPIPSQKPFNLHKLPSLPSKDDIDSIKMEAVRKMKEGKCEEAVQLLRDANMRYRNEPEANFNVQMALVEILILL
+
+                                         [1]
+                                         7.7e-05
+                                         TQTQLGNCMGALGLHIGSRFD
+                                           ++ + +   +  +++  ++
+226  ERYQEAAEYSCLNDENAQISDVRIPLYKAIIYTMLDKDTEAKQCWKEFRKSIGEGFDPFSFED
+
+
+tr|Q9FY96|Q9FY96_ARATH
+  Pollen Ole e 1 allergen and extensin family protein OS=Arabidopsis thaliana 
+  OX=3702 GN=At5g13140 PE=1 SV=1
+  LENGTH = 267  COMBINED P-VALUE = 7.24e-05  E-VALUE =        2
+  DIAGRAM: 212-[4]-39
+
+                                                                   [4]
+                                                                   5.4e-06
+                                                                   LPDFPDPFTLPPI
+                                                                    ++ +   ++++
+151  SKQDRVCIYSLSALSYKPPHKNTSLCGNGGKKHHRKDEKVEKKFRDSKFFWPYLAPYWFPWPYPDLPPLPTLPPF
+
+     
+     
+     PRL
+     +
+226  PSFPFPSLPFGNPNLALPAFDWKNPVTWIPYLPRFPPGDHNP
+
+
+tr|Q8H1F1|Q8H1F1_ARATH
+  AP-5 complex subunit zeta-1 OS=Arabidopsis thaliana OX=3702 GN=At3g15160 PE=1 
+  SV=1
+  LENGTH = 562  COMBINED P-VALUE = 7.28e-05  E-VALUE =        2
+  DIAGRAM: 121-[3]-6-[7]-37-[9]-172-[4]-184
+
+                                                   [3]             [7]
+                                                   5.4e-06         5.0e-05
+                                                   AESGCEWVKE      PPIPRLLP
+                                                   +++ ++ +           + +++
+76   ASKGLLLLAILQFFLDFGDMVLHDSDPSLRTFFRSCLSREFSDAAVAEATCEFLVVNQRKLLASFPNLLPQFFPL
+
+                                     [9]
+                                     2.0e-05
+                                     FPPIPRLP
+                                     ++ +  ++
+151  LLKLIAWNWEKLEKSFLKIFPGLISPGSFLPLFPSIVDLPILVVALEKVERSSGSGSRVGGSIASIQKSAAPEML
+
+                                                                   [4]
+                                                                   6.0e-06
+                                                                   LPDFPDPFTLPPI
+                                                                    +++ +  + + +
+301  LKIAPRLLDVYFSVTLRDANDSLICALIPLLMTRNSTMFPDKIFSHEIRRRLLEFVLAAFQRSPNFIALLKKPII
+
+     
+     
+     PRL
+      ++
+376  DRLGEAYDDVAKRELALQLCWAIGEYGGGGESHKEAARELFESLELLVYENLSSSRLGLRQESGNGSRRTTQSRL
+
+
+sp|Q9FY89|VP202_ARATH
+  Vacuolar protein sorting-associated protein 20 homolog 2 OS=Arabidopsis 
+  thaliana OX=3702 GN=VPS20.2 PE=1 SV=1
+  LENGTH = 216  COMBINED P-VALUE = 7.56e-05  E-VALUE =      2.1
+  DIAGRAM: 185-[5]-23
+
+                                        [5]
+                                        1.3e-05
+                                        LNLPDFPD
+                                        +++++ +
+151  EEEILAEFDNLESLLIVEDMPEVPTTELMPEEPEKMDLPDVPTKAPVASNETTSTKRKVLEEPLEA
+
+
+tr|Q3EAM7|Q3EAM7_ARATH
+  Egg cell-secreted-like protein (DUF1278) OS=Arabidopsis thaliana OX=3702 
+  GN=At3g48675 PE=4 SV=1
+  LENGTH = 119  COMBINED P-VALUE = 7.58e-05  E-VALUE =      2.1
+  DIAGRAM: 29-[7]-61-[9]-13
+
+                                  [7]
+                                  1.7e-05
+                                  PPIPRLLP
+                                  + ++ + +
+1    MENNSGAILFVILAMTIVLQVRPGFSQALPTIPGLFPPGLPIDIIKCWSSLFNVQGCVQEIYKSIFSGQFASIEA
+
+                            [9]
+                            9.5e-06
+                            FPPIPRLP
+                            ++++ + +
+76   PCCKTFSAIDTNCWPHMFPLNPFFPPILKNNCERIATTPSSTHK
+
+
+sp|Q9LXB7|PLPK2_ARATH
+  Protein PELPK2 OS=Arabidopsis thaliana OX=3702 GN=PELPK2 PE=3 SV=1
+  LENGTH = 130  COMBINED P-VALUE = 7.66e-05  E-VALUE =      2.1
+  DIAGRAM: 40-[5]-6-[5]-[5]-16-[4]-1-[9]-9-[5]-2
+
+                                             [5]           [5]     [5]
+                                             3.5e-05       4.4e-06 7.0e-06
+                                             LNLPDFPD      LNLPDFPDLNLPDFPD
+                                              +++ +++       ++++++++++++ ++
+1    MTLKKSFSASLLSPFLIICLIALLSVPVSVGARRLLEEPKPEIPTFPELPKPEMPKLPEFPKLELPKLPEIPKPE
+
+                [4]              [9]              [5]
+                2.5e-06          1.0e-05          3.3e-05
+                LPDFPDPFTLPPIPRL FPPIPRLP         LNLPDFPD
+                ++++++  +++  ++  +++ + ++           +++++
+76   MPKLPEIQKPELPTFPELPKMPEFPKFDFPKLPELPKPEETKVPAFTMPKFPGSP
+
+
+sp|P29976|AROF_ARATH
+  Phospho-2-dehydro-3-deoxyheptonate aldolase 1, chloroplastic OS=Arabidopsis 
+  thaliana OX=3702 GN=DHS1 PE=2 SV=2
+  LENGTH = 525  COMBINED P-VALUE = 7.88e-05  E-VALUE =      2.2
+  DIAGRAM: 85-[5]-252-[1]-159
+
+               [5]
+               1.5e-08
+               LNLPDFPD
+               ++++++++
+76   TPESWKLKKALQLPDYPNANELESVLKTIEAFPPIVFAGEARNLEERLADAAVGKAFLLQGGDCAESFKEFNATN
+
+                                                  [1]
+                                                  2.0e-05
+                                                  TQTQLGNCMGALGLHIGSRFD
+                                                  + + +++  + +++ ++++++
+301  YTSHECLLLPYEQSLTRLDSTSGLYYDCSAHMVWCGERTRQLDGAHVEFLRGIANPLGIKVSNKMDPFELVKLVE
+
+
+tr|A8MS52|A8MS52_ARATH
+  ECA1 gametogenesis related family protein OS=Arabidopsis thaliana OX=3702 
+  GN=At5g36662 PE=1 SV=1
+  LENGTH = 118  COMBINED P-VALUE = 9.14e-05  E-VALUE =      2.5
+  DIAGRAM: 20-[5]-7-[9]-45-[9]-22
+
+                         [5]            [9]
+                         5.7e-06        3.8e-05
+                         LNLPDFPD       FPPIPRLP
+                          ++++++        +  ++ ++
+1    MSIKNVFSLLAVLCIIVSVNAQLPQFPAQLPFPFLFQLIPVLPDITKCFSSVMDIPGCIAEISQSIFTRKFGNLG
+
+                  [9]
+                  1.4e-05
+                  FPPIPRLP
+                   ++++ ++
+76   PACCEAFVDADNCIPKIPLIPFFPSMLKEQCSRVAGATPPIPK
+
+
+tr|F4I6H5|F4I6H5_ARATH
+  Plant transposase (Ptta/En/Spm family) OS=Arabidopsis thaliana OX=3702 
+  GN=At1g40087 PE=4 SV=1
+  LENGTH = 390  COMBINED P-VALUE = 1.09e-04  E-VALUE =        3
+  DIAGRAM: 326-[1]-25-[9]-10
+
+                               [1]                                           [9]
+                               1.6e-05                                       1.5
+                               TQTQLGNCMGALGLHIGSRFD                         FPP
+                                 + ++  +++ +  +++ +                          +
+301  SRLVRHSNATRRQDIENSELVAQLKTQVKTLGDQVNAMSTFLGQILGNSTGEQASAWTANFATAFANIPNPAFVN
+
+     
+     e-06
+     IPRLP
+     ++ ++
+376  IPNLPNPQERDGGAS
+
+
+tr|Q9LT52|Q9LT52_ARATH
+  At5g49640 OS=Arabidopsis thaliana OX=3702 GN=MNI5.2 PE=2 SV=1
+  LENGTH = 70  COMBINED P-VALUE = 1.25e-04  E-VALUE =      3.4
+  DIAGRAM: 36-[4]-18
+
+                                         [4]
+                                         5.3e-05
+                                         LPDFPDPFTLPPIPRL
+                                           +  +  ++ ++++
+1    MTTCSKEKPTKPSYRNCERQIASGRPDKTQHQSLTNRNTDKEGKRLHPIPRNHEPLEPSHTIADGDKETG
+
+
+sp|O23553|BAM3_ARATH
+  Beta-amylase 3, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=BAM3 PE=1 
+  SV=3
+  LENGTH = 548  COMBINED P-VALUE = 1.32e-04  E-VALUE =      3.6
+  DIAGRAM: 11-[10]-201-[2]-16-[5]-62-[2]-206
+
+                [10]
+                3.4e-05
+                MQPPPPKNTKNECETVVE
+                 + +++++++++ ++ ++
+1    MELTLNSSSSLIKRKDAKSSRNQESSSNNMTFAKMKPPTYQFQAKNSVKEMKFTHEKTFTPEGETLEKWEKLHVL
+
+          [2]                          [5]
+          2.2e-07                      1.3e-05
+          WYDEWRERIECWY                LNLPDFPD
+          ++++ +++++ +                 ++ + +++
+226  QVYSDFMRSFRERFEGYIGGVIAEIQVGMGPCGELRYPSYPESNGTWRFPGIGEFQCYDKYMKSSLQAYAESIGK
+
+                                  [2]
+                                  1.5e-07
+                                  WYDEWRERIECWY
+                                  +++++ + ++ ++
+301  TNWGTSGPHDAGEYKNLPEDTEFFRRDGTWNSEYGKFFMEWYSGKLLEHGDQLLSSAKGIFQGSGAKLSGKVAGI
+
+
+tr|A8MQ86|A8MQ86_ARATH
+  ECA1 gametogenesis related family protein OS=Arabidopsis thaliana OX=3702 
+  GN=At5g36310 PE=4 SV=1
+  LENGTH = 115  COMBINED P-VALUE = 1.33e-04  E-VALUE =      3.7
+  DIAGRAM: 20-[5]-7-[9]-45-[9]-19
+
+                         [5]            [9]
+                         5.7e-06        6.2e-05
+                         LNLPDFPD       FPPIPRLP
+                          ++++++        +  ++ ++
+1    MSIKNVFSLLAVLCIIVSVNAQLPQFPAQLPFLFPFQLIPGLPDITKCFSSVMDIPGCIAEISQSIFTGKFGNLG
+
+                  [9]
+                  1.3e-05
+                  FPPIPRLP
+                   ++++ ++
+76   PTCCKAFLDADNCIPKIPFIPPMLKEQCSRVAGATPPIPK
+
+
+tr|Q1G3S6|Q1G3S6_ARATH
+  Transmembrane protein OS=Arabidopsis thaliana OX=3702 GN=At2g02498 PE=4 SV=1
+  LENGTH = 108  COMBINED P-VALUE = 1.35e-04  E-VALUE =      3.7
+  DIAGRAM: 50-[9]-23-[9]-19
+
+                                                       [9]
+                                                       4.4e-06
+                                                       FPPIPRLP
+                                                       +  ++ ++
+1    MKMMVKLYPITTVVTLLFLAFGLALARYPTFPTEPFPPPPNQNENISVNQFQVIPHLPWPPKRPGHPPHQNAKVA
+
+           [9]
+           3.8e-05
+           FPPIPRLP
+             +++  +
+76   VNQYPGIIPIPHYPEPPKHPGHPPYQYPKISPN
+
+
+tr|Q9FN10|Q9FN10_ARATH
+  Acyl-CoA N-acyltransferases (NAT) superfamily protein OS=Arabidopsis thaliana 
+  OX=3702 GN=At5g67430 PE=2 SV=1
+  LENGTH = 386  COMBINED P-VALUE = 1.44e-04  E-VALUE =        4
+  DIAGRAM: 279-[5]-99
+
+                                                           [5]
+                                                           3.2e-07
+                                                           LNLPDFPD
+                                                           ++++ +++
+226  GDNVSGSLPDQTGSWAVISIWNSKDVYRLQVKGASRLKRMLAKSTRVFDGAFPFLKIPSFPNLFKSFAMHFMYGI
+
+
+tr|Q42139|Q42139_ARATH
+  AT4g32260/F10M6_100 OS=Arabidopsis thaliana OX=3702 GN=PDE334 PE=1 SV=2
+  LENGTH = 219  COMBINED P-VALUE = 1.48e-04  E-VALUE =      4.1
+  DIAGRAM: 30-[5]-181
+
+                                   [5]
+                                   2.1e-05
+                                   LNLPDFPD
+                                    ++++ ++
+1    MAANSIMASSKPLISLSSNQQPNRVQIPKFAKLPQIPKSLTSSTDLRSKALSLSSATAKSLALIAAFAPPSMAEA
+
+
+tr|Q9SZK8|Q9SZK8_ARATH
+  At4g38080 OS=Arabidopsis thaliana OX=3702 GN=At4g38080 PE=2 SV=1
+  LENGTH = 128  COMBINED P-VALUE = 1.63e-04  E-VALUE =      4.5
+  DIAGRAM: 44-[9]-[9]-10-[4]-9-[9]-25
+
+                                                 [9]     [9]               [4]
+                                                 5.8e-05 1.5e-05           1.8e-
+                                                 FPPIPRLPFPPIPRLP          LPDFP
+                                                 +++ ++   ++++ ++           ++ +
+1    MAPLKNSFVTSLVIALTFTSFFTSLSAHRHLLQSTPVTQPPALTFPPLPKTTMPPVPSLPTPGQQTLPQPQPTLP
+
+                         [9]
+     06                  3.6e-06
+     DPFTLPPIPRL         FPPIPRLP
+      +  +++++            ++++ ++
+76   QPTGLPPMPSTQIPSLPNQVQPTIPNIPQINFPSNFPFNFPFNIPFLTPPPSK
+
+
+tr|F4I4V4|F4I4V4_ARATH
+  Cyclin/Brf1-like TBP-binding domain-containing protein OS=Arabidopsis 
+  thaliana OX=3702 GN=At1g30455 PE=3 SV=1
+  LENGTH = 254  COMBINED P-VALUE = 1.76e-04  E-VALUE =      4.8
+  DIAGRAM: 182-[10]-4-[3]-40
+
+                                     [10]                  [3]
+                                     2.3e-05               1.8e-06
+                                     MQPPPPKNTKNECETVVE    AESGCEWVKE
+                                     ++ +++ ++ +  +++++     + +++ +++
+151  NACNNASNLFEASKAAAAKSRKDKRQQRAEEEKNAPPPATAMEAVDSMVKRKKFPDTNCDYLEELLDTSAQKASK
+
+
+sp|P93758|RMR42_ARATH
+  Remorin 4.2 OS=Arabidopsis thaliana OX=3702 GN=REM4.2 PE=1 SV=1
+  LENGTH = 274  COMBINED P-VALUE = 1.90e-04  E-VALUE =      5.2
+  DIAGRAM: 191-[2]-55-[8]-7
+
+                                              [2]
+                                              3.6e-05
+                                              WYDEWRERIECWY
+                                              ++++  ++ + +
+151  VGSTVQRVKREEVEAKITAWQTAKLAKINNRFKREDAVINGWFNEQVNKANSWMKKIERKLEERKAKAMEKTQNN
+
+                                       [8]
+                                       1.9e-07
+                                       ALGKPPAA
+                                       +++++++
+226  VAKAQRKAEERRATAEAKRGTEVAKVVEVANLMRALGRPPAKRSFFSFS
+
+
+tr|F4K2Z6|F4K2Z6_ARATH
+  ECA1 gametogenesis related family protein OS=Arabidopsis thaliana OX=3702 
+  GN=At5g36330 PE=4 SV=1
+  LENGTH = 122  COMBINED P-VALUE = 2.00e-04  E-VALUE =      5.5
+  DIAGRAM: 27-[5]-7-[9]-45-[9]-19
+
+                                [5]            [9]
+                                5.7e-06        6.2e-05
+                                LNLPDFPD       FPPIPRLP
+                                 ++++++        +  ++ ++
+1    MTKRGYIASIKNVFSLLAVLCIIVSVNAQLPQFPAQLPFLFPFQLIPGLPDITKCFSSVMDIPGCIAEISQSIFT
+
+                         [9]
+                         1.3e-05
+                         FPPIPRLP
+                          ++++ ++
+76   GKFGNLGPTCCKTFLDADNCIPKIPFIPPMLKEQCSRVAGATPPIPK
+
+
+sp|O82376|FBK38_ARATH
+  Putative F-box/kelch-repeat protein At2g29800 OS=Arabidopsis thaliana OX=3702 
+  GN=At2g29800 PE=4 SV=1
+  LENGTH = 414  COMBINED P-VALUE = 2.07e-04  E-VALUE =      5.7
+  DIAGRAM: 56-[7]-350
+
+                                                             [7]
+                                                             9.2e-08
+                                                             PPIPRLLP
+                                                             +++++ ++
+1    MASISETSDDGSNGGVPNQKPEEPHKNPQEEKENQNENPNEADEEDDHQDEEVENVPPIPRKIPPVLIENTIAPL
+
+
+tr|Q0WUQ7|Q0WUQ7_ARATH
+  Xaa-Pro dipeptidase OS=Arabidopsis thaliana OX=3702 GN=At4g29490 PE=1 SV=1
+  LENGTH = 486  COMBINED P-VALUE = 2.13e-04  E-VALUE =      5.9
+  DIAGRAM: 87-[9]-313-[3]-68
+
+                 [9]
+                 6.3e-06
+                 FPPIPRLP
+                    +++++
+76   FYGAIDIGSGKSILFIPRLPDDYAVWLGEIKPLSHFKETYMVDMVFYVDEIIQVFNEQFKGSGKPLLYLLHGLNT
+
+                                      [3]
+                                      3.8e-06
+                                      AESGCEWVKE
+                                      +++++  ++
+376  DTGGYPKGVERPKKPGLKSLRTARDLLEGMVITVEPGCYFIKALLFPAMANATTSKFFNRETIERFRNFGGVRIE
+
+
+tr|F4JQL6|F4JQL6_ARATH
+  Cytochrome P450 superfamily protein OS=Arabidopsis thaliana OX=3702 
+  GN=At4g12334 PE=4 SV=1
+  LENGTH = 113  COMBINED P-VALUE = 2.15e-04  E-VALUE =      5.9
+  DIAGRAM: 87-[7]-18
+
+                 [7]
+                 3.0e-06
+                 PPIPRLLP
+                 + +++++
+76   MVLGGFDTSVKEPHIPRLLYLQAIMKETLPLSYSSSPE
+
+
+sp|Q9M9E2|PPR45_ARATH
+  Pentatricopeptide repeat-containing protein At1g15510, chloroplastic 
+  OS=Arabidopsis thaliana OX=3702 GN=PCMP-H73 PE=1 SV=1
+  LENGTH = 866  COMBINED P-VALUE = 2.36e-04  E-VALUE =      6.5
+  DIAGRAM: 115-[1]-1-[2]-305-[9]-268-[3]-125
+
+                                             [1]                   [2]
+                                             5.9e-05               9.1e-05
+                                             TQTQLGNCMGALGLHIGSRFD WYDEWRERIECWY
+                                               +   + +  +++ +++ +   +    + ++ ++
+76   EEAMKLLNSMQELRVAVDEDVFVALVRLCEWKRAQEEGSKVYSIALSSMSSLGVELGNAFLAMFVRFGNLVDAWY
+
+          [9]
+          4.1e-06
+          FPPIPRLP
+          +  +++ +
+451  KALDIFHNIPRKNVISWTSIIAGLRLNNRCFEALIFLRQMKMTLQPNAITLTAALAACARIGALMCGKEIHAHVL
+
+                                                             [3]
+                                                             1.1e-07
+                                                             AESGCEWVKE
+                                                             +++++ +++
+676  RIHHKIDLGELSAQHIFELDKKSVGYYILLCNLYADCGKWREVAKVRRMMKENGLTVDAGCSWVEVKGKVHAFLS
+
+
+tr|A8MRF5|A8MRF5_ARATH
+  ECA1 gametogenesis related family protein OS=Arabidopsis thaliana OX=3702 
+  GN=At5g36500 PE=4 SV=1
+  LENGTH = 118  COMBINED P-VALUE = 2.49e-04  E-VALUE =      6.8
+  DIAGRAM: 20-[5]-7-[9]-45-[9]-22
+
+                         [5]            [9]
+                         5.7e-06        6.2e-05
+                         LNLPDFPD       FPPIPRLP
+                          ++++++        +  ++ ++
+1    MSIKNVFLLLAVLCIIVSVNAQLPQFPAQLPFLFPFQLIPGLPDITKCFSSVMDIPGCIVEISQSIFTGKFGNLG
+
+                  [9]
+                  1.3e-05
+                  FPPIPRLP
+                   ++++ ++
+76   PACCKAFLDADNCIPKIPFIPFFPPMLKEKCSRVAGATPPIPK
+
+
+tr|F4JK17|F4JK17_ARATH
+  Cofactor-independent phosphoglycerate mutase OS=Arabidopsis thaliana OX=3702 
+  GN=At4g09520 PE=1 SV=1
+  LENGTH = 492  COMBINED P-VALUE = 2.62e-04  E-VALUE =      7.2
+  DIAGRAM: 135-[5]-139-[1]-189
+
+                                                                 [5]
+                                                                 3.2e-07
+                                                                 LNLPDFPD
+                                                                 ++++ +++
+76   YYRGRGAFESMGAGLAMSPGDIAFKSNFATLDEDSGVVVSRRADRHFEEEGPILCAALDGMKLPSFPEYEVRVRY
+
+                                                              [1]
+                                                              1.4e-05
+                                                              TQTQLGNCMGALGLHIGS
+                                                              +++ + +   + +  ++
+226  NIANLVLLRGCGIRIEVPPFHEKHGLWPCMVAPTKIIAGLGMSLGIDILEALGATGDYRTLLTSKAIAIANALSA
+
+     
+     
+     RFD
+      ++
+301  PLNPCPNVFEPAEDGHKPGRSDGYDFGFLHIKAIDDAGHDKATLFKVRGLEAVDKAIRQLAKLLWQAESSSNYQY
+
+
+sp|Q9T0K0|C71AJ_ARATH
+  Cytochrome P450 71A19 OS=Arabidopsis thaliana OX=3702 GN=CYP71A19 PE=2 SV=1
+  LENGTH = 490  COMBINED P-VALUE = 2.64e-04  E-VALUE =      7.2
+  DIAGRAM: 30-[4]-143-[8]-158-[7]-127
+
+                                   [4]
+                                   5.5e-07
+                                   LPDFPDPFTLPPIPRL
+                                   +   +++ +++ +  +
+1    MEIILVTLCLTTLLALLLLKSILKRTTTNNLNLPPSPWRLPVIGNLHQLSLNTHRSLRSLSLRYGPLMLLHFGRT
+
+                                            [8]
+                                            3.9e-05
+                                            ALGKPPAA
+                                            ++++  +
+151  DEIKLMIEKVENASSCSPPSPVNLSQLFMTLTNDIICRAALGRKYSSKEDGIDVENIVRAFSALVGEFPIGEYIP
+
+                                                            [7]
+                                                            6.2e-05
+                                                            PPIPRLLP
+                                                            ++ + +++
+301  FLEWAMTELMRNPKVMKKLQEEIRSSSRQGLFVTEKEAEKMDYLQAVIKEALRLRPPAPLMVPRVFSEDVTLKGY
+
+
+sp|O24616|PSA7B_ARATH
+  Proteasome subunit alpha type-7-B OS=Arabidopsis thaliana OX=3702 GN=PAD2 
+  PE=1 SV=2
+  LENGTH = 250  COMBINED P-VALUE = 2.69e-04  E-VALUE =      7.4
+  DIAGRAM: 136-[9]-12-[6]-81
+
+                                                                  [9]
+                                                                  2.4e-05
+                                                                  FPPIPRLP
+                                                                  + +  +++
+76   GLKADARVLINKARIECQSHRLTLEDPVTVEYITRYIAGLQQKYTQSGGVRPFGLSTLIVGFDPYSRLPSLYQTD
+
+           [6]
+           3.0e-07
+           SWRAAMLGRTPPP
+           ++++ +++++
+151  PSGTFSAWKANATGRNSNSIREFLEKNYKESSGQETIKLAIRALLEVVESGGKNIEVAVMTREETGLRQLEEAEI
+
+
+tr|Q1PFY7|Q1PFY7_ARATH
+  CCT motif family protein OS=Arabidopsis thaliana OX=3702 GN=At1g04500 PE=2 
+  SV=1
+  LENGTH = 386  COMBINED P-VALUE = 2.99e-04  E-VALUE =      8.2
+  DIAGRAM: 46-[3]-134-[1]-175
+
+                                                   [3]
+                                                   6.9e-06
+                                                   AESGCEWVKE
+                                                   +  ++  ++
+1    MSQDVISSHEQLSMDEITSPLTAQIFDFCDSQLFQETFNQTSEVTSASNGCGYVENNNTNNFPDKSNSGSNQDHE
+
+                                             [1]
+                                             1.7e-06
+                                             TQTQLGNCMGALGLHIGSRFD
+                                             +++++++ +    +++++ ++
+151  EDCLSSVPSYNLGSINPSSPSCSFLGNTGLPTYMTVTGNMMNTGLGSGFYSGNIHLGSDFKPSHDQLMEIQADNG
+
+
+tr|F4I8Y6|F4I8Y6_ARATH
+  F-box associated ubiquitination effector family protein OS=Arabidopsis 
+  thaliana OX=3702 GN=At1g11608 PE=4 SV=1
+  LENGTH = 84  COMBINED P-VALUE = 3.00e-04  E-VALUE =      8.2
+  DIAGRAM: 10-[5]-53-[7]-5
+
+               [5]                                                          [7]
+               1.3e-05                                                      2.2e
+               LNLPDFPD                                                     PPIP
+                 +++++                                                        ++
+1    MKKHWSRLMTVGLPEFPMCPKYSSYFIENHGKIVLSIHHLGSISIYIVGEDQECQKVKYSSMDRSVGGSGCYYVP
+
+     
+     -05
+     RLLP
+      +++
+76   SLLPVPGFL
+
+
+sp|F4JMI7|WTR34_ARATH
+  WAT1-related protein At4g16620 OS=Arabidopsis thaliana OX=3702 GN=At4g16620 
+  PE=2 SV=1
+  LENGTH = 359  COMBINED P-VALUE = 3.02e-04  E-VALUE =      8.3
+  DIAGRAM: 106-[7]-92-[4]-45-<6>-47-[3]-22
+
+                                    [7]
+                                    7.3e-05
+                                    PPIPRLLP
+                                      ++ + +
+76   KIKLVLVALAGVTLFQGLFLEGMKHTSASMATAMPNLCPAFIFVIAWAAGMEKVKLSCMYSRVKMGGTVLCVMGA
+
+                                                             [4]
+                                                             7.2e-06
+                                                             LPDFPDPFTLPPIPRL
+                                                             + +++++ ++  +  +
+151  LIMSLMHSTTATLSSVKTIPIVPDEVVVDKDKILGCLYLLLAICGLSSSIVLQASILAEFPAPISMFSMVSLMGG
+
+                                               <6>
+                                               1.0e-04
+                                               SWRAAMLGRTPPP
+                                               + ++  + ++ ++
+226  ITTVALQYALKGSMEMGSASVIGLGHLVGYAILGGLVSGGGLSFNAWVIKRKGPVIVSLFSPIATVVCVVVSAFT
+
+                                [3]
+                                3.5e-05
+                                AESGCEWVKE
+                                 ++ ++ +++
+301  MEESFNLGSFAGMALMFGGLYFVLWAKGKEDCEEIDEMKQDDEESLLRTEFDLQKPLLL
+
+
+tr|A8MRQ2|A8MRQ2_ARATH
+  ECA1 gametogenesis related family protein OS=Arabidopsis thaliana OX=3702 
+  GN=At5g36490 PE=4 SV=1
+  LENGTH = 118  COMBINED P-VALUE = 3.06e-04  E-VALUE =      8.4
+  DIAGRAM: 20-[5]-7-[9]-45-[9]-22
+
+                         [5]            [9]
+                         5.7e-06        6.2e-05
+                         LNLPDFPD       FPPIPRLP
+                          ++++++        +  ++ ++
+1    MSIKNVFLLLAVLCIIVSVNAQLPQFPAQLPFLFPFQLIPGLPDITKCFSSVMDIPGCIAEISQSIFTGKFGNLG
+
+                  [9]
+                  1.3e-05
+                  FPPIPRLP
+                   ++++ ++
+76   PACCKAFLDADNCIPKIPFIPFFPPMLKEKCSRVAGATPPIPK
+
+
+tr|A0A1I9LRZ7|A0A1I9LRZ7_ARATH
+  Uncharacterized protein OS=Arabidopsis thaliana OX=3702 GN=At3g48343 PE=4 
+  SV=1
+  LENGTH = 122  COMBINED P-VALUE = 3.17e-04  E-VALUE =      8.7
+  DIAGRAM: 79-[4]-27
+
+         [4]
+         5.4e-06
+         LPDFPDPFTLPPIPRL
+         +  + ++ +++ +++
+76   TVEKITGFYSFLKLPFIPRRCTQRGTIGCTQSQLSETLMSKVGEFRV
+
+
+sp|Q8W4E6|HPAT1_ARATH
+  Hydroxyproline O-arabinosyltransferase 1 OS=Arabidopsis thaliana OX=3702 
+  GN=HPAT1 PE=1 SV=1
+  LENGTH = 366  COMBINED P-VALUE = 3.28e-04  E-VALUE =        9
+  DIAGRAM: 79-[2]-72-[4]-186
+
+         [2]
+         9.5e-06
+         WYDEWRERIECWY
+          ++ ++ +++ ++
+76   ASDSVYNTWQCRVMYYWFKKIQASAGPGSEMGGFTRILHSGKPDQYMDEIPTFVAQPLPSGMDQGYVVLNRPWAF
+
+                   [4]
+                   2.6e-06
+                   LPDFPDPFTLPPIPRL
+                   +   ++   + +++ +
+151  VQWLQQTDIKEDYILMSEPDHIIVKPIPNLAKDGLGAAFPFFYIEPKKYEKVLRKYYPEVRGPVTNIDPIGNSPV
+
+
+tr|F4K390|F4K390_ARATH
+  Phosphoglycolate phosphatase OS=Arabidopsis thaliana OX=3702 GN=At5g48830 
+  PE=4 SV=1
+  LENGTH = 517  COMBINED P-VALUE = 3.34e-04  E-VALUE =      9.2
+  DIAGRAM: 426-[8]-83
+
+                                                        [8]
+                                                        2.1e-06
+                                                        ALGKPPAA
+                                                         ++++ ++
+376  EVALYQWLHQNLEAVVSMYEDRFDLYILQTQVINNLDGSDDTESLSWWRKFTLGKTKAAPSSPLRYSIISDFSLP
+
+
+sp|Q9SXE1|GSOX3_ARATH
+  Flavin-containing monooxygenase FMO GS-OX3 OS=Arabidopsis thaliana OX=3702 
+  GN=FMOGS-OX3 PE=1 SV=1
+  LENGTH = 462  COMBINED P-VALUE = 3.60e-04  E-VALUE =      9.9
+  DIAGRAM: 356-[2]-28-[3]-55
+
+                                                             [2]
+                                                             1.4e-05
+                                                             WYDEWRERIECWY
+                                                               ++  + ++ ++
+301  RIDEKRVEPLYKHVFPPALAPGLAFVGLPAMGIVFVMFEIQSKWVAAVLSGRVTLPSTDKMMEDINAWYASLDAL
+
+                           [3]
+                           1.9e-07
+                           AESGCEWVKE
+                            +++++ +++
+376  GIPKRHTHTIGRIQSEYLNWVAKESGCELVERWRGQEVDGGYLRLVAHPETYRDEWDDDELIEEAYNDFSRKKLI
+
+********************************************************************************
+
+
+CPU: mablin-mac.local
+Time 1.040 secs.
+
+mast -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_outgroup_arabidopsis -ev 10.0 -mt 0.0001 /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/arabidopsis_proteome.fasta

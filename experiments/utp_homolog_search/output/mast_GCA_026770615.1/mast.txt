@@ -1,0 +1,945 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE protein.faa (peptide)
+	Last updated on Sun Jan 11 17:09:34 2026
+	Database contains 26002 sequences, 7216544 residues
+
+	MOTIFS meme_gb.xml (peptide)
+	MOTIF ID                    ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- --------------------- ------- ----- -------------------
+	    1 TQTQLGACMGALGLHLGSRLD MEME-1     21 TQTQLGNCMGALGLHIGSRFD
+	    2 WLEEWRERLECWW         MEME-2     13 WYDEWRERIECWY
+	    3 AEPGCEWVEE            MEME-3     10 AESGCEWVKE
+	    4 LPDFPEPFSLPPIPRL      MEME-4     16 LPDFPDPFTLPPIPRL
+	    5 LZLPDFPD              MEME-5      8 LNLPDFPD
+	    6 AWRAALLGRAPPP         MEME-6     13 SWRAAMLGRTPPP
+	    7 PPJPRLLP              MEME-7      8 PPIPRLLP
+	    8 ALGKPPAA              MEME-8      8 ALGKPPAA
+	    9 FPPIPRLP              MEME-9      8 FPPIPRLP
+	   10 APPPPPKATEAECETLGE    MEME-10    18 MQPPPPKNTKNECETVVE
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.38
+	   3   0.31  0.34
+	   4   0.36  0.17  0.17
+	   5   0.40  0.24  0.22  0.62
+	   6   0.33  0.22  0.20  0.25  0.25
+	   7   0.29  0.17  0.21  0.58  0.41  0.23
+	   8   0.46  0.32  0.26  0.32  0.31  0.68  0.21
+	   9   0.31  0.19  0.20  0.67  0.47  0.28  0.66  0.36
+	  10   0.29  0.31  0.66  0.33  0.37  0.31  0.33  0.49  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5, 8, 9 and 10 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 44 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+KAJ1632202.1                       hypothetical protein T492D...    0.079    109
+KAJ1622397.1                       hypothetical protein T492D...    0.088    173
+KAJ1615587.1                       hypothetical protein T492D...      0.2    143
+KAJ1623902.1                       hypothetical protein T492D...     0.24    153
+KAJ1618608.1                       hypothetical protein T492D...     0.42    186
+KAJ1625234.1                       hypothetical protein T492D...     0.46     93
+KAJ1623796.1                       Bromodomain-containing pro...     0.64    334
+KAJ1620771.1                       hypothetical protein T492D...     0.85    449
+KAJ1640246.1                       hypothetical protein T492D...        1    360
+KAJ1640838.1                       hypothetical protein T492D...      1.1    160
+KAJ1637212.1                       hypothetical protein T492D...      1.2    366
+KAJ1640734.1                       FAD-linked oxidoreductase-...      1.3    649
+KAJ1623300.1                       HotDog domain-containing p...      1.5    208
+KAJ1639704.1                       hypothetical protein T492D...      1.6    316
+KAJ1623025.1                       hypothetical protein T492D...      1.8     89
+KAJ1633921.1                       hypothetical protein T492D...      1.9    111
+KAJ1629055.1                       hypothetical protein T492D...      2.2    264
+KAJ1634655.1                       pyridoxal phosphate-depend...      2.2    441
+KAJ1637486.1                       hypothetical protein T492D...      2.9    113
+KAJ1624165.1                       hypothetical protein T492D...      3.1    415
+KAJ1635604.1                       hypothetical protein T492D...      3.1    183
+KAJ1639335.1                       hypothetical protein T492D...      3.6    312
+KAJ1638617.1                       Rieske [2Fe-2S] iron-sulfu...      3.9    185
+KAJ1631184.1                       hypothetical protein T492D...      4.1    120
+KAJ1638293.1                       hypothetical protein T492D...      4.4    240
+KAJ1616110.1                       hypothetical protein T492D...      4.7    222
+KAJ1620954.1                       hypothetical protein T492D...      5.3    170
+KAJ1633948.1                       hypothetical protein T492D...        6    134
+KAJ1618196.1                       hypothetical protein T492D...        6    142
+KAJ1617919.1                       hypothetical protein T492D...        6    164
+KAJ1633864.1                       hypothetical protein T492D...      6.1    236
+KAJ1632265.1                       hypothetical protein T492D...      6.2    182
+KAJ1638700.1                       hypothetical protein T492D...      6.3    265
+KAJ1616764.1                       hypothetical protein T492D...      6.3    427
+KAJ1631367.1                       hypothetical protein T492D...      6.5     98
+KAJ1637053.1                       Pex12 amino terminal regio...      7.2    442
+KAJ1626434.1                       hypothetical protein T492D...      7.4     56
+KAJ1638139.1                       hypothetical protein T492D...      8.1    157
+KAJ1634313.1                       hypothetical protein T492D...      8.2    332
+KAJ1641137.1                       hypothetical protein T492D...      8.3     84
+KAJ1619853.1                       hypothetical protein T492D...      8.4    892
+KAJ1622298.1                       hypothetical protein T492D...      8.8    208
+KAJ1625151.1                       hypothetical protein T492D...        9    325
+KAJ1616319.1                       hypothetical protein T492D...      9.7    244
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+KAJ1632202.1                          0.079  20-[5]-81
+KAJ1622397.1                          0.088  59-[4]-98
+KAJ1615587.1                            0.2  42-[4]-85
+KAJ1623902.1                           0.24  32-[4]-105
+KAJ1618608.1                           0.42  56-[4]-114
+KAJ1625234.1                           0.46  32-[6]-5-[5]-35
+KAJ1623796.1                           0.64  52-[5]-274
+KAJ1620771.1                           0.85  14-[2]-65-[4]-72-[7]-209-[6]-39
+KAJ1640246.1                              1  30-[6]-8-[6]-228-[9]-60
+KAJ1640838.1                            1.1  44-[4]-100
+KAJ1637212.1                            1.2  272-[4]-78
+KAJ1640734.1                            1.3  35-[8]-296-[6]-109-[5]-180
+KAJ1623300.1                            1.5  72-[2]-81-[10]-24
+KAJ1639704.1                            1.6  185-[8]-123
+KAJ1623025.1                            1.8  24-[4]-49
+KAJ1633921.1                            1.9  2-[10]-91
+KAJ1629055.1                            2.2  74-[6]-177
+KAJ1634655.1                            2.2  300-[9]-95-[1]-17
+KAJ1637486.1                            2.9  11-[7]-94
+KAJ1624165.1                            3.1  122-[4]-30-[7]-[7]-48-[8]-175
+KAJ1635604.1                            3.1  104-[7]-13-[5]-50
+KAJ1639335.1                            3.6  69-[8]-109-[5]-118
+KAJ1638617.1                            3.9  134-[4]-35
+KAJ1631184.1                            4.1  99-[10]-3
+KAJ1638293.1                            4.4  38-[10]-184
+KAJ1616110.1                            4.7  44-[4]-162
+KAJ1620954.1                            5.3  144-[7]-18
+KAJ1633948.1                              6  37-[8]-26-[4]-47
+KAJ1618196.1                              6  23-[6]-106
+KAJ1633864.1                            6.1  8-[2]-125-[6]-52-[4]-9
+KAJ1632265.1                            6.2  82-[7]-92
+KAJ1638700.1                            6.3  73-[10]-78-[1]-[6]-62
+KAJ1616764.1                            6.3  237-[7]-30-[5]-123-[8]-13
+KAJ1631367.1                            6.5  61-[5]-29
+KAJ1637053.1                            7.2  122-[6]-231-[7]-68
+KAJ1626434.1                            7.4  14-[4]-26
+KAJ1638139.1                            8.1  72-[7]-77
+KAJ1634313.1                            8.2  127-[7]-197
+KAJ1619853.1                            8.4  261-[6]-618
+KAJ1622298.1                            8.8  138-[8]-62
+KAJ1625151.1                              9  17-[8]-40-[5]-68-[3]-42-[6]-119
+KAJ1616319.1                            9.7  121-[1]-27-[6]-62
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+KAJ1632202.1
+  hypothetical protein T492DRAFT_838593 [Pavlovales sp. CCMP2436]
+  LENGTH = 109  COMBINED P-VALUE = 3.02e-06  E-VALUE =    0.079
+  DIAGRAM: 20-[5]-81
+
+                         [5]
+                         4.2e-05
+                         LNLPDFPD
+                          +++ ++
+1    MPAGVCSKGRRTAEKINPPVSSLPPFPVLLSLSLLMTGGGIGGGGLGGSKIECEPVTTGCALTVRPVLAATFAAM
+
+
+KAJ1622397.1
+  hypothetical protein T492DRAFT_846339 [Pavlovales sp. CCMP2436]
+  LENGTH = 173  COMBINED P-VALUE = 3.38e-06  E-VALUE =    0.088
+  DIAGRAM: 59-[4]-98
+
+                                                                [4]
+                                                                1.8e-06
+                                                                LPDFPDPFTLPPIPRL
+                                                                +++ + + +   ++ +
+1    MEKKSKVTEEPTTVSIDVQHTPPSIEKVSVDTTPVTITPTSTPQTSTPQTSTPQTSTPPIPDVPPPVKPKRIPSL
+
+
+KAJ1615587.1
+  hypothetical protein T492DRAFT_1120308, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 143  COMBINED P-VALUE = 7.53e-06  E-VALUE =      0.2
+  DIAGRAM: 42-[4]-85
+
+                                               [4]
+                                               3.5e-07
+                                               LPDFPDPFTLPPIPRL
+                                               + + ++++  + + ++
+1    QCLFSFICSSNNNIGRITGILARLRAAYGTQIPILNAEPFGELAELPAFYAFPTIERLAQVPDEELRALGLGYRA
+
+
+KAJ1623902.1
+  hypothetical protein T492DRAFT_845127 [Pavlovales sp. CCMP2436]
+  LENGTH = 153  COMBINED P-VALUE = 9.09e-06  E-VALUE =     0.24
+  DIAGRAM: 32-[4]-105
+
+                                     [4]
+                                     9.6e-06
+                                     LPDFPDPFTLPPIPRL
+                                      ++   + + ++++
+1    MEKKSKVTEEPSTVSIDVQHTPPAIEKVTIEPTPDTTPPASTPPIPDVPPPVKPKRIPSEKQKLNYLAANKRRVQ
+
+
+KAJ1618608.1
+  hypothetical protein T492DRAFT_449013 [Pavlovales sp. CCMP2436]
+  LENGTH = 186  COMBINED P-VALUE = 1.62e-05  E-VALUE =     0.42
+  DIAGRAM: 56-[4]-114
+
+                                                             [4]
+                                                             7.6e-06
+                                                             LPDFPDPFTLPPIPRL
+                                                             +++ ++ +  ++ +
+1    MPPPHPPLPGLREVVGAGEEAAAAVTAATASAATTVVVALATAAGATQTAGAQASPLPALPSLFPSPPPPLPPGT
+
+
+KAJ1625234.1
+  hypothetical protein T492DRAFT_880418, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 93  COMBINED P-VALUE = 1.78e-05  E-VALUE =     0.46
+  DIAGRAM: 32-[6]-5-[5]-35
+
+                                     [6]               [5]
+                                     3.5e-05           6.7e-05
+                                     SWRAAMLGRTPPP     LNLPDFPD
+                                     + ++++++   +      + ++  ++
+1    VSTYDEASACLHHAVHLCNLLANQKAALNHTYARRAALIGHIFTQSLPLPLPLPPNPKAVASMAAGVGAGAAEAA
+
+
+KAJ1623796.1
+  Bromodomain-containing protein [Pavlovales sp. CCMP2436]
+  LENGTH = 334  COMBINED P-VALUE = 2.46e-05  E-VALUE =     0.64
+  DIAGRAM: 52-[5]-274
+
+                                                         [5]
+                                                         1.9e-08
+                                                         LNLPDFPD
+                                                         ++++++++
+1    MADPGLHRDKRQRAVTGIQMDESMLKKCDAALKTVTRRQSAVAFSEPVNWRALNLPDYPKIVKQPMDLGTVQDNL
+
+
+KAJ1620771.1
+  hypothetical protein T492DRAFT_1150037, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 449  COMBINED P-VALUE = 3.26e-05  E-VALUE =     0.85
+  DIAGRAM: 14-[2]-65-[4]-72-[7]-209-[6]-39
+
+                   [2]
+                   6.1e-06
+                   WYDEWRERIECWY
+                     ++ ++++  ++
+1    MTLTRALLLWCWAVSGADGRSRFHHWYDPVVATPSPPPAAAATAALATPPASTVLARRDGLGNSPAVDSSLGAAH
+
+                      [4]
+                      2.4e-05
+                      LPDFPDPFTLPPIPRL
+                       + ++  +   + ++
+76   SESHSRLVDAGEYADAVPPSFPPSFPPTPPPRRAASAAWAGGGARDGVPSRAAHAPLPATPLPRSEAGAAALGMQ
+
+                                   [7]
+                                   1.4e-05
+                                   PPIPRLLP
+                                   ++++ + +
+151  SLGVQSLDAVGSAAPQGGVGTGAQSVHSPLPPLPSLPPSPPSPPPPKPKWIDLQFEAAVRASPEELADPGPRSRF
+
+                           [6]
+                           7.4e-05
+                           SWRAAMLGRTPPP
+                           +  +++++ + ++
+376  AADARHTALAALAQRRERAAAAAAAAAATGPAAAAPAAAAPASTAAAAAAASAAARHAALLALAQRRERAQISQ
+
+
+KAJ1640246.1
+  hypothetical protein T492DRAFT_832215 [Pavlovales sp. CCMP2436]
+  LENGTH = 360  COMBINED P-VALUE = 4.03e-05  E-VALUE =        1
+  DIAGRAM: 30-[6]-8-[6]-228-[9]-60
+
+                                   [6]                  [6]
+                                   4.6e-05              8.6e-05
+                                   SWRAAMLGRTPPP        SWRAAMLGRTPPP
+                                   + ++++ + + +           +++++ +++++
+1    MEALGTPLSSAAADGAGPVVASSAHRRERLACRAYARGQRRGNSAPVPHPCRTRATLVPRVTPAPPSCPRRQLEN
+
+                                                                        [9]
+                                                                        1.5e-07
+                                                                        FPPIPRLP
+                                                                        +++++ ++
+226  AFGLLPDAVSAVAQLTGEDAAAFRIPLGMAAAQSHVSSDLTWSQQEQKERRPSVERWRRRTDPSPPAFPPIPSIP
+
+
+KAJ1640838.1
+  hypothetical protein T492DRAFT_831835 [Pavlovales sp. CCMP2436]
+  LENGTH = 160  COMBINED P-VALUE = 4.30e-05  E-VALUE =      1.1
+  DIAGRAM: 44-[4]-100
+
+                                                 [4]
+                                                 8.6e-06
+                                                 LPDFPDPFTLPPIPRL
+                                                 +++ + + +   ++
+1    MEKTSKVTEEPSTVSIAEHYTPPSIEKVTIESTPVTTPPASTPPIPDVPPPVKAKRIPSEKQKLNYLAANKRRVQ
+
+
+KAJ1637212.1
+  hypothetical protein T492DRAFT_901164 [Pavlovales sp. CCMP2436]
+  LENGTH = 366  COMBINED P-VALUE = 4.74e-05  E-VALUE =      1.2
+  DIAGRAM: 272-[4]-78
+
+                                                    [4]
+                                                    7.1e-07
+                                                    LPDFPDPFTLPPIPRL
+                                                    +  +++ ++ + ++ +
+226  ENVAYMKHSDRRSGCELAAALAAARVVVTPHGFNAYFVTMMALNSTLVEVYPAGYTFPDIPILARRFGVKHKHLL
+
+
+KAJ1640734.1
+  FAD-linked oxidoreductase-like protein [Pavlovales sp. CCMP2436]
+  LENGTH = 649  COMBINED P-VALUE = 5.14e-05  E-VALUE =      1.3
+  DIAGRAM: 35-[8]-296-[6]-109-[5]-180
+
+                                        [8]
+                                        4.9e-06
+                                        ALGKPPAA
+                                        ++++  ++
+1    MLMRHFPSPLGGALEMQTVTTARRLSSAWARSPGVALGRAAAAWRGEEAGAPDKTALRARLWADEAETSRANMFT
+
+                                            [6]
+                                            2.0e-08
+                                            SWRAAMLGRTPPP
+                                            + ++++++ +++
+301  ESYAHAIKTVGASAALGSSGELKPGVSVKLSALDPRFEPSHRAALLGHVQPLGVAGVRGSLVDSVSQLAALAADA
+
+                [5]
+                6.5e-06
+                LNLPDFPD
+                + ++ ++
+451  YWDSEMKVAQGLGLPTFPVYTRKEATDVCYHACIAKVLHEHADAITPAFATHNARTLSVVAALARARGWSPLGQE
+
+
+KAJ1623300.1
+  HotDog domain-containing protein [Pavlovales sp. CCMP2436]
+  LENGTH = 208  COMBINED P-VALUE = 5.66e-05  E-VALUE =      1.5
+  DIAGRAM: 72-[2]-81-[10]-24
+
+                                                                             [2]
+                                                                             3.6
+                                                                             WYD
+                                                                             +++
+1    MAKNRLRVLATQLGAAPPAADDGSPMGQGTYIRALPPYGALRIDHGSRPPRPAPIDRSALERVVGQEIGTSGWFE
+
+     
+     e-05
+     EWRERIECWY
+       +++++
+76   VTQDRVDAFALTTGDPQWIHAHDAGEKGSPFGAPIVHGNLTLCLAYLLATEAMPPVKGVTTGLNYGLNRVRFPSP
+
+                     [10]
+                     5.3e-07
+                     MQPPPPKNTKNECETVVE
+                     ++ ++   +++++++++
+151  LMVGASIRATVKVVSTKPVPPVPGTNEGCENVIQVTLVSDGGDKPVCVADLASRLYFA
+
+
+KAJ1639704.1
+  hypothetical protein T492DRAFT_856341 [Pavlovales sp. CCMP2436]
+  LENGTH = 316  COMBINED P-VALUE = 6.05e-05  E-VALUE =      1.6
+  DIAGRAM: 185-[8]-123
+
+                                        [8]
+                                        2.9e-07
+                                        ALGKPPAA
+                                        ++++++++
+151  GLPPGPGADAGASNIPPLQARHGSDAGAQQAQDAGAVGRTPAAPAPWAAPASSGGAQALPAVQSAPASATGALPD
+
+
+KAJ1623025.1
+  hypothetical protein T492DRAFT_912914, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 89  COMBINED P-VALUE = 6.93e-05  E-VALUE =      1.8
+  DIAGRAM: 24-[4]-49
+
+                             [4]
+                             3.1e-06
+                             LPDFPDPFTLPPIPRL
+                             +   +   ++++++
+1    PPTSRFLLFAAESARGGGCPDAHTLSPPPPTHTLPPLPITRLPPPQLSPRVAVVALPHVHWTDGGLVDLSKVSRA
+
+
+KAJ1633921.1
+  hypothetical protein T492DRAFT_527990 [Pavlovales sp. CCMP2436]
+  LENGTH = 111  COMBINED P-VALUE = 7.29e-05  E-VALUE =      1.9
+  DIAGRAM: 2-[10]-91
+
+       [10]
+       1.3e-06
+       MQPPPPKNTKNECETVVE
+       ++ ++ ++++ + ++ ++
+1    MSKKKKKKKKNDQEKEKTTKKKLKRAVQALGVALGKLLSALPGASDPELLRASLRELATTERGRLSANQLRELRG
+
+
+KAJ1629055.1
+  hypothetical protein T492DRAFT_874002 [Pavlovales sp. CCMP2436]
+  LENGTH = 264  COMBINED P-VALUE = 8.28e-05  E-VALUE =      2.2
+  DIAGRAM: 74-[6]-177
+
+                                                                               [
+                                                                               4
+                                                                               S
+                                                                               +
+1    MAKRARGGGGTHACSRRGCTHALGVSDHCTLVGGTSDDASASDSASPGDEPERRFPCDEPGCEYCHVRPAPARGS
+
+     6]
+     .2e-07
+     WRAAMLGRTPPP
+      +  ++++++ +
+76   LRVGAIGRRPSAKDGFAVLEHAARDTGLPPLLRAISGDLLHPILKLLGDADLPCARLACTAFRDHSSPTQKAPHG
+
+
+KAJ1634655.1
+  pyridoxal phosphate-dependent transferase [Pavlovales sp. CCMP2436]
+  LENGTH = 441  COMBINED P-VALUE = 8.36e-05  E-VALUE =      2.2
+  DIAGRAM: 300-[9]-95-[1]-17
+
+     [9]
+     4.0e-07
+     FPPIPRLP
+      +++++++
+301  LPPVPRLPLGDGGGGALNSGGGAAAGAEGMGSGLGGLAYGLGGYAVRNDAQRFQLWEGAVAGRLGLGAAAEYALR
+
+                                 [1]
+                                 7.1e-05
+                                 TQTQLGNCMGALGLHIGSRFD
+                                   +  + + ++++++    ++
+376  LGLHNIEASVRGRAAQLREGAAGVKGVRVADLSGQCEGALGLSGIVALDVEAIGGAAVILIIILVI
+
+
+KAJ1637486.1
+  hypothetical protein T492DRAFT_834402 [Pavlovales sp. CCMP2436]
+  LENGTH = 113  COMBINED P-VALUE = 1.12e-04  E-VALUE =      2.9
+  DIAGRAM: 11-[7]-94
+
+                [7]
+                4.0e-07
+                PPIPRLLP
+                +++ ++++
+1    MYLSSLHGWRLLPIYRLLPRTAEARHWSRARSYPERNWLATDPFPRKPADATDYFPRKPSAQAIKATAAAKGSHG
+
+
+KAJ1624165.1
+  hypothetical protein T492DRAFT_1048938 [Pavlovales sp. CCMP2436]
+  LENGTH = 415  COMBINED P-VALUE = 1.19e-04  E-VALUE =      3.1
+  DIAGRAM: 122-[4]-30-[7]-[7]-48-[8]-175
+
+                                                    [4]
+                                                    7.2e-06
+                                                    LPDFPDPFTLPPIPRL
+                                                    ++  + + + ++ +
+76   TPVDEAPAVDHAEPSAVAAAAATTPLLPPAAGVEPPRPPPKAAPPPRMPPAPRPKTRPPPPNGGAEPPPRPPKAP
+
+                       [7]     [7]
+                       3.4e-05 3.4e-07
+                       PPIPRLLPPPIPRLLP
+                       ++++  ++++++++++
+151  PPPPPPKALPPTAPPPPPLPLPTALPLPLPKMLPPPPLPPNPAPAGCADAPPKAEPPPVGAQPNAEGAAPPPPPL
+
+            [8]
+            2.4e-05
+            ALGKPPAA
+            +  +++++
+226  PNAELPGADAKPPAARPDGAPPNAEPPATALAAPAGAGAPDLPAAGKSVARKLLAAAACWIASICCRCCCNAATY
+
+
+KAJ1635604.1
+  hypothetical protein T492DRAFT_902411 [Pavlovales sp. CCMP2436]
+  LENGTH = 183  COMBINED P-VALUE = 1.19e-04  E-VALUE =      3.1
+  DIAGRAM: 104-[7]-13-[5]-50
+
+                                  [7]                  [5]
+                                  2.3e-05              1.0e-07
+                                  PPIPRLLP             LNLPDFPD
+                                    ++ +++             ++++++++
+76   QLTPPPPPDEQLSPPPLAEVEVLREWTDGSGLPILLPPPLHASEAIAYKLLDIPDYPDDHLLVALLLARFNAIPP
+
+
+KAJ1639335.1
+  hypothetical protein T492DRAFT_565669, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 312  COMBINED P-VALUE = 1.37e-04  E-VALUE =      3.6
+  DIAGRAM: 69-[8]-109-[5]-118
+
+                                                                          [8]
+                                                                          1.2e-0
+                                                                          ALGKPP
+                                                                          ++++
+1    SALPLASPPESFEFLLRQAVGASLEAACDGSKLQDVEFPPLPTSVLEDASSSAYDVSDANVRLAARFAQALGKRA
+
+     
+     5
+     AA
+     +
+76   AVLVPDKAELERALRVLGGKQRPYANVSVHSLTAGSSGTGDNTVEGFFGRIFNIQRFGQQEVTVVEDAEVYIVIT
+
+                                         [5]
+                                         1.6e-06
+                                         LNLPDFPD
+                                         + +++++
+151  ASCQELPDVERLWLKEGPKGKTLILFNLKLDTQRGDLGLPAFPRKALQHRFLSYVKPVYFLRSRSYSLSLRRPPF
+
+
+KAJ1638617.1
+  Rieske [2Fe-2S] iron-sulfur domain-containing protein, partial [Pavlovales 
+  sp. CCMP2436]
+  LENGTH = 185  COMBINED P-VALUE = 1.51e-04  E-VALUE =      3.9
+  DIAGRAM: 134-[4]-35
+
+                                                                [4]
+                                                                3.1e-05
+                                                                LPDFPDPFTLPPIPRL
+                                                                  +  +++  + ++
+76   FDGEDGECKSIPQLLDPAAAMLDPAAAIARLPFVPPAKSCADAVAIQVVDGMVWMHTQAKTAAEAPFPIPRIPEM
+
+
+KAJ1631184.1
+  hypothetical protein T492DRAFT_839383 [Pavlovales sp. CCMP2436]
+  LENGTH = 120  COMBINED P-VALUE = 1.59e-04  E-VALUE =      4.1
+  DIAGRAM: 99-[10]-3
+
+                             [10]
+                             2.6e-05
+                             MQPPPPKNTKNECETVVE
+                              +++++ ++ + +  +++
+76   PKCEGSERVTAVLPAPPELPTPPPPGPPPPMPIVEACLGVTESSS
+
+
+KAJ1638293.1
+  hypothetical protein T492DRAFT_944822 [Pavlovales sp. CCMP2436]
+  LENGTH = 240  COMBINED P-VALUE = 1.69e-04  E-VALUE =      4.4
+  DIAGRAM: 38-[10]-184
+
+                                           [10]
+                                           8.1e-07
+                                           MQPPPPKNTKNECETVVE
+                                           + ++++++++++ +++++
+1    MLTASRVTFRSAQLGRALSSKPAAKAPSKVAPMTPAKPKIPPPPKVARGDTQYVISRRAYEAGLSVLRKQYAGEE
+
+
+KAJ1616110.1
+  hypothetical protein T492DRAFT_851061 [Pavlovales sp. CCMP2436]
+  LENGTH = 222  COMBINED P-VALUE = 1.82e-04  E-VALUE =      4.7
+  DIAGRAM: 44-[4]-162
+
+                                                 [4]
+                                                 8.6e-06
+                                                 LPDFPDPFTLPPIPRL
+                                                 +++ + + +   ++
+1    MEKKSTVIEDPSTVSIDVQHTPPVIERVIIEPTSVTTPPAPTPPIPDVPPPVKAKRIPSEKQKLNYLAANKRRVQ
+
+
+KAJ1620954.1
+  hypothetical protein T492DRAFT_847428 [Pavlovales sp. CCMP2436]
+  LENGTH = 170  COMBINED P-VALUE = 2.05e-04  E-VALUE =      5.3
+  DIAGRAM: 144-[7]-18
+
+                                                                          [7]
+                                                                          9.9e-0
+                                                                          PPIPRL
+                                                                            ++++
+76   VATVACAQMCEAAEGMAGPEMPFRMRTVASACAWSEVQVHAQWRVGQLLPLLLYLRWCYAALCADVRRFVDMPRL
+
+     
+     8
+     LP
+     ++
+151  LPAEYEPPAGALVLGSKTIV
+
+
+KAJ1633948.1
+  hypothetical protein T492DRAFT_837216 [Pavlovales sp. CCMP2436]
+  LENGTH = 134  COMBINED P-VALUE = 2.29e-04  E-VALUE =        6
+  DIAGRAM: 37-[8]-26-[4]-47
+
+                                          [8]                               [4]
+                                          4.6e-06                           3.1e
+                                          ALGKPPAA                          LPDF
+                                          +++++ +                            +++
+1    MPTPYPPSASSSHARPCSPIGLAAATPDRPASAGQNRALGRPSSSTGNEGDDELPYSSSDMWATNASAEEQRPTY
+
+     
+     -05
+     PDPFTLPPIPRL
+     +    +++++ +
+76   PGSPGMPPLPSLDDVGADCVIPLAPRGLDVPPELAQIGAHVRQVKEWNSGEIWMNCEKG
+
+
+KAJ1618196.1
+  hypothetical protein T492DRAFT_892469 [Pavlovales sp. CCMP2436]
+  LENGTH = 142  COMBINED P-VALUE = 2.31e-04  E-VALUE =        6
+  DIAGRAM: 23-[6]-106
+
+                            [6]
+                            1.3e-07
+                            SWRAAMLGRTPPP
+                            + ++ +++ + ++
+1    MRSLSGLLGQAEREADAAAAVASASRARLLGHAAPPFLLPPPPLLASTVAPLRAQLMLRGNTREAAGRYGGARVE
+
+
+KAJ1617919.1
+  hypothetical protein T492DRAFT_1096424, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 164  COMBINED P-VALUE = 2.33e-04  E-VALUE =        6
+
+                                                                            [10]
+                                                                            2.1e
+                                                                            MQPP
+                                                                            +++
+76   DAAAPMGLAKRLRACVTVARMGFVPYQQTTAEHALLANAEANFGNICIEALACRHAHAPAGATAATRRLLRAPPA
+
+     
+     -08
+     PPKNTKNECETVVE
+     ++ ++++ + ++++
+151  PPASNSVTCRKIGN
+
+
+KAJ1633864.1
+  hypothetical protein T492DRAFT_530172 [Pavlovales sp. CCMP2436]
+  LENGTH = 236  COMBINED P-VALUE = 2.34e-04  E-VALUE =      6.1
+  DIAGRAM: 8-[2]-125-[6]-52-[4]-9
+
+             [2]
+             4.3e-05
+             WYDEWRERIECWY
+               +++ + ++ ++
+1    MIIYIYLQEWTAYGDSLSGWWQLWQLLWPFGARVRLPSASEVQSRLAYISSYRLLDEARARHSDLHLVPPVAHIG
+
+                                                                            [6]
+                                                                            1.8e
+                                                                            SWRA
+                                                                            + ++
+76   LLEFQRFEEAERLGYETAQAALAEWLPRSRTFVVKEDSEVTQVFIGSRSQHTQPQQPSAAQSERKAQLLSNARRA
+
+                                                                  [4]
+     -05                                                          9.8e-05
+     AMLGRTPPP                                                    LPDFPDPFTLPPIP
+      +++ + ++                                                    +       ++ +++
+151  LAVGATAAPDEPAIVRASSAQRCGGSESVSLLSAVEDEDEVRQQPESPQDSGHGTAGSARSIQRARTLDKLRPLP
+
+     
+     
+     RL
+     +
+226  RRSGGHGWSES
+
+
+KAJ1632265.1
+  hypothetical protein T492DRAFT_990000 [Pavlovales sp. CCMP2436]
+  LENGTH = 182  COMBINED P-VALUE = 2.40e-04  E-VALUE =      6.2
+  DIAGRAM: 82-[7]-92
+
+            [7]
+            4.3e-07
+            PPIPRLLP
+            ++++++ +
+76   RIASSDAPPMPRLAPPPPPARTRALGGNSPDSAFGGEGEDGEPASAQAVAVTPPAQDAWVAGAGGFTVYTHADKP
+
+
+KAJ1638700.1
+  hypothetical protein T492DRAFT_186648 [Pavlovales sp. CCMP2436]
+  LENGTH = 265  COMBINED P-VALUE = 2.43e-04  E-VALUE =      6.3
+  DIAGRAM: 73-[10]-78-[1]-[6]-62
+
+                                                                              [1
+                                                                              4.
+                                                                              MQ
+     
+1    MPDSLRDGDQLLAKLSVKVQLWALPDRARRQPALFALHVSHALVSWSLTRRFAQLAQLHASLIELENAECRLPSL
+
+     0]
+     1e-05
+     PPPPKNTKNECETVVE
+     +++  +++ ++  +++
+76   PPKHPFAEQSCAFLNERALSVERFFNELLAAPAVSEVQSVLIGAFLETAAVRSLLCVLGDVSARELAVSHELTDV
+
+                        [1]                  [6]
+                        2.8e-05              1.7e-05
+                        TQTQLGNCMGALGLHIGSRFDSWRAAMLGRTPPP
+                        +      ++ + ++ ++  + +++ +++  ++ +
+151  RALFSDASERFQARHATLVSTRARSVCVVADGVVLAGALGAWRGAALAMAKDAALREMQKDLRAESVARGAAMLM
+
+
+KAJ1616764.1
+  hypothetical protein T492DRAFT_1104608 [Pavlovales sp. CCMP2436]
+  LENGTH = 427  COMBINED P-VALUE = 2.43e-04  E-VALUE =      6.3
+  DIAGRAM: 237-[7]-30-[5]-123-[8]-13
+
+                 [7]                                   [5]
+                 7.7e-07                               7.5e-05
+                 PPIPRLLP                              LNLPDFPD
+                 +++++++                                +++++ +
+226  AFSCIWQLPPGPPPIPRLLLGKEDMLLIGPRTFAEAILRGPVAYSKAGRPTKLPDFANKRIRVRRGSMFAETCDE
+
+                                    [8]
+                                    7.9e-05
+                                    ALGKPPAA
+                                    +++  +++
+376  ACIIAMPAAAAMAGVPREAKLAGAVLDEYASALGLRPAASPPGRPPPTNTTL
+
+
+KAJ1631367.1
+  hypothetical protein T492DRAFT_996538 [Pavlovales sp. CCMP2436]
+  LENGTH = 98  COMBINED P-VALUE = 2.51e-04  E-VALUE =      6.5
+  DIAGRAM: 61-[5]-29
+
+                                                                  [5]
+                                                                  1.6e-05
+                                                                  LNLPDFPD
+                                                                  +++++ +
+1    MVLAASDAPGGVSWCPDCRAADPVVLQLMALHPASFVLVRAVCKRSDYAGNPNFPYRKDAQLRLPAIPTLYHRTC
+
+
+KAJ1637053.1
+  Pex12 amino terminal region-domain-containing protein [Pavlovales sp. 
+  CCMP2436]
+  LENGTH = 442  COMBINED P-VALUE = 2.78e-04  E-VALUE =      7.2
+  DIAGRAM: 122-[6]-231-[7]-68
+
+                                                    [6]
+                                                    1.2e-07
+                                                    SWRAAMLGRTPPP
+                                                    + ++ +++++ ++
+76   SSFAESFYGVRRARFEQDGRSTRLTPAQRRLSLVALVVLPYLRTKLMALRAGALGRQRTAMLLHASAREIPPPRE
+
+                                                                       [7]
+                                                                       4.5e-05
+                                                                       PPIPRLLP
+                                                                       ++ + +++
+301  RKLLRAGPSRHAGALSHALARLLRLLSAVVLEHARHGLVILVIVIKILHWWYSPEAGATRPRVFPLPPPPPLLPA
+
+
+KAJ1626434.1
+  hypothetical protein T492DRAFT_560729, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 56  COMBINED P-VALUE = 2.83e-04  E-VALUE =      7.4
+  DIAGRAM: 14-[4]-26
+
+                   [4]
+                   4.5e-05
+                   LPDFPDPFTLPPIPRL
+                     ++ + + ++ ++ +
+1    FKLYLESNGATLSATAEFLAYYALPYVPQLTEHPAFRELLTPGWAGALRLRVSDFL
+
+
+KAJ1638139.1
+  hypothetical protein T492DRAFT_858956, partial [Pavlovales sp. CCMP2436]
+  LENGTH = 157  COMBINED P-VALUE = 3.13e-04  E-VALUE =      8.1
+  DIAGRAM: 72-[7]-77
+
+                                                                             [7]
+                                                                             9.9
+                                                                             PPI
+                                                                               +
+1    LAYAVRCVLAGLVLPAVATVACAQMCEAAEGMAGPEMPFRMRAVASACAWSEVQVYAQWRCYAALCADVRRFVDM
+
+     
+     e-08
+     PRLLP
+     +++++
+76   PRLLPAEYESPAGALVLGSKTIRRRDLIAPVCVPGEGHRALERKHCGDAMLRFRLRVCRSLLAGGAIGLMTLQNA
+
+
+KAJ1634313.1
+  hypothetical protein T492DRAFT_1142300 [Pavlovales sp. CCMP2436]
+  LENGTH = 332  COMBINED P-VALUE = 3.14e-04  E-VALUE =      8.2
+  DIAGRAM: 127-[7]-197
+
+                                                         [7]
+                                                         2.3e-07
+                                                         PPIPRLLP
+                                                         ++++ +++
+76   IEDKLSEEGEHVQEAIWVVSPMGARAGSIARAFRLAHGLARDSAVYPTLPLLPPLPTLLPDWTSMPCEHNLAVRQ
+
+
+KAJ1641137.1
+  hypothetical protein T492DRAFT_923487 [Pavlovales sp. CCMP2436]
+  LENGTH = 84  COMBINED P-VALUE = 3.19e-04  E-VALUE =      8.3
+
+                                                                       [10]
+                                                                       3.0e-08
+                                                                       MQPPPPKNT
+                                                                       +++ ++ ++
+1    MGLAKHLRACVTVAMVGFVPYQQTTAKHALLANAAANFGNICIGALACRHAHAPAGATAATRRLLRAPPTPPASN
+
+     
+     
+     KNECETVVE
+     ++ + ++++
+76   SVTCRKIGN
+
+
+KAJ1619853.1
+  hypothetical protein T492DRAFT_889707 [Pavlovales sp. CCMP2436]
+  LENGTH = 892  COMBINED P-VALUE = 3.22e-04  E-VALUE =      8.4
+  DIAGRAM: 261-[6]-618
+
+                                         [6]
+                                         2.1e-07
+                                         SWRAAMLGRTPPP
+                                         + +  ++++ +++
+226  AGPVPFGKQNFFLGKEDLREAARQQSVAWTGSALASSRRGSALGKPPPARYSLSITPQLGGSVHGSITIKTPDGR
+
+
+KAJ1622298.1
+  hypothetical protein T492DRAFT_1063410 [Pavlovales sp. CCMP2436]
+  LENGTH = 208  COMBINED P-VALUE = 3.37e-04  E-VALUE =      8.8
+  DIAGRAM: 138-[8]-62
+
+                                                                    [8]
+                                                                    7.2e-06
+                                                                    ALGKPPAA
+                                                                    +++++
+76   ADSDDCGAIILGMEESRPNWDAHSARMNLIRTKTLINSADIVVVRFGDKYRQWNAAFEAGYASALGKPVVIQHPP
+
+
+KAJ1625151.1
+  hypothetical protein T492DRAFT_244028 [Pavlovales sp. CCMP2436]
+  LENGTH = 325  COMBINED P-VALUE = 3.48e-04  E-VALUE =        9
+  DIAGRAM: 17-[8]-40-[5]-68-[3]-42-[6]-119
+
+                      [8]                                             [5]
+                      5.7e-05                                         1.8e-05
+                      ALGKPPAA                                        LNLPDFPD
+                      +  ++ ++                                          +++ ++
+1    MHSASASVAPSRHASKPATAKPASAIAAQQQQQPYKPQSAVRSKDVRSRPQTSFADYNETDARLAATLPDLPDIL
+
+                                                                       [3]
+                                                                       7.6e-05
+                                                                       AESGCEWVK
+                                                                        + ++  ++
+76   AFLDKLPGLPPGLPPRLPPGLPPGLPPSSFSLGIPPPTGLFERPPPGLSTATGLPPGLGQGAAMGVGEGGCAEVG
+
+                                                [6]
+                                                5.9e-06
+     E                                          SWRAAMLGRTPPP
+     +                                          + ++  ++++++
+151  GAPLRTDSGGDVERGGEAKAEAGSPGLPPGLTPGLSYAHEAQLAARAFGIGKVPGESGRESDSGPGESVSRQPRP
+
+
+KAJ1616319.1
+  hypothetical protein T492DRAFT_1107470 [Pavlovales sp. CCMP2436]
+  LENGTH = 244  COMBINED P-VALUE = 3.72e-04  E-VALUE =      9.7
+  DIAGRAM: 121-[1]-27-[6]-62
+
+                                                   [1]
+                                                   2.6e-05
+                                                   TQTQLGNCMGALGLHIGSRFD
+                                                   + + ++ +       ++ ++
+76   VVVLVVEVDGDGLSAATKKWMRTGRAELLSARRCEIVTVANSACRNSATALKPCALGATAKLGVRLRAGGAAVHE
+
+                        [6]
+                        5.1e-07
+                        SWRAAMLGRTPPP
+                          ++ ++++ +++
+151  AALYLDVGVAIDVEDTIDAYVRALALGRPPPPVEAVASTPAEAAASTPPEAAAVKHVRRPPRAARVLGRAGLAAC
+
+********************************************************************************
+
+
+CPU: mablin-mac.local
+Time 0.675 secs.
+
+mast -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_GCA_026770615.1 -ev 10.0 -nostatus /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_026770615.1/protein.faa

@@ -1,0 +1,18 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+KAL3918012.1         -            564 good-c-term          -            713    0.0021   16.4   2.6   1   1   1.7e-06    0.0051   15.1   2.6   431   546   105   217    30   234 0.86 MAG: hypothetical protein SGPRY_006174 [Prymnesium sp.]
+KAL3894458.1         -            309 good-c-term          -            713    0.0051   15.1   0.6   1   1     2e-06    0.0062   14.9   0.6    72   239   130   295    90   303 0.71 MAG: hypothetical protein SGPRY_013804, partial [Prymnesium sp.]
+KAL3915262.1         -            145 good-c-term          -            713     0.096   10.9   0.0   1   1   3.9e-05      0.12   10.6   0.0   493   541    33    80    27    99 0.84 MAG: hypothetical protein SGPRY_007300 [Prymnesium sp.]
+KAL3930580.1         -            495 good-c-term          -            713       3.7    5.7  20.7   1   1    0.0017       5.3    5.2  20.7    43   232   282   378   212   415 0.35 MAG: hypothetical protein SGPRY_001478 [Prymnesium sp.]
+KAL3923068.1         -            335 good-c-term          -            713       4.8    5.3  17.2   1   1     0.002       5.9    5.0  17.2   139   223   242   324   136   335 0.36 MAG: hypothetical protein SGPRY_004343, partial [Prymnesium sp.]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# Target file:     /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_046255225.1/protein.faa
+# Option settings: hmmsearch -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_046255225.txt --domtblout /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_046255225.domtblout -E 10.0 --domE 10.0 /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_046255225.1/protein.faa 
+# Current dir:     /Users/mablin/Projects/github.com/mablin7/nitroplast
+# Date:            Mon Jan 12 00:19:01 2026
+# [ok]

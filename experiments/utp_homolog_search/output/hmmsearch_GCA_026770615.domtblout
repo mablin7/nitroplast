@@ -1,0 +1,20 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+KAJ1629283.1         -            190 good-c-term          -            713   1.5e-16   60.6   2.9   1   1   4.2e-20   1.8e-16   60.4   2.9   318   480     2   173     1   185 0.73 hypothetical protein T492DRAFT_122706 [Pavlovales sp. CCMP2436]
+KAJ1622593.1         -            405 good-c-term          -            713   0.00013   21.2   0.2   1   1   4.6e-08    0.0002   20.6   0.2   458   548   228   314   217   318 0.77 rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+KAJ1625317.1         -            484 good-c-term          -            713   0.00014   21.1   3.7   1   1   1.7e-07   0.00074   18.7   3.7   493   570   223   300    58   315 0.75 rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+KAJ1621538.1         -            261 good-c-term          -            713     0.092   11.8   0.4   1   1   2.9e-05      0.13   11.3   0.4   494   571   152   229   145   239 0.93 rab-GTPase-TBC domain-containing protein, partial [Pavlovales sp. CCMP2436]
+KAJ1634223.1         -            655 good-c-term          -            713       0.3   10.1   0.1   1   1    0.0001      0.44    9.5   0.1   495   549   541   595   534   600 0.93 rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+KAJ1632668.1         -            417 good-c-term          -            713       9.6    5.1  14.7   1   2       1.1   4.7e+03   -3.8   0.9   324   360   116   155   103   160 0.70 rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+KAJ1632668.1         -            417 good-c-term          -            713       9.6    5.1  14.7   2   2   2.1e-05     0.089   11.8   6.9   448   561   247   359   221   386 0.80 rab-GTPase-TBC domain-containing protein [Pavlovales sp. CCMP2436]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# Target file:     /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_026770615.1/protein.faa
+# Option settings: hmmsearch -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_026770615.txt --domtblout /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_026770615.domtblout -E 10.0 --domE 10.0 /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_026770615.1/protein.faa 
+# Current dir:     /Users/mablin/Projects/github.com/mablin7/nitroplast
+# Date:            Mon Jan 12 00:18:59 2026
+# [ok]

@@ -1,0 +1,1 @@
+((Prymnesium_sp_KAL3915781.1:0.369469,Prymnesium_parvum_KAL1528323.1:0.17991):0.140819,(Braarudosphaera_bigelowii_KC1-P2_N1_k37_Locus_10649_Transcript_1_1:0.427912,(Emiliania_huxleyi_EOD29973.1:1.53546e-06,Emiliania_huxleyi_EOD04622.1:0.00750075):0.269151):0.140819);

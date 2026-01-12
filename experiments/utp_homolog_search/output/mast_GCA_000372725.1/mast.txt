@@ -1,0 +1,951 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE protein.faa (peptide)
+	Last updated on Sun Jan 11 17:08:12 2026
+	Database contains 38554 sequences, 13220558 residues
+
+	MOTIFS meme_gb.xml (peptide)
+	MOTIF ID                    ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- --------------------- ------- ----- -------------------
+	    1 TQTQLGACMGALGLHLGSRLD MEME-1     21 TQTQLGNCMGALGLHIGSRFD
+	    2 WLEEWRERLECWW         MEME-2     13 WYDEWRERIECWY
+	    3 AEPGCEWVEE            MEME-3     10 AESGCEWVKE
+	    4 LPDFPEPFSLPPIPRL      MEME-4     16 LPDFPDPFTLPPIPRL
+	    5 LZLPDFPD              MEME-5      8 LNLPDFPD
+	    6 AWRAALLGRAPPP         MEME-6     13 SWRAAMLGRTPPP
+	    7 PPJPRLLP              MEME-7      8 PPIPRLLP
+	    8 ALGKPPAA              MEME-8      8 ALGKPPAA
+	    9 FPPIPRLP              MEME-9      8 FPPIPRLP
+	   10 APPPPPKATEAECETLGE    MEME-10    18 MQPPPPKNTKNECETVVE
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.38
+	   3   0.31  0.34
+	   4   0.36  0.17  0.17
+	   5   0.40  0.24  0.22  0.62
+	   6   0.33  0.22  0.20  0.25  0.25
+	   7   0.29  0.17  0.21  0.58  0.41  0.23
+	   8   0.46  0.32  0.26  0.32  0.31  0.68  0.21
+	   9   0.31  0.19  0.20  0.67  0.47  0.28  0.66  0.36
+	  10   0.29  0.31  0.66  0.33  0.37  0.31  0.33  0.49  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5, 8, 9 and 10 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 43 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+EOD36399.1                         hypothetical protein EMIHU...    0.066    291
+EOD26108.1                         hypothetical protein EMIHU...    0.081    291
+EOD16256.1                         hypothetical protein EMIHU...     0.94    591
+EOD41927.1                         hypothetical protein EMIHU...      1.2    299
+EOD21982.1                         hypothetical protein EMIHU...      1.4    202
+EOD11340.1                         hypothetical protein EMIHU...      1.7    258
+EOD36333.1                         hypothetical protein EMIHU...      1.7     90
+EOD09984.1                         hypothetical protein EMIHU...        2    555
+EOD13623.1                         hypothetical protein EMIHU...        2    555
+EOD13668.1                         hypothetical protein EMIHU...      2.2     81
+EOD25761.1                         hypothetical protein EMIHU...      2.2     81
+EOD36879.1                         hypothetical protein EMIHU...      2.5    276
+EOD13790.1                         hypothetical protein EMIHU...      2.6     80
+EOD09506.1                         hypothetical protein EMIHU...      3.2    378
+EOD14584.1                         hypothetical protein EMIHU...      3.9    352
+EOD26662.1                         hypothetical protein EMIHU...        4    102
+EOD13815.1                         hypothetical protein EMIHU...      4.2    182
+EOD14795.1                         hypothetical protein EMIHU...      4.2    198
+EOD26483.1                         hypothetical protein EMIHU...      4.6    176
+EOD23811.1                         hypothetical protein EMIHU...      4.7    348
+EOD34224.1                         hypothetical protein EMIHU...        5    219
+EOD06576.1                         hypothetical protein EMIHU...      5.7    739
+EOD26814.1                         hypothetical protein EMIHU...        6    150
+EOD14377.1                         hypothetical protein EMIHU...      6.1    102
+EOD38906.1                         hypothetical protein EMIHU...      6.5    495
+EOD11392.1                         hypothetical protein EMIHU...      7.1    469
+EOD30026.1                         hypothetical protein EMIHU...      7.4    189
+EOD18503.1                         hypothetical protein EMIHU...      7.5    219
+EOD07795.1                         hypothetical protein EMIHU...      7.5    341
+EOD17414.1                         peptidyl-prolyl cis-trans ...      7.9    186
+EOD29480.1                         peptidyl-prolyl cis-trans ...      7.9    186
+EOD32447.1                         hypothetical protein EMIHU...      8.3    383
+EOD17115.1                         hypothetical protein EMIHU...      8.3    358
+EOD39023.1                         hypothetical protein EMIHU...      8.3    358
+EOD28553.1                         hypothetical protein EMIHU...      8.8    159
+EOD18421.1                         hypothetical protein EMIHU...      8.8    159
+EOD08052.1                         hypothetical protein EMIHU...      9.1    131
+EOD10736.1                         hypothetical protein EMIHU...      9.1    131
+EOD16137.1                         hypothetical protein EMIHU...      9.1    160
+EOD40887.1                         aspartate-semialdehyde deh...      9.6    408
+EOD33147.1                         hypothetical protein EMIHU...      9.8    947
+EOD16063.1                         hypothetical protein EMIHU...      9.8    411
+EOD17377.1                         hypothetical protein EMIHU...      9.8    411
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+EOD36399.1                            0.066  87-[9]-10-[10]-149-[6]-6
+EOD26108.1                            0.081  87-[9]-10-[10]-149-[6]-6
+EOD16256.1                             0.94  186-[3]-209-[7]-178
+EOD41927.1                              1.2  99-[9]-133-[4]-13-[7]-22
+EOD21982.1                              1.4  1-[6]-37-[5]-2-[4]-125
+EOD11340.1                              1.7  140-[7]-110
+EOD36333.1                              1.7  15-[6]-11-[9]-2-[9]-12-[9]-13
+EOD09984.1                                2  215-[5]-130-[1]-181
+EOD13623.1                                2  215-[5]-130-[1]-181
+EOD13668.1                              2.2  61-[7]-12
+EOD25761.1                              2.2  61-[7]-12
+EOD36879.1                              2.5  1-[7]-163-[9]-96
+EOD13790.1                              2.6  63-[4]-1
+EOD09506.1                              3.2  354-[4]-8
+EOD14584.1                              3.9  301-[7]-43
+EOD26662.1                                4  24-[10]-60
+EOD13815.1                              4.2  67-[6]-31-[9]-63
+EOD14795.1                              4.2  36-[4]-146
+EOD26483.1                              4.6  1-[2]-25-[9]-129
+EOD23811.1                              4.7  8-[6]-327
+EOD34224.1                                5  29-[4]-174
+EOD06576.1                              5.7  23-[7]-155-[6]-156-[2]-316-[4]-39
+EOD26814.1                                6  15-[6]-89-[1]-12
+EOD14377.1                              6.1  24-[10]-60
+EOD38906.1                              6.5  164-[9]-46-[5]-158-[8]-103
+EOD11392.1                              7.1  185-[5]-152-[6]-23-[8]-31-[2]-36
+EOD30026.1                              7.4  6-[7]-5-[4]-154
+EOD18503.1                              7.5  29-[4]-174
+EOD07795.1                              7.5  43-[8]-185-[2]-92
+EOD17414.1                              7.9  126-[2]-47
+EOD29480.1                              7.9  126-[2]-47
+EOD32447.1                              8.3  53-[7]-126-[4]-100-[6]-67
+EOD17115.1                              8.3  61-[3]-178-[5]-101
+EOD39023.1                              8.3  61-[3]-178-[5]-101
+EOD28553.1                              8.8  16-[6]-90-[5]-32
+EOD18421.1                              8.8  126-[8]-25
+EOD08052.1                              9.1  96-[8]-10-[4]-1
+EOD10736.1                              9.1  96-[8]-10-[4]-1
+EOD16137.1                              9.1  17-[6]-90-[5]-32
+EOD40887.1                              9.6  94-[1]-202-[4]-75
+EOD33147.1                              9.8  376-[1]-28-[3]-193-[6]-23-[7]-275
+EOD16063.1                              9.8  96-[4]-125-[4]-144-[6]-1
+EOD17377.1                              9.8  96-[4]-125-[4]-144-[6]-1
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+EOD36399.1
+  hypothetical protein EMIHUDRAFT_423306 [Emiliania huxleyi CCMP1516]
+  LENGTH = 291  COMBINED P-VALUE = 1.70e-06  E-VALUE =    0.066
+  DIAGRAM: 87-[9]-10-[10]-149-[6]-6
+
+                 [9]               [10]
+                 2.5e-06           1.5e-05
+                 FPPIPRLP          MQPPPPKNTKNECETVVE
+                 +++ ++ +          ++++  ++++++ ++ ++
+76   EKDVAKFLQQQGFPPLPKVNGLSPLVQYIGAAPPANIDGSKQKERAFDSTLLVKFLYPSGWLVETPTLTENGEAG
+
+                                                    [6]
+                                                    2.3e-05
+                                                    SWRAAMLGRTPPP
+                                                    + +++++ +   +
+226  LTRAGFTVDRKGTACVHVVGGAIVGLVTGTTGQRFKSLEADLRACTESFRAYAVKKPDFAFLNGAA
+
+
+EOD26108.1
+  hypothetical protein EMIHUDRAFT_443487 [Emiliania huxleyi CCMP1516]
+  LENGTH = 291  COMBINED P-VALUE = 2.10e-06  E-VALUE =    0.081
+  DIAGRAM: 87-[9]-10-[10]-149-[6]-6
+
+                 [9]               [10]
+                 2.5e-06           1.5e-05
+                 FPPIPRLP          MQPPPPKNTKNECETVVE
+                 +++ ++ +          ++++  ++++++ ++ ++
+76   EKDVAKFLQQQGFPPLPKVNGLSPLVQYIGAAPPANIDGSKQKERAFDSTLLVKFLYPSGWLVETPTLTENGEAG
+
+                                                    [6]
+                                                    2.3e-05
+                                                    SWRAAMLGRTPPP
+                                                    + +++++ +   +
+226  LTRAGFTVDRKGTACVHVVGGAIVGLVTGTTGQRFKSLEADLRACTESFRAYAVKKPDFAFLNGAA
+
+
+EOD16256.1
+  hypothetical protein EMIHUDRAFT_102866 [Emiliania huxleyi CCMP1516]
+  LENGTH = 591  COMBINED P-VALUE = 2.45e-05  E-VALUE =     0.94
+  DIAGRAM: 186-[3]-209-[7]-178
+
+                                         [3]
+                                         1.8e-06
+                                         AESGCEWVKE
+                                         +++ + ++++
+151  AGTSLLTDVRELRAASAAELRRLRRSLRRAPPFSTAAEPACSWLSRLGLDGGAPCPLSGERSGGLQRWMLANALV
+
+                                   [7]
+                                   1.3e-07
+                                   PPIPRLLP
+                                   ++++ +++
+376  WRAEKRAVLEAAGQESLRFELVARPSPPPPPPLPSLLPLPPLPSPVSDFAPSPPPPPGQAAAASPLVHRPPMVDA
+
+
+EOD41927.1
+  hypothetical protein EMIHUDRAFT_461035 [Emiliania huxleyi CCMP1516]
+  LENGTH = 299  COMBINED P-VALUE = 3.02e-05  E-VALUE =      1.2
+  DIAGRAM: 99-[9]-133-[4]-13-[7]-22
+
+                             [9]
+                             3.3e-05
+                             FPPIPRLP
+                             +++ +  +
+76   GCADYHCCVEAVPYPSPPPSPPPPFPPLPPMPPPSPPPAPPPYRLCDLEHDCDNKGACGVCLKELGRFFDVGYSL
+
+                    [4]                          [7]
+                    1.3e-05                      6.8e-06
+                    LPDFPDPFTLPPIPRL             PPIPRLLP
+                     +  +++  +++++               ++++  ++
+226  VFERVECNVVMPSPPPPSLPSPPALPPLPPRPPPPPRPPPSPPSPPIPPNVPADGEDDPHRVLEDVARRDVGGG
+
+
+EOD21982.1
+  hypothetical protein EMIHUDRAFT_240649 [Emiliania huxleyi CCMP1516]
+  LENGTH = 202  COMBINED P-VALUE = 3.56e-05  E-VALUE =      1.4
+  DIAGRAM: 1-[6]-37-[5]-2-[4]-125
+
+      [6]                                               [5]       [4]
+      5.7e-05                                           2.6e-05   4.8e-07
+      SWRAAMLGRTPPP                                     LNLPDFPD  LPDFPDPFTLPPIP
+      +  +++ + ++++                                     ++++  ++  ++   ++ ++++++
+1    MAKGAAMGGEAVAAEVRARVGRWERGEASPSREWEEEGGEEEGAAPPSRGGLQLPPRPERQLPFVYDPAKLPPLP
+
+     
+     
+     RL
+      +
+76   VLDDRGVANCPEQHPPSAWQHHPAELTPEELAEREAAQRRAAFEAEFDRRAKQLGDAPPEARKIVPGEPFSPLEQ
+
+
+EOD11340.1
+  hypothetical protein EMIHUDRAFT_214667 [Emiliania huxleyi CCMP1516]
+  LENGTH = 258  COMBINED P-VALUE = 4.32e-05  E-VALUE =      1.7
+  DIAGRAM: 140-[7]-110
+
+                                                                      [7]
+                                                                      2.3e-06
+                                                                      PPIPRLLP
+                                                                      ++++ + +
+76   HAASEDVARPVGHCPRHTSNHRFLLPMAARLAACYYLMQKEEAERSFSYELVLRVRPDHIFSKRVPPVPHLFPGS
+
+
+EOD36333.1
+  hypothetical protein EMIHUDRAFT_447024 [Emiliania huxleyi CCMP1516]
+  LENGTH = 90  COMBINED P-VALUE = 4.43e-05  E-VALUE =      1.7
+  DIAGRAM: 15-[6]-11-[9]-2-[9]-12-[9]-13
+
+                    [6]                     [9]       [9]                 [9]
+                    7.4e-05                 1.7e-05   4.3e-05             1.7e-0
+                    SWRAAMLGRTPPP           FPPIPRLP  FPPIPRLP            FPPIPR
+                    + +   +++++             ++ +++    ++ +++              ++ +++
+1    MSTRHNTVFPRCCRWARRSGVLGKSTMLAQQLSQRGGARFPEIPRDSTLFPEIPRDFLRFYLIPRDSPRFPEIPR
+
+     
+     5
+     LP
+     
+76   DSPRGGGRASGGFGP
+
+
+EOD09984.1
+  hypothetical protein EMIHUDRAFT_437971 [Emiliania huxleyi CCMP1516]
+  LENGTH = 555  COMBINED P-VALUE = 5.17e-05  E-VALUE =        2
+  DIAGRAM: 215-[5]-130-[1]-181
+
+                                                                      [5]
+                                                                      6.9e-07
+                                                                      LNLPDFPD
+                                                                      +++++ ++
+151  LTRGDFERLTWSAEQMAKVSAKVVTDRVASDIEQMAKVSAKEITDRVASDIDKVVSDAGRLASSVIQLPDLPDGL
+
+                                                          [1]
+                                                          4.1e-07
+                                                          TQTQLGNCMGALGLHIGSRFD
+                                                           ++ +++++ + +  +++ +
+301  LGALNSSLALASRQLASRRLLGASFALGSAAGLALHYALSGLGGAGAATAAAAARAIVGGCLLAYSTTLANQLGA
+
+
+EOD13623.1
+  hypothetical protein EMIHUDRAFT_445828 [Emiliania huxleyi CCMP1516]
+  LENGTH = 555  COMBINED P-VALUE = 5.17e-05  E-VALUE =        2
+  DIAGRAM: 215-[5]-130-[1]-181
+
+                                                                      [5]
+                                                                      6.9e-07
+                                                                      LNLPDFPD
+                                                                      +++++ ++
+151  LTRGDFERLTWSAEQMAKVSAKVVTDRVASDIEQMAKVSAKEITDRVASDIDKVVSDAGRLASSVIQLPDLPDGL
+
+                                                          [1]
+                                                          4.1e-07
+                                                          TQTQLGNCMGALGLHIGSRFD
+                                                           ++ +++++ + +  +++ +
+301  LGALNSSLALASRQLASRRLLGASFALGSAAGLALHYALSGLGGAGAATAAAAARAIVGGCLLAYSTTLANQLGA
+
+
+EOD13668.1
+  hypothetical protein EMIHUDRAFT_246736 [Emiliania huxleyi CCMP1516]
+  LENGTH = 81  COMBINED P-VALUE = 5.80e-05  E-VALUE =      2.2
+  DIAGRAM: 61-[7]-12
+
+                                                                  [7]
+                                                                  9.2e-06
+                                                                  PPIPRLLP
+                                                                   +++++ +
+1    MLPPFCAQAAALSVRQPKATTEPTVATEAPEPPAAPDTSPKMEVEPAAPDAQALATGAFYHKPLPRLPPSAPSLE
+
+
+EOD25761.1
+  hypothetical protein EMIHUDRAFT_205877 [Emiliania huxleyi CCMP1516]
+  LENGTH = 81  COMBINED P-VALUE = 5.80e-05  E-VALUE =      2.2
+  DIAGRAM: 61-[7]-12
+
+                                                                  [7]
+                                                                  9.2e-06
+                                                                  PPIPRLLP
+                                                                   +++++ +
+1    MLPPFCAQAAALSVRQPKATTEPTVATEAPEPPAAPDTSPKMEVEPAAPDAQALATGAFYHKPLPRLPPSAPSLE
+
+
+EOD36879.1
+  hypothetical protein EMIHUDRAFT_449129, partial [Emiliania huxleyi CCMP1516]
+  LENGTH = 276  COMBINED P-VALUE = 6.49e-05  E-VALUE =      2.5
+  DIAGRAM: 1-[7]-163-[9]-96
+
+      [7]
+      5.9e-05
+      PPIPRLLP
+      + ++  ++
+1    MLALPQALPSGRSPLFVVGIIGSDPSQDDAALNLAALLSEADTFRSAADVSAVVAHHDAERGVLYLAVAANAPPP
+
+                           [9]
+                           1.3e-06
+                           FPPIPRLP
+                           + + ++++
+151  NDRDASRAASGADVPAPVLGAVFGPMPRLPGLAAARPATDPALQPAGGGAAAAPASGGGGGGGGARKARPALNSA
+
+
+EOD13790.1
+  hypothetical protein EMIHUDRAFT_356833 [Emiliania huxleyi CCMP1516]
+  LENGTH = 80  COMBINED P-VALUE = 6.78e-05  E-VALUE =      2.6
+  DIAGRAM: 63-[4]-1
+
+                                                                    [4]
+                                                                    1.1e-05
+                                                                    LPDFPDPFTLPP
+                                                                      +  ++ +++
+1    MLDDVPAPGAGSKKRDADAIARDAAGVARMKAKAASAEGAVSTDFSTMTAKEAAAAKRAAFEAKQASAEPLSLPS
+
+     
+     
+     IPRL
+     ++++
+76   LPKLF
+
+
+EOD09506.1
+  hypothetical protein EMIHUDRAFT_197976 [Emiliania huxleyi CCMP1516]
+  LENGTH = 378  COMBINED P-VALUE = 8.37e-05  E-VALUE =      3.2
+  DIAGRAM: 354-[4]-8
+
+                                                           [4]
+                                                           2.3e-07
+                                                           LPDFPDPFTLPPIPRL
+                                                           ++   +  ++++++
+301  RPECNIFRVELTGLNKPGDCVHDALQKEGCTLVIGGITYDAAADDIQVAANYSFLPVKISLTKLPPIPLMVGAGR
+
+
+EOD14584.1
+  hypothetical protein EMIHUDRAFT_96292 [Emiliania huxleyi CCMP1516]
+  LENGTH = 352  COMBINED P-VALUE = 1.01e-04  E-VALUE =      3.9
+  DIAGRAM: 301-[7]-43
+
+      [7]
+      1.0e-06
+      PPIPRLLP
+      ++++++ +
+301  APPLPRLPPEPEGARGGEPTDACADHASTDAERPPPELAWRDESADTPRFAV
+
+
+EOD26662.1
+  hypothetical protein EMIHUDRAFT_457345 [Emiliania huxleyi CCMP1516]
+  LENGTH = 102  COMBINED P-VALUE = 1.03e-04  E-VALUE =        4
+  DIAGRAM: 24-[10]-60
+
+                             [10]
+                             2.4e-06
+                             MQPPPPKNTKNECETVVE
+                             + ++++ +  ++++  ++
+1    MAGITVGGAHPLSLTSWEAEAKNPASPPPPLQCVDSCNAAIEFLFGIPAKCLLASPFTYAPLKEKEEVSAVKPAV
+
+
+EOD13815.1
+  hypothetical protein EMIHUDRAFT_311205 [Emiliania huxleyi CCMP1516]
+  LENGTH = 182  COMBINED P-VALUE = 1.10e-04  E-VALUE =      4.2
+  DIAGRAM: 67-[6]-31-[9]-63
+
+                                                                        [6]
+                                                                        7.7e-05
+                                                                        SWRAAMLG
+                                                                        +  + +++
+1    MAAMARKCRRMEGFLNNYAFGVRYEDEPGFNLRATDLRPPPPNANLDDLTRGATFCLCPSGTGWGMRAFHAVALG
+
+                                         [9]
+                                         2.2e-07
+     RTPPP                               FPPIPRLP
+       +                                 +  +++++
+76   CIPVIIQDDGSGSYPSVLQAFEGPLLDWASLAVRLTFADIPRLPSLLRALAADHEALAAKRRALVAALPRLLWRE
+
+
+EOD14795.1
+  hypothetical protein EMIHUDRAFT_448222 [Emiliania huxleyi CCMP1516]
+  LENGTH = 198  COMBINED P-VALUE = 1.10e-04  E-VALUE =      4.2
+  DIAGRAM: 36-[4]-146
+
+                                         [4]
+                                         4.5e-06
+                                         LPDFPDPFTLPPIPRL
+                                         +++ +   ++   +++
+1    MRSSLLTVAAAVSSAAHIFQRQPTIQLVNARRSAVPLPAIPQLPRLLRPPRLSAGEADDEIAALEAKLAEAKRAK
+
+
+EOD26483.1
+  hypothetical protein EMIHUDRAFT_55989, partial [Emiliania huxleyi CCMP1516]
+  LENGTH = 176  COMBINED P-VALUE = 1.20e-04  E-VALUE =      4.6
+  DIAGRAM: 1-[2]-25-[9]-129
+
+      [2]                                   [9]
+      6.1e-05                               6.5e-05
+      WYDEWRERIECWY                         FPPIPRLP
+      +++    +++ +                          ++ ++ +
+1    VFVRHDEARLDTWRLVLSGPVDTPYAHGLFVFDVYAPPEYPSIPPLVHFETTGGGTVKFNPNLYADGKAAALARS
+
+
+EOD23811.1
+  hypothetical protein EMIHUDRAFT_469409 [Emiliania huxleyi CCMP1516]
+  LENGTH = 348  COMBINED P-VALUE = 1.23e-04  E-VALUE =      4.7
+  DIAGRAM: 8-[6]-327
+
+             [6]
+             9.9e-07
+             SWRAAMLGRTPPP
+             +  +++++++ ++
+1    MPFSLVCFAVAAAAVGRAAAAAIPDFPAEPPHLPPGPPTPPPYPPGKAPLPPPSAPPFPPAERICDSSGNCMERT
+
+
+EOD34224.1
+  hypothetical protein EMIHUDRAFT_98634 [Emiliania huxleyi CCMP1516]
+  LENGTH = 219  COMBINED P-VALUE = 1.30e-04  E-VALUE =        5
+  DIAGRAM: 29-[4]-174
+
+                                  [4]
+                                  5.7e-06
+                                  LPDFPDPFTLPPIPRL
+                                  +   +++ ++++ + +
+1    MFHPGAGASRPGVTGGLPFWLVPPPPSPPVLPPPSPLVLPPFPPLGAAGLFAALPALMRRAAQRRLKHQLTADGA
+
+
+EOD06576.1
+  hypothetical protein EMIHUDRAFT_453443 [Emiliania huxleyi CCMP1516]
+  LENGTH = 739  COMBINED P-VALUE = 1.49e-04  E-VALUE =      5.7
+  DIAGRAM: 23-[7]-155-[6]-156-[2]-316-[4]-39
+
+                            [7]
+                            1.3e-05
+                            PPIPRLLP
+                              ++++++
+1    MGVCGSKQDVVEVATASQKPQKQDSVPKLLPEEAAAEKARDDEQEIGETSLEMINVGGIETDAPGGTQRRGYLVT
+
+                                         [6]
+                                         5.0e-06
+                                         SWRAAMLGRTPPP
+                                         + ++++ + + ++
+151  ELVTLLPSLATASLRRALAEGRRDLGASCHALVRVLAERAAAQGEVAPPLYMALRGVRRGDRPLHGMVEDEPGFA
+
+                                                            [2]
+                                                            3.9e-05
+                                                            WYDEWRERIECWY
+                                                              ++  +++++ +
+301  SYVLPPNTLLRLVKVEGPPFTATFRRWTPWCTDADGDRATYDHLTGTSYFDKGDHYEDQDGNRVDCPYDAAATIE
+
+              [4]
+              2.5e-06
+              LPDFPDPFTLPPIPRL
+              ++  +++  +++ +
+676  LPPLTMLQVMPRHPAPADLPPPPAEGSSADAVVAWSRMKHDVTWERTEDEKDYERIVAVPTFTG
+
+
+EOD26814.1
+  hypothetical protein EMIHUDRAFT_236498 [Emiliania huxleyi CCMP1516]
+  LENGTH = 150  COMBINED P-VALUE = 1.56e-04  E-VALUE =        6
+  DIAGRAM: 15-[6]-89-[1]-12
+
+                    [6]
+                    7.7e-05
+                    SWRAAMLGRTPPP
+                    +   ++++++ ++
+1    MSGRCLCCTVLLWHASRVTAATGRRLGASARLGAAIAGQRNSPGLNAQPGAPARAGASHGACNAQQCSPRLAQMR
+
+                                               [1]
+                                               1.4e-06
+                                               TQTQLGNCMGALGLHIGSRFD
+                                               +   ++  + ++++ +  ++
+76   PPSQPTVHRLLKKHCDECGTAATHGRLSLYNKLYSKIALYLYNARTLQLYFTALSLYILYRLHPPSALCPPTKAH
+
+
+EOD14377.1
+  hypothetical protein EMIHUDRAFT_211801 [Emiliania huxleyi CCMP1516]
+  LENGTH = 102  COMBINED P-VALUE = 1.57e-04  E-VALUE =      6.1
+  DIAGRAM: 24-[10]-60
+
+                             [10]
+                             2.4e-06
+                             MQPPPPKNTKNECETVVE
+                             + ++++ +  ++++  ++
+1    MAGITVGGAHPLSLTSWEAEAKNPASPPPPLQCVDSCNAAIEFLFGIPAKCLLASPFTYAPLKEKEEASAVKPAV
+
+
+EOD38906.1
+  hypothetical protein EMIHUDRAFT_109134 [Emiliania huxleyi CCMP1516]
+  LENGTH = 495  COMBINED P-VALUE = 1.69e-04  E-VALUE =      6.5
+  DIAGRAM: 164-[9]-46-[5]-158-[8]-103
+
+                   [9]                                                   [5]
+                   5.8e-05                                               2.6e-05
+                   FPPIPRLP                                              LNLPDFP
+                    + ++++                                               +++  ++
+151  RALKALLSDHPSLGKPLIPRLGVFWDFGSLHQHPDPANGVLRTEEQNALFKQGLGCLGTLYSHKYTFVLRLTSFP
+
+     
+     
+     D
+     +
+226  DGHKAEEQAEGTNVAKYFDRGWCFTEQSWAGLTKAGFLSLDLGKMRAGTEYDCGRLVDDCRKDGGRRPPLLPSAF
+
+              [8]
+              9.6e-06
+              ALGKPPAA
+              ++++  ++
+376  DEGCKALAAALGKEGAAPRLEELTLGENKLGDEGCKALAAALKEGAAPSLKARDATPRHTPLPHPMLIAHPLACR
+
+
+EOD11392.1
+  hypothetical protein EMIHUDRAFT_214748 [Emiliania huxleyi CCMP1516]
+  LENGTH = 469  COMBINED P-VALUE = 1.84e-04  E-VALUE =      7.1
+  DIAGRAM: 185-[5]-152-[6]-23-[8]-31-[2]-36
+
+                                        [5]
+                                        2.6e-05
+                                        LNLPDFPD
+                                        +++  +++
+151  ANGVMRTEEQNALFKQGLSCLGTLYSHPKTSISWVLRLTSFPDGHKAKDQATGTNVAKYFDRGWCATENAWASLT
+
+                                                  [6]
+                                                  8.9e-06
+                                                  SWRAAMLGRTPPP
+                                                    +++++++  ++
+301  TELIYDDLGWGDAEAAQLAEVLASGAAPRLERLWLNRNQIGDEGCKARAAALGKEGAAPRLMVLWLNSNQIGDEG
+
+           [8]                                    [2]
+           2.0e-05                                1.2e-05
+           ALGKPPAA                               WYDEWRERIECWY
+           ++++  ++                               +++  ++ +++ +
+376  CKALAAALGKLGAAPRLMGLLLNSNQIGDEGCKALYATLGKPSSPWLELRNNQIDCQWRAADLDATGDDCMVAAC
+
+
+EOD30026.1
+  hypothetical protein EMIHUDRAFT_99488 [Emiliania huxleyi CCMP1516]
+  LENGTH = 189  COMBINED P-VALUE = 1.91e-04  E-VALUE =      7.4
+  DIAGRAM: 6-[7]-5-[4]-154
+
+           [7]          [4]
+           1.1e-05      5.8e-07
+           PPIPRLLP     LPDFPDPFTLPPIPRL
+            + +++++     +   +++ ++++ +++
+1    MLRLALRPAPRLLPPAPRLLLPPPAPPRLPPAPRLLLARPLSSSAAGLDRPMQPAAAAAAKRSKRSVAGVLSIRN
+
+
+EOD18503.1
+  hypothetical protein EMIHUDRAFT_96206 [Emiliania huxleyi CCMP1516]
+  LENGTH = 219  COMBINED P-VALUE = 1.94e-04  E-VALUE =      7.5
+  DIAGRAM: 29-[4]-174
+
+                                  [4]
+                                  5.7e-06
+                                  LPDFPDPFTLPPIPRL
+                                  +   +++ ++++ + +
+1    MFHPGAGASRPGVTGGLPFWLVPPPPSPPVLPPPSPLVLPPFPPLGAAGLFAALPALMRRAAQRRLKHQLTADGA
+
+
+EOD07795.1
+  hypothetical protein EMIHUDRAFT_249410 [Emiliania huxleyi CCMP1516]
+  LENGTH = 341  COMBINED P-VALUE = 1.95e-04  E-VALUE =      7.5
+  DIAGRAM: 43-[8]-185-[2]-92
+
+                                                [8]
+                                                1.6e-05
+                                                ALGKPPAA
+                                                +++++  +
+1    MCQSEAPDAAPVKPDAAPPASKPKPQAEELAAIRHSPQRKRAIALGRPSDAAGECDVVADPRFDIDKTIFGTLTS
+
+                [2]
+                7.3e-05
+                WYDEWRERIECWY
+                ++   ++ +   +
+226  IHLIDFLPATAWQVTFNDYFAVFFVRLHALLQRAGKLPPPLPGRVCHSLLHISFVFLLLPGRTSSRSKLLAGVAY
+
+
+EOD17414.1
+  peptidyl-prolyl cis-trans isomerase [Emiliania huxleyi CCMP1516]
+  LENGTH = 186  COMBINED P-VALUE = 2.05e-04  E-VALUE =      7.9
+  DIAGRAM: 126-[2]-47
+
+                                                        [2]
+                                                        1.6e-05
+                                                        WYDEWRERIECWY
+                                                        +++  ++ + +++
+76   DGTYKNLVTGATEKRSGGGNIKDEFAAKISNEPGTLSMANTGSPNSGGSQFFMNTVHNDFLDWFSPGESKHPVFG
+
+
+EOD29480.1
+  peptidyl-prolyl cis-trans isomerase [Emiliania huxleyi CCMP1516]
+  LENGTH = 186  COMBINED P-VALUE = 2.05e-04  E-VALUE =      7.9
+  DIAGRAM: 126-[2]-47
+
+                                                        [2]
+                                                        1.6e-05
+                                                        WYDEWRERIECWY
+                                                        +++  ++ + +++
+76   DGTYKNLVTGATEKRSGGGNIKDEFAAKISNEPGTLSMANTGSPNSGGSQFFMNTVHNDFLDWFSPGESKHPVFG
+
+
+EOD32447.1
+  hypothetical protein EMIHUDRAFT_230762 [Emiliania huxleyi CCMP1516]
+  LENGTH = 383  COMBINED P-VALUE = 2.14e-04  E-VALUE =      8.3
+  DIAGRAM: 53-[7]-126-[4]-100-[6]-67
+
+                                                          [7]
+                                                          5.7e-06
+                                                          PPIPRLLP
+                                                          +++++  +
+1    MSAVDGGKLQLGKPLIEPSVPAAASRAAPPLVGDDTLRNRIEPCLCAPAARFFLPMPRKMPFFASLGETASAAPS
+
+                                          [4]
+                                          8.4e-05
+                                          LPDFPDPFTLPPIPRL
+                                          +    ++++ + +
+151  LVRHRSLLLLLALVLHKCATDGLTRWTRLQTSYSGATVAVLSEVFKFPLIVAAICSIGGGASQIAPVFKEALSKP
+
+        [6]
+        8.6e-05
+        SWRAAMLGRTPPP
+        +  +++ + ++++
+301  ARASASATAAGVAPAAVLWGVFLVLFSSFISALPNVAYEKARAGRVHVLKTEGENQYVNNVQVTVWIMIWIGARK
+
+
+EOD17115.1
+  hypothetical protein EMIHUDRAFT_445285 [Emiliania huxleyi CCMP1516]
+  LENGTH = 358  COMBINED P-VALUE = 2.17e-04  E-VALUE =      8.3
+  DIAGRAM: 61-[3]-178-[5]-101
+
+                                                                  [3]
+                                                                  1.7e-06
+                                                                  AESGCEWVKE
+                                                                  + ++++ +++
+1    MRIALTALLSPLVAAAAVVTSPVGARALGSLTISEAGLGTLNLALDKKENDEAAAGALQASVAAGCNFVDTAEAY
+
+                             [5]
+                             2.9e-06
+                             LNLPDFPD
+                              +++++++
+226  AELSVPVISYFPLANGLLSGRYDADNLPKFPKSLTMKKYVVGGADGFPDGGYTPLLRELQRIAAARGKSVPQVSI
+
+
+EOD39023.1
+  hypothetical protein EMIHUDRAFT_439942 [Emiliania huxleyi CCMP1516]
+  LENGTH = 358  COMBINED P-VALUE = 2.17e-04  E-VALUE =      8.3
+  DIAGRAM: 61-[3]-178-[5]-101
+
+                                                                  [3]
+                                                                  1.7e-06
+                                                                  AESGCEWVKE
+                                                                  + ++++ +++
+1    MRIALTALLSPLVAAAAVVTSPVGARALGSLTISEAGLGTLNLALDKKENDEAAAGALQASVAAGCNFVDTAEAY
+
+                             [5]
+                             2.9e-06
+                             LNLPDFPD
+                              +++++++
+226  AELSVPVISYFPLANGLLSGRYDADNLPKFPKSLTMKKYVVGGADGFPDGGYTPLLRELQRIAAARGKSVPQVSI
+
+
+EOD28553.1
+  hypothetical protein EMIHUDRAFT_353504 [Emiliania huxleyi CCMP1516]
+  LENGTH = 159  COMBINED P-VALUE = 2.29e-04  E-VALUE =      8.8
+  DIAGRAM: 16-[6]-90-[5]-32
+
+                     [6]
+                     3.5e-06
+                     SWRAAMLGRTPPP
+                       ++++ + ++++
+1    MAKGFSKAPPPASKPPKKRAAAAGPAPPPPLSAKAQQASKDFDSLKASGAPEYSIAVRTVSSGGEPSEWYLVGGL
+
+                                                 [5]
+                                                 4.0e-05
+                                                 LNLPDFPD
+                                                  ++ ++++
+76   AVPRSNSEEKAVSMAIFQNEDELLKGAYKFYPKLKASTDKFEYGYKMRDFPDDPWNIASEAATKGSDNPFMDWFN
+
+
+EOD18421.1
+  hypothetical protein EMIHUDRAFT_196674 [Emiliania huxleyi CCMP1516]
+  LENGTH = 159  COMBINED P-VALUE = 2.30e-04  E-VALUE =      8.8
+  DIAGRAM: 126-[8]-25
+
+                                                        [8]
+                                                        3.3e-06
+                                                        ALGKPPAA
+                                                        +++++ ++
+76   FHLVSASSGSKRAHPHVCLPSFCTCASYCHKVATRPDALACKHGLAVLLAEALGRTQSAEHSDVAWANSLSHHLQ
+
+
+EOD08052.1
+  hypothetical protein EMIHUDRAFT_249251 [Emiliania huxleyi CCMP1516]
+  LENGTH = 131  COMBINED P-VALUE = 2.35e-04  E-VALUE =      9.1
+  DIAGRAM: 96-[8]-10-[4]-1
+
+                          [8]               [4]
+                          3.6e-05           9.8e-05
+                          ALGKPPAA          LPDFPDPFTLPPIPRL
+                          + ++  ++          +   ++ + ++ + +
+76   RFTDTERRRMEVMERRKLDEVAKGKVKSHREQVREFNDYLGSLPEHYDLPKVSKGN
+
+
+EOD10736.1
+  hypothetical protein EMIHUDRAFT_215549 [Emiliania huxleyi CCMP1516]
+  LENGTH = 131  COMBINED P-VALUE = 2.35e-04  E-VALUE =      9.1
+  DIAGRAM: 96-[8]-10-[4]-1
+
+                          [8]               [4]
+                          3.6e-05           9.8e-05
+                          ALGKPPAA          LPDFPDPFTLPPIPRL
+                          + ++  ++          +   ++ + ++ + +
+76   RFTDTERRRMEVMERRKLDEVAKGKVKSHREQVREFNDYLGSLPEHYDLPKVSKGN
+
+
+EOD16137.1
+  hypothetical protein EMIHUDRAFT_370468 [Emiliania huxleyi CCMP1516]
+  LENGTH = 160  COMBINED P-VALUE = 2.36e-04  E-VALUE =      9.1
+  DIAGRAM: 17-[6]-90-[5]-32
+
+                      [6]
+                      3.5e-06
+                      SWRAAMLGRTPPP
+                        ++++ + ++++
+1    MVAKGFSKAPPPASKPPKKRAAAAGPAPPPPLSAKAQQASKDFDSLKASGAPEYSIAVRTVSSGGEPSEWYLVGG
+
+                                                  [5]
+                                                  4.0e-05
+                                                  LNLPDFPD
+                                                   ++ ++++
+76   LAVPRSNSEEKAVSMAIFQNEDELLKGAYKFYPKLKASTDKFEYGYKMRDFPDDPWNIASEAATKGSDNPFMDWF
+
+
+EOD40887.1
+  aspartate-semialdehyde dehydrogenase [Emiliania huxleyi CCMP1516]
+  LENGTH = 408  COMBINED P-VALUE = 2.48e-04  E-VALUE =      9.6
+  DIAGRAM: 94-[1]-202-[4]-75
+
+                        [1]
+                        7.1e-05
+                        TQTQLGNCMGALGLHIGSRFD
+                         + ++ +  ++ +  +   +
+76   SCRRLPEVAPIDMMADIAPKKVGVVGVTGAVGQEIVAVLGERGFPVSELRLFASARSAGQPMETGSGTLQIEEFS
+
+                      [4]
+                      2.6e-06
+                      LPDFPDPFTLPPIPRL
+                      +++ +   +   ++ +
+301  YTKEERKVTWETRKIMDLPDLPVSCTCVRIPTLRAHAEAITIETEKPVDLDKAYAALNAAPGVTYDVEVGRVRKN
+
+
+EOD33147.1
+  hypothetical protein EMIHUDRAFT_202342 [Emiliania huxleyi CCMP1516]
+  LENGTH = 947  COMBINED P-VALUE = 2.55e-04  E-VALUE =      9.8
+  DIAGRAM: 376-[1]-28-[3]-193-[6]-23-[7]-275
+
+      [1]                                              [3]
+      1.2e-05                                          8.6e-05
+      TQTQLGNCMGALGLHIGSRFD                            AESGCEWVKE
+      + + + + + +++  ++  ++                             ++ ++ ++
+376  ASADDVASSFPALAKTLGTVLNERPELRPPYAKNFLPLLFNLHQAEPAEKREPICEAIGAYAHAAPPALLSDFFR
+
+                                 [6]                                 [7]
+                                 2.0e-05                             5.4e-07
+                                 SWRAAMLGRTPPP                       PPIPRLLP
+                                 +  + + ++++ +                       + ++++++
+601  LLLVAERAEAAGGPSDAGREEALQGVVVAVCAGLAGKTPHMEVVRAAVVLVKVQLSALPREAVQPLLPRLVPPLL
+
+
+EOD16063.1
+  hypothetical protein EMIHUDRAFT_445503 [Emiliania huxleyi CCMP1516]
+  LENGTH = 411  COMBINED P-VALUE = 2.55e-04  E-VALUE =      9.8
+  DIAGRAM: 96-[4]-125-[4]-144-[6]-1
+
+                          [4]
+                          7.6e-05
+                          LPDFPDPFTLPPIPRL
+                            +  + +++  ++ +
+76   SFDEYYAEQPWLALPFGSRDVKAALSKKYKVSGIPSLVLLDGDGAIITKDGRSAVMEGDFPFTPPTFWDCLGDEF
+
+                 [4]
+                 9.3e-05
+                 LPDFPDPFTLPPIPRL
+                      +++ +  ++ +
+226  PHFLAIPQGDPRKAKLSSFFGVEGIPTLVTVDGATGATINGNARGACGGDPDGLAFPWAPKPVVDFADGCDGIND
+
+                           [6]
+                           4.4e-05
+                           SWRAAMLGRTPPP
+                           ++++  + +++
+376  EGAYYVSDATEATATTIQAFLAAYKAGTLDRKQLGQ
+
+
+EOD17377.1
+  hypothetical protein EMIHUDRAFT_436388 [Emiliania huxleyi CCMP1516]
+  LENGTH = 411  COMBINED P-VALUE = 2.55e-04  E-VALUE =      9.8
+  DIAGRAM: 96-[4]-125-[4]-144-[6]-1
+
+                          [4]
+                          7.6e-05
+                          LPDFPDPFTLPPIPRL
+                            +  + +++  ++ +
+76   SFDEYYAEQPWLALPFGSRDVKAALSKKYKVSGIPSLVLLDGDGAIITKDGRSAVMEGDFPFTPPTFWDCLGDEF
+
+                 [4]
+                 9.3e-05
+                 LPDFPDPFTLPPIPRL
+                      +++ +  ++ +
+226  PHFLAIPQGDPRKAKLSSFFGVEGIPTLVTVDGATGATINGNARGACGGDPDGLAFPWAPKPVVDFADGCDGIND
+
+                           [6]
+                           4.4e-05
+                           SWRAAMLGRTPPP
+                           ++++  + +++
+376  EGAYYVSDATEATATTIQAFLAAYKAGTLDRKQLGQ
+
+********************************************************************************
+
+
+CPU: mablin-mac.local
+Time 1.171 secs.
+
+mast -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_GCA_000372725.1 -ev 10.0 -nostatus /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_000372725.1/protein.faa

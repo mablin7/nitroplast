@@ -1,0 +1,1045 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE protein.faa (peptide)
+	Last updated on Sun Jan 11 17:11:06 2026
+	Database contains 24907 sequences, 12707976 residues
+
+	MOTIFS meme_gb.xml (peptide)
+	MOTIF ID                    ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- --------------------- ------- ----- -------------------
+	    1 TQTQLGACMGALGLHLGSRLD MEME-1     21 TQTQLGNCMGALGLHIGSRFD
+	    2 WLEEWRERLECWW         MEME-2     13 WYDEWRERIECWY
+	    3 AEPGCEWVEE            MEME-3     10 AESGCEWVKE
+	    4 LPDFPEPFSLPPIPRL      MEME-4     16 LPDFPDPFTLPPIPRL
+	    5 LZLPDFPD              MEME-5      8 LNLPDFPD
+	    6 AWRAALLGRAPPP         MEME-6     13 SWRAAMLGRTPPP
+	    7 PPJPRLLP              MEME-7      8 PPIPRLLP
+	    8 ALGKPPAA              MEME-8      8 ALGKPPAA
+	    9 FPPIPRLP              MEME-9      8 FPPIPRLP
+	   10 APPPPPKATEAECETLGE    MEME-10    18 MQPPPPKNTKNECETVVE
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.38
+	   3   0.31  0.34
+	   4   0.36  0.17  0.17
+	   5   0.40  0.24  0.22  0.62
+	   6   0.33  0.22  0.20  0.25  0.25
+	   7   0.29  0.17  0.21  0.58  0.41  0.23
+	   8   0.46  0.32  0.26  0.32  0.31  0.68  0.21
+	   9   0.31  0.19  0.20  0.67  0.47  0.28  0.66  0.36
+	  10   0.29  0.31  0.66  0.33  0.37  0.31  0.33  0.49  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5, 8, 9 and 10 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 39 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+KAL1518698.1                       hypothetical protein AB1Y2...     0.08    585
+KAL1523410.1                       hypothetical protein AB1Y2...     0.25    256
+KAL1514871.1                       hypothetical protein AB1Y2...     0.73    384
+KAL1496682.1                       hypothetical protein AB1Y2...     0.74    577
+KAL1522943.1                       hypothetical protein AB1Y2...      1.4    237
+KAL1528809.1                       hypothetical protein AB1Y2...      1.5    525
+KAL1528810.1                       hypothetical protein AB1Y2...      1.7    535
+KAL1504650.1                       hypothetical protein AB1Y2...      2.1    701
+KAL1520305.1                       hypothetical protein AB1Y2...      2.2   1216
+KAL1511540.1                       hypothetical protein AB1Y2...      2.4    929
+KAL1503898.1                       hypothetical protein AB1Y2...        3    174
+KAL1512190.1                       hypothetical protein AB1Y2...      3.4    276
+KAL1499117.1                       hypothetical protein AB1Y2...      3.6   1281
+KAL1507217.1                       hypothetical protein AB1Y2...      3.8    374
+KAL1515574.1                       hypothetical protein AB1Y2...      4.1    454
+KAL1522684.1                       hypothetical protein AB1Y2...      4.5    803
+KAL1520504.1                       hypothetical protein AB1Y2...      4.8    143
+KAL1526412.1                       hypothetical protein AB1Y2...      4.8    705
+KAL1504923.1                       hypothetical protein AB1Y2...      4.9    299
+KAL1527882.1                       hypothetical protein AB1Y2...      4.9   1772
+KAL1523264.1                       hypothetical protein AB1Y2...      4.9   1205
+KAL1521207.1                       hypothetical protein AB1Y2...      5.1   1059
+KAL1522109.1                       hypothetical protein AB1Y2...      5.1    310
+KAL1522698.1                       hypothetical protein AB1Y2...      5.7    908
+KAL1498999.1                       hypothetical protein AB1Y2...      5.8    300
+KAL1529582.1                       hypothetical protein AB1Y2...        6    202
+KAL1520445.1                       hypothetical protein AB1Y2...      6.1     80
+KAL1495371.1                       hypothetical protein AB1Y2...        7    184
+KAL1495377.1                       hypothetical protein AB1Y2...        7    184
+KAL1522683.1                       hypothetical protein AB1Y2...      7.3    778
+KAL1510887.1                       hypothetical protein AB1Y2...      7.4    266
+KAL1529102.1                       hypothetical protein AB1Y2...      7.6    560
+KAL1526276.1                       hypothetical protein AB1Y2...      8.2    313
+KAL1511054.1                       hypothetical protein AB1Y2...      8.4    447
+KAL1498680.1                       hypothetical protein AB1Y2...      8.7    267
+KAL1511340.1                       hypothetical protein AB1Y2...      8.9    322
+KAL1510348.1                       hypothetical protein AB1Y2...        9    863
+KAL1528069.1                       hypothetical protein AB1Y2...      9.1    178
+KAL1507078.1                       hypothetical protein AB1Y2...      9.2   1608
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+KAL1518698.1                           0.08  250-[6]-190-[4]-42-[3]-64
+KAL1523410.1                           0.25  22-[4]-13-[7]-155-[6]-29
+KAL1514871.1                           0.73  167-[6]-123-[6]-28-[7]-32
+KAL1496682.1                           0.74  46-[5]-194-[8]-84-[9]-229
+KAL1522943.1                            1.4  35-[7]-90-[3]-29-[6]-52
+KAL1528809.1                            1.5  46-[7]-22-[8]-260-[3]-171
+KAL1528810.1                            1.7  56-[7]-22-[8]-260-[3]-171
+KAL1504650.1                            2.1  11-[9]-495-[3]-177
+KAL1520305.1                            2.2  30-[6]-477-[6]-105-[8]-185-[5]-7-[7]-362
+KAL1511540.1                            2.4  439-[3]-196-[6]-42-[4]-50-[7]-155
+KAL1503898.1                              3  27-[9]-30-[4]-93
+KAL1512190.1                            3.4  62-[10]-117-[9]-71
+KAL1499117.1                            3.6  124-[6]-286-[5]-769-[9]-12-[9]-53
+KAL1507217.1                            3.8  141-[7]-93-[7]-124
+KAL1515574.1                            4.1  5-[6]-46-[5]-382
+KAL1522684.1                            4.5  250-[7]-180-[4]-349
+KAL1520504.1                            4.8  1-[8]-33-[7]-93
+KAL1526412.1                            4.8  326-[2]-94-[3]-62-[7]-192
+KAL1504923.1                            4.9  299
+KAL1527882.1                            4.9  281-[4]-408-[5]-217-[9]-27-[7]-15-[9]-369-[3]-397
+KAL1523264.1                            4.9  1-[1]-68-[4]-493-[8]-376-[7]-214
+KAL1521207.1                            5.1  3-[7]-192-[6]-330-[7]-505
+KAL1522109.1                            5.1  101-[7]-28-[6]-160
+KAL1522698.1                            5.7  4-[6]-58-[4]-706-[1]-90
+KAL1498999.1                            5.8  145-[3]-24-[5]-113
+KAL1529582.1                              6  141-[6]-23-[1]-4
+KAL1520445.1                            6.1  15-[3]-55
+KAL1495371.1                              7  121-[5]-55
+KAL1495377.1                              7  121-[5]-55
+KAL1522683.1                            7.3  250-[7]-180-[4]-324
+KAL1510887.1                            7.4  107-[7]-151
+KAL1529102.1                            7.6  468-[6]-79
+KAL1526276.1                            8.2  205-[7]-100
+KAL1511054.1                            8.4  202-[3]-59-[8]-168
+KAL1498680.1                            8.7  77-[4]-144-[6]-17
+KAL1511340.1                            8.9  6-[9]-93-[2]-202
+KAL1510348.1                              9  8-[3]-253-[2]-35-[7]-44-[7]-230-[4]-238
+KAL1528069.1                            9.1  62-[4]-29-[7]-63
+KAL1507078.1                            9.2  25-[4]-293-[1]-540-[6]-598-[10]-84
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+KAL1518698.1
+  hypothetical protein AB1Y20_002985 [Prymnesium parvum]
+  LENGTH = 585  COMBINED P-VALUE = 3.22e-06  E-VALUE =     0.08
+  DIAGRAM: 250-[6]-190-[4]-42-[3]-64
+
+                              [6]
+                              3.0e-05
+                              SWRAAMLGRTPPP
+                              +   ++ ++ + +
+226  IISLGPIKFAAISMRAAAVFVLPSAAFDSYMYGKPVLAWLNILLYNRSAASGAGSQLYGVEPWYFYLINLTLNFN
+
+        [4]                                                       [3]
+        5.7e-06                                                   4.3e-07
+        LPDFPDPFTLPPIPRL                                          AESGCEWVKE
+           +++ + +++  ++                                           +++++ + +
+451  GKEWYRFPSSFFLPPTARLAFIRDGFDGLLPSHFTSPAPQGSRIVHSHFNDQNADEPSAYEKESNCDFIVDLELA
+
+
+KAL1523410.1
+  hypothetical protein AB1Y20_018350 [Prymnesium parvum]
+  LENGTH = 256  COMBINED P-VALUE = 1.01e-05  E-VALUE =     0.25
+  DIAGRAM: 22-[4]-13-[7]-155-[6]-29
+
+                           [4]                          [7]
+                           2.1e-05                      1.0e-08
+                           LPDFPDPFTLPPIPRL             PPIPRLLP
+                            +  + +++ +  +               ++++++++
+1    MILPLLLLLHTTPRPTEPPLSSSPPPPPPFSAPSPPHAAANPAATNATTSSLPLPRLLPPHLSRLLSRLSSFRLS
+
+                                                                     [6]
+                                                                     2.7e-05
+                                                                     SWRAAMLGRTP
+                                                                     + +++++ +++
+151  DKRQLKRAYLTLAKRIHPDKTRDDRAAAAFDALRDAYELLLDPPRRRAHDEALRRAAAAARQTRARRAAAVRRAT
+
+     
+     
+     PP
+     
+226  LTVATTAGRAAWRHKRPTAALLVLLYLRFFL
+
+
+KAL1514871.1
+  hypothetical protein AB1Y20_003954 [Prymnesium parvum]
+  LENGTH = 384  COMBINED P-VALUE = 2.91e-05  E-VALUE =     0.73
+  DIAGRAM: 167-[6]-123-[6]-28-[7]-32
+
+                      [6]
+                      6.3e-05
+                      SWRAAMLGRTPPP
+                      + +++   ++ ++
+151  HRARASLCAGVLSEWRRATRAARRERQAAALAAWRRAAEREEVRWFVRTSTRLLRRWRAACAVAARRRLVVAAAA
+
+        [6]                                      [7]
+        6.3e-05                                  1.0e-06
+        SWRAAMLGRTPPP                            PPIPRLLP
+        +++   + ++++                             ++++++ +
+301  AFHSWRRVCLSRRKAHGVADAVGASPPRGSSTAEMHLAPFELREPPVPRLPPASTRAASILPECGDFSTSKLHKM
+
+
+KAL1496682.1
+  hypothetical protein AB1Y20_014276 [Prymnesium parvum]
+  LENGTH = 577  COMBINED P-VALUE = 2.98e-05  E-VALUE =     0.74
+  DIAGRAM: 46-[5]-194-[8]-84-[9]-229
+
+                                                   [5]
+                                                   7.1e-05
+                                                   LNLPDFPD
+                                                   ++++  +
+1    MPSAQRLSLVEADEGEWEHNPPSPPPDPRTRRAFLLLVLLGASVLALSLPTSPASPTAPTSPASPASPRLQHPRD
+
+                            [8]
+                            1.3e-05
+                            ALGKPPAA
+                             ++++ ++
+226  SGRRVECGAAEPSARLWVLSDGALIGKTAAARPSRAPHWKETICSHEVPQKLCFEVRDDAQATLLGGACASAALS
+
+                                             [9]
+                                             4.0e-07
+                                             FPPIPRLP
+                                              +++++++
+301  AAWAAAKESKHSLELDDGSKLEVHVSRAQPPSPPASPTPPLPPVPRLPARRTKAAIVALLNERFRKGAPSNDLES
+
+
+KAL1522943.1
+  hypothetical protein AB1Y20_017907 [Prymnesium parvum]
+  LENGTH = 237  COMBINED P-VALUE = 5.48e-05  E-VALUE =      1.4
+  DIAGRAM: 35-[7]-90-[3]-29-[6]-52
+
+                                        [7]
+                                        1.8e-06
+                                        PPIPRLLP
+                                          ++ +++
+1    MAVAVLHTALLLLLPARELRPGLSGTARSFDQDGFVYIPSLLPSDAFDKVQRECRSYRSRLKPERNSIANGRLGH
+
+                                                               [3]
+                                                               8.6e-05
+                                                               AESGCEWVKE
+                                                               +++ ++ + +
+76   VLDSRSVAHQTFLTDTMSKRLQSLLGMDDPFVPSEFPIELRHYPHSSGMQWHQDDMLYTQPQCEFVFTVDNDSDS
+
+                           [6]
+                           4.4e-05
+                           SWRAAMLGRTPPP
+                           + ++ +++ +  +
+151  FTEWIDAQNCTSSVWTVPNSLLAIRAGATGPTHRVTPVTRGQRTILKFVYTTGGEKLPDFYAHIDSFPGHRASTK
+
+
+KAL1528809.1
+  hypothetical protein AB1Y20_010133 [Prymnesium parvum]
+  LENGTH = 525  COMBINED P-VALUE = 6.08e-05  E-VALUE =      1.5
+  DIAGRAM: 46-[7]-22-[8]-260-[3]-171
+
+                                                   [7]
+                                                   5.3e-05
+                                                   PPIPRLLP
+                                                   + ++ + +
+1    MLWRRLHSSAPSRLCRQPTRSKSLPAWVDALRRSLDNVTSTPLDASLCMPQLYPFQHTAVQFALSRGGRVLLGHE
+
+      [8]
+      7.2e-06
+      ALGKPPAA
+       +++++ +
+76   MGLGKTPIAVTVCAHYVHAEGPVLVVAPPVLLEQWAAEIVRWAPSVSPCEVQVIRKGSERPKDDAKFVLVSYAML
+
+                                                 [3]
+                                                 7.8e-07
+                                                 AESGCEWVKE
+                                                 + + ++++++
+301  LPLSAAELRHIKTSMENVAVSAEFPFDAPLPSVMAAFHASATAKARAVCEWLGEALFQGEKGNLAVSGKTLLFAH
+
+
+KAL1528810.1
+  hypothetical protein AB1Y20_010133 [Prymnesium parvum]
+  LENGTH = 535  COMBINED P-VALUE = 6.80e-05  E-VALUE =      1.7
+  DIAGRAM: 56-[7]-22-[8]-260-[3]-171
+
+                                                             [7]
+                                                             5.3e-05
+                                                             PPIPRLLP
+                                                             + ++ + +
+1    MSSWIDCARMMLWRRLHSSAPSRLCRQPTRSKSLPAWVDALRRSLDNVTSTPLDASLCMPQLYPFQHTAVQFALS
+
+                [8]
+                7.2e-06
+                ALGKPPAA
+                 +++++ +
+76   RGGRVLLGHEMGLGKTPIAVTVCAHYVHAEGPVLVVAPPVLLEQWAAEIVRWAPSVSPCEVQVIRKGSERPKDDA
+
+                                                           [3]
+                                                           7.8e-07
+                                                           AESGCEWVKE
+                                                           + + ++++++
+301  LPPKRRSRVALPLSAAELRHIKTSMENVAVSAEFPFDAPLPSVMAAFHASATAKARAVCEWLGEALFQGEKGNLA
+
+
+KAL1504650.1
+  hypothetical protein AB1Y20_008431 [Prymnesium parvum]
+  LENGTH = 701  COMBINED P-VALUE = 8.46e-05  E-VALUE =      2.1
+  DIAGRAM: 11-[9]-495-[3]-177
+
+                [9]
+                2.7e-06
+                FPPIPRLP
+                 ++ ++++
+1    MLKGGVKAGGHVPPLPRLNKERHRQPSRQQPAGRWLWFAVIGLCALSSLCVKPARSGVALVFLHGTSPSAATPLI
+
+                                                                     [3]
+                                                                     6.9e-06
+                                                                     AESGCEWVKE
+                                                                        +++ +++
+451  TFRCTGCYHLFGVDLIADSSRQLRVIEVNIAPDLTLSTEGSACNAPAASAAGSNASTRESGELNSSRGCEGVSQS
+
+
+KAL1520305.1
+  hypothetical protein AB1Y20_021897 [Prymnesium parvum]
+  LENGTH = 1216  COMBINED P-VALUE = 8.70e-05  E-VALUE =      2.2
+  DIAGRAM: 30-[6]-477-[6]-105-[8]-185-[5]-7-[7]-362
+
+                                   [6]
+                                   1.4e-05
+                                   SWRAAMLGRTPPP
+                                   + ++++ + +  +
+1    MEVRFLERAAADAVPPPTVLGDHAAAALSLARRAAAFGTASRAARADVSSRAAVEAPLPPRAPRAAAATFAAAEA
+
+                                                                           [6]
+                                                                           7.4e-
+                                                                           SWRAA
+                                                                           ++  +
+451  AARKRRAVEEARLGPGRYFVNTELITKRVTGASFGSAASAVVRKRQSPPPTPGPGAYAPSAPAPPPRGGGAWPRA
+
+     
+     05
+     MLGRTPPP
+      +++   +
+526  STGREAQPRAESSKGVEGGKGVGSGNGGEGGKGVEGGKGVEGGKREGGKAVERGKCMGKPSGGEEARLVVGRRGA
+
+                                           [8]
+                                           1.6e-06
+                                           ALGKPPAA
+                                           +++++ +
+601  GPAFGSAPRYPPPAAGCGSGAPMYDVRHSLTERAVVGGAIGRPAASAPLRRPTGAAEARGVALLRRAQLEALLRG
+
+           [5]            [7]
+           3.5e-06        4.8e-05
+           LNLPDFPD       PPIPRLLP
+           ++++ ++        + +++ ++
+826  EPRTPILRLPPFPPPPPLAVLLLLPRHVPSPPFAPRLHRPKPRVAPWDWAGLSSPPATLDAPPPQPLDHAAVERR
+
+
+KAL1511540.1
+  hypothetical protein AB1Y20_006334 [Prymnesium parvum]
+  LENGTH = 929  COMBINED P-VALUE = 9.62e-05  E-VALUE =      2.4
+  DIAGRAM: 439-[3]-196-[6]-42-[4]-50-[7]-155
+
+                                                                     [3]
+                                                                     3.2e-06
+                                                                     AESGCEWVKE
+                                                                     ++  ++ +++
+376  AETTSAALREALRVAEQAVLAAGKQEASEAKDPGAVVKTALERVRALIDQARPLQAHSSSLPDLVERACERVEEL
+
+                                                  [6]
+                                                  5.4e-05
+                                                  SWRAAMLGRTPPP
+                                                  + + ++ +++ +
+601  EAAEKARRLEAEATARARAKREAEAKARREAEEKEKARRAEAAARSARGAAGGKAAGGARRGRHRASSGGEGGGG
+
+                              [4]
+                              9.8e-05
+                              LPDFPDPFTLPPIPRL
+                              + + ++   +++++
+676  EAEALPPPLAAEELPLVSSSQLERMVAAPPELPAVPPLPGAHLPQLNGELPAAQLPLAHLPAAQLPTPTLPLPLP
+
+                     [7]
+                     5.0e-07
+                     PPIPRLLP
+                     ++++++ +
+751  ALPTPNGRHHPAGLPPPPVPRLSPVLADAPHASQPWGASWGSPPGPIGTPPLSSPPGPSPLAVSLLGAAGLPLLP
+
+
+KAL1503898.1
+  hypothetical protein AB1Y20_012360 [Prymnesium parvum]
+  LENGTH = 174  COMBINED P-VALUE = 1.22e-04  E-VALUE =        3
+  DIAGRAM: 27-[9]-30-[4]-93
+
+                                [9]                                   [4]
+                                5.4e-06                               4.7e-05
+                                FPPIPRLP                              LPDFPDPFTL
+                                 ++++++                               +   +  ++
+1    MNPLSDSEQISPDRNGHAPTDLSTLSPIPPIPKIAIAFPPFRRGHISTGTMPAALLLLLAPSALLLGSRPPTFSA
+
+     
+     
+     PPIPRL
+       ++
+76   VRMPHMVALADGEPMTGTCKWFNVEKGYGFIAVDESETDIFVHQSDIYAPGFRSLAEGEALEFRVQTDSKTGKLK
+
+
+KAL1512190.1
+  hypothetical protein AB1Y20_005455 [Prymnesium parvum]
+  LENGTH = 276  COMBINED P-VALUE = 1.36e-04  E-VALUE =      3.4
+  DIAGRAM: 62-[10]-117-[9]-71
+
+                                                                   [10]
+                                                                   3.9e-06
+                                                                   MQPPPPKNTKNEC
+                                                                   ++++++++  +++
+1    MLTCTSVFPLLLASLLGQASAQCINDCLNWNADGECDDGGPGAEWASCPVGNDCADCGVRQAAPPPPPRYPVAEC
+
+     
+     
+     ETVVE
+      +  +
+76   VTSSSSSALAVQPEYFAPTIVGGSEVEFARQYYWLVSLQSTGESHFCGGTLISSTWVLSAAHCTFGTAASSIIVK
+
+                                                    [9]
+                                                    1.9e-06
+                                                    FPPIPRLP
+                                                    ++++  ++
+151  IGLHNRFDFSDRCVRKHTIKRIINHPQYSDNADAYDVSLLELNSPVDFPPISSLNEGAVADGTLLTVAGWGALSS
+
+
+KAL1499117.1
+  hypothetical protein AB1Y20_013629 [Prymnesium parvum]
+  LENGTH = 1281  COMBINED P-VALUE = 1.45e-04  E-VALUE =      3.6
+  DIAGRAM: 124-[6]-286-[5]-769-[9]-12-[9]-53
+
+                                                      [6]
+                                                      2.5e-06
+                                                      SWRAAMLGRTPPP
+                                                      + ++ + +++ ++
+76   ERFLVLMMALLCRPALSSAAAACMLTAMRVNGAVTHGVLHAVAFFDLVKALRALLGGKAAAPKRGARKAGKAKRA
+
+                                                     [5]
+                                                     4.2e-05
+                                                     LNLPDFPD
+                                                     ++++  ++
+376  QTLWRLLVQHASDKAAGVRAKALTCLASLLALLHAQPERALLALVQQPLHLPPSPSAPATPSPPSGGEPRGEGLR
+
+     [9]                 [9]
+     6.2e-05             4.0e-07
+     FPPIPRLP            FPPIPRLP
+        ++++              +++++++
+1201 QLSIPRLRRASLDGSGGRPSLPPVPRLPPAEQENRPDVVMASPFKEAPPPRQWNVCASPEKPHAASPALAKRPRG
+
+
+KAL1507217.1
+  hypothetical protein AB1Y20_008067 [Prymnesium parvum]
+  LENGTH = 374  COMBINED P-VALUE = 1.52e-04  E-VALUE =      3.8
+  DIAGRAM: 141-[7]-93-[7]-124
+
+                                                                       [7]
+                                                                       1.6e-06
+                                                                       PPIPRLLP
+                                                                       ++++ +++
+76   APSPRAPPAAGFGPPLGAGGHFAPAGYPQVMAHAPPLQMAQMAQMAHMQQMQQMQMMHAQPPQPPIPPMPPMLPS
+
+                      [7]
+                      9.2e-06
+                      PPIPRLLP
+                      + +++ ++
+226  TLLQQREVRDKFEPLQQPELPRGLPAREAPSAEVLAAIDEYYKGGKPPRPSRRRRRRSASPRRERRGGASMESDG
+
+
+KAL1515574.1
+  hypothetical protein AB1Y20_002194 [Prymnesium parvum]
+  LENGTH = 454  COMBINED P-VALUE = 1.63e-04  E-VALUE =      4.1
+  DIAGRAM: 5-[6]-46-[5]-382
+
+          [6]                                                        [5]
+          4.4e-06                                                    1.4e-05
+          SWRAAMLGRTPPP                                              LNLPDFPD
+          +  +++++++ +                                                ++++++
+1    MHDLGALQAYALGRANAHSLLPTLPTLSHATELYSTAGLHATQLPPNVSASIIPKHLFTFWSPPDEIPDFPAACI
+
+
+KAL1522684.1
+  hypothetical protein AB1Y20_017660 [Prymnesium parvum]
+  LENGTH = 803  COMBINED P-VALUE = 1.80e-04  E-VALUE =      4.5
+  DIAGRAM: 250-[7]-180-[4]-349
+
+                              [7]
+                              1.0e-06
+                              PPIPRLLP
+                              ++++++ +
+226  LWHRALESCSDTPRLMLKFVAWRTEPPVPRLPPPRWPLVDGEACDEPPRELLWLEQGEEDDDAPLAPSAAANRPT
+
+                                                                    [4]
+                                                                    1.5e-05
+                                                                    LPDFPDPFTLPP
+                                                                    ++  ++   +++
+376  RCCAEGEMPTSLLPAVLRWLEPRCSTVVRTALTAERRARVLSSRIHIWRHVWLWLHGATEPQPIPSLPASSPLPP
+
+     
+     
+     IPRL
+        +
+451  PSALAGGTEARRLHAAYALAAAGESGALLGVLTDAARSTSERRTAAYGLVASSTSHRGGEAGLVAQLMQLSGGRR
+
+
+KAL1520504.1
+  hypothetical protein AB1Y20_022083 [Prymnesium parvum]
+  LENGTH = 143  COMBINED P-VALUE = 1.91e-04  E-VALUE =      4.8
+  DIAGRAM: 1-[8]-33-[7]-93
+
+      [8]                                      [7]
+      6.5e-05                                  6.9e-05
+      ALGKPPAA                                 PPIPRLLP
+      + +++ ++                                 ++++  ++
+1    MAAGRTNSAAPASVGSTVTSHAAGSPSAAPRTSASAAAATRPPPLPPGVPTVTRLFLLSNPELMFDPKKRASWAV
+
+
+KAL1526412.1
+  hypothetical protein AB1Y20_015124 [Prymnesium parvum]
+  LENGTH = 705  COMBINED P-VALUE = 1.91e-04  E-VALUE =      4.8
+  DIAGRAM: 326-[2]-94-[3]-62-[7]-192
+
+                               [2]
+                               7.7e-05
+                               WYDEWRERIECWY
+                                 ++ +  + ++
+301  RLHSARVCGAGGAPPAAGVPYEGRVLSGDALRAQLRCWREYGCVEPRGAEAMAAAADDAMADMRAHCVVCLGATS
+
+                                                               [3]
+                                                               8.9e-06
+                                                               AESGCEWVKE
+                                                               + ++++ +++
+376  ALGPLRALLRQGATVVAVARGSPAVWRGLMEEARRAAGSLLLPTRAPLPQAATIDDIAAAAGCDLLTDTPEIAAW
+
+                                                            [7]
+                                                            3.4e-06
+                                                            PPIPRLLP
+                                                            + ++ +++
+451  LEETIRTLALPTTIGVYAYLDGEDHVRVSVACDAVVRQLCAARGLGRLSLAYIQTPSLPYLIPADAHAASRAAYA
+
+
+KAL1504923.1
+  hypothetical protein AB1Y20_008690 [Prymnesium parvum]
+  LENGTH = 299  COMBINED P-VALUE = 1.95e-04  E-VALUE =      4.9
+  DIAGRAM: 299
+
+
+KAL1527882.1
+  hypothetical protein AB1Y20_009258 [Prymnesium parvum]
+  LENGTH = 1772  COMBINED P-VALUE = 1.98e-04  E-VALUE =      4.9
+  DIAGRAM: 281-[4]-408-[5]-217-[9]-27-[7]-15-[9]-369-[3]-397
+
+                                                             [4]
+                                                             8.1e-06
+                                                             LPDFPDPFTLPPIPRL
+                                                             +   + +  +++++
+226  AFKSFLKGLLTKDPKRRMGWPELMRHPFISASSNRRLTQRVAPHALKLRLLNPTEFLSVLPPVRLLPPMPAVCHI
+
+                                   [5]
+                                   6.1e-06
+                                   LNLPDFPD
+                                   + +++ ++
+676  ACGFSTPASGTRDMGGGRAASRFDGLAVAKLVLPESPDNAATPSRPPPASGQLGGSSVPPDGGGPPEEKAASLPW
+
+                                   [9]                                [7]
+                                   1.1e-06                            8.7e-06
+                                   FPPIPRLP                           PPIPRLLP
+                                   ++++  ++                           + ++ +++
+901  GGEVTIRLVPEVLQALETPLRGVACADGESFPPISMLPSTGGGVGESSEYWLPTGWASKCISILAPQLPALLPKQ
+
+                  [9]
+                  5.1e-05
+                  FPPIPRLP
+                  +  ++ ++
+976  ELQLAALRCMCTLFAAVPHLPPSAAHSHAVHGGGREMCVVAEHVQLVEALQHPGVIRALCDPMGQRHEFYVLAVL
+
+                    [3]
+                    7.1e-05
+                    AESGCEWVKE
+                    +++ ++ +++
+1351 RASLPLLSATGTLSMVKAACEALGKHAHTSATLLDQRLLAAVCALVHTDELRALRDLPAARGGGCRAAATLLNGV
+
+
+KAL1523264.1
+  hypothetical protein AB1Y20_018214 [Prymnesium parvum]
+  LENGTH = 1205  COMBINED P-VALUE = 1.98e-04  E-VALUE =      4.9
+  DIAGRAM: 1-[1]-68-[4]-493-[8]-376-[7]-214
+
+      [1]
+      9.2e-05
+      TQTQLGNCMGALGLHIGSRFD
+      +       ++++++++   +
+1    MYTFHRVVLLNALALHVMMVFAFAHASCKDRAEQTVPDQALSDERAAVFELCLRAELGTSWLLPRTLSTVALTHG
+
+                    [4]
+                    1.3e-05
+                    LPDFPDPFTLPPIPRL
+                    + + +  ++   ++ +
+76   VLQLFHTFLRCLAEPLKNSPRLFVIVLLPALSHFVPWVFYTVESVRTNFVSGLSDAFVTVSFVYCLLWLFPLLQL
+
+                                                                               [
+                                                                               9
+                                                                               A
+                                                                               +
+526  TLMEGTSSNEQVILSDLFSILRHSGSLETEKLESSKMIISVLLSSFSTQNPGGEPQSTEAKRQLISFCNSLRNTA
+
+     8]
+     .8e-07
+     LGKPPAA
+     +++ ++
+601  LGKAPSVRNMKSVTVLTPYYNEDVTHSEESLVQPKDGNTTFLEIVRAMHPDSWANMRERLNIHSSDVLVTTPQDA
+
+             [7]
+             2.1e-05
+             PPIPRLLP
+               +++++
+976  DMARFAHYVDLPRLLSFWCASSGFFISTVLAVYSAYFLAVTLMVLSMMNMEGYFDTPGSMHDLQFSQEEHEPNFG
+
+
+KAL1521207.1
+  hypothetical protein AB1Y20_022758 [Prymnesium parvum]
+  LENGTH = 1059  COMBINED P-VALUE = 2.03e-04  E-VALUE =      5.1
+  DIAGRAM: 3-[7]-192-[6]-330-[7]-505
+
+        [7]
+        6.7e-07
+        PPIPRLLP
+        + ++++ +
+1    MVSPAIPRLAPLVHTRLSPQGGVLILRHLFAFGPLSPRSPALSSQPHRSAAAAALPTLPLTSLPRSSLPLPSPPP
+
+                                                          [6]
+                                                          1.4e-05
+                                                          SWRAAMLGRTPPP
+                                                          + +++  + ++
+151  VRDTTPAEMASDFFDPSENERRVQAYMQRVERINQLEDEIEELDDDALAAKTLSLRAAVRGGTPLDEVLEEAFAV
+
+                          [7]
+                          7.3e-05
+                          PPIPRLLP
+                          + ++  ++
+526  SMSGTALTEAEELATIYNLPVLAVPPVLPPQRRDLPAAVYKTVKGKSNAALNELMEMHRRRRPVLVGTTSVAASE
+
+
+KAL1522109.1
+  hypothetical protein AB1Y20_021752 [Prymnesium parvum]
+  LENGTH = 310  COMBINED P-VALUE = 2.06e-04  E-VALUE =      5.1
+  DIAGRAM: 101-[7]-28-[6]-160
+
+                               [7]                                 [6]
+                               1.3e-05                             3.7e-05
+                               PPIPRLLP                            SWRAAMLGRTPPP
+                               +++++  +                            +++  +    +++
+76   RADEELARSLHAHEFQRSVLMMGGGMPPVPRGYPFGARRLFSGLQPSNAFRPELLLFDNTDVAWRSGAAMLPPPP
+
+
+KAL1522698.1
+  hypothetical protein AB1Y20_017674 [Prymnesium parvum]
+  LENGTH = 908  COMBINED P-VALUE = 2.28e-04  E-VALUE =      5.7
+  DIAGRAM: 4-[6]-58-[4]-706-[1]-90
+
+         [6]
+         7.4e-05
+         SWRAAMLGRTPPP
+           ++ +++ +  +
+1    MQRPPRRASLLGSTSLPSLPPAARVQAELAAVQLGLLLRQKTTPAPCTWERLPTPPKLPEPQSINAVVLPPLPEP
+
+     [4]
+     2.8e-05
+     LPDFPDPFTLPPIPRL
+     ++    + +++++ +
+76   VPQLKVVDVVPPVARSSRALPKERLTLRLPPTDIPLQRVCSTVSEGRPASAGAESGAAGSAAETELTVDAEGGAE
+
+                                                    [1]
+                                                    2.4e-06
+                                                    TQTQLGNCMGALGLHIGSRFD
+                                                     +  +++++++++ ++  +
+751  RRAELFSRLLLDGKHPTCPRALFARWLEWTQARAYARAIVALSGTVKGQRLLQTCFNALAHSILKKRQTETVPRA
+
+
+KAL1498999.1
+  hypothetical protein AB1Y20_013518 [Prymnesium parvum]
+  LENGTH = 300  COMBINED P-VALUE = 2.34e-04  E-VALUE =      5.8
+  DIAGRAM: 145-[3]-24-[5]-113
+
+                                                                           [3]
+                                                                           9.2e-
+                                                                           AESGC
+                                                                            + ++
+76   YDPSAPPRLRQNVRQLPQVHLHPVGVGGANRTACFSPPGATASERRGGACVRAQVLDIAHVLSRFEAVALLQLNC
+
+                                  [5]
+     05                           8.5e-06
+     EWVKE                        LNLPDFPD
+     +++                          +++++ ++
+151  EWVAPRPRVHPFLPPRPFLSPYDSLLLSLLSLPATPDHSPNSPLPLLSSPPPTLPALSPSPSPSPSASASAGCER
+
+
+KAL1529582.1
+  hypothetical protein AB1Y20_000525 [Prymnesium parvum]
+  LENGTH = 202  COMBINED P-VALUE = 2.41e-04  E-VALUE =        6
+  DIAGRAM: 141-[6]-23-[1]-4
+
+                                                                       [6]
+                                                                       1.5e-05
+                                                                       SWRAAMLGR
+                                                                       + +++++ +
+76   QKGVDTLTLKEAYKKLAVESHPDRFQGKEREAAEVRFQAISEAFTVLSNETSRALYDEEMERATTAAARAAAMKK
+
+                                [1]
+                                6.0e-06
+     TPPP                       TQTQLGNCMGALGLHIGSRFD
+     +++                        ++  + +++    +     ++
+151  VKAQTWNTEVPDLQARLRAKQREDPPMNKHILTACLAFITVNFVLCFNWLAG
+
+
+KAL1520445.1
+  hypothetical protein AB1Y20_022027 [Prymnesium parvum]
+  LENGTH = 80  COMBINED P-VALUE = 2.45e-04  E-VALUE =      6.1
+  DIAGRAM: 15-[3]-55
+
+                    [3]
+                    9.6e-06
+                    AESGCEWVKE
+                    + + + ++++
+1    MAAVQPPPAPPRVPPVAAVCAWVGDPHMPVAIPASHPLALGTAFLGWVAVVGAGPGAALVSLNTSQMLIKAKNYL
+
+
+KAL1495371.1
+  hypothetical protein AB1Y20_016740 [Prymnesium parvum]
+  LENGTH = 184  COMBINED P-VALUE = 2.81e-04  E-VALUE =        7
+  DIAGRAM: 121-[5]-55
+
+                                                   [5]
+                                                   2.9e-06
+                                                   LNLPDFPD
+                                                     ++++++
+76   AAQHIPRLKVAQLKAVLSFRAVEYSKSAKKAELVQLVCDTLKLPMLNPLPDFPSNLPDVTSTAPAGSAPAAAAAP
+
+
+KAL1495377.1
+  hypothetical protein AB1Y20_016746 [Prymnesium parvum]
+  LENGTH = 184  COMBINED P-VALUE = 2.81e-04  E-VALUE =        7
+  DIAGRAM: 121-[5]-55
+
+                                                   [5]
+                                                   2.9e-06
+                                                   LNLPDFPD
+                                                     ++++++
+76   AAQHIPRLKVAQLKAVLSFRAVEYSKSAKKAELVQLVCDTLKLPMLNPLPDFPSNLPDVTSTAPAGSAPAAAAAP
+
+
+KAL1522683.1
+  hypothetical protein AB1Y20_017660 [Prymnesium parvum]
+  LENGTH = 778  COMBINED P-VALUE = 2.93e-04  E-VALUE =      7.3
+  DIAGRAM: 250-[7]-180-[4]-324
+
+                              [7]
+                              1.0e-06
+                              PPIPRLLP
+                              ++++++ +
+226  LWHRALESCSDTPRLMLKFVAWRTEPPVPRLPPPRWPLVDGEACDEPPRELLWLEQGEEDDDAPLAPSAAANRPT
+
+                                                                    [4]
+                                                                    1.5e-05
+                                                                    LPDFPDPFTLPP
+                                                                    ++  ++   +++
+376  RCCAEGEMPTSLLPAVLRWLEPRCSTVVRTALTAERRARVLSSRIHIWRHVWLWLHGATEPQPIPSLPASSPLPP
+
+     
+     
+     IPRL
+        +
+451  PSALAGGTEARRLHAAYALAAAGESGALLGVLTDAARSTSERRTAAYGLVASSTSHRGGEAGLVAQLMQLSGGRR
+
+
+KAL1510887.1
+  hypothetical protein AB1Y20_005719 [Prymnesium parvum]
+  LENGTH = 266  COMBINED P-VALUE = 2.98e-04  E-VALUE =      7.4
+  DIAGRAM: 107-[7]-151
+
+                                     [7]
+                                     1.3e-07
+                                     PPIPRLLP
+                                     +++++ ++
+76   DHCASCDCASCAFCASPLPTLPTLNALNTLPTLPLPRILPPRPAASPPPPPRPAASPPPPPPPPPPRVKPASHRP
+
+
+KAL1529102.1
+  hypothetical protein AB1Y20_000062 [Prymnesium parvum]
+  LENGTH = 560  COMBINED P-VALUE = 3.05e-04  E-VALUE =      7.6
+  DIAGRAM: 468-[6]-79
+
+                       [6]
+                       8.9e-10
+                       SWRAAMLGRTPPP
+                       ++++++++  +++
+451  VLTYLLLRFEQRGLAAYNSWRAALLGLPPTPLEDVALERVELCMRRHEARPAHQSFRDCAASSPFEEHGTFGHPI
+
+
+KAL1526276.1
+  hypothetical protein AB1Y20_014994 [Prymnesium parvum]
+  LENGTH = 313  COMBINED P-VALUE = 3.30e-04  E-VALUE =      8.2
+  DIAGRAM: 205-[7]-100
+
+                                                            [7]
+                                                            7.1e-07
+                                                            PPIPRLLP
+                                                            ++++++ +
+151  VTCCYGYMFVDLKKAISETARVLKPGGSLVATYWVDVDLMRIGDRIMRAVLNEAEPPVPRMNPLSLADGRALEKA
+
+
+KAL1511054.1
+  hypothetical protein AB1Y20_005878 [Prymnesium parvum]
+  LENGTH = 447  COMBINED P-VALUE = 3.37e-04  E-VALUE =      8.4
+  DIAGRAM: 202-[3]-59-[8]-168
+
+                                                         [3]
+                                                         3.1e-07
+                                                         AESGCEWVKE
+                                                         + + ++++ +
+151  FQFNEVWYIPSTLRGRACMRRRPVVLHCDEKYGQPVMDVNAQYVIMVSEAFSASPDCEWLAEHAEALAQALAFYE
+
+                                                   [8]
+                                                   3.1e-06
+                                                   ALGKPPAA
+                                                   ++++++ +
+226  LYADVQGLVHEKPFGNWEDSLLYCGPRPFTNLMYLEALRRAAALLRALGRTPDARKYEAEAERIYEPVMRLISAQ
+
+
+KAL1498680.1
+  hypothetical protein AB1Y20_013992 [Prymnesium parvum]
+  LENGTH = 267  COMBINED P-VALUE = 3.50e-04  E-VALUE =      8.7
+  DIAGRAM: 77-[4]-144-[6]-17
+
+       [4]
+       3.2e-07
+       LPDFPDPFTLPPIPRL
+       ++ + +  +++++ +
+76   VFIPQFDEIGVLPPIGRWDPLKIREQGPERYRRFVEMEIKHGRMAMAAFLGVVTTYSGMRFPGYLSVAQDIKFSD
+
+                 [6]
+                 5.7e-05
+                 SWRAAMLGRTPPP
+                   ++++++ +  +
+226  LGKTWKLNAERNNGRAAMMGITGMVVHESLTGNPVFPIGESL
+
+
+KAL1511340.1
+  hypothetical protein AB1Y20_006143 [Prymnesium parvum]
+  LENGTH = 322  COMBINED P-VALUE = 3.57e-04  E-VALUE =      8.9
+  DIAGRAM: 6-[9]-93-[2]-202
+
+           [9]
+           9.9e-05
+           FPPIPRLP
+             +++  +
+1    MGTWDAHYKIPHMPVDPSTLPPDDERYVKKELHDGEPIEQALQAAMAGLKSDILWGTLGMPMESSIEKLHQLEDE
+
+                                     [2]
+                                     3.5e-07
+                                     WYDEWRERIECWY
+                                     ++++++  ++ ++
+76   RDEDKARAIRKEIRSYLELSVKQLEEMIEKGNFHNEYRIVVSAWYMMMLPSTKLGTPLLPPQEAQRAAWDWEERD
+
+
+KAL1510348.1
+  hypothetical protein AB1Y20_006664 [Prymnesium parvum]
+  LENGTH = 863  COMBINED P-VALUE = 3.60e-04  E-VALUE =        9
+  DIAGRAM: 8-[3]-253-[2]-35-[7]-44-[7]-230-[4]-238
+
+             [3]
+             1.8e-05
+             AESGCEWVKE
+               +++ + ++
+1    MAPQLAATQRQGCGWAEGRTALQPGVLCDSLAKHGKQICEARYQLLADGTLGRCAFSLYHFHAECIAEVIYACSP
+
+                                                   [2]
+                                                   7.3e-05
+                                                   WYDEWRERIECWY
+                                                   ++++  ++  +
+226  QSGCPPPLPPFPPSTPPSPPSLPPPLPPPEPPFEPPLPPSPPYHCGWHDAVGKRSTCHLSAGKPAKCIDTYEYFQ
+
+                        [7]                                                 [7]
+                        2.1e-05                                             1.4e
+                        PPIPRLLP                                            PPIP
+                          +++ ++                                            ++++
+301  GELYRCKFLMDQNFACRRGSIIPRCLPAPPPPPLAPPSAPPPLPSSPPRPPPPSPPSPPFPPPSHPPPPPSPPVP
+
+     
+     -05
+     RLLP
+      + +
+376  SLPPPLPPTHVPHSVDRIQFSEVGPTSLALRMHQLDQRHVAAFRVRVTVNGFLVNELSFPFEPEGTQQRERIGDL
+
+              [4]
+              1.3e-05
+              LPDFPDPFTLPPIPRL
+              +  + + +++ + ++
+601  DGSNCSIGPLVQFGSCFSLTPPPRKQDDAVLSFASLPQGAVHITAEVGVAAAAPPRGKARFEMRLINARGDVVVS
+
+
+KAL1528069.1
+  hypothetical protein AB1Y20_009435 [Prymnesium parvum]
+  LENGTH = 178  COMBINED P-VALUE = 3.63e-04  E-VALUE =      9.1
+  DIAGRAM: 62-[4]-29-[7]-63
+
+                                                                   [4]
+                                                                   2.6e-06
+                                                                   LPDFPDPFTLPPI
+                                                                   ++    + ++ ++
+1    MSRRPARVKPTYQRSDLPPGLYVADRRLVHKTLPGTSGVGTRVRMVRRLGTETDSFDYDILNMPRRLPPATLAPI
+
+                                     [7]
+                                     5.3e-05
+     PRL                             PPIPRLLP
+     ++                              ++ ++ ++
+76   PRYEDHIGEGNQIVSRPMPVWPGRLNRGAHDVPPPPRSLPRSLSTADIDGATPKSHANRILDRSMRRQFNSSLDG
+
+
+KAL1507078.1
+  hypothetical protein AB1Y20_007939 [Prymnesium parvum]
+  LENGTH = 1608  COMBINED P-VALUE = 3.68e-04  E-VALUE =      9.2
+  DIAGRAM: 25-[4]-293-[1]-540-[6]-598-[10]-84
+
+                              [4]
+                              8.6e-06
+                              LPDFPDPFTLPPIPRL
+                              + +  ++  +++++
+1    MSDAADDEPPPIPDLDDDEPPPIPPLDADDDDDGLPPIPSEEDFLSQLAEHRKRASLARPSAASKPPHDDAAEHA
+
+                                       [1]
+                                       5.2e-05
+                                       TQTQLGNCMGALGLHIGSRFD
+                                        ++++    ++    +  ++
+301  SLDAPCTPRATSDDEGTSDDDEDYEKAHEQLIEKLRGNLEKQAGAVTRDVLVRLQKRGEVVSSDEDSDDGRGAHR
+
+                                                                           [6]
+                                                                           1.8e-
+                                                                           SWRAA
+                                                                           +   +
+826  RSDENRFFDVIVDSTETRDMWIQSLPQPPSFAMAGWVIERYSLKGSYMLGSKRRRYAVFDMLQNTFSLYLSEESA
+
+     
+     05
+     MLGRTPPP
+     +++ +++
+901  LLGDKPPELRVKVKFAVRRPQKDPNTFDFAFSADDEEVEAGGFSNRFHEFTVEKESQQLGWLEALPPPREYTVQG
+
+           [10]
+           2.0e-06
+           MQPPPPKNTKNECETVVE
+           ++ +++++++++ ++ ++
+1501 PPPPPPAPRPPPTPAKASSQRSGDDSDPASALLKAIEARREKQEARARAIEAGQIAVEDPREKRLQEMKGVSRSP
+
+********************************************************************************
+
+
+CPU: mablin-mac.local
+Time 1.096 secs.
+
+mast -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_GCA_041296205.1 -ev 10.0 -nostatus /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_041296205.1/protein.faa

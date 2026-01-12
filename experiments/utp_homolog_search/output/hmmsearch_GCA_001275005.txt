@@ -1,0 +1,113 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# target sequence database:        /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_001275005.1/protein.faa
+# output directed to file:         /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_001275005.txt
+# per-dom hits tabular output:     /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_001275005.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       good-c-term  [M=713]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-39  134.8   6.2      4e-39  134.7   6.2    1.0  1  KOO53160.1  tbc1 domain family member 14 [Chrysochromulina to
+  ------ inclusion threshold ------
+      0.034   12.6   0.0      0.058   11.8   0.0    1.3  1  KOO25314.1  domain containing protein [Chrysochromulina tobin
+       0.17   10.3  14.7       0.28    9.5  14.7    1.3  1  KOO22835.1  hypothetical protein Ctob_002169 [Chrysochromulin
+        4.2    5.7  25.2        5.3    5.3  25.2    1.1  1  KOO23139.1  hypothetical protein Ctob_001292 [Chrysochromulin
+
+
+Domain annotation for each sequence (and alignments):
+>> KOO53160.1  tbc1 domain family member 14 [Chrysochromulina tobinii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  134.7   6.2   9.5e-43     4e-39     449     632 ..       1     187 [.       1     218 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 134.7 bits;  conditional E-value: 9.5e-43
+  good-c-term 449 mlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdG 546
+                  mllly++   a+ c+  + d+h     v   a   ++ wrl  ae ++ re+pel  h+    +    ++p w++tlf+stl ld aar+wdcylrdG
+   KOO53160.1   1 MLLLYMDEPMAYACMQCLADSH----CVGARAVNERKLWRLRAAEAMFAREVPELQAHFDKLGVLTSEWLPEWFATLFLSTLPLDLAARVWDCYLRDG 94 
+                  9*******************87....57788899999************************************************************* PP
+
+  good-c-term 547 eafawratleilrllapavle.ckqrehclrllsqpstaGGvserelfksl....GshdvalhellaGfsqrlpmptierG..vcfdlwqnss 632
+                  e++ wr +l +l llap +l  c+ +  cl ll +   +    e+ lf  l    G     l ++ a + qrlpmp+ e    vc+dlw ns 
+   KOO53160.1  95 ETLLWRVSLALLELLAPRLLStCHTQAACLDLLLEARLSDLANEKALFGLLqaeeGKEADRLADVWADLGQRLPMPSPENAnpVCYDLWTNSI 187
+                  ******************99549*************************9983332444457999999*********9997444********95 PP
+
+>> KOO25314.1  domain containing protein [Chrysochromulina tobinii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   1.4e-05     0.058     173     280 ..     473     581 ..     408     593 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.4e-05
+  good-c-term 173 fdnislgelvellrqgsvfkkyahsrieskrchscrlwladnqlryln..lsgrhkpekavqlsaieqvlegpqsdvflrngittdsaeastcfslvf 268
+                  ++   l e +++l+ gs+  ky++s  +s+ +  c +  +  + + ++   ++++  +++++l++++  l+g +s +f ++    ++ +  +cfslvf
+   KOO25314.1 473 VKSKRLHERIAVLQGGSTLIKYNNSDGKSTPRWVCVTLDKFGAAELIRwgDTRTQDCKSEKRLTEATALLHGAKSSTFFKQKGV-KADQDWQCFSLVF 569
+                  444455666777777888888888877777666665554443333332002333444566778888889999998887765433.3455679****** PP
+
+  good-c-term 269 hgrtldlqastr 280
+                  + rtld  a t 
+   KOO25314.1 570 KDRTLDFAAATV 581
+                  *******99985 PP
+
+>> KOO22835.1  hypothetical protein Ctob_002169 [Chrysochromulina tobinii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.5  14.7   6.7e-05      0.28      43     206 ..      33     197 ..       8     225 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 6.7e-05
+  good-c-term  43 srlelal.eallgergvaaasrrraaevgcewleda.gael.lpdfpelalppiprllpslee.qslvsaedlhgspaeqeavdakakagkrrilgav 136
+                  s+   a+  a +g+++++++ ++++ae+++++l+d+ ++++ l d +  +  ++ + + ++++ q +  +e +++++ eq++ ++++++  ++ l+++
+   KOO22835.1  33 SKASSAVlDAKMGPAAAPEK-KKSSAEDEVNVLKDRlAKGHrLNDAELAQ-LELAA-VARWNQlQREEDEEYQRQRELEQQREQQREQRL-AQELQEL 126
+                  34444444667777665555.666799********966668677655443.34444.456766565665566666666665555554444.4444445 PP
+
+  good-c-term 137 raflspfr.lpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsrieskrchs 206
+                  r+++++ r + ++a +a++++l+e  v+++++++  e   +++++ ++ lr+++ ++k++h+r+ s ++++
+   KOO22835.1 127 RKAAAADRaNLERAGKAVAEELKELRVMKEAAAVDRENLEAAMAQELSELREMREQQKREHKRAPSPEKEE 197
+                  44444444044556678888999999999999999999999999999999999999999998877654433 PP
+
+>> KOO23139.1  hypothetical protein Ctob_001292 [Chrysochromulina tobinii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.3  25.2    0.0013       5.3      20     244 ..      18     242 ..       6     275 .. 0.43
+
+  Alignments for each domain:
+  == domain 1  score: 5.3 bits;  conditional E-value: 0.0013
+  good-c-term  20 valplptqdelraclgalalhlgsrlelaleallgergvaaasrrraaevgcewledagaellpdfpelalppiprllpslee.........qslvsa 108
+                  ++  +++qdel +  ++l+ +l+s++++  + +++ r++   ++++ + +++  +++a+++  +++ + a   + +l   ++e         + l++a
+   KOO23139.1  18 AKELAKEQDELASVRAQLGQALASKMDAEAQLMQKLRAAL--KAKADMAAQLMQIAEASEAVAQKMVA-AAERVQELETAFKEvakdkaamqERLAAA 112
+                  44556789*******************6655454444433..44555677766666554332222222.22233333333322433444442222222 PP
+
+  good-c-term 109 edlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsrieskrchs 206
+                  e++++++++q+a   +++a  r+ +ga+++++++++l   a+++a++++++e++++   ++ ++f + s++ + +++ +++ + +  ++r+ ++r +s
+   KOO23139.1 113 EQEASESSAQAAQLVSETAPLRERVGALQEAAAQAAL---AEHKAATSAAAEAAVE---AAKQDFIANSATAIEAAALKRKLQVADDRERALRERLTS 204
+                  2222222222222222222222223333222222222...1111222222222222...222223333333333333333333344444445555555 PP
+
+  good-c-term 207 crlwladnqlrylnlsgrhkpekavqlsaieqvlegpq 244
+                   + + ++++ ++ +++++++ ek+ +   +++v++ ++
+   KOO23139.1 205 LEAEVTARSAAMATAEATAHAEKRERELLRDRVTALEA 242
+                  55555555555444444444444444444444433332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (713 nodes)
+Target sequences:                      16765  (7795796 residues searched)
+Passed MSV filter:                      2194  (0.130868); expected 335.3 (0.02)
+Passed bias filter:                      489  (0.0291679); expected 335.3 (0.02)
+Passed Vit filter:                       120  (0.00715777); expected 16.8 (0.001)
+Passed Fwd filter:                        18  (0.00107367); expected 0.2 (1e-05)
+Initial search space (Z):              16765  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.36u 0.00s 00:00:00.36 Elapsed: 00:00:00.18
+# Mc/sec: 30784.13
+//
+[ok]

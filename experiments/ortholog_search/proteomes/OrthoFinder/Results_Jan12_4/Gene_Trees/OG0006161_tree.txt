@@ -1,0 +1,1 @@
+((Prymnesium_parvum_KAL1514948.1:0.393054,Prymnesium_sp_KAL3923686.1:0.462005):0.280211,((Braarudosphaera_bigelowii_KC1-P2-N_k25_Locus_10301_Transcript_3_1:0.19294,Braarudosphaera_bigelowii_KC1-P2_N2_k25_Locus_4117_Transcript_2_1:0.106135):0.561238,Braarudosphaera_bigelowii_KC1-P2-N_k31_Locus_7389_Transcript_1_1:0.472939):0.280211);

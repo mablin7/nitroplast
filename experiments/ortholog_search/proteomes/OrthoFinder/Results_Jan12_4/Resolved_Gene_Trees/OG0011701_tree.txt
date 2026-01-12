@@ -1,0 +1,1 @@
+((Prymnesium_sp_KAL3906578.1:0.198172,Prymnesium_parvum_KAL1522097.1:0.301161)n1:0.652792,(Chrysochromulina_tobinii_KOO30128.1:0.20848,Chrysochromulina_tobinii_KOO31164.1:0.152923)n2:0.652792)n0;

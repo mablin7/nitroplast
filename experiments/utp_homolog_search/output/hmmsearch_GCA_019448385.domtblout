@@ -1,0 +1,29 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+KAG8469704.1         -           1064 good-c-term          -            713   1.5e-83  281.3  16.3   1   1   1.4e-85   1.5e-82  277.9  16.3   162   638   497  1002   454  1008 0.83 hypothetical protein KFE25_006159 [Diacronema lutheri]
+KAG8461992.1         -            547 good-c-term          -            713   1.3e-16   60.0  12.4   1   1   1.5e-19   1.7e-16   59.6  12.4   317   587   210   489   103   503 0.81 hypothetical protein KFE25_014011 [Diacronema lutheri]
+KAG8458271.1         -            275 good-c-term          -            713   2.9e-06   25.8   0.5   1   1   3.2e-09   3.6e-06   25.5   0.5   157   306   109   254    74   270 0.76 hypothetical protein KFE25_001563 [Diacronema lutheri]
+KAG8464611.1         -            461 good-c-term          -            713   5.3e-05   21.6   0.1   1   1   7.2e-08     8e-05   21.0   0.1   487   548   315   373   276   375 0.78 hypothetical protein KFE25_009979 [Diacronema lutheri]
+KAG8468176.1         -            498 good-c-term          -            713   0.00011   20.6   6.0   1   2   1.2e-07   0.00013   20.3   2.5   446   564    93   209    72   223 0.82 hypothetical protein KFE25_013259 [Diacronema lutheri]
+KAG8468176.1         -            498 good-c-term          -            713   0.00011   20.6   6.0   2   2     0.076        84    1.1   0.1   546   562   341   357   317   367 0.90 hypothetical protein KFE25_013259 [Diacronema lutheri]
+KAG8461188.1         -            815 good-c-term          -            713   0.00097   17.5   5.6   1   1   1.9e-06    0.0021   16.4   5.6   495   576   240   321    84   329 0.83 hypothetical protein KFE25_002377 [Diacronema lutheri]
+KAG8462178.1         -            578 good-c-term          -            713    0.0027   16.0   1.6   1   1   3.6e-06     0.004   15.4   1.6   495   550   407   462   369   476 0.89 hypothetical protein KFE25_011628 [Diacronema lutheri]
+KAG8465079.1         -            579 good-c-term          -            713    0.0063   14.8   1.2   1   1   1.1e-05     0.012   13.8   1.2   505   574   247   316   227   328 0.91 hypothetical protein KFE25_012442 [Diacronema lutheri]
+KAG8459939.1         -            415 good-c-term          -            713    0.0073   14.6  11.9   1   1   1.1e-05     0.012   13.8  11.9   322   560   106   347    85   364 0.79 hypothetical protein KFE25_010988 [Diacronema lutheri]
+KAG8461857.1         -            764 good-c-term          -            713      0.18   10.0   8.0   1   2   0.00011      0.12   10.6   5.2   430   546   224   339   115   359 0.70 hypothetical protein KFE25_013876 [Diacronema lutheri]
+KAG8461857.1         -            764 good-c-term          -            713      0.18   10.0   8.0   2   2      0.32   3.6e+02   -0.9   0.0   554   583   399   428   391   432 0.89 hypothetical protein KFE25_013876 [Diacronema lutheri]
+KAG8459690.1         -           1468 good-c-term          -            713      0.24    9.6  18.5   1   1   0.00047      0.52    8.4  18.5   102   209  1004  1117   925  1146 0.49 hypothetical protein KFE25_003142 [Diacronema lutheri]
+KAG8459609.1         -            266 good-c-term          -            713       3.2    5.8  20.8   1   1    0.0033       3.7    5.6  20.8    41   230    69   245    26   262 0.41 hypothetical protein KFE25_000965 [Diacronema lutheri]
+KAG8459706.1         -            863 good-c-term          -            713       4.7    5.3  35.3   1   2    0.0014       1.6    6.8  15.6    84   188   281   378   221   415 0.36 hypothetical protein KFE25_003158 [Diacronema lutheri]
+KAG8459706.1         -            863 good-c-term          -            713       4.7    5.3  35.3   2   2    0.0088       9.7    4.2  11.7    84   163   700   772   674   803 0.37 hypothetical protein KFE25_003158 [Diacronema lutheri]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# Target file:     /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_019448385.1/protein.faa
+# Option settings: hmmsearch -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_019448385.txt --domtblout /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_019448385.domtblout -E 10.0 --domE 10.0 /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_019448385.1/protein.faa 
+# Current dir:     /Users/mablin/Projects/github.com/mablin7/nitroplast
+# Date:            Mon Jan 12 00:18:58 2026
+# [ok]

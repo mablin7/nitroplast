@@ -1,0 +1,17 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+KOO53160.1           -            236 good-c-term          -            713   3.5e-39  134.8   6.2   1   1   9.5e-43     4e-39  134.7   6.2   449   632     1   187     1   218 0.88 tbc1 domain family member 14 [Chrysochromulina tobinii]
+KOO25314.1           -            616 good-c-term          -            713     0.034   12.6   0.0   1   1   1.4e-05     0.058   11.8   0.0   173   280   473   581   408   593 0.69 domain containing protein [Chrysochromulina tobinii]
+KOO22835.1           -            426 good-c-term          -            713      0.17   10.3  14.7   1   1   6.7e-05      0.28    9.5  14.7    43   206    33   197     8   225 0.66 hypothetical protein Ctob_002169 [Chrysochromulina tobinii]
+KOO23139.1           -            348 good-c-term          -            713       4.2    5.7  25.2   1   1    0.0013       5.3    5.3  25.2    20   244    18   242     6   275 0.43 hypothetical protein Ctob_001292 [Chrysochromulina tobinii]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# Target file:     /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_001275005.1/protein.faa
+# Option settings: hmmsearch -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_001275005.txt --domtblout /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_001275005.domtblout -E 10.0 --domE 10.0 /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_001275005.1/protein.faa 
+# Current dir:     /Users/mablin/Projects/github.com/mablin7/nitroplast
+# Date:            Mon Jan 12 00:18:57 2026
+# [ok]

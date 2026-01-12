@@ -1,0 +1,1 @@
+(Braarudosphaera_bigelowii_KC1-P2-N_k65_Locus_2770_Transcript_13_1:0.491055,(Emiliania_huxleyi_EOD39210.1:0.440176,((Emiliania_huxleyi_EOD19822.1:0.183313,Emiliania_huxleyi_EOD15788.1:0.0722872)n3:0.0969269,Emiliania_huxleyi_EOD12485.1:2.29426e-06)n2:0.613312)n1:0.491055)n0;

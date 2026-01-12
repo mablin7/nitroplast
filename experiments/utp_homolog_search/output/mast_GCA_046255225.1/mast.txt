@@ -1,0 +1,691 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE protein.faa (peptide)
+	Last updated on Sun Jan 11 17:11:20 2026
+	Database contains 15075 sequences, 5206961 residues
+
+	MOTIFS meme_gb.xml (peptide)
+	MOTIF ID                    ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- --------------------- ------- ----- -------------------
+	    1 TQTQLGACMGALGLHLGSRLD MEME-1     21 TQTQLGNCMGALGLHIGSRFD
+	    2 WLEEWRERLECWW         MEME-2     13 WYDEWRERIECWY
+	    3 AEPGCEWVEE            MEME-3     10 AESGCEWVKE
+	    4 LPDFPEPFSLPPIPRL      MEME-4     16 LPDFPDPFTLPPIPRL
+	    5 LZLPDFPD              MEME-5      8 LNLPDFPD
+	    6 AWRAALLGRAPPP         MEME-6     13 SWRAAMLGRTPPP
+	    7 PPJPRLLP              MEME-7      8 PPIPRLLP
+	    8 ALGKPPAA              MEME-8      8 ALGKPPAA
+	    9 FPPIPRLP              MEME-9      8 FPPIPRLP
+	   10 APPPPPKATEAECETLGE    MEME-10    18 MQPPPPKNTKNECETVVE
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.38
+	   3   0.31  0.34
+	   4   0.36  0.17  0.17
+	   5   0.40  0.24  0.22  0.62
+	   6   0.33  0.22  0.20  0.25  0.25
+	   7   0.29  0.17  0.21  0.58  0.41  0.23
+	   8   0.46  0.32  0.26  0.32  0.31  0.68  0.21
+	   9   0.31  0.19  0.20  0.67  0.47  0.28  0.66  0.36
+	  10   0.29  0.31  0.66  0.33  0.37  0.31  0.33  0.49  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5, 8, 9 and 10 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 27 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+KAL3892565.1                       MAG: hypothetical protein ...     0.14    240
+KAL3901505.1                       MAG: hypothetical protein ...     0.56    177
+KAL3920498.1                       MAG: hypothetical protein ...     0.61    497
+KAL3916054.1                       MAG: hypothetical protein ...     0.62    336
+KAL3931323.1                       MAG: hypothetical protein ...     0.74    116
+KAL3928095.1                       MAG: hypothetical protein ...        1    515
+KAL3932683.1                       MAG: hypothetical protein ...        1    332
+KAL3920879.1                       MAG: hypothetical protein ...        1    209
+KAL3908189.1                       MAG: hypothetical protein ...      1.3    534
+KAL3896474.1                       MAG: hypothetical protein ...      1.6    248
+KAL3911422.1                       MAG: hypothetical protein ...      2.1    118
+KAL3927896.1                       MAG: hypothetical protein ...      2.3    160
+KAL3903263.1                       MAG: hypothetical protein ...      2.4    222
+KAL3917319.1                       MAG: hypothetical protein ...      2.5    318
+KAL3895916.1                       MAG: hypothetical protein ...      2.9    448
+KAL3904490.1                       MAG: hypothetical protein ...        3    439
+KAL3911144.1                       MAG: hypothetical protein ...      3.4    739
+KAL3893270.1                       MAG: hypothetical protein ...      4.3    514
+KAL3920364.1                       MAG: hypothetical protein ...      4.3    259
+KAL3926370.1                       MAG: hypothetical protein ...      5.4    609
+KAL3907628.1                       MAG: hypothetical protein ...      6.5    164
+KAL3917566.1                       MAG: hypothetical protein ...      7.8    269
+KAL3920529.1                       MAG: hypothetical protein ...        8    240
+KAL3912493.1                       MAG: hypothetical protein ...      8.3    401
+KAL3902935.1                       MAG: hypothetical protein ...      8.8    368
+KAL3918783.1                       MAG: hypothetical protein ...      9.1   1690
+KAL3909274.1                       MAG: hypothetical protein ...      9.9    267
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+KAL3892565.1                           0.14  25-[10]-28-[6]-80-[4]-60
+KAL3901505.1                           0.56  95-[9]-74
+KAL3920498.1                           0.61  150-[1]-52-[9]-47-[3]-186-[4]-7
+KAL3916054.1                           0.62  214-[8]-39-[7]-6-<6>-48
+KAL3931323.1                           0.74  33-[9]-46-[1]-8
+KAL3928095.1                              1  77-[4]-109-[1]-15-[6]-145-[1]-98
+KAL3932683.1                              1  2-[10]-16-[8]-253-[2]-22
+KAL3920879.1                              1  115-[7]-34-[9]-44
+KAL3908189.1                            1.3  448-[4]-70
+KAL3896474.1                            1.6  112-[4]-120
+KAL3911422.1                            2.1  61-[9]-49
+KAL3927896.1                            2.3  26-[7]-126
+KAL3903263.1                            2.4  33-[5]-[6]-136-[5]-24
+KAL3917319.1                            2.5  168-[10]-132
+KAL3895916.1                            2.9  5-[8]-435
+KAL3904490.1                              3  225-[1]-13-[7]-172
+KAL3911144.1                            3.4  115-[6]-130-[4]-303-[9]-154
+KAL3893270.1                            4.3  122-[9]-384
+KAL3920364.1                            4.3  72-[6]-146-[4]-12
+KAL3926370.1                            5.4  43-[8]-258-[6]-231-[7]-48
+KAL3907628.1                            6.5  9-[10]-35-[1]-81
+KAL3917566.1                            7.8  247-[4]-6
+KAL3920529.1                              8  41-[7]-5-[1]-165
+KAL3912493.1                            8.3  49-[8]-126-[7]-109-[8]-78-[5]-7
+KAL3902935.1                            8.8  28-[7]-15-[9]-46-[5]-255
+KAL3918783.1                            9.1  192-[1]-395-[9]-1074
+KAL3909274.1                            9.9  80-[7]-179
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+KAL3892565.1
+  MAG: hypothetical protein SGPRY_015010 [Prymnesium sp.]
+  LENGTH = 240  COMBINED P-VALUE = 9.16e-06  E-VALUE =     0.14
+  DIAGRAM: 25-[10]-28-[6]-80-[4]-60
+
+                              [10]                                          [6]
+                              2.6e-05                                       7.7e
+                              MQPPPPKNTKNECETVVE                            SWRA
+                              +++  + ++    +++++                            + ++
+1    MSDLLSKQATLEQQHSPSPSQPPPLAAPNATPTATQTAETVVEVDGAAEAGETDEAAAASESAIAMDEGDVSPRA
+
+     
+     -05
+     AMLGRTPPP
+     +  + + ++
+76   TGRGESGTAGCEYELYAVLVHSGSASFGHYYALIKDLAAGEWHEFNDSTVRPIKQTDLVRAFGSGSGGGSAYLLL
+
+                   [4]
+                   7.2e-05
+                   LPDFPDPFTLPPIPRL
+                   +        +++++
+151  YRAVGQWQVDVRAPVQPLDPAVALPPLPTFPPHPPFTSEGHDSPMLIHDEKRLRLTPPGSPMEESSQPQDSSTAG
+
+
+KAL3901505.1
+  MAG: hypothetical protein SGPRY_012265, partial [Prymnesium sp.]
+  LENGTH = 177  COMBINED P-VALUE = 3.68e-05  E-VALUE =     0.56
+  DIAGRAM: 95-[9]-74
+
+                         [9]
+                         2.6e-05
+                         FPPIPRLP
+                           +++++
+76   CKAIEKEEMNLSPEAVGKTIRVPIPRLTADMREVMVKQVKKSGESCRIHIRGHRQTAMKQAKAMRVKDVVQRQEK
+
+
+KAL3920498.1
+  MAG: hypothetical protein SGPRY_005231 [Prymnesium sp.]
+  LENGTH = 497  COMBINED P-VALUE = 4.03e-05  E-VALUE =     0.61
+  DIAGRAM: 150-[1]-52-[9]-47-[3]-186-[4]-7
+
+     [1]                                                                      [9
+     4.2e-05                                                                  7.
+     TQTQLGNCMGALGLHIGSRFD                                                    FP
+     ++ ++   ++  ++    ++                                                     +
+151  TQVQLTLDIGSKALNALKKLQPTIIHSVGPVLTLSRTCLTLGFFVLPAILYARMLNVPLVISYHTHLPVYADRYI
+
+     ]                                                    [3]
+     4e-05                                                2.3e-05
+     PIPRLP                                               AESGCEWVKE
+     +++ +                                                 + +++ ++
+226  PIPVLRELGVAFSKWFVPKVLNCADVSLATSPQLKEQLQVWFNLLPYASAPLAQELGCNNIEVWRKGIDTNARLA
+
+                             [4]
+                             2.3e-06
+                             LPDFPDPFTLPPIPRL
+                             +  + ++ ++  ++++
+451  RQVLLISMVTSSACREWWDQKMRQLNPFYKPPQVDAIPKLAFNGTMA
+
+
+KAL3916054.1
+  MAG: hypothetical protein SGPRY_006981 [Prymnesium sp.]
+  LENGTH = 336  COMBINED P-VALUE = 4.12e-05  E-VALUE =     0.62
+  DIAGRAM: 214-[8]-39-[7]-6-<6>-48
+
+                                                                     [8]
+                                                                     2.6e-05
+                                                                     ALGKPPAA
+                                                                     ++  ++++
+151  GTIIPQGSINLYQYPMVSLNGQLPVEVAGKMLHAIRWLVHKVAEEPNRVFYRRDASGALPLHALAISNTPSALVL
+
+                                         [7]           <6>
+                                         3.1e-07       1.0e-04
+                                         PPIPRLLP      SWRAAMLGRTPPP
+                                         + ++ +++        +  +++++ ++
+226  IREICSLWPRMIPLVHGPGLYEGEHLFHILVRSLPLPVLPQLLPTALLRVLTRGGLLGKAHAADAKLIVRWVQML
+
+
+KAL3931323.1
+  MAG: hypothetical protein SGPRY_001171 [Prymnesium sp.]
+  LENGTH = 116  COMBINED P-VALUE = 4.91e-05  E-VALUE =     0.74
+  DIAGRAM: 33-[9]-46-[1]-8
+
+                                      [9]
+                                      3.3e-06
+                                      FPPIPRLP
+                                      +++++ ++
+1    MVAHHVQKKATKGHNAYRPRKSRPSDRNRKPPSYPTIPDIPWMTPIDKPSGNTLKQVSIAVEASDTAETLRSKLT
+
+                 [1]
+                 7.4e-05
+                 TQTQLGNCMGALGLHIGSRFD
+                   +++ + +++ ++  +  ++
+76   AAGAPSPDTFFFGGAELTGDLGAAGLTEGKDLEAFVYSPAE
+
+
+KAL3928095.1
+  MAG: hypothetical protein SGPRY_002538 [Prymnesium sp.]
+  LENGTH = 515  COMBINED P-VALUE = 6.60e-05  E-VALUE =        1
+  DIAGRAM: 77-[4]-109-[1]-15-[6]-145-[1]-98
+
+       [4]
+       5.5e-07
+       LPDFPDPFTLPPIPRL
+       +++    + ++ ++++
+76   LLLPETGGLFALPSLPRLPSEALLCGGRGWSERLGQACERALIRQAQDDKARGGLFTRVASSPARLRELLQPAAS
+
+                                                         [1]
+                                                         2.2e-05
+                                                         TQTQLGNCMGALGLHIGSRFD
+                                                               ++++  +++ +  ++
+151  PSKRAHLFSRTPERLRAKLRLDDEACYSLTDERMADEITISLGGLAGVRSSTPVVDATACVGGNALSFAKAFKRV
+
+                  [6]
+                  3.9e-05
+                  SWRAAMLGRTPPP
+                  + ++  ++++
+226  VAIEYDETRAAMLAHNARVLGRGGVEVVRADCVEAVPSLGLDGFVVFVDPPWGGLAYKDSPNCDISLSGQPLRRV
+
+                          [1]
+                          4.8e-05
+                          TQTQLGNCMGALGLHIGSRFD
+                            +++++++ ++   ++
+376  EGGADGREGARELNKRLAKLARAKQLNACVSAFNQAVSTDSWSHAILINAHASAGDKEGAMVALERMRRAGHPPC
+
+
+KAL3932683.1
+  MAG: hypothetical protein SGPRY_000607 [Prymnesium sp.]
+  LENGTH = 332  COMBINED P-VALUE = 6.73e-05  E-VALUE =        1
+  DIAGRAM: 2-[10]-16-[8]-253-[2]-22
+
+       [10]                              [8]
+       6.5e-06                           1.6e-05
+       MQPPPPKNTKNECETVVE                ALGKPPAA
+       + + ++ ++++ +++  +                + ++++++
+1    MCASPAPSAAIDEACSSHLEEVELGSPPKKNVLPATAENRPTAALIIARITSRDLTAAQCVADTPREELQEIDSH
+
+                                                                             [2]
+                                                                             9.5
+                                                                             WYD
+                                                                             + +
+226  ELLLRHDKITEMLSFQDSKGRTPSMLAAERGYTKIQERLQESTPFSQWQLWYDDISRVSTGITFRTVSNVVDWTA
+
+     
+     e-06
+     EWRERIECWY
+       ++ ++ +
+301  NSNETVNEWLSKRFSSRAAPITETGLRPAPPA
+
+
+KAL3920879.1
+  MAG: hypothetical protein SGPRY_005096 [Prymnesium sp.]
+  LENGTH = 209  COMBINED P-VALUE = 6.91e-05  E-VALUE =        1
+  DIAGRAM: 115-[7]-34-[9]-44
+
+                                             [7]
+                                             2.3e-07
+                                             PPIPRLLP
+                                             ++++ +++
+76   NSVHKGDQYAASGLSPPSIIVQQPSSPMSQPASFTSRSASLPMPQLVPSNTPFPMAPPPIPARSLPSSYGFGATD
+
+            [9]
+            1.2e-05
+            FPPIPRLP
+             +++++ +
+151  QSSSSMPPPPIPRRPSNIGTSPSQRSDALLHGQKAFVLLATAEDGDIPSSFNLPHPSTF
+
+
+KAL3908189.1
+  MAG: hypothetical protein SGPRY_009894, partial [Prymnesium sp.]
+  LENGTH = 534  COMBINED P-VALUE = 8.34e-05  E-VALUE =      1.3
+  DIAGRAM: 448-[4]-70
+
+                                                                              [4
+                                                                              3.
+                                                                              LP
+                                                                              +
+376  SLLTLPQSSFPSAWIQKRLRRYDAALFANLIWWRISLSPSKPLVFRGCLPRAFRSACSMLEFQFSLTLFSRGSVV
+
+     ]
+     0e-06
+     DFPDPFTLPPIPRL
+        +  ++++++++
+451  SSASLSQLPPLPRLLLLPCQTAGRPLMEEESELRQLWICLIYLTLEEAGLPAPADAADAGSTILEEVRKKYRNFV
+
+
+KAL3896474.1
+  MAG: hypothetical protein SGPRY_013265 [Prymnesium sp.]
+  LENGTH = 248  COMBINED P-VALUE = 1.04e-04  E-VALUE =      1.6
+  DIAGRAM: 112-[4]-120
+
+                                          [4]
+                                          2.2e-06
+                                          LPDFPDPFTLPPIPRL
+                                          +    +  +++++++
+76   FSLLAQQHVDASDCMLAELLTTISSMLQQQGPAGSFLLDGHNSGIQLPPIPKFSQTGYTFYTWLRVDSFGASLNT
+
+
+KAL3911422.1
+  MAG: hypothetical protein SGPRY_008698, partial [Prymnesium sp.]
+  LENGTH = 118  COMBINED P-VALUE = 1.42e-04  E-VALUE =      2.1
+  DIAGRAM: 61-[9]-49
+
+                                                                  [9]
+                                                                  1.1e-06
+                                                                  FPPIPRLP
+                                                                   ++++ ++
+1    ARRLASRAELEAQAASEQPLSKSLQKRILKLHSLEALKQKRKDDKKQRRRIRKMAGASSVEIPPIPDLPSPAPGS
+
+
+KAL3927896.1
+  MAG: hypothetical protein SGPRY_002620 [Prymnesium sp.]
+  LENGTH = 160  COMBINED P-VALUE = 1.50e-04  E-VALUE =      2.3
+  DIAGRAM: 26-[7]-126
+
+                               [7]
+                               4.1e-06
+                               PPIPRLLP
+                                ++++ ++
+1    MPGQALDEVAATLAAAEASVLRDEEPAPIPRRVPEVYTAAMCQPAWARGRVWDTRDPSNCVPVKPFSVDDPPIHD
+
+
+KAL3903263.1
+  MAG: hypothetical protein SGPRY_011746 [Prymnesium sp.]
+  LENGTH = 222  COMBINED P-VALUE = 1.60e-04  E-VALUE =      2.4
+  DIAGRAM: 33-[5]-[6]-136-[5]-24
+
+                                      [5]     [6]
+                                      4.2e-05 8.1e-05
+                                      LNLPDFPDSWRAAMLGRTPPP
+                                      ++ ++ ++  ++++ + +++
+1    MVRVALVENFKARGNMAMRNGDPVAARAFYSEALEVPEVPQQVRAALYGNRTACLLALNQPELAAADAERALELV
+
+                                             [5]
+                                             6.3e-07
+                                             LNLPDFPD
+                                             + +++ ++
+151  ELYSSLLRDKPADVRVLSCRSACHLHAGEWADVEEDVGAALALPDIPNRTHLKLLLRRAQARLRTGRRAGNV
+
+
+KAL3917319.1
+  MAG: hypothetical protein SGPRY_006452, partial [Prymnesium sp.]
+  LENGTH = 318  COMBINED P-VALUE = 1.64e-04  E-VALUE =      2.5
+  DIAGRAM: 168-[10]-132
+
+                       [10]
+                       3.9e-06
+                       MQPPPPKNTKNECETVVE
+                        ++ ++ + +++ +++++
+151  SPPAPRILNKFFARERLPLPPSKTAKLDNEMEYLNKLPSYGSHSAANGSRTSSRAASRAKELPPYAPLDEGSRSR
+
+
+KAL3895916.1
+  MAG: hypothetical protein SGPRY_013395 [Prymnesium sp.]
+  LENGTH = 448  COMBINED P-VALUE = 1.89e-04  E-VALUE =      2.9
+  DIAGRAM: 5-[8]-435
+
+          [8]
+          4.1e-07
+          ALGKPPAA
+          +++++++
+1    MSLSQALNKPPAETSPLLPLSSFGGAKGIRYASGVMLLINNITGPGIPALPNLLAEAGWLSPLLCMLGVWGMTTL
+
+
+KAL3904490.1
+  MAG: hypothetical protein SGPRY_011265 [Prymnesium sp.]
+  LENGTH = 439  COMBINED P-VALUE = 2.01e-04  E-VALUE =        3
+  DIAGRAM: 225-[1]-13-[7]-172
+
+     [1]                               [7]
+     5.4e-06                           1.8e-06
+     TQTQLGNCMGALGLHIGSRFD             PPIPRLLP
+     ++++ ++ ++ + + ++++               +++++ ++
+226  SRTKDNNKLGEFNLTVTSRPRRMLLGSECMRGGIPPMPRGVPQIDVTFDIDANGMLNVSALEKSTGKENKITITN
+
+
+KAL3911144.1
+  MAG: hypothetical protein SGPRY_008804, partial [Prymnesium sp.]
+  LENGTH = 739  COMBINED P-VALUE = 2.24e-04  E-VALUE =      3.4
+  DIAGRAM: 115-[6]-130-[4]-303-[9]-154
+
+                                             [6]
+                                             4.4e-05
+                                             SWRAAMLGRTPPP
+                                             + ++ + +   ++
+76   LFSAMLFDKAGANLPELQNVGIGMNVMSASIGGLFFSSYSSCRAVMAGPDITPVVFLVEMAKAISSSLCPLGTAE
+
+                                      [4]
+                                      8.6e-06
+                                      LPDFPDPFTLPPIPRL
+                                      ++++   + +  + +
+226  ESDGKYLKIVFGTWEPSYYHEGTDAMRGGWMLMLPAFFIGFPLYYLKRRHIGKPSINFPGMIILPTAIFYIILFA
+
+                                                         [9]
+                                                         9.5e-06
+                                                         FPPIPRLP
+                                                         + ++ ++
+526  ILAAFGFAYTFAKRSTLSPPVSGEAHCSTAVRSAAQEMKLGVYGIDATSEAVFQKIKRLAAKRKIELVWAGAPCS
+
+
+KAL3893270.1
+  MAG: hypothetical protein SGPRY_014345 [Prymnesium sp.]
+  LENGTH = 514  COMBINED P-VALUE = 2.83e-04  E-VALUE =      4.3
+  DIAGRAM: 122-[9]-384
+
+                                                    [9]
+                                                    3.2e-08
+                                                    FPPIPRLP
+                                                    +++++ ++
+76   GMPQRYSSKDWLRNIISVRSDVVFAAVRTQLLWQLAWAVLVSVVYVLFPKIPTLPALPHSLLGGVIGVLLGFRTN
+
+
+KAL3920364.1
+  MAG: hypothetical protein SGPRY_005279 [Prymnesium sp.]
+  LENGTH = 259  COMBINED P-VALUE = 2.87e-04  E-VALUE =      4.3
+  DIAGRAM: 72-[6]-146-[4]-12
+
+                                                                             [6]
+                                                                             6.7
+                                                                             SWR
+                                                                             + +
+1    MLRLRSRVLALGALGASAAFSCAHHPPPRGVFLRRAIRMASSPPDNTWEPPAGFVDWKDDAPPPLEAWEEPRAKR
+
+     
+     e-06
+     AAMLGRTPPP
+      +++  ++++
+76   SAALHPVPPVESIQMDAQLDAAVGVCMGCGASFQSDNNEAPGYVPQAVIEEKLAVANEEGKKRRRKSAVCQRCHG
+
+           [4]
+           1.3e-06
+           LPDFPDPFTLPPIPRL
+           +   ++   ++++ +
+226  ILVANKLDLLPKGVALPPIERWVKAECKYADSTL
+
+
+KAL3926370.1
+  MAG: hypothetical protein SGPRY_003326 [Prymnesium sp.]
+  LENGTH = 609  COMBINED P-VALUE = 3.61e-04  E-VALUE =      5.4
+  DIAGRAM: 43-[8]-258-[6]-231-[7]-48
+
+                                                [8]
+                                                1.8e-05
+                                                ALGKPPAA
+                                                +++ +++
+1    MDQIRRSNSAEMTPPAPIPYTDSHILANPLLPPARPRRSSFSAALGTPTSKALRRLRRAIVLQMLRCRTQRVGLI
+
+              [6]
+              3.5e-06
+              SWRAAMLGRTPPP
+                ++   ++ ++
+301  RRVHTQYARTMRAGSRGRPPAKLLQEAEGTLSKLAACQVQIQQARRFAGRCTGHAFVVFEKKKDAAKCVRHFELI
+
+                                 [7]
+                                 3.8e-05
+                                 PPIPRLLP
+                                 ++++ + +
+526  TCITASIFLFLRWRNPQPTEPSYAVCPLPPVPELPPGDQCFGDHGLLDFNGACVRHWYVSGAIALMNSLVRPAHV
+
+
+KAL3907628.1
+  MAG: hypothetical protein SGPRY_010103 [Prymnesium sp.]
+  LENGTH = 164  COMBINED P-VALUE = 4.34e-04  E-VALUE =      6.5
+  DIAGRAM: 9-[10]-35-[1]-81
+
+              [10]                                                 [1]
+              5.5e-05                                              4.8e-05
+              MQPPPPKNTKNECETVVE                                   TQTQLGNCMGALG
+               + +++ + +++ ++++                                      + +    ++++
+1    MQQEAPPMSVGQPPAGSDSAEKEMIVQRPITDVFDVVTDFDKYPLWVTGLKKVTVLERFESGRGKVVEFNAGALS
+
+     
+     
+     LHIGSRFD
+     ++++  +
+76   LSIAYTLSYTVDEPQRVSWVSVAGGVKSIVGEYKLSSTDDGATRVQYRLDVDAGFGIPGPVRKAVTNIVIGAALP
+
+
+KAL3917566.1
+  MAG: hypothetical protein SGPRY_006357 [Prymnesium sp.]
+  LENGTH = 269  COMBINED P-VALUE = 5.19e-04  E-VALUE =      7.8
+  DIAGRAM: 247-[4]-6
+
+                           [4]
+                           1.4e-07
+                           LPDFPDPFTLPPIPRL
+                            ++ +++   + + ++
+226  LERARSAPGTDDDLLLIPMYQDGPTVPDPSHIPAIRRLMSRLQN
+
+
+KAL3920529.1
+  MAG: hypothetical protein SGPRY_005219 [Prymnesium sp.]
+  LENGTH = 240  COMBINED P-VALUE = 5.28e-04  E-VALUE =        8
+  DIAGRAM: 41-[7]-5-[1]-165
+
+                                              [7]          [1]
+                                              7.3e-05      9.8e-07
+                                              PPIPRLLP     TQTQLGNCMGALGLHIGSRFD
+                                               ++++  +     ++  + +  +  + +++ ++
+1    MRCGRRSAQAGGCAALVCAAAILCWSTNLRAVREATIALTASPLPRTKPSLPHASRVLVTGGAGFIGYHLSRRLH
+
+
+KAL3912493.1
+  MAG: hypothetical protein SGPRY_008320 [Prymnesium sp.]
+  LENGTH = 401  COMBINED P-VALUE = 5.49e-04  E-VALUE =      8.3
+  DIAGRAM: 49-[8]-126-[7]-109-[8]-78-[5]-7
+
+                                                      [8]
+                                                      2.0e-05
+                                                      ALGKPPAA
+                                                      +++ ++
+1    MLSPPASCCGRTFHEARALLAHTSSHRSCELCDFNACSAALKRHRWEAHAIGTPPVVEGRGESAVGRSGAQFRVF
+
+                                      [7]
+                                      9.9e-05
+                                      PPIPRLLP
+                                       ++  +++
+151  RSLEQEEWPANHSILDALGAEAHSWLAAVGLGSVPLWQLVPYPWRPILTLASVTPDLHPAVQRASAEGRGLCVDN
+
+     [8]
+     2.3e-05
+     ALGKPPAA
+     + ++ +++
+301  AKGRVPSHCDWNTQLCQFRTLPLQNIRRCGLPLKAEHSFGWNPIFRHDAAEPPPMGGVVLACKTEETAATRSVYT
+
+                [5]
+                2.6e-05
+                LNLPDFPD
+                 +++ +++
+376  FFDKWHDGISARRLPNFPSTDEATAS
+
+
+KAL3902935.1
+  MAG: hypothetical protein SGPRY_011868, partial [Prymnesium sp.]
+  LENGTH = 368  COMBINED P-VALUE = 5.87e-04  E-VALUE =      8.8
+  DIAGRAM: 28-[7]-15-[9]-46-[5]-255
+
+                                 [7]                    [9]
+                                 2.2e-05                5.1e-06
+                                 PPIPRLLP               FPPIPRLP
+                                 ++++ + +                ++ ++++
+1    EVRCIEYTSVDSIVSSDHSPVRAVLSVFLPLPHLDPSLPLYPSRTSNEERALPPFPRLPDEATSPRASPRASPRT
+
+                                   [5]
+                                   5.6e-05
+                                   LNLPDFPD
+                                   + ++  ++
+76   SLPRSSPRLFGFKLSVRSKPRPRQEERPTALPLPSHPSACGRLSLGRYSFPSTGHLAAVAHWARRGSNGLPRGRV
+
+
+KAL3918783.1
+  MAG: hypothetical protein SGPRY_005878 [Prymnesium sp.]
+  LENGTH = 1690  COMBINED P-VALUE = 6.04e-04  E-VALUE =      9.1
+  DIAGRAM: 192-[1]-395-[9]-1074
+
+                                               [1]
+                                               8.9e-06
+                                               TQTQLGNCMGALGLHIGSRFD
+                                               ++ ++ +   ++++  +++
+151  DKTWSVSCPNQLEGCHYDCNDSPPCLLSIDPTLLRSHPQGQWHRVELPSRWSAFGLLFSSKISKCAVVGSSSPIE
+
+             [9]
+             6.6e-07
+             FPPIPRLP
+              +++++++
+601  KSEATAWHSPPVPRLPPPSHPACTERTDRSCSTPTSKSRRSYAVPYNFSALKPSTLTAHLRRISAAGSSLEAFCS
+
+
+KAL3909274.1
+  MAG: hypothetical protein SGPRY_009486 [Prymnesium sp.]
+  LENGTH = 267  COMBINED P-VALUE = 6.58e-04  E-VALUE =      9.9
+  DIAGRAM: 80-[7]-179
+
+          [7]
+          2.2e-06
+          PPIPRLLP
+          +  +++++
+76   CINDIPAYPRMVPGVAATEVYDSSPLPHGGKLTRAKYTIALLGYRLSYYLDLKYEPKLSSMTFRLDYSRHSDIDD
+
+********************************************************************************
+
+
+CPU: mablin-mac.local
+Time 0.567 secs.
+
+mast -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_GCA_046255225.1 -ev 10.0 -nostatus /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_046255225.1/protein.faa

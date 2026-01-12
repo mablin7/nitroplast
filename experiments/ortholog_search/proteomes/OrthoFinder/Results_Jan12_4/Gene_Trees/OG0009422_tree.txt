@@ -1,0 +1,1 @@
+(Chrysochromulina_tobinii_KOO24359.1:0.456437,(Braarudosphaera_bigelowii_KC1-P2-N_k25_Locus_24904_Transcript_7_1:0.549993,(Braarudosphaera_bigelowii_KC1-P2_N4_k65_Locus_10315_Transcript_2_1:0.840859,Braarudosphaera_bigelowii_KC1-P2_N3_k49_Locus_16126_Transcript_5_1:0.0889753):0.296684):0.456437);

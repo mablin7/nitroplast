@@ -1,0 +1,1 @@
+(Emiliania_huxleyi_EOD14978.1:0.657416,(Chrysochromulina_tobinii_KOO36090.1:0.244306,(Chrysochromulina_tobinii_KOO22833.1:0.248486,Chrysochromulina_tobinii_KOO30004.1:0.421568)n2:0.358547)n1:0.657416)n0;

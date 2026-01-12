@@ -1,0 +1,12 @@
+2026-01-12 10:09:48 : Started OrthoFinder version 2.5.5
+Command Line: /Users/mablin/micromamba/envs/bio/bin/orthofinder -f /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/ortholog_search/proteomes -S diamond
+
+WorkingDirectory_Base: /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/ortholog_search/proteomes/OrthoFinder/Results_Jan12_2/WorkingDirectory/
+
+Species used: 
+0: Braarudosphaera_bigelowii.faa
+1: Chrysochromulina_tobinii.faa
+2: Emiliania_huxleyi.faa
+3: Prymnesium_parvum.faa
+4: Prymnesium_sp.faa
+

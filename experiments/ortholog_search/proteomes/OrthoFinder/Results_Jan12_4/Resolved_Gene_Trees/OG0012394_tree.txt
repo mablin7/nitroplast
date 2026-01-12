@@ -1,0 +1,1 @@
+(Prymnesium_parvum_KAL1520885.1:0.0124892,(Prymnesium_parvum_KAL1499056.1:0.0286586,(Prymnesium_parvum_KAL1527124.1:0.769691,Prymnesium_parvum_KAL1499288.1:0.0326637)n2:0.948389)n1:0.0124892)n0;

@@ -1,0 +1,1 @@
+(Braarudosphaera_bigelowii_KC1-P2-N_CL8719Contig1_1:0.688847,(Chrysochromulina_tobinii_KOO23849.1:1.0043,(((Chrysochromulina_tobinii_KOO30142.1:0.0125717,Chrysochromulina_tobinii_KOO31740.1:0.0250352):1.04949,Chrysochromulina_tobinii_KOO52952.1:0.670064):0.166333,Chrysochromulina_tobinii_KOO53076.1:0.617619):0.133232):0.688847);

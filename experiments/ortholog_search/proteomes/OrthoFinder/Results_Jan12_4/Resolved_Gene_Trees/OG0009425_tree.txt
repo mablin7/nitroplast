@@ -1,0 +1,1 @@
+((Braarudosphaera_bigelowii_KC1-P2_N4_CL6408Contig1_1:0.02881,Braarudosphaera_bigelowii_KC1-P2-N_k25_Locus_25486_Transcript_2_1:0.021451)n1:0.283834,(Chrysochromulina_tobinii_KOO53510.1:0.5809,Chrysochromulina_tobinii_KOO30242.1:0.139889)n2:0.283834)n0;

@@ -1,0 +1,1 @@
+(Chrysochromulina_tobinii:0.25759,((Prymnesium_parvum:0.276722,Prymnesium_sp:0.475696)0.758217:0.200746,(Braarudosphaera_bigelowii:0.456931,Emiliania_huxleyi:0.520585)0.489099:0.121605)1:0.25759);

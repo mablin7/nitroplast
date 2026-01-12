@@ -1,0 +1,10 @@
+uTP Presence Classifier - Data Preparation Metadata
+==================================================
+
+uTP proteins loaded: 933
+uTP regions detected: 648
+Mature domains extracted: 605
+Control candidates selected: 1210
+
+Mature domain lengths: min=53, max=1656, mean=418
+Control candidate lengths: min=75, max=3507, mean=413

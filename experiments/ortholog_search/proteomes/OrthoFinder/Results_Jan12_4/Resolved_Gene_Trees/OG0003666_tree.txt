@@ -1,0 +1,1 @@
+((Emiliania_huxleyi_EOD33731.1:0.120268,(Emiliania_huxleyi_EOD03696.1:0.0572504,(Emiliania_huxleyi_EOD18025.1:0.124683,Emiliania_huxleyi_EOD23234.1:0.0194292)n3:0.0361156)n2:0.0843176)n1:0.436753,(Chrysochromulina_tobinii_KOO30584.1:0.420497,(Chrysochromulina_tobinii_KOO30585.1:0.9655,Chrysochromulina_tobinii_KOO32209.1:0.0907976)n5:0.154915)n4:0.436753)n0;

@@ -1,0 +1,724 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE protein.faa (peptide)
+	Last updated on Sun Jan 11 17:08:24 2026
+	Database contains 16765 sequences, 7795796 residues
+
+	MOTIFS meme_gb.xml (peptide)
+	MOTIF ID                    ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- --------------------- ------- ----- -------------------
+	    1 TQTQLGACMGALGLHLGSRLD MEME-1     21 TQTQLGNCMGALGLHIGSRFD
+	    2 WLEEWRERLECWW         MEME-2     13 WYDEWRERIECWY
+	    3 AEPGCEWVEE            MEME-3     10 AESGCEWVKE
+	    4 LPDFPEPFSLPPIPRL      MEME-4     16 LPDFPDPFTLPPIPRL
+	    5 LZLPDFPD              MEME-5      8 LNLPDFPD
+	    6 AWRAALLGRAPPP         MEME-6     13 SWRAAMLGRTPPP
+	    7 PPJPRLLP              MEME-7      8 PPIPRLLP
+	    8 ALGKPPAA              MEME-8      8 ALGKPPAA
+	    9 FPPIPRLP              MEME-9      8 FPPIPRLP
+	   10 APPPPPKATEAECETLGE    MEME-10    18 MQPPPPKNTKNECETVVE
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.38
+	   3   0.31  0.34
+	   4   0.36  0.17  0.17
+	   5   0.40  0.24  0.22  0.62
+	   6   0.33  0.22  0.20  0.25  0.25
+	   7   0.29  0.17  0.21  0.58  0.41  0.23
+	   8   0.46  0.32  0.26  0.32  0.31  0.68  0.21
+	   9   0.31  0.19  0.20  0.67  0.47  0.28  0.66  0.36
+	  10   0.29  0.31  0.66  0.33  0.37  0.31  0.33  0.49  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5, 8, 9 and 10 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 28 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+KOO24026.1                         hypothetical protein Ctob_...     0.48    136
+KOO26597.1                         hypothetical protein Ctob_...     0.75    230
+KOO34323.1                         hypothetical protein Ctob_...     0.96    124
+KOO22738.1                         general transcription fact...      1.3    339
+KOO24542.1                         putative importin subunit ...      1.4    392
+KOO21997.1                         hypothetical protein Ctob_...      2.1    435
+KOO23848.1                         hypothetical protein Ctob_...      2.6    400
+KOO23441.1                         ATP-dependent RNA helicase...      3.2    494
+KOO29435.1                         hypothetical protein Ctob_...      3.8    864
+KOO22974.1                         60s ribosomal protein l10a...      3.9    216
+KOO29096.1                         ras-related protein rab-28...      4.5    237
+KOO52820.1                         hypothetical protein Ctob_...      4.6    201
+KOO30712.1                         hypothetical protein Ctob_...      4.7    286
+KOO29692.1                         hypothetical protein Ctob_...        5    282
+KOO29927.1                         hypothetical protein Ctob_...        5    118
+KOO28987.1                         hypothetical protein Ctob_...      5.6    331
+KOO24023.1                         hypothetical protein Ctob_...      5.8    170
+KOO32176.1                         hypothetical protein Ctob_...      6.3    187
+KOO22052.1                         hypothetical protein Ctob_...      6.4    177
+KOO52793.1                         hypothetical protein Ctob_...      6.6    309
+KOO33325.1                         hypothetical protein Ctob_...      7.1    210
+KOO30574.1                         hypothetical protein Ctob_...      7.2    144
+KOO27198.1                         multidrug resistance prote...      7.2    426
+KOO32764.1                         hypothetical protein Ctob_...      8.5    270
+KOO27593.1                         exostosin-like glycosyltra...        9    498
+KOO53666.1                         hypothetical protein Ctob_...      9.1    198
+KOO23716.1                         ring u-box domain-containi...      9.4   1049
+KOO31475.1                         hypothetical protein Ctob_...      9.9    180
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+KOO24026.1                             0.48  45-[8]-21-[6]-49
+KOO26597.1                             0.75  18-[8]-67-[6]-97-[7]-4-[3]-5
+KOO34323.1                             0.96  6-[4]-102
+KOO22738.1                              1.3  168-[5]-38-[1]-104
+KOO24542.1                              1.4  197-[4]-10-[1]-86-[7]-54
+KOO21997.1                              2.1  240-[10]-177
+KOO23848.1                              2.6  18-[7]-374
+KOO23441.1                              3.2  40-[4]-3-[7]-427
+KOO29435.1                              3.8  322-[4]-104-[2]-378-[6]-18
+KOO22974.1                              3.9  51-[5]-57-[7]-92
+KOO29096.1                              4.5  44-[2]-157-[7]-15
+KOO52820.1                              4.6  143-[7]-50
+KOO30712.1                              4.7  127-[7]-151
+KOO29692.1                                5  52-[8]-10-[1]-191
+KOO29927.1                                5  15-[5]-41-[5]-46
+KOO28987.1                              5.6  35-[1]-123-[5]-66-[6]-65
+KOO24023.1                              5.8  65-[6]-[9]-84
+KOO32176.1                              6.3  15-[5]-41-[5]-71-[6]-31
+KOO22052.1                              6.4  16-[1]-26-[6]-101
+KOO52793.1                              6.6  56-[10]-155-[10]-62
+KOO33325.1                              7.1  36-[10]-111-[3]-14-[6]-8
+KOO30574.1                              7.2  36-[3]-98
+KOO27198.1                              7.2  140-[2]-156-[6]-58-[5]-18-[6]-7
+KOO32764.1                              8.5  71-[1]-10-[8]-160
+KOO27593.1                                9  38-[3]-121-[2]-222-[9]-86
+KOO53666.1                              9.1  121-[7]-69
+KOO23716.1                              9.4  619-[6]-365-[4]-17-[3]-9
+KOO31475.1                              9.9  50-[6]-90-[5]-19
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+KOO24026.1
+  hypothetical protein Ctob_001578 [Chrysochromulina tobinii]
+  LENGTH = 136  COMBINED P-VALUE = 2.87e-05  E-VALUE =     0.48
+  DIAGRAM: 45-[8]-21-[6]-49
+
+                                                  [8]                          [
+                                                  4.4e-05                      1
+                                                  ALGKPPAA                     S
+                                                  + ++  ++                     +
+1    MPAKKASQTASHTKKAAPPPKKSPPKKSPPKAAPPPPPAPVAKPAAKGKGKAAPPAKTIAKKPLKLVKIPTSALA
+
+     6]
+     .8e-05
+     WRAAMLGRTPPP
+      ++   +++  +
+76   ERAKSKGRAIKAAAPFEHPDAEKVPQPRKSPPKKAAPPANEAVKEALKKVSTILAECIKSL
+
+
+KOO26597.1
+  hypothetical protein Ctob_013446 [Chrysochromulina tobinii]
+  LENGTH = 230  COMBINED P-VALUE = 4.47e-05  E-VALUE =     0.75
+  DIAGRAM: 18-[8]-67-[6]-97-[7]-4-[3]-5
+
+                       [8]
+                       4.1e-05
+                       ALGKPPAA
+                       + ++  ++
+1    MDAVLMNVDLDGSVQLRPAKGKEKSAAKLTGLAAAAITRRNRLPVMRERSDDSSSEEEQQQQARRSPLVVEVEQR
+
+                       [6]
+                       7.4e-05
+                       SWRAAMLGRTPPP
+                       +++     + + +
+76   RAAARASHPELVQRRARTAYRSVIGNRPVSVIVKKPLPHPAMRTTSAGSQEEPQGLHRAAVRRASDEAFDAYAAG
+
+                                                          [7]         [3]
+                                                          1.4e-05     4.7e-05
+                                                          PPIPRLLP    AESGCEWVKE
+                                                          ++++ ++     + +++  +++
+151  TLAIAPSGLPLRRTRSDMSAETTIEDRKPSATSSYPVSHLEAAAVAPCAAATAPPIPVLLRPLPLTRSGCSSLTE
+
+
+KOO34323.1
+  hypothetical protein Ctob_007263 [Chrysochromulina tobinii]
+  LENGTH = 124  COMBINED P-VALUE = 5.71e-05  E-VALUE =     0.96
+  DIAGRAM: 6-[4]-102
+
+           [4]
+           1.1e-05
+           LPDFPDPFTLPPIPRL
+           +  + + ++++  +++
+1    MKLLVLVLPFASAFKLPISPKLSATAVTLAAPLPALAVYEPIHKVLPGTEYGDVIMSQNNVASAALGLVMLLGVF
+
+
+KOO22738.1
+  general transcription factor [Chrysochromulina tobinii]
+  LENGTH = 339  COMBINED P-VALUE = 7.65e-05  E-VALUE =      1.3
+  DIAGRAM: 168-[5]-38-[1]-104
+
+                       [5]                                           [1]
+                       2.1e-05                                       2.4e-05
+                       LNLPDFPD                                      TQTQLGNCMGA
+                       +++ ++++                                      + +  ++ ++
+151  MRKNPFSEWFREPLDHVALQLHDYPQVISQPMDLGTVHKKMERSQYMSVEDFAHDVRLIWQNAITYNSAQSFIGV
+
+     
+     
+     LGLHIGSRFD
+      +  ++  ++
+226  VAGILAAIFDRRFALITRSATADPGRPLPDRPGWPTFQQKKKFYDLCTRLTLADLNQMVSLVQRGCQAAVQQCGD
+
+
+KOO24542.1
+  putative importin subunit beta-4-like protein, partial [Chrysochromulina 
+  tobinii]
+  LENGTH = 392  COMBINED P-VALUE = 8.64e-05  E-VALUE =      1.4
+  DIAGRAM: 197-[4]-10-[1]-86-[7]-54
+
+                                                    [4]                       [1
+                                                    9.3e-05                   4.
+                                                    LPDFPDPFTLPPIPRL          TQ
+                                                    + +   ++  + + ++          ++
+151  GEFACYLQPDIISHYQEILPHIFMVLNDATERVKEKSCYALESFCENLGDDIVPFLQPLLERLTALLRDSTRATQ
+
+     ]
+     0e-05
+     TQLGNCMGALGLHIGSRFD
+     +   + + + +++ +  +
+226  EMAISALAAVAMSAGKQFRPYFETIYSLVRVLLHQTGAGELTLRARALECIGLMNLAVGREVCEPVLPEVTAAAL
+
+                                   [7]
+                                   1.1e-06
+                                   PPIPRLLP
+                                   + ++ +++
+301  EGLQLDLPELREYTYGFFAQLSELLQGDVAPILPQLLPRVLQSLDFEDCIDFGDDDKPPSAMAALVASINAKGAS
+
+
+KOO21997.1
+  hypothetical protein Ctob_000452 [Chrysochromulina tobinii]
+  LENGTH = 435  COMBINED P-VALUE = 1.28e-04  E-VALUE =      2.1
+  DIAGRAM: 240-[10]-177
+
+                    [10]
+                    1.4e-06
+                    MQPPPPKNTKNECETVVE
+                      ++++ +  + ++++++
+226  EVESLNLALVVRFSKGSPPKPDVVPSACETLVDELSEAFKTTRPDMMLDLPPLAAPDTYGGLGEKTPRTGMGASQ
+
+
+KOO23848.1
+  hypothetical protein Ctob_000771 [Chrysochromulina tobinii]
+  LENGTH = 400  COMBINED P-VALUE = 1.56e-04  E-VALUE =      2.6
+  DIAGRAM: 18-[7]-374
+
+                       [7]
+                       2.3e-06
+                       PPIPRLLP
+                        + +++++
+1    MAITPTLLLLVAPTAFAFVPAPRLVPRTAHFSPRLAIRTPVAPVAFADQAGTLAGTFFQASLLPYIGFLYFLGYA
+
+
+KOO23441.1
+  ATP-dependent RNA helicase dhh1 [Chrysochromulina tobinii]
+  LENGTH = 494  COMBINED P-VALUE = 1.88e-04  E-VALUE =      3.2
+  DIAGRAM: 40-[4]-3-[7]-427
+
+                                             [4]                [7]
+                                             2.8e-06            2.0e-05
+                                             LPDFPDPFTLPPIPRL   PPIPRLLP
+                                             +   ++  ++++++     + +++ ++
+1    MPDGSDGKGGKGKGKGGGKGGGGRGRGQGDDRQPPPEPPPLQMAPASLTMPPMPQMPAMPQMPRGLPPMPDAGMG
+
+
+KOO29435.1
+  hypothetical protein Ctob_012988 [Chrysochromulina tobinii]
+  LENGTH = 864  COMBINED P-VALUE = 2.29e-04  E-VALUE =      3.8
+  DIAGRAM: 322-[4]-104-[2]-378-[6]-18
+
+                           [4]
+                           4.2e-06
+                           LPDFPDPFTLPPIPRL
+                            +  +++ +++ +++
+301  PLFSLAAKPAPLAATAPARKVATPSAPAPLSMPAVPRPPIPSAMPAPATTLVSQSAHAITEALETCPRALALLQG
+
+                                                                        [2]
+                                                                        1.6e-05
+                                                                        WYDEWRER
+                                                                         +++ +++
+376  VPKSELVLAQLWTIAHAIDYETACSFENMDKSEDSAVDAIDAGIAALCAAGTLSFDETVGSRSTPCASMREVRKK
+
+     
+     
+     IECWY
+     +  +
+451  VAEWAARSRVVVPKADLPSEIDAGAMTMQSGLAMLAASSQSFAGDNLKHVEEHGAAEARAVAVHGNAQSKQRLLD
+
+             [6]
+             6.6e-05
+             SWRAAMLGRTPPP
+             +  + + +   ++
+826  LRLGRELLAKQAGAAGQPAPPAKKLTIAKERDGDLATQL
+
+
+KOO22974.1
+  60s ribosomal protein l10a-1-like protein [Chrysochromulina tobinii]
+  LENGTH = 216  COMBINED P-VALUE = 2.32e-04  E-VALUE =      3.9
+  DIAGRAM: 51-[5]-57-[7]-92
+
+                                                        [5]
+                                                        4.5e-05
+                                                        LNLPDFPD
+                                                        ++++  +
+1    MSKVSNDHLRKCIDAVLAGSVEKKRDFVETIELQIGLKQYDPQKDKRFAGSIKLPHIPRPKMRVCVLGDAFHCEK
+
+                                              [7]
+                                              4.8e-05
+                                              PPIPRLLP
+                                                +++++
+76   AAALGLEFKNAEGLKNFNKNKKLIKKFAKKYHNFVASESLIKQIPRLLGPGLNKAGKFPILVLQQEDLATKVDDV
+
+
+KOO29096.1
+  ras-related protein rab-28 [Chrysochromulina tobinii]
+  LENGTH = 237  COMBINED P-VALUE = 2.70e-04  E-VALUE =      4.5
+  DIAGRAM: 44-[2]-157-[7]-15
+
+                                                 [2]
+                                                 2.6e-05
+                                                 WYDEWRERIECWY
+                                                 + +++ + +++ +
+1    MAGVGKSHAEDSDDEPESLQYKVIILGDGACGKTSIAMRFTGDTFAQQYKQTIGCDFFMKRLLLPGNLNVALQIW
+
+                                                                     [7]
+                                                                     3.9e-06
+                                                                     PPIPRLLP
+                                                                      ++++++
+151  HNQFADENEMFSCFMSAKTGDNVSQCFHRIAADLAGVVLTKPEIEVASKVVRAEVVNHQQHDPDTPMPRLLKQAD
+
+
+KOO52820.1
+  hypothetical protein Ctob_016757, partial [Chrysochromulina tobinii]
+  LENGTH = 201  COMBINED P-VALUE = 2.72e-04  E-VALUE =      4.6
+  DIAGRAM: 143-[7]-50
+
+                                                                         [7]
+                                                                         8.4e-08
+                                                                         PPIPRLL
+                                                                         ++++ ++
+76   ALQQLLSTISTSDGRLSALMSTLQAVADPAKTKAGEDKDKKPPHLFKDCPKSKEKAAKKAKKEALAAAPPIPGLL
+
+     
+     
+     P
+     +
+151  PSDAMAAISALLSQIVVNGGAVADLIIIGAVDSGCTGSLTPHHRALINVRP
+
+
+KOO30712.1
+  hypothetical protein Ctob_016144 [Chrysochromulina tobinii]
+  LENGTH = 286  COMBINED P-VALUE = 2.83e-04  E-VALUE =      4.7
+  DIAGRAM: 127-[7]-151
+
+                                                         [7]
+                                                         2.3e-07
+                                                         PPIPRLLP
+                                                           ++++++
+76   VVGALYHSLAMVPVTSVIAILLIWALVALPLCVVGTILGRNWAGTSDAPCKINAIPRLIPQKRWFARPPVLITLG
+
+
+KOO29692.1
+  hypothetical protein Ctob_006915 [Chrysochromulina tobinii]
+  LENGTH = 282  COMBINED P-VALUE = 2.96e-04  E-VALUE =        5
+  DIAGRAM: 52-[8]-10-[1]-191
+
+                                                         [8]               [1]
+                                                         3.5e-07           7.1e-
+                                                         ALGKPPAA          TQTQL
+                                                         ++++ +++           +  +
+1    MSDLPGMLAELGIARADAARLAAALRAPATSPTAVAPDQTPPPPPPPSLPLHALGRVPAAVYINLASRTDRRRAM
+
+     
+     05
+     GNCMGALGLHIGSRFD
+      + + + ++  + +++
+76   EAALPAVGLGHAERFEALTTAPPSCAASHVALWRRCAASEAPLLILEDDVSFGTPEVDASCRALMRAVEGASELP
+
+
+KOO29927.1
+  hypothetical protein Ctob_014526 [Chrysochromulina tobinii]
+  LENGTH = 118  COMBINED P-VALUE = 3.01e-04  E-VALUE =        5
+  DIAGRAM: 15-[5]-41-[5]-46
+
+                    [5]                                              [5]
+                    4.2e-05                                          1.9e-07
+                    LNLPDFPD                                         LNLPDFPD
+                    +  + +++                                         ++++ +++
+1    MLVGNVPSPALSSTRLGQPTFPSSTSRSPSPSTSAAAIENVDALPPGSSMLVGNVPSPAISNTPLKLPSFPSSTS
+
+
+KOO28987.1
+  hypothetical protein Ctob_006853 [Chrysochromulina tobinii]
+  LENGTH = 331  COMBINED P-VALUE = 3.37e-04  E-VALUE =      5.6
+  DIAGRAM: 35-[1]-123-[5]-66-[6]-65
+
+                                        [1]
+                                        9.2e-05
+                                        TQTQLGNCMGALGLHIGSRFD
+                                           +++    +++  +   ++
+1    MALGNVNSPRRRAPKSGGNGAAGNAAHEVKTLPLTASVGFGLASIALSGTIVGTLDPTLQWRLSAAPFRFQPDGV
+
+                                  [5]
+                                  4.4e-06
+                                  LNLPDFPD
+                                  +++++ +
+151  NNLPCTAIAVGIKGIGSALSNVAIYPDLVLNLPDNPVLQATVTAWWNAAYAIGWAAGPILGGGLYDVFASNELCL
+
+                                 [6]
+                                 3.2e-05
+                                 SWRAAMLGRTPPP
+                                 ++ +  + ++ ++
+226  GKFALPPYCPPASLDGTTLTATIPIFRSSYEARVLARTAAPAANQTSDCSCDWQPSNGFDGFASATAAVALIYTL
+
+
+KOO24023.1
+  hypothetical protein Ctob_001588, partial [Chrysochromulina tobinii]
+  LENGTH = 170  COMBINED P-VALUE = 3.47e-04  E-VALUE =      5.8
+  DIAGRAM: 65-[6]-[9]-84
+
+                                                                      [6]
+                                                                      1.4e-05
+                                                                      SWRAAMLGRT
+                                                                        +++ ++ +
+1    RLRTKYAALLLLHQQALARGARSVRSGGCDLRLKGRVTGWQLCVAFERRHQRLTCLVCRFAASQVHFRAMGTGSA
+
+        [9]
+        4.1e-06
+     PPPFPPIPRLP
+     +++++ + + +
+76   PAPFPVINRKPTLGATLRNFTFGDLCSMFGCTVAGGVWGFAAGKPLRRHGSINLAMTACSVAFAYSFQASWHRLT
+
+
+KOO32176.1
+  hypothetical protein Ctob_015367, partial [Chrysochromulina tobinii]
+  LENGTH = 187  COMBINED P-VALUE = 3.78e-04  E-VALUE =      6.3
+  DIAGRAM: 15-[5]-41-[5]-71-[6]-31
+
+                    [5]                                              [5]
+                    2.2e-06                                          1.4e-05
+                    LNLPDFPD                                         LNLPDFPD
+                    + +++++                                          + ++ +++
+1    MLAGKVPSPALSSTWLGLPEFPISTSRSPSPSTSAAAIDCVNRLPPGSVMLVGKVPLPALSSTRLGLPLFPSSTS
+
+                                                                         [6]
+                                                                         7.0e-05
+                                                                         SWRAAML
+                                                                           + +++
+76   RSPSPSTSAAAIDCVAAIEPGSSMLVGKVPLPVLSNTRLGLLEFPISTSRSPSPSTSAAAIEFVSALPPGRVMLV
+
+     
+     
+     GRTPPP
+     ++++ +
+151  GKVPSPALSNTRLGLLEFPISTSRSPSPSTSAAAIEY
+
+
+KOO22052.1
+  hypothetical protein Ctob_001057 [Chrysochromulina tobinii]
+  LENGTH = 177  COMBINED P-VALUE = 3.80e-04  E-VALUE =      6.4
+  DIAGRAM: 16-[1]-26-[6]-101
+
+                     [1]                                            [6]
+                     1.8e-05                                        2.7e-06
+                     TQTQLGNCMGALGLHIGSRFD                          SWRAAMLGRTPP
+                     +++ + +   ++ + ++  +                           + + ++++ + +
+1    MEKLKQPPLLQSLHEVMRTIVFNPASALVVVIAAALMRRSQMSLAALLNPWEVSLLVWLSGYAAVRVALLGFVDG
+
+     
+     
+     P
+     +
+76   VVWFLAPRLPPLPSRVGPKPVYQHQINAMDVTYLLINSTIEYVFAQQIGHLLWHAPFIVRAPELLGLLNGPLAFW
+
+
+KOO52793.1
+  hypothetical protein Ctob_015359 [Chrysochromulina tobinii]
+  LENGTH = 309  COMBINED P-VALUE = 3.94e-04  E-VALUE =      6.6
+  DIAGRAM: 56-[10]-155-[10]-62
+
+                                                             [10]
+                                                             5.7e-08
+                                                             MQPPPPKNTKNECETVVE
+                                                             +++++ ++++++++++++
+1    MATQKLFVVALAVSLSPTFAFKATRLAARRDVIACFAAGAVALTGPQPTKALVKGSAPPPKMEPKERKCKSIDEC
+
+         [10]
+         2.0e-05
+         MQPPPPKNTKNECETVVE
+         ++   ++ +++ +++ ++
+226  LVFKADIGAAIENENACQNKVSQPQPRTYGQKARFGRRFDESLLVELDLVGFADAKKAGLIDPRFERCRQNPFAN
+
+
+KOO33325.1
+  hypothetical protein Ctob_006222 [Chrysochromulina tobinii]
+  LENGTH = 210  COMBINED P-VALUE = 4.25e-04  E-VALUE =      7.1
+  DIAGRAM: 36-[10]-111-[3]-14-[6]-8
+
+                                         [10]
+                                         2.0e-05
+                                         MQPPPPKNTKNECETVVE
+                                         ++ +++ + +++ +++++
+1    MAAEQLKAEFAAMSPGKKASEVNTAAEEPTPSKVAAAPTPPPPARSSSASRVVEPEPEPVAERPARVSPIALLRL
+
+                    [3]                     [6]
+                    1.8e-06                 1.2e-05
+                    AESGCEWVKE              SWRAAMLGRTPPP
+                    ++ +++ +                +  ++ ++ + ++
+151  RMKAMLEESEAKRLNAEKGCEQLAATLVEKEKELNEVTLALQAAILGQKGAAESVRIWQK
+
+
+KOO30574.1
+  hypothetical protein Ctob_010495 [Chrysochromulina tobinii]
+  LENGTH = 144  COMBINED P-VALUE = 4.28e-04  E-VALUE =      7.2
+  DIAGRAM: 36-[3]-98
+
+                                         [3]
+                                         2.2e-06
+                                         AESGCEWVKE
+                                          +++++ +++
+1    MPSSRSIDLRLSPALGTGLSHRVCTRGFLSLYQPLIGESGCEPVGSTRTSSARGRVAGRTPIHRLVEEKVARLGG
+
+
+KOO27198.1
+  multidrug resistance protein a [Chrysochromulina tobinii]
+  LENGTH = 426  COMBINED P-VALUE = 4.32e-04  E-VALUE =      7.2
+  DIAGRAM: 140-[2]-156-[6]-58-[5]-18-[6]-7
+
+                                                                      [2]
+                                                                      2.1e-05
+                                                                      WYDEWRERIE
+                                                                      +++ +++ ++
+76   PGRAIAGSAFFLGQYLCGLSGFLVTLVRPLLLRELLRAMPPIDGSPPAYSVSLAYGLAVALAVVVWLENYTRGLG
+
+     
+     
+     CWY
+       +
+151  LFYAGEVAPLRFTAAALQLIATKLMRLHVAEGRDGLETSLAGNDLLRLEGLLKLLPTAGASLTSLVGGLIALLLT
+
+              [6]
+              1.1e-06
+              SWRAAMLGRTPPP
+              +   ++++++ ++
+301  HHQRRFRRLSVTSTALGRASPMVAAALTFIIYSRLYELEAAVIFPALSVFQSLRLPFILLPIIFNNLVSVFVSIR
+
+          [5]                       [6]
+          3.5e-05                   9.5e-05
+          LNLPDFPD                  SWRAAMLGRTPPP
+          +++++ +                     +  ++++++++
+376  RVSAFLDLPEQPPRGMLLDAAPADANARSGRQSNGKATGKSPPPHRRIPKQ
+
+
+KOO32764.1
+  hypothetical protein Ctob_012552 [Chrysochromulina tobinii]
+  LENGTH = 270  COMBINED P-VALUE = 5.09e-04  E-VALUE =      8.5
+  DIAGRAM: 71-[1]-10-[8]-160
+
+                                                                            [1]
+                                                                            3.5e
+                                                                            TQTQ
+                                                                             +++
+1    MPRLDVSFEFEADLDTFDDAEVLSKLAGLVKVPKANITTKVRRGDGEPQSVCFDAEIRCPDPTTLEDATQTLQSG
+
+                                [8]
+     -05                        2.1e-06
+     LGNCMGALGLHIGSRFD          ALGKPPAA
+     +     ++++ + ++            +++++ ++
+76   MDRVGSALGMTILQKPRITATNPSVAVAMGRPVSATRKMAFVDPPSSLSTAAEDNKADQNKRAEMNQGLKGKKLL
+
+
+KOO27593.1
+  exostosin-like glycosyltransferase [Chrysochromulina tobinii]
+  LENGTH = 498  COMBINED P-VALUE = 5.36e-04  E-VALUE =        9
+  DIAGRAM: 38-[3]-121-[2]-222-[9]-86
+
+                                           [3]
+                                           5.0e-05
+                                           AESGCEWVKE
+                                             ++++ ++
+1    MPLGERKEGSVERFPLSGPRPRDALIAPAPACVCHAGYSGAGCEIVDMGFCFNSCSGHGACVARFCLCERGWRGL
+
+                        [2]
+                        5.8e-05
+                        WYDEWRERIECWY
+                        ++++ ++++   +
+151  FFVPVMVMQMAGNLWHPYQFLRETQRKLQHEYPFWNRSAGADHVFFLTTDRSGCWKPWALQHSIIIGYLGFRASE
+
+                                  [9]
+                                  1.4e-05
+                                  FPPIPRLP
+                                     +++++
+376  IIQPNVTQPFEDLLEGTPYAYSTFALMLTKADIPRLPAILRAVPQSKLCEMQRQLARVHRAFLWQRPHGPEHANA
+
+
+KOO53666.1
+  hypothetical protein Ctob_014148 [Chrysochromulina tobinii]
+  LENGTH = 198  COMBINED P-VALUE = 5.44e-04  E-VALUE =      9.1
+  DIAGRAM: 121-[7]-69
+
+                                                   [7]
+                                                   9.9e-05
+                                                   PPIPRLLP
+                                                   + ++++ +
+76   APTSTASPMAPDSATKDGVWGQLAGTTMLELDDLPQPASAEADLALLSVPKLPPASAAVAPPPPAVRNSLASVSV
+
+
+KOO23716.1
+  ring u-box domain-containing protein [Chrysochromulina tobinii]
+  LENGTH = 1049  COMBINED P-VALUE = 5.61e-04  E-VALUE =      9.4
+  DIAGRAM: 619-[6]-365-[4]-17-[3]-9
+
+                        [6]
+                        6.0e-05
+                        SWRAAMLGRTPPP
+                        ++++    ++ ++
+601  MGNDYLPKVREATFERCWSAYRAVRRSRRFAASALLEPSRKTFECALLLALVLVLKDIHKVATAAASQLVSAEGM
+
+                           [4]                              [3]
+                           1.0e-06                          6.9e-06
+                           LPDFPDPFTLPPIPRL                 AESGCEWVKE
+                           ++  ++ ++  +++ +                 ++  ++++
+976  KRASSNGSARASERASASAAAALPSHPSAFTPLPLPHLPPRPPTKAMKPVRLPEGVELVCEWVPADVAPRATWV
+
+
+KOO31475.1
+  hypothetical protein Ctob_010673 [Chrysochromulina tobinii]
+  LENGTH = 180  COMBINED P-VALUE = 5.92e-04  E-VALUE =      9.9
+  DIAGRAM: 50-[6]-90-[5]-19
+
+                                                       [6]
+                                                       2.1e-05
+                                                       SWRAAMLGRTPPP
+                                                       ++++++  + ++
+1    MPDKGTSQPVMPADLIEQFRAEYRSDYQRLAQLEAQRDAKRAAEAEAEKAAYRAAAQSRMPAWWPREVRVNKSPP
+
+        [5]
+        3.0e-05
+        LNLPDFPD
+        ++++  +
+151  HAGLKLPVIPRRRVEMYGVAECMVFESPQR
+
+********************************************************************************
+
+
+CPU: mablin-mac.local
+Time 0.693 secs.
+
+mast -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_GCA_001275005.1 -ev 10.0 -nostatus /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_001275005.1/protein.faa

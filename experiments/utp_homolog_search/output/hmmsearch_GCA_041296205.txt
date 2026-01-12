@@ -1,0 +1,359 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# target sequence database:        /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_041296205.1/protein.faa
+# output directed to file:         /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_041296205.txt
+# per-dom hits tabular output:     /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_041296205.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       good-c-term  [M=713]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+   8.7e-138  461.4  10.9     9e-138  461.3   9.9    1.4  1  KAL1503411.1  hypothetical protein AB1Y20_011462 [Prymnesium 
+    1.9e-11   43.7   8.9    3.9e-07   29.5   3.7    2.1  2  KAL1523211.1  hypothetical protein AB1Y20_018163 [Prymnesium 
+    2.1e-09   37.0  13.9    5.6e-09   35.5  13.9    1.7  1  KAL1521483.1  hypothetical protein AB1Y20_021145 [Prymnesium 
+    2.1e-09   36.9  12.5    2.1e-09   36.9  12.5    2.3  3  KAL1498658.1  hypothetical protein AB1Y20_013971 [Prymnesium 
+    9.1e-08   31.6   6.7    1.7e-07   30.7   6.7    1.3  1  KAL1499441.1  hypothetical protein AB1Y20_011645 [Prymnesium 
+    1.1e-07   31.2   1.8    1.6e-07   30.8   1.8    1.2  1  KAL1524148.1  hypothetical protein AB1Y20_019057 [Prymnesium 
+    5.9e-05   22.3   0.2    5.9e-05   22.3   0.2    2.0  2  KAL1495465.1  hypothetical protein AB1Y20_016831 [Prymnesium 
+    0.00034   19.8   0.7    0.00034   19.8   0.7    2.3  2  KAL1525766.1  hypothetical protein AB1Y20_020609 [Prymnesium 
+     0.0021   17.1  10.8     0.0021   17.1  10.8    2.3  2  KAL1523088.1  hypothetical protein AB1Y20_018048 [Prymnesium 
+     0.0071   15.4   0.6      0.088   11.8   0.1    2.1  2  KAL1512138.1  hypothetical protein AB1Y20_005406 [Prymnesium 
+  ------ inclusion threshold ------
+       0.16   10.9   6.3       0.25   10.2   3.3    2.1  2  KAL1499615.1  hypothetical protein AB1Y20_011814 [Prymnesium 
+       0.28   10.1   7.2       0.35    9.8   7.2    1.1  1  KAL1499665.1  hypothetical protein AB1Y20_011862 [Prymnesium 
+        8.6    5.2  25.2         12    4.7  25.2    1.1  1  KAL1515696.1  hypothetical protein AB1Y20_002313 [Prymnesium 
+        8.8    5.2  14.3         10    4.9  14.3    1.1  1  KAL1495188.1  hypothetical protein AB1Y20_017053 [Prymnesium 
+
+
+Domain annotation for each sequence (and alignments):
+>> KAL1503411.1  hypothetical protein AB1Y20_011462 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  461.3   9.9  5.1e-141    9e-138     160     632 ..     387     859 ..     340     891 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 461.3 bits;  conditional E-value: 5.1e-141
+   good-c-term 160 efvyddiiqtgmefdnislgelvellrqgsvfkkyahsrieskrchscrlwladn.qlrylnlsgrhkpekavqlsaieqvlegpqsdvflrngitt 255
+                   + +++++i+tg+efd ++  el+++lrqg+vf+kyah + +++  h cr+w +dn +l y n+++r ++ek+v l +ie+++ g +sdvf rng+++
+  KAL1503411.1 387 NDIANNEIKTGTEFDDLAESELMNWLRQGTVFQKYAHGHLSTAPYHPCRVWIRDNnTLCYCNVQQRGRREKTVPLDEIEEIIIGGDSDVFRRNGVAA 483
+                   44567789*******************************************988615789***********************************99 PP
+
+   good-c-term 256 dsaea....stcfslvfhgrtldlqastreavsiwthyfrqvversqletharqvalrGqpresflenatqlwcdeilphweenrslprtqmlwweG 348
+                   +s e     + cfslvf grtldlqa t + vsiwt+yf qv+er+qle+h r valr qpre fle +  +w deil  w  +rs  rt +lwweG
+  KAL1503411.1 484 QSSEErpsgALCFSLVFGGRTLDLQATTPDEVSIWTRYFSQVIERTQLEAHMRSVALRAQPRELFLESSVAVWRDEILTNWAAERSAKRTMFLWWEG 580
+                   98875333367************************************************************************************** PP
+
+   good-c-term 349 vpsalrpqlwplaiGdalqlGeGGytkwaaaaqpadreaarclleeeivqaedlppelnmftalesplrGslllllsavhaf..fshGdGpapserc 443
+                   vps lr ++w laiGd l+lG   ++    a    d++aa+ l+  e+     +  eln+ft+  sp++ sll ll+a  ++   s  d pa s   
+  KAL1503411.1 581 VPSVLRGDVWRLAIGDPLKLGPNSFAAHCEAVSAEDKQAAQGLVARELQAVGAVALELNLFTSEHSPMQLSLLQLLAASRSYarASNADLPACS--- 674
+                   ************************************************99999***********************998766216777888876... PP
+
+   good-c-term 444 sllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwd 540
+                   s+l amlllyl+   af clc+m+  h +      G    +  wrl ca  +l relpel+ hl    +el  f+p w+ ++++stl ld +ar+wd
+  KAL1503411.1 675 SFLGAMLLLYLDAKDAFVCLCTMVSLHHL------GWRHNEEEWRLRCAAAMLRRELPELMAHLANLGVELSDFLPTWVNSVLLSTLPLDVTARVWD 765
+                   89***********************9965......66777889****************************************************** PP
+
+   good-c-term 541 cylrdGeafawratleilrllapavleckqrehclrllsqpstaGGvserelfkslGshdvalhellaGfsqrlpmptierG..vcfdlwqnss 632
+                   cylrdGe f wra le+lrllap +++  +r+ c+ +l     a   s++ lf+s+ s + a+ + l  fsq+lpmp+ +rG   cfd+w+ns+
+  KAL1503411.1 766 CYLRDGEPFLWRAVLELLRLLAPLIIDTTDRDSCFAILQHARHASTFSDKALFHSIASNEAAMQDWLKDFSQKLPMPSADRGggTCFDMWRNST 859
+                   *********************************************************************************6448*******97 PP
+
+>> KAL1523211.1  hypothetical protein AB1Y20_018163 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.2   1.3e-06    0.0022     323     362 ..     227     266 ..     219     279 .. 0.91
+   2 !   29.5   3.7   2.2e-10   3.9e-07     497     569 ..     439     511 ..     433     524 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 1.3e-06
+   good-c-term 323 lwcdeilphweenrslprtqmlwweGvpsalrpqlwplai 362
+                    w deilp w e rs p  ++   +Gvp+  + +lw +a+
+  KAL1523211.1 227 CWRDEILPCWVERRSDPTVRLRILQGVPAEAQGELWFIAL 266
+                   599*********************************8876 PP
+
+  == domain 2  score: 29.5 bits;  conditional E-value: 2.2e-10
+   good-c-term 497 drelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleck 569
+                     ++p+l  hl   ++  e ++p wl  l+  tl     a +w+ +l dGe f    +l i+r l  a+lec 
+  KAL1523211.1 439 RDQMPDLAAHLERLALLPEMYLPEWLLPLYTRTLQAPLVALVWNLFLVDGEKFLLHVALAIMRALHDALLECD 511
+                   4579********************************************************************7 PP
+
+>> KAL1521483.1  hypothetical protein AB1Y20_021145 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.5  13.9   3.2e-12   5.6e-09     443     576 ..     170     302 ..      62     324 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 35.5 bits;  conditional E-value: 3.2e-12
+   good-c-term 443 csllaamlllylepar.afcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarl 538
+                     +laa+ll+ +  a  af cl  +++a++   f             l+  + l++  lp l  hlr+h++ +e f  rw+  lf stl  +ta r+
+  KAL1521483.1 170 LGMLAALLLVVVGAAEgAFWCLVGLVQAKLPAAFYDRSLSGC--RVELAVLQELIEERLPLLAAHLRTHAVRVELFATRWFVGLFASTLPPETALRV 264
+                   5689******99998559*******99999999987765544..3579999********************************************** PP
+
+   good-c-term 539 wdcylrdGeafawratleilrllapavleckqrehclr 576
+                   wd  + +G       +l +l  +  ++l c ++   l 
+  KAL1521483.1 265 WDLLVFEGARTLHGVALALLGTMEHTLLHCEEQSSLLC 302
+                   ********999999999999999999999998776665 PP
+
+>> KAL1498658.1  hypothetical protein AB1Y20_013971 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.4      0.54   9.7e+02     106     198 ..     221     304 ..     187     339 .. 0.51
+   2 ?   -3.5   0.8       2.1   3.7e+03      83     196 ..     904     949 ..     845     976 .. 0.36
+   3 !   36.9  12.5   1.2e-12   2.1e-09     403     580 ..    1096    1265 ..    1027    1284 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 0.54
+   good-c-term 106 vsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsr 198
+                    +ae++++++ae+       +a++++  +a r+++++++l++  + +ag + +++  ++++ q+g e + + +      lr +s+  ++++ +
+  KAL1498658.1 221 IEAEKEAEREAER-------EAEREEEREAEREAEREAELEE--EGRAGIRGERDGGVQAELQAGGEREPFHMLLSHLKLRWTSMLGSSENDE 304
+                   2222222222222.......2222222223333333333322..3344444455555566667777777666666665555555555444444 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 2.1
+   good-c-term  83 pdfpelal..ppiprllpslee.qslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyddiiqtgmefdni 176
+                    + +ela+  p   rll sl+  q ++s ++++g                                                               
+  KAL1498658.1 904 SHAQELAMrgPRAARLLASLRAaQYEAS-RRAAG--------------------------------------------------------------- 936
+                   2222233311222222222211111111.11111............................................................... PP
+
+   good-c-term 177 slgelvellrqgsvfkkyah 196
+                          l+r++s  +k++ 
+  KAL1498658.1 937 -------LVRTTSLPNKKSA 949
+                   .......1111111111111 PP
+
+  == domain 3  score: 36.9 bits;  conditional E-value: 1.2e-12
+   good-c-term  403 ppelnmftalesplrGslllllsavhaffshGdGpapsercsllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklld 497 
+                     p l +f+a  + +r  l  ll     f +  +G    +  + l a lll+l+ ar     ca l+a +  + v     +   +  +   +  l 
+  KAL1498658.1 1096 FPTLGLFAA-GTAMREQLRELLW---VFCALPNGLRYQQGMTHLGAALLLHLQEARLA---CAALNALLVGYPVLRACVSMHVAPAVEFFDGALA 1183
+                    455665544.3345555554443...34444556666666777899999999999964...6788888888888887777777778888888889 PP
+
+   good-c-term  498 relpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleckqrehclrllsq 580 
+                     + p l  hlr+  i  + ++  wl t+f  +l l ta r+wdc l +Ge   + a+l +++ll p +l     e cl+ll +
+  KAL1498658.1 1184 AQQPALASHLRSLDITSDMYVMPWLLTMFSRSLPLSTACRIWDCVLSEGERALFCAALAVMQLLQPVLL-VAGFEECLQLLQN 1265
+                    999***************************************************************766.567899****976 PP
+
+>> KAL1499441.1  hypothetical protein AB1Y20_011645 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   6.7   9.4e-11   1.7e-07     347     543 ..      69     262 ..      64     286 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 30.7 bits;  conditional E-value: 9.4e-11
+   good-c-term 347 eGvpsalrpqlwplaiGdalql..GeGGytkwaaaaqpadreaarclleeeivqaedlppelnmftalesplrGslllllsavhaffshGdGpapse 441
+                    G+p++ r + w l  G   ++  G G y +  aa +  + eaa    e       dl   +    al + +  s+  +l a  a        a  +
+  KAL1499441.1  69 RGIPTSHRARAWTLLCGAKARMadGHGSYEHLLAAGRRIEDEAASTSSETVAAILRDLHRTFPGHPALTADFLQSVKHVLLAYAA---RNPEVAYCQ 162
+                   599************9987665338899****************999988888889***99999999999988887766665444...344444444 PP
+
+   good-c-term 442 rcs.llaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaar 537
+                       + aa+l++  e   af  lc + +  +  h+v+              ae+l+++elp +  hlr+ s+ l     +w+  lf+ +l  +t  r
+  KAL1499441.1 163 GMNfVCAAILMVVPEEEPAFWALCYLAEEVLVDHYVQSMIG---HKVDQQVAEQLVEQELPRVSAHLRSLSLSLSFVTSQWFLCLFLNSLPSETVFR 256
+                   44415688899999999*******************97543...2334468********************************************** PP
+
+   good-c-term 538 lwdcyl 543
+                   +wd  +
+  KAL1499441.1 257 VWDLVF 262
+                   ***765 PP
+
+>> KAL1524148.1  hypothetical protein AB1Y20_019057 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.8   1.8   8.9e-11   1.6e-07     426     559 ..     141     273 ..      50     293 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 30.8 bits;  conditional E-value: 8.9e-11
+   good-c-term 426 avhaffshGdGpapsercsllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwl 522
+                    + a+  h       +   ++ a+lll ++   af cl a+++  +  hf      +            ll ++ pel+ h+    +       +wl
+  KAL1524148.1 141 VLVAYAVHNPQVGYCQSMNFIVAVLLLIVDEESAFWCLTAVVERLLPGHFTSRMVMSL---VDQGVLRNLLRKQDPELMAHFEHLQVATSLVTTQWL 234
+                   5556666666666666778899*******************99999999976554433...33455679**************************** PP
+
+   good-c-term 523 ttlfm.stlsldtaarlwdcylrdGea.fawratleilr 559
+                    tlf+ s++ l +  rlwdc + +G+a f +ra+  +l 
+  KAL1524148.1 235 LTLFVgSAMPLSALLRLWDCVFYEGDAsFLFRAAAALLL 273
+                   ****86889****************97799999877664 PP
+
+>> KAL1495465.1  hypothetical protein AB1Y20_016831 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.4      0.25   4.5e+02     337     363 ..     151     177 ..     146     183 .. 0.90
+   2 !   22.3   0.2   3.3e-08   5.9e-05     494     545 ..     339     390 ..     301     402 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.25
+   good-c-term 337 slprtqmlwweGvpsalrpqlwplaiG 363
+                    lpr + + w G+p   r + w l +G
+  KAL1495465.1 151 DLPRLREMSWSGIPPPARAESWQLLLG 177
+                   79********************99887 PP
+
+  == domain 2  score: 22.3 bits;  conditional E-value: 3.3e-08
+   good-c-term 494 klldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrd 545
+                    l+ r  p+l  hl    + +  f  rw+  l+m  lsld   r+wd yl +
+  KAL1495465.1 339 ELIARIEPKLHNHLVEQGLHFIQFAFRWMNCLLMRELSLDLILRVWDTYLAE 390
+                   6888999******************************************964 PP
+
+>> KAL1525766.1  hypothetical protein AB1Y20_020609 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   0.7   1.9e-07   0.00034     445     571 ..     225     347 ..     220     358 .. 0.80
+   2 ?    1.7   1.1     0.057     1e+02      26     123 ..     490     586 ..     474     692 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 1.9e-07
+   good-c-term 445 llaamlllylepar.afcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwd 540
+                   ++aa+ll+ l  a  af cl a+l+  + k f+ G  +        +  +  l  e  el   l    +  e +   w+ + f  t+ ++t  r wd
+  KAL1525766.1 225 FIAALLLVVLRDAEdAFWCLAAVLEYRLPKNFLEGSLQGMLLEQ--AVFQ-ELVNEREELANVLAG--VPTELYTTPWFVACFANTFPIETRLRTWD 316
+                   689*****99888549******************9876543322..2223.333455566666654..555668899******************** PP
+
+   good-c-term 541 cylrdGeafawratleilrllapavleckqr 571
+                    +l +G +   +  + +l+  ap + +c + 
+  KAL1525766.1 317 IFLLEGISVIHQVGMAVLQSAAPKLQQCADT 347
+                   *************************999765 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.057
+   good-c-term  26 tqdelraclgalalhlgsrlelal.eallgergvaaasrrraaevgcewledagae.llpdfpelalppiprllpslee......qslvsaedlhgs 114
+                   ++d+l +c +a+  ++gs + + + + ++g++++ a  +r  a++ +e  +++ga+ + p+  + a  p pr+  + +e       +l +      +
+  KAL1525766.1 490 EKDKLASCGAAFRDAMGSTFLCEIlSDAAGSHPSIAVVDR--ARALVESQATRGADaSAPSPSACATEP-PRVSHEAREeeggatCELRT------A 577
+                   5789999999999999999988776656665554444333..445555554444442345444466555.66655442234433211111......1 PP
+
+   good-c-term 115 paeqeavda 123
+                   ++ +ea +a
+  KAL1525766.1 578 ASPAEAPAA 586
+                   111111111 PP
+
+>> KAL1523088.1  hypothetical protein AB1Y20_018048 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1  10.8   1.2e-06    0.0021     439     541 ..     155     255 ..      46     261 .. 0.70
+   2 ?   -1.9   0.2      0.69   1.2e+03      68     187 ..     333     368 ..     267     437 .. 0.39
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 1.2e-06
+   good-c-term 439 psercsllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldta 535
+                     +    laa lll +    af cl  +l++ + + +   G    +    +   + ll r  p +l  l    + +e f  +w+  lf s l l+ta
+  KAL1523088.1 155 YCQGLNTLAATLLLLMAEEMAFWCLVQLLETRIPHGYF--GRTLWRCHAEIEVFKVLLSRRHPRVLPLLERGGLSVELFTTQWMVCLFASDLPLETA 249
+                   445567799*****9*99************99866554..3333334456788889***************************************** PP
+
+   good-c-term 536 arlwdc 541
+                    r+wd 
+  KAL1523088.1 250 MRVWDL 255
+                   *****4 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.69
+   good-c-term  68 evgcewledagaellpdfpelalppiprllpsleeqslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyd 164
+                   +++++w++++    l ++ ++a+ ++ + l                                                                   
+  KAL1523088.1 333 HAELQWVRESM--PLRELRAVACDKVRARL------------------------------------------------------------------- 360
+                   22233332211..12222222222211111................................................................... PP
+
+   good-c-term 165 diiqtgmefdnislgelvellrq 187
+                                  +lv++lr+
+  KAL1523088.1 361 ---------------RLVQALRE 368
+                   ...............11111111 PP
+
+>> KAL1512138.1  hypothetical protein AB1Y20_005406 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.1     0.063   1.1e+02     436     460 ..      71      95 ..      65      98 .. 0.80
+   2 !   11.8   0.1   4.9e-05     0.088     494     569 ..     172     247 ..     151     256 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.063
+   good-c-term 436 Gpapsercsllaamlllyleparaf 460
+                    papserc   aa+ ++  +  r+f
+  KAL1512138.1  71 APAPSERCDDEAALRIFLRDAERTF 95 
+                   69*******9999877666666666 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 4.9e-05
+   good-c-term 494 klldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleck 569
+                   +l++r +pe+   l+a  +  e +  +w   l +  l +++   + + ++rdG  f +r +l ++  ++p +l  k
+  KAL1512138.1 172 RLVERRFPEVAALLQAACVVPEAYASKWYIGLCVHVLPFEALLPFVEGFFRDGYPFLFRFSLALVAAVSPRLLVLK 247
+                   799**************************************************************99999988766 PP
+
+>> KAL1499615.1  hypothetical protein AB1Y20_011814 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.0     0.088   1.6e+02     320     360 ..      34      75 ..      21     113 .. 0.73
+   2 ?   10.2   3.3   0.00014      0.25     445     565 ..     153     270 ..     138     279 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.088
+   good-c-term 320 atqlwcdeilphweenrslpr..tqmlwweGvpsalrpqlwpl 360
+                   at  w  e+l   e  r++     +    +Gvp alrp++w  
+  KAL1499615.1  34 ATLEW-KELLALREAARAIDPnaIKAALCKGVPPALRPEVWLK 75 
+                   55555.466777777777643013455679***********65 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 0.00014
+   good-c-term 445 llaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdc 541
+                   ++aa ll  l+   af  l a+++  +  h+ k               e+l    lp++  hl+     ++ +  rw+  l+ s l      r+wd 
+  KAL1499615.1 153 FIAAGLLATLDEECAFWMLVAVVQEWLPDHYSKAMVGNHV---DCRVLERLTAEHLPDVAAHLKQLDASIQLICTRWFLCLWSSVLPPAVLLRVWDF 246
+                   689999*************************997654433...2335699999************9999999************************* PP
+
+   good-c-term 542 ylrdGeafawratleilrllapav 565
+                    +  G + + + +l  +  +ap++
+  KAL1499615.1 247 LFVCGPTATMQVALACMHWIAPTL 270
+                   999999999999999999999976 PP
+
+>> KAL1499665.1  hypothetical protein AB1Y20_011862 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   7.2    0.0002      0.35     443     557 ..      67     178 ..      43     191 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 0.0002
+   good-c-term 443 csllaamlllyleparafcclcamldahffk...hfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaa 536
+                     +laa+lll+ + a af  l ++ ++  +      ++G  +t q s         l r +p l  +l    + +      wl  lf+ +l ++   
+  KAL1499665.1  67 LNFLAALLLLHGDEAGAFALLATLCESLVLEfhtPDLRGLHQT-QASL-----LDALARHMPALSGKLTRDGVPVREQTTHWLLCLFVDALPMELVL 157
+                   4679**************8776665555444000444444333.3332.....23478*************************************** PP
+
+   good-c-term 537 rlwdcylrdGeafawratlei 557
+                   rlwd  + +G+     a + +
+  KAL1499665.1 158 RLWDLLFFEGQQVISHACVAL 178
+                   *****9999988777776655 PP
+
+>> KAL1515696.1  hypothetical protein AB1Y20_002313 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.7  25.2     0.007        12     103     265 ..      33     182 ..       2     192 .. 0.45
+
+  Alignments for each domain:
+  == domain 1  score: 4.7 bits;  conditional E-value: 0.007
+   good-c-term 103 qslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsri 199
+                   ++l++++++          + +++a+   + +  +++l++++l+ ++++ ++   ++++  ++++q+ m++++  +++     +q+++ ++++h+  
+  KAL1515696.1  33 HHLQQQQQM----------QMQQHAQ---LQHFQQQSLQRQQLHLQQQKLMQ---QQHMQKQQQMQMQMRLQMQMMQKQQLQQQQQHMHQQHQHQLS 113
+                   222221111..........1111111...11111111111222222211111...122222333344444444444444334444444444444444 PP
+
+   good-c-term 200 eskrchscrlwladnq...lrylnlsgrhkpekavqlsaieqvlegpqsdvflrngittdsaeastcfs 265
+                   ++++  +++  l+++q   ++ + + ++ k+++++q+ + +q l+++q++++ +++ +t  ae+s   +
+  KAL1515696.1 114 QQQQIPQQQQVLQQQQvppQQQVPQPQQIKQQMQQQQLQKQQQLQKQQQQQMPQQSHATPGAEISSPST 182
+                   444444444444444411133455667777777777788888888888888888898888888887655 PP
+
+>> KAL1495188.1  hypothetical protein AB1Y20_017053 [Prymnesium parvum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.9  14.3    0.0058        10      86     180 ..      18     101 ..       2     122 .. 0.36
+
+  Alignments for each domain:
+  == domain 1  score: 4.9 bits;  conditional E-value: 0.0058
+   good-c-term  86 pelalppiprllpsleeqslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislge 180
+                   ++ + +++p+ ++++++q   +++ ++++++ q++++++        +++++++++++ +++ ++ ++++++ ++ v++ i ++g++++ i++ +
+  KAL1495188.1  18 QQSQ-QQMPQQMQQMQQQ--LQQQMQQMQQQMQQQMQQQ--------MQQMQQQMQQQMQQQMQQLQQQMQQIRQDVQQLIHHQGHNAAIIAARR 101
+                   2221.1222222222111..1111111111111111111........111122222222222222233333333334444444444444444433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (713 nodes)
+Target sequences:                      24907  (12707976 residues searched)
+Passed MSV filter:                      3241  (0.130124); expected 498.1 (0.02)
+Passed bias filter:                      666  (0.0267395); expected 498.1 (0.02)
+Passed Vit filter:                       222  (0.00891316); expected 24.9 (0.001)
+Passed Fwd filter:                        38  (0.00152568); expected 0.2 (1e-05)
+Initial search space (Z):              24907  [actual number of targets]
+Domain search space  (domZ):              14  [number of targets reported over threshold]
+# CPU time: 0.80u 0.01s 00:00:00.81 Elapsed: 00:00:00.44
+# Mc/sec: 20174.56
+//
+[ok]

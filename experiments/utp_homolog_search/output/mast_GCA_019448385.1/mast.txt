@@ -1,0 +1,813 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.5.5 (Release date: Thu Sep 14 08:48:04 2023 +1000)
+
+	For further information on how to interpret these results please access https://meme-suite.org/meme.
+	To get a copy of the MAST software please access https://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE protein.faa (peptide)
+	Last updated on Sun Jan 11 17:09:02 2026
+	Database contains 14446 sequences, 8860175 residues
+
+	MOTIFS meme_gb.xml (peptide)
+	MOTIF ID                    ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- --------------------- ------- ----- -------------------
+	    1 TQTQLGACMGALGLHLGSRLD MEME-1     21 TQTQLGNCMGALGLHIGSRFD
+	    2 WLEEWRERLECWW         MEME-2     13 WYDEWRERIECWY
+	    3 AEPGCEWVEE            MEME-3     10 AESGCEWVKE
+	    4 LPDFPEPFSLPPIPRL      MEME-4     16 LPDFPDPFTLPPIPRL
+	    5 LZLPDFPD              MEME-5      8 LNLPDFPD
+	    6 AWRAALLGRAPPP         MEME-6     13 SWRAAMLGRTPPP
+	    7 PPJPRLLP              MEME-7      8 PPIPRLLP
+	    8 ALGKPPAA              MEME-8      8 ALGKPPAA
+	    9 FPPIPRLP              MEME-9      8 FPPIPRLP
+	   10 APPPPPKATEAECETLGE    MEME-10    18 MQPPPPKNTKNECETVVE
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9
+	----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.38
+	   3   0.31  0.34
+	   4   0.36  0.17  0.17
+	   5   0.40  0.24  0.22  0.62
+	   6   0.33  0.22  0.20  0.25  0.25
+	   7   0.29  0.17  0.21  0.58  0.41  0.23
+	   8   0.46  0.32  0.26  0.32  0.31  0.68  0.21
+	   9   0.31  0.19  0.20  0.67  0.47  0.28  0.66  0.36
+	  10   0.29  0.31  0.66  0.33  0.37  0.31  0.33  0.49  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5, 8, 9 and 10 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.073 C 0.018 D 0.052 E 0.062 F 0.040 G 0.069 H 0.022 I 0.056 K 0.058 
+	L 0.092 M 0.023 N 0.046 P 0.051 Q 0.041 R 0.052 S 0.074 T 0.059 V 0.064 
+	W 0.013 Y 0.033 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 28 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+KAG8465090.1                       hypothetical protein KFE25...     0.16    639
+KAG8462101.1                       hypothetical protein KFE25...     0.26    441
+KAG8466347.1                       hypothetical protein KFE25...     0.35    336
+KAG8467152.1                       hypothetical protein KFE25...     0.42    342
+KAG8469650.1                       hypothetical protein KFE25...     0.49    489
+KAG8469292.1                       hypothetical protein KFE25...     0.61    210
+KAG8461638.1                       hypothetical protein KFE25...        1    650
+KAG8470450.1                       hypothetical protein KFE25...      1.1   1269
+KAG8459504.1                       hypothetical protein KFE25...      1.6    614
+KAG8461925.1                       hypothetical protein KFE25...      1.9    550
+KAG8467191.1                       hypothetical protein KFE25...      2.4    117
+KAG8464968.1                       hypothetical protein KFE25...      2.5    559
+KAG8466191.1                       hypothetical protein KFE25...      2.5    480
+KAG8458120.1                       hypothetical protein KFE25...        3    134
+KAG8465093.1                       hypothetical protein KFE25...      5.2    346
+KAG8461288.1                       hypothetical protein KFE25...      5.5    154
+KAG8458571.1                       hypothetical protein KFE25...      5.6    787
+KAG8460058.1                       hypothetical protein KFE25...      5.7    529
+KAG8457625.1                       hypothetical protein KFE25...      5.8    146
+KAG8464428.1                       hypothetical protein KFE25...      6.1    413
+KAG8467899.1                       hypothetical protein KFE25...      7.1    334
+KAG8466993.1                       hypothetical protein KFE25...      7.4    533
+KAG8463453.1                       hypothetical protein KFE25...      7.8    528
+KAG8464824.1                       hypothetical protein KFE25...        8    207
+KAG8468748.1                       hypothetical protein KFE25...      8.1    901
+KAG8470139.1                       hypothetical protein KFE25...      8.2    106
+KAG8459296.1                       hypothetical protein KFE25...      9.2    156
+KAG8457735.1                       hypothetical protein KFE25...      9.8   1123
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [n]  occurrence of motif `n' with p-value less than 0.0001.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+KAG8465090.1                           0.16  32-[4]-60-[2]-435-[6]-42-[6]-15
+KAG8462101.1                           0.26  42-[4]-14-[5]-103-[8]-65-[7]-177
+KAG8466347.1                           0.35  105-[7]-112-[4]-95
+KAG8467152.1                           0.42  149-[4]-30-[7]-126-[3]-3
+KAG8469650.1                           0.49  244-[6]-89-[3]-133
+KAG8469292.1                           0.61  74-[2]-81-[10]-24
+KAG8461638.1                              1  282-[4]-164-[8]-69-[7]-103
+KAG8470450.1                            1.1  50-[2]-375-[1]-26-[6]-287-[6]-90-[4]-365
+KAG8459504.1                            1.6  7-[6]-435-[7]-151
+KAG8461925.1                            1.9  132-[4]-232-<6>-121-[2]-23
+KAG8467191.1                            2.4  14-[1]-16-[7]-58
+KAG8464968.1                            2.5  82-<6>-77-[7]-379
+KAG8466191.1                            2.5  316-[9]-156
+KAG8458120.1                              3  31-[6]-61-[7]-21
+KAG8465093.1                            5.2  186-[7]-116-[1]-15
+KAG8461288.1                            5.5  10-[6]-131
+KAG8458571.1                            5.6  129-[7]-4-[6]-110-[10]-505
+KAG8460058.1                            5.7  47-[6]-116-[6]-89-[8]-149-[1]-73
+KAG8457625.1                            5.8  38-[6]-14-[4]-65
+KAG8464428.1                            6.1  47-[5]-96-[4]-106-[1]-119
+KAG8467899.1                            7.1  52-[5]-274
+KAG8466993.1                            7.4  57-[4]-357-[6]-90
+KAG8463453.1                            7.8  152-[8]-201-[4]-10-[9]-133
+KAG8464824.1                              8  137-[8]-16-[3]-36
+KAG8468748.1                            8.1  118-[3]-247-[6]-77-[7]-243-[4]-169
+KAG8470139.1                            8.2  50-[4]-40
+KAG8459296.1                            9.2  7-[8]-141
+KAG8457735.1                            9.8  35-[6]-102-[3]-9-[4]-608-[5]-322
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence,
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif, and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+KAG8465090.1
+  hypothetical protein KFE25_012453 [Diacronema lutheri]
+  LENGTH = 639  COMBINED P-VALUE = 1.13e-05  E-VALUE =     0.16
+  DIAGRAM: 32-[4]-60-[2]-435-[6]-42-[6]-15
+
+                                     [4]
+                                     3.8e-06
+                                     LPDFPDPFTLPPIPRL
+                                     ++  +    +++ +++
+1    MSLGLSTTALSPATRLPSTEARAPLPRSVSNQLPLQPIRTALPPKPRLINVDERRVFGETSSTVRSLTNKFKHET
+
+                                      [2]
+                                      3.1e-05
+                                      WYDEWRERIECWY
+                                        +  +  + +++
+76   GQYTQNATPYYLQGNLDFESEEARAERLALKAHSAEHFRAVVRCYWRSANLRDGDVMLQPRYLEIHRLICMAIAP
+
+                                    [6]
+                                    2.7e-06
+                                    SWRAAMLGRTPPP
+                                    + ++  ++ ++++
+526  EGGGGAGAPAGALPPAGGARRASWLDGRRASAVRADGVGVAPPAGSRSPEASLLRTLQPVGVSSMLGAVQMVALR
+
+                [6]
+                3.0e-05
+                SWRAAMLGRTPPP
+                + +  + +  +++
+601  CSRTTAGSSMSSLRTGMGGLPPAASPSRAALAVGARRPY
+
+
+KAG8462101.1
+  hypothetical protein KFE25_011551 [Diacronema lutheri]
+  LENGTH = 441  COMBINED P-VALUE = 1.82e-05  E-VALUE =     0.26
+  DIAGRAM: 42-[4]-14-[5]-103-[8]-65-[7]-177
+
+                                               [4]                           [5]
+                                               1.2e-05                       8.3
+                                               LPDFPDPFTLPPIPRL              LNL
+                                                ++++ +   ++  +               +++
+1    MVTTMADRETAASPLGVSLSSRRPRRDSRQEKAGLPRTWLRERPDFPPPKAYPPPFRPGVRPPAHGPPNPWRLRL
+
+     
+     e-05
+     PDFPD
+     +  ++
+76   PPEPQPYVLLPDECAQWAEAAAAMAIEQRARLAAGRAPNLAANAARPHSAPARAGAPPARAPAAAAGAGGGARAG
+
+                                      [8]
+                                      5.1e-08
+                                      ALGKPPAA
+                                      ++++++++
+151  APPVGPVARAGTALDTARPRSAMPRADASLSRAALGRPTSAAVRFASAVVGGGARSPNARASSPPGARTGTDAAE
+
+                                    [7]
+                                    8.1e-05
+                                    PPIPRLLP
+                                    + ++   +
+226  SSRAAPLLAHPPGYVPRSSMSVGKLFAGREMPAIPLIKPFDGGLRLLSVLESDSESDGGSAHARAAGAAGADAAS
+
+
+KAG8466347.1
+  hypothetical protein KFE25_002103 [Diacronema lutheri]
+  LENGTH = 336  COMBINED P-VALUE = 2.43e-05  E-VALUE =     0.35
+  DIAGRAM: 105-[7]-112-[4]-95
+
+                                   [7]
+                                   7.2e-06
+                                   PPIPRLLP
+                                   + ++ +++
+76   DGSFALEHGEKLAAPGGPLVIDNSSAFRRDPKVPLLVPEINAASGKGHRLIANPNCTTAILLMALAPLVALFGVK
+
+     [4]
+     1.4e-06
+     LPDFPDPFTLPPIPRL
+     +++ +   +   ++ +
+226  MPDLPVSCTAVRIPTLRAHSESVTIETVRPVDLAMVREILSAAPGVRLVDDPAAKKYPMPITATGSYDVEVGRLR
+
+
+KAG8467152.1
+  hypothetical protein KFE25_000468 [Diacronema lutheri]
+  LENGTH = 342  COMBINED P-VALUE = 2.89e-05  E-VALUE =     0.42
+  DIAGRAM: 149-[4]-30-[7]-126-[3]-3
+
+                                                                               [
+                                                                               3
+                                                                               L
+     
+76   YVPINPSDLSEGIHVFNEARAGSTSGERIGVSPSSSMPSQLLAFPDDLPEAQANASTAQSKLRVGVRELGFLYRT
+
+     4]                                           [7]
+     .3e-06                                       6.9e-05
+     PDFPDPFTLPPIPRL                              PPIPRLLP
+     +  ++  +++ ++ +                              + +  +++
+151  PVEPSEVSLPVIPGLPEIADIIPSFLQPLIPPEVNNFLANILEVVPTIISLIPSLIIGAVSRGGGQQPMMTPGNA
+
+                                  [3]
+                                  5.8e-05
+                                  AESGCEWVKE
+                                   +++++  ++
+301  NPTPPAEVVQQMRNRATELGYDVSVLQPVEQAGCEYTQSTPA
+
+
+KAG8469650.1
+  hypothetical protein KFE25_006105 [Diacronema lutheri]
+  LENGTH = 489  COMBINED P-VALUE = 3.40e-05  E-VALUE =     0.49
+  DIAGRAM: 244-[6]-89-[3]-133
+
+                        [6]
+                        2.1e-05
+                        SWRAAMLGRTPPP
+                        ++    ++ ++++
+226  AGQPGRWGQLLTDGWHGLRSWSGKSLGMSTAALPDGGVGDRQCDELRAYVSRLESQLGALHRSAERLAKRHRSEA
+
+                                                   [3]
+                                                   3.2e-06
+                                                   AESGCEWVKE
+                                                   +++ ++ +++
+301  AGMTEVGAAFAQLGANGDEDWPKPLASQLSHLGVTSDLAARALSEQADAECESLEEPLRDVLRRLHQCRQALSTR
+
+
+KAG8469292.1
+  hypothetical protein KFE25_007810 [Diacronema lutheri]
+  LENGTH = 210  COMBINED P-VALUE = 4.19e-05  E-VALUE =     0.61
+  DIAGRAM: 74-[2]-81-[10]-24
+
+                                                                               [
+                                                                               2
+                                                                               W
+                                                                               +
+1    MSAGERRLRVLATHVSVASAPADDGSPMGRGTYIRSLPPIDALRIDHGSRPPRPPAMDRASLGAAVGQQLGQSGW
+
+     2]
+     .4e-05
+     YDEWRERIECWY
+     ++  +++++
+76   FEVTQERVDAFALTTGDPQWIHARDAAERGSPFGAPIVHGNLTMCLAYLLATEGMPPLEGVTTGLNYGVNRVRYP
+
+                       [10]
+                       8.1e-07
+                       MQPPPPKNTKNECETVVE
+                       ++ ++   +++++++++
+151  SPLVVGSRVRATVKLLSTKPVPPVPGTEEGCENVIQVTVVSESGDKPVCVAELVSRLYFG
+
+
+KAG8461638.1
+  hypothetical protein KFE25_001256 [Diacronema lutheri]
+  LENGTH = 650  COMBINED P-VALUE = 7.14e-05  E-VALUE =        1
+  DIAGRAM: 282-[4]-164-[8]-69-[7]-103
+
+                                                              [4]
+                                                              1.2e-06
+                                                              LPDFPDPFTLPPIPRL
+                                                               ++ ++  ++  ++++
+226  RKRILDKLRDDGIRPEELARSWDDVLWERISDELSAFFSNTDGLQNADGSLKLDDKGRPALPSAKTLLAIPRLDP
+
+                 [8]
+                 1.1e-05
+                 ALGKPPAA
+                  +++ +++
+451  FLQGYGACVRIDELGKDPAAPSCGIPKHVVRSPKVDKIFALEPGANPTAWMDDVGDAKGEPLPFNLALRPDQAAI
+
+                   [7]
+                   6.5e-05
+                   PPIPRLLP
+                   ++ +  ++
+526  LKDGGVNALHVRAIPPHPNFVPWRIAHVLAKVEQVAEAWVDLFFEGGEYKRMKSADGDFSPFNVVDARKVAQWLV
+
+
+KAG8470450.1
+  hypothetical protein KFE25_008871 [Diacronema lutheri]
+  LENGTH = 1269  COMBINED P-VALUE = 7.71e-05  E-VALUE =      1.1
+  DIAGRAM: 50-[2]-375-[1]-26-[6]-287-[6]-90-[4]-365
+
+                                                       [2]
+                                                       5.0e-07
+                                                       WYDEWRERIECWY
+                                                       +  +++++++  +
+1    MEDEEEARFRRAEAVAAELVRASAPLAQKLRTSKDDPDFLAAFHANSRLHWIGAWRERFDELFGGREPAPPRPPP
+
+                                                                    [1]
+                                                                    5.4e-05
+                                                                    TQTQLGNCMGAL
+                                                                    +  +++ +   +
+376  FVHQLADAVMAKANAHGASGRHVSVRVWEAKPEELRRWGEKGHIGHGDCYMRSRAATVREPITTARQLRECAVGL
+
+                                        [6]
+                                        7.0e-05
+     GLHIGSRFD                          SWRAAMLGRTPPP
+        ++                              +  +   + ++++
+451  VHALAVLPSNVRGLGVQLGALAFAGHAGHAGHAGHAGHAGHAGHAPPAERTPERERARTHGGALGGAHGGALGGA
+
+                                        [6]
+                                        2.7e-06
+                                        SWRAAMLGRTPPP
+                                        ++ +++ + + ++
+751  PAWLVDSARARRPLDPVAYTLAGTRDPMQPTIAAGAWPAAAGGTASGAATCAAACGAGARRAEPDHACAQPAAEM
+
+                                                                    [4]
+                                                                    2.5e-06
+                                                                    LPDFPDPFTLPP
+                                                                    ++   ++ ++++
+826  CAGSVELTGGHTDVAPAQLPPDFAPAHLPPDFAPAHLPPDVAPAHLPPDFAPAHLPPDVAPAQLPPDFAPAQLPP
+
+     
+     
+     IPRL
+     +  +
+901  VEQLDRAVFAQLEPRWQQLITHGYTRQGDALPRWLVLPEHNAAATAVQPRESAHAAADQSAALPSDDSPFALRDN
+
+
+KAG8459504.1
+  hypothetical protein KFE25_012839 [Diacronema lutheri]
+  LENGTH = 614  COMBINED P-VALUE = 1.13e-04  E-VALUE =      1.6
+  DIAGRAM: 7-[6]-435-[7]-151
+
+            [6]
+            4.2e-05
+            SWRAAMLGRTPPP
+            +  +++++ + ++
+1    MARGWSAALVAAALGGRGAVVRADEASHQYADGEPIKLWANKIGPYHNPQETYNFFALPFCSDDDLANVEHKWGG
+
+          [7]
+          2.0e-07
+          PPIPRLLP
+            ++++++
+451  YPCRVNAIPRLVPEKAWYARAHVLVLLGGVLPFGSIFIEMYFVFTSFWNYKFYYVYGFLLLVFAILAVVTVCVTI
+
+
+KAG8461925.1
+  hypothetical protein KFE25_013944 [Diacronema lutheri]
+  LENGTH = 550  COMBINED P-VALUE = 1.31e-04  E-VALUE =      1.9
+  DIAGRAM: 132-[4]-232-<6>-121-[2]-23
+
+                                                              [4]
+                                                              3.7e-07
+                                                              LPDFPDPFTLPPIPRL
+                                                              +++ ++  +++ ++ +
+76   APANASDADDASDSSSTEPSEDASPPFSGSFSSGWSPLLGEANLGFIPGISDLTIPSLPALPSLGSVPGVPSLAA
+
+          <6>
+          1.0e-04
+          SWRAAMLGRTPPP
+          ++  +++ ++++
+376  NERVYAYVQAALARGVPIDAVGFQFHIANIHNGEGVSGALLFGSYMDGVRVQFNRFGALGVEVHVTEIDVGCNVP
+
+                                                                     [2]
+                                                                     2.1e-05
+                                                                     WYDEWRERIEC
+                                                                     +++++   ++
+451  TLPCPASWLNYNPGARQEEQAGAFARILAHCLATPACTVYQMWGSTDKYSWRDGNWGAGALPSSWYNQYAHIFDT
+
+     
+     
+     WY
+      +
+526  SYQPKLAAYALLGVLKAKQLANSVD
+
+
+KAG8467191.1
+  hypothetical protein KFE25_000507 [Diacronema lutheri]
+  LENGTH = 117  COMBINED P-VALUE = 1.65e-04  E-VALUE =      2.4
+  DIAGRAM: 14-[1]-16-[7]-58
+
+                   [1]                                  [7]
+                   6.5e-05                              8.2e-06
+                   TQTQLGNCMGALGLHIGSRFD                PPIPRLLP
+                   ++++   ++   +  ++  +                 + ++ + +
+1    MAQRVTYRRRKSFNTRSNKIRCVKTPGGKLAVQYLQKRPRGVMCGDCKTSLPGIPQLRPKEYSKQLLARREKSVT
+
+
+KAG8464968.1
+  hypothetical protein KFE25_012331 [Diacronema lutheri]
+  LENGTH = 559  COMBINED P-VALUE = 1.70e-04  E-VALUE =      2.5
+  DIAGRAM: 82-<6>-77-[7]-379
+
+            <6>
+            1.0e-04
+            SWRAAMLGRTPPP
+            + +    +++++
+76   RAAQAGTASRSLVDGRVPPRVRHLVDRLPRGAGLLAVGLAAAAGIALSVRGRRRRRSAFAGAGGEPAPTARTAAT
+
+                           [7]
+                           2.3e-06
+                           PPIPRLLP
+                           +++++++
+151  SEPAARALLPPALTTSRATHVQPPMPRLVGPPNTAPATAPAAAPAAAPAAASAARAPAAAADTRRGAAPVLSRAG
+
+
+KAG8466191.1
+  hypothetical protein KFE25_001947 [Diacronema lutheri]
+  LENGTH = 480  COMBINED P-VALUE = 1.72e-04  E-VALUE =      2.5
+  DIAGRAM: 316-[9]-156
+
+                     [9]
+                     1.6e-07
+                     FPPIPRLP
+                      +++++++
+301  CTSDHTPVHARLRVTLPPPIPRLPAEPEAREQFALVCTAIRATGLVKSDVGKHASADPYMRILIADGICSPACTA
+
+
+KAG8458120.1
+  hypothetical protein KFE25_012780 [Diacronema lutheri]
+  LENGTH = 134  COMBINED P-VALUE = 2.09e-04  E-VALUE =        3
+  DIAGRAM: 31-[6]-61-[7]-21
+
+                                    [6]
+                                    3.5e-05
+                                    SWRAAMLGRTPPP
+                                    + + ++  +++++
+1    MKRALALLVVAALGAADALAHTSAPFSRSAMAARSTLCARAPAPGTCARRPSARVHAIMADESGNGLLEGLKRRG
+
+                                   [7]
+                                   7.1e-07
+                                   PPIPRLLP
+                                     ++++++
+76   AQLARDLADAAERAGEALDEGLDAVLGPQPSSIPRLIPIPIPVEPDYRGRGAYGDYGPY
+
+
+KAG8465093.1
+  hypothetical protein KFE25_012456 [Diacronema lutheri]
+  LENGTH = 346  COMBINED P-VALUE = 3.61e-04  E-VALUE =      5.2
+  DIAGRAM: 186-[7]-116-[1]-15
+
+                                         [7]
+                                         6.5e-05
+                                         PPIPRLLP
+                                         ++++++
+151  TPVSGDAAGGGDASSADATSPIARADAQAVGTKRRAPPLPRMTVPLWIVVEWSLTVGAIRTNSLGSVICSDFLQS
+
+               [1]
+               4.2e-08
+               TQTQLGNCMGALGLHIGSRFD
+                + +++  +++++++++  +
+301  GSSAAFVTQGAQLQLGPGIGALGLHVALALVRLRWTALAIASMEML
+
+
+KAG8461288.1
+  hypothetical protein KFE25_010475 [Diacronema lutheri]
+  LENGTH = 154  COMBINED P-VALUE = 3.83e-04  E-VALUE =      5.5
+  DIAGRAM: 10-[6]-131
+
+               [6]
+               1.2e-07
+               SWRAAMLGRTPPP
+               +++++++ + ++
+1    MASMVKALCTSWRAAAMARPTAIGALCASVFTRGLAFCHRARRGLYAGRGINFGNNVSFSKRRTKMRQLPNVQPA
+
+
+KAG8458571.1
+  hypothetical protein KFE25_003106 [Diacronema lutheri]
+  LENGTH = 787  COMBINED P-VALUE = 3.89e-04  E-VALUE =      5.6
+  DIAGRAM: 129-[7]-4-[6]-110-[10]-505
+
+                                                           [7]         [6]
+                                                           3.6e-05     7.7e-05
+                                                           PPIPRLLP    SWRAAMLGR
+                                                             + ++++    + ++ ++ +
+76   RLHDELRTMGALELMVTLVQSPNLLVRRESLHILWSLSSSARNARALVDMPGALDAIVRLLPARRTASKAGLLAR
+
+     
+     
+     TPPP
+     ++
+151  TQLDETGASEASRVEILAPAAVATLRNVALQRGAPAQLVRAGAVGGLLRLLLGVDLDDVELVDVLLVLWRLSASP
+
+                                            [10]
+                                            3.2e-06
+                                            MQPPPPKNTKNECETVVE
+                                            ++  +++++ +++++++
+226  DEGESIRTVGSGAPRNTRFVIGKDGSGGEDSGAVDAGAAAGAAPPIASASGCETVGAVASPETRARADGVDADVA
+
+
+KAG8460058.1
+  hypothetical protein KFE25_014203 [Diacronema lutheri]
+  LENGTH = 529  COMBINED P-VALUE = 3.92e-04  E-VALUE =      5.7
+  DIAGRAM: 47-[6]-116-[6]-89-[8]-149-[1]-73
+
+                                                    [6]
+                                                    9.5e-05
+                                                    SWRAAMLGRTPPP
+                                                    +  +++  +++++
+1    MSLGLRLVGVVCAVSLLDVQHPLVSRAASIGPSARRPWLRAAPRAPRAPPAALARRAPPARACARLSGAAAAAEN
+
+                               [6]
+                               8.6e-05
+                               SWRAAMLGRTPPP
+                               +++ +++ + ++
+151  TVGVRQTMLFTIAVGLCSTFAFGMAPSYRLALVARIVAGSMNGNISILKAFIARTTSGTRRVKAFGLLTLAFGCG
+
+                                                          [8]
+                                                          2.1e-05
+                                                          ALGKPPAA
+                                                          ++ +++++
+226  AVIAPATGGLLARPAALYPATFGRLPLFRAQPYLLPCLVCMAVQFAALLTAYVALPRTPAAGDARAAAAGAATPE
+
+                                                                 [1]
+                                                                 3.7e-07
+                                                                 TQTQLGNCMGALGLH
+                                                                     + ++++ ++
+376  SLPLQAPLTQRVGTRRSLAWANFLLLPVFLLLPALALLRRYSLSPAASPAVAAIVFPALVVTLALINCFGTLGFT
+
+     
+     
+     IGSRFD
+     +++ +
+451  LGNVLVNSSVPPSQLAMINGFSQSLSALARGFAPIVGGLIVSISAHMRVGGQFVVFAFMGLVALLAGAVVKSVPQ
+
+
+KAG8457625.1
+  hypothetical protein KFE25_002289 [Diacronema lutheri]
+  LENGTH = 146  COMBINED P-VALUE = 4.00e-04  E-VALUE =      5.8
+  DIAGRAM: 38-[6]-14-[4]-65
+
+                                           [6]                        [4]
+                                           7.6e-07                    1.5e-05
+                                           SWRAAMLGRTPPP              LPDFPDPFTL
+                                           + ++ +++++++               + +     +
+1    MKEVRRAPSSPPSSGDQNALDITRAVGNWALHGRHPTRALRANMTGRGKGGKGLGKGGAKRHRKVLRDNIQGITK
+
+     
+     
+     PPIPRL
+     + + ++
+76   PAIRRLARRGGVKRISGLIYEETRGVLKVFLENCIRDAVTYTEHARRKTVTAMDVVYALKRQGRTLYGFGG
+
+
+KAG8464428.1
+  hypothetical protein KFE25_003491 [Diacronema lutheri]
+  LENGTH = 413  COMBINED P-VALUE = 4.20e-04  E-VALUE =      6.1
+  DIAGRAM: 47-[5]-96-[4]-106-[1]-119
+
+                                                    [5]
+                                                    8.8e-05
+                                                    LNLPDFPD
+                                                       ++++
+1    MSTGSYPRARFAVSPLVAGVATSKTVAIFSQTSEMKSRGEAVNAALCVGQPDFPPPPAVVEATAEAAAKGLTTYT
+
+      [4]
+      5.4e-06
+      LPDFPDPFTLPPIPRL
+      +++ +++  ++ +  +
+151  IMPTHPSDDYVPTVAELERALNERTRILILCNPCNPTGAVIPRERLEQIAQLLRRPDLAHILVLSDEIYEAITYG
+
+                                                     [1]
+                                                     6.5e-05
+                                                     TQTQLGNCMGALGLHIGSRFD
+                                                      ++++ ++    + + +
+226  VPHVSFAALDGMKERTLTINGFSKAYSMTGYRLGYLAAPVPIIKAASRLQAQISSCASSISQHAGVAALTRTPDD
+
+
+KAG8467899.1
+  hypothetical protein KFE25_006951 [Diacronema lutheri]
+  LENGTH = 334  COMBINED P-VALUE = 4.90e-04  E-VALUE =      7.1
+  DIAGRAM: 52-[5]-274
+
+                                                         [5]
+                                                         3.5e-08
+                                                         LNLPDFPD
+                                                         ++++++++
+1    MADAGLHRDKRQRGLTGIQIDESMLKKCDAMLKGVAKRGMASVFLSPVDWRALNLPDYPQIVKQPMDLGTVQEKL
+
+
+KAG8466993.1
+  hypothetical protein KFE25_008372 [Diacronema lutheri]
+  LENGTH = 533  COMBINED P-VALUE = 5.14e-04  E-VALUE =      7.4
+  DIAGRAM: 57-[4]-357-[6]-90
+
+                                                              [4]
+                                                              6.8e-06
+                                                              LPDFPDPFTLPPIPRL
+                                                                + ++  +++++ ++
+1    MAVEPLDVLRPAVSRSTRSAAPPPPPPPPPPLLVVEALPSGAARPAVLPPIAGGARAPAAPPARAQLPPIARLAP
+
+                                                            [6]
+                                                            6.6e-05
+                                                            SWRAAMLGRTPPP
+                                                            ++  ++ + + ++
+376  GAATLQIVSTARASNRNPLQLMRMPLDASATELATDAVRALLLCPALLVWTLVGAAWTFALGGGTGGALLCADSP
+
+
+KAG8463453.1
+  hypothetical protein KFE25_004964 [Diacronema lutheri]
+  LENGTH = 528  COMBINED P-VALUE = 5.43e-04  E-VALUE =      7.8
+  DIAGRAM: 152-[8]-201-[4]-10-[9]-133
+
+       [8]
+       2.1e-05
+       ALGKPPAA
+       ++++  ++
+151  TPALNRHASALCTHLAARAQGGHGDVEVHRPLSASTLDVIGEIGFGARFGALDGCEPGAAPSPFLGAANMLLSGV
+
+                                                                  [4]
+                                                                  3.1e-05
+                                                                  LPDFPDPFTLPPIP
+                                                                    + +++ +++ +
+301  TFLEALAAARLSYAEAVDEIITLLLAGHETTANTLSWALHLLAAHPAEQAAARAELEAACPNGEPPNVDSLPKLT
+
+                 [9]
+                 3.6e-06
+     RL          FPPIPRLP
+      +          +++++  +
+376  HLRGCVYEALRLFPTVPNVPRLCARDAIIGDVLVPAGTICFHAVAAGARDGSEFAEPDAFRPARHAHLPDGGSAA
+
+
+KAG8464824.1
+  hypothetical protein KFE25_010192 [Diacronema lutheri]
+  LENGTH = 207  COMBINED P-VALUE = 5.51e-04  E-VALUE =        8
+  DIAGRAM: 137-[8]-16-[3]-36
+
+                                                                   [8]
+                                                                   1.4e-05
+                                                                   ALGKPPAA
+                                                                   +++++
+76   DSDDCAAIILGMEERRPNWDAIGARMNAIRTRTLLAEADVVVVRFGDKYRQWNAAYEAGIASALGKPVITLHPPE
+
+                [3]
+                9.8e-05
+                AESGCEWVKE
+                + + ++ +++
+151  LGHMLKEVDAGALAVCEDVQQVVQTLDYAITGRLPPPRDGRAFVPIADRLGKGNPTP
+
+
+KAG8468748.1
+  hypothetical protein KFE25_013831 [Diacronema lutheri]
+  LENGTH = 901  COMBINED P-VALUE = 5.62e-04  E-VALUE =      8.1
+  DIAGRAM: 118-[3]-247-[6]-77-[7]-243-[4]-169
+
+                                                [3]
+                                                2.6e-05
+                                                AESGCEWVKE
+                                                  ++++ + +
+76   VIEHTVHRIDSVKVKEMTKVPAVSRRSDASAVLAPQLDPSGPGGGAGCELVVSNSRFFALRVGLVGADGQRVSCM
+
+     [6]
+     2.9e-05
+     SWRAAMLGRTPPP
+     + +++++ ++  +
+376  APRAAALKRRHDALHDGDALHDGDALHDGDALHDGEIDASGAETARARVDGGAREAPPGLARAWSRGRLDALQPH
+
+                    [7]
+                    3.2e-06
+                    PPIPRLLP
+                    +++++++
+451  VERSHWQRARARSPPPPVPRLVQQRAPAGSTGGGGRGEAAALFGVPRDARDEHVSLSDGDEDAFFAACGGFALHA
+
+                                              [4]
+                                              3.1e-05
+                                              LPDFPDPFTLPPIPRL
+                                               +  + ++  +++
+676  VAGVGAGADAEAVAVAFAGADEEGADDGAAFASTVFDDCSASPRPPLPFHTPPLGSVPVADPFLHSTRVSATESA
+
+
+KAG8470139.1
+  hypothetical protein KFE25_008560 [Diacronema lutheri]
+  LENGTH = 106  COMBINED P-VALUE = 5.69e-04  E-VALUE =      8.2
+  DIAGRAM: 50-[4]-40
+
+                                                       [4]
+                                                       2.5e-07
+                                                       LPDFPDPFTLPPIPRL
+                                                        ++ +++ +++++ +
+1    MLDSINYPEVSALSNARRKTHYSGDRPALLLQTKSVAQEAEDEMWRQLAKRPTLPEPVKLPPIEKTADEIRSVTL
+
+
+KAG8459296.1
+  hypothetical protein KFE25_014141 [Diacronema lutheri]
+  LENGTH = 156  COMBINED P-VALUE = 6.37e-04  E-VALUE =      9.2
+  DIAGRAM: 7-[8]-141
+
+            [8]
+            3.0e-05
+            ALGKPPAA
+            ++ + +++
+1    MLALRRLALTRAPAARLPAVARAYHENVINHYENPRNVGKMNKDDPDVGTGIVGAPACGDVMKLQIRVNDDGTVK
+
+
+KAG8457735.1
+  hypothetical protein KFE25_013241 [Diacronema lutheri]
+  LENGTH = 1123  COMBINED P-VALUE = 6.81e-04  E-VALUE =      9.8
+  DIAGRAM: 35-[6]-102-[3]-9-[4]-608-[5]-322
+
+                                        [6]
+                                        6.3e-07
+                                        SWRAAMLGRTPPP
+                                        + ++++++ + ++
+1    MAAALGSPLLDVSSEADRIGALDEEEALRAEIAFVAERAALLGAAAGAPRDAIAVCVSGGGIRSAAVACGLLWRL
+
+     [3]                [4]
+     3.1e-05            8.1e-06
+     AESGCEWVKE         LPDFPDPFTLPPIPRL
+      ++ ++++ +         + + ++   + ++  +
+151  MQARCNWLVGTTPRERFTALAAVPALAALAPIVWLAALTVPLAMWADLGAGHALRALACEPDARAARRDAAALLL
+
+                                                [5]
+                                                6.3e-05
+                                                LNLPDFPD
+                                                 ++++ ++
+751  APASAVVGAAAAPGMAGASGEPGARACAERAPARARAPWSRRWQRLPAAPDASQWAELLLCATILLVLLALNFEF
+
+********************************************************************************
+
+
+CPU: mablin-mac.local
+Time 0.773 secs.
+
+mast -o /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/mast_GCA_019448385.1 -ev 10.0 -nostatus /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_motif_analysis/data/meme_gb.xml /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_019448385.1/protein.faa

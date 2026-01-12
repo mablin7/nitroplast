@@ -1,0 +1,1 @@
+((Emiliania_huxleyi_EOD31323.1:0.148124,Emiliania_huxleyi_EOD31324.1:0.257256):0.245099,(Braarudosphaera_bigelowii_KC1-P2-N_k37_Locus_1174_Transcript_3_1:0.634425,Braarudosphaera_bigelowii_KC1-P2_N2_CL5233Contig1_1:0.0731413):0.245099);

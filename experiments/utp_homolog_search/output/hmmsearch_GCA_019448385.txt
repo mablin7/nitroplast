@@ -1,0 +1,301 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/utp.hmm
+# target sequence database:        /Users/mablin/Projects/github.com/mablin7/nitroplast/data/haptophytes/ncbi_dataset/data/GCA_019448385.1/protein.faa
+# output directed to file:         /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_019448385.txt
+# per-dom hits tabular output:     /Users/mablin/Projects/github.com/mablin7/nitroplast/experiments/utp_homolog_search/output/hmmsearch_GCA_019448385.domtblout
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       good-c-term  [M=713]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.5e-83  281.3  16.3    1.5e-82  277.9  16.3    2.2  1  KAG8469704.1  hypothetical protein KFE25_006159 [Diacronema l
+    1.3e-16   60.0  12.4    1.7e-16   59.6  12.4    1.2  1  KAG8461992.1  hypothetical protein KFE25_014011 [Diacronema l
+    2.9e-06   25.8   0.5    3.6e-06   25.5   0.5    1.1  1  KAG8458271.1  hypothetical protein KFE25_001563 [Diacronema l
+    5.3e-05   21.6   0.1      8e-05   21.0   0.1    1.2  1  KAG8464611.1  hypothetical protein KFE25_009979 [Diacronema l
+    0.00011   20.6   6.0    0.00013   20.3   2.5    2.1  2  KAG8468176.1  hypothetical protein KFE25_013259 [Diacronema l
+    0.00097   17.5   5.6     0.0021   16.4   5.6    1.5  1  KAG8461188.1  hypothetical protein KFE25_002377 [Diacronema l
+     0.0027   16.0   1.6      0.004   15.4   1.6    1.2  1  KAG8462178.1  hypothetical protein KFE25_011628 [Diacronema l
+     0.0063   14.8   1.2      0.012   13.8   1.2    1.4  1  KAG8465079.1  hypothetical protein KFE25_012442 [Diacronema l
+     0.0073   14.6  11.9      0.012   13.8  11.9    1.3  1  KAG8459939.1  hypothetical protein KFE25_010988 [Diacronema l
+  ------ inclusion threshold ------
+       0.18   10.0   8.0       0.12   10.6   5.2    1.9  2  KAG8461857.1  hypothetical protein KFE25_013876 [Diacronema l
+       0.24    9.6  18.5       0.52    8.4  18.5    1.5  1  KAG8459690.1  hypothetical protein KFE25_003142 [Diacronema l
+        3.2    5.8  20.8        3.7    5.6  20.8    1.1  1  KAG8459609.1  hypothetical protein KFE25_000965 [Diacronema l
+        4.7    5.3  35.3        1.6    6.8  15.6    2.1  2  KAG8459706.1  hypothetical protein KFE25_003158 [Diacronema l
+
+
+Domain annotation for each sequence (and alignments):
+>> KAG8469704.1  hypothetical protein KFE25_006159 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  277.9  16.3   1.4e-85   1.5e-82     162     638 ..     497    1002 ..     454    1008 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 277.9 bits;  conditional E-value: 1.4e-85
+   good-c-term  162 vyddiiqtgmefdnislgelvellrqgsvfkkyahsrie..skrchscrlwladnqlrylnlsgrhkpekavqlsaieqvlegpqsdvflrngi. 253 
+                    + +++i+t+++fd +s  elv++l+qgsvf k +h r+   +++ h++++w +d qlry n s+r++ ek+  lsa+++v+ gp+s+vf r+g+ 
+  KAG8469704.1  497 IKRTEIKTTTAFDELSQHELVQWLAQGSVFVKFTHGRVGalKSSHHQVKMWIRDDQLRYRNISKRMRGEKQIPLSAVTDVIVGPKSQVFRRHGVr 591 
+                    456678999**************************9975225667899*****************************************998862 PP
+
+   good-c-term  254 ...ttds.a.eastc...............fslvfhgrtldlqastreavsiwthyfrqvversqletharqvalrGqpresflenatqlwcdei 328 
+                       t++s a  as +               fslv + rt+dlqa+t e    w +yf+qvvers++e+ ar++alr qpre f+e+at++w  ei
+  KAG8469704.1  592 arvTRQSsAhSASSAdtgsgggandpdrayFSLVLNQRTIDLQADTAELGDFWSRYFKQVVERSRIEATARRLALRAQPRERFVEQATRIWSTEI 686 
+                    2222222121222112222233333333449**************************************************************** PP
+
+   good-c-term  329 lphweenrslprtqmlwweGvpsalrpqlwplaiG.dalqlGeGGytkwaaaaqp..adreaar..clleeeivqaedlpp...elnmf.tales 414 
+                    lp we +r+  rtqmlwweG+ps++r ++w   +G d+  + +   ++ a    p   d  aa    l        e+lp    el  f     s
+  KAG8469704.1  687 LPEWETQRAEKRTQMLWWEGLPSSVRGNVWLHVLGeDTASIANLSSARSARPLIPpkGDGSAAHaaALAGAGEWLDEQLPHghvELYSFyGRTAS 781 
+                    ********************************99956778888888888877666334666655114555555667899954337765515678* PP
+
+   good-c-term  415 plrGslllllsavhaffs..hGdGp..apsercsllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellc 505 
+                    p+r s l  ls++   ++  hG     a +    l+aamll+ lep  a+  l +++  h     v G +++    wr    + +l++elp l  
+  KAG8469704.1  782 PFRESALQALSTLSLQYAaaHGGQSirARAPTAPLVAAMLLIQLEPPLAYAALATLVVMH-----VPGATDADAMQWRNLGFQLVLEQELPVLHA 871 
+                    ***********99877651255433225566789*******************9988776.....899*************************** PP
+
+   good-c-term  506 hlrahsie.lehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavle..ckqrehclrllsqpstaGGvserelfkslG 597 
+                     + +  ie l++f+p wl +lf+  l++dtaarlwdcy+rdGe f wra++e+lr  +  +l      reh l ll qp     ++++ lfksl 
+  KAG8469704.1  872 LFESLRIEpLDYFLP-WLQALFVPVLTIDTAARLWDCYMRDGEVFLWRAAIELLRKRTNELLTegTAGREHVLLLLRQPIDPMLIADKALFKSLQ 965 
+                    999999997888888.****************************************999998523578*************************** PP
+
+   good-c-term  598 shdvalhellaGfsqrlpmptierGvcfdlwqnssenepaq 638 
+                     ++ a+ + l  + q+lp+p      c+dl+ ns + e a+
+  KAG8469704.1  966 EKEDAVIQWLPLLQQKLPLPE----HCWDLYANSYDSEGAD 1002
+                    ********************6....6*********999885 PP
+
+>> KAG8461992.1  hypothetical protein KFE25_014011 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.6  12.4   1.5e-19   1.7e-16     317     587 ..     210     489 ..     103     503 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 59.6 bits;  conditional E-value: 1.5e-19
+   good-c-term 317 lenatqlwcdeilphweenrslprtqmlwweGvpsalrpqlwplaiGdalqlGeGGytkwa...aaaqpadreaarcllee......eivqaedlpp 404
+                   +  a   w   + ph+   r+  r q l   Gvp a+rp+lw +aiG+al +     +      a  + a+ ea r   e       e+  a  l p
+  KAG8461992.1 210 MLRALVEWRTHLSPHFATARTSRRLQHLVRTGVPPAVRPELWKMAIGNALGITREHVAACGtagAGVDDAEAEAKRARTEAalrrmvEVDMARTL-P 305
+                   445667799999**************************************998665544330013345666777777666511111133345555.6 PP
+
+   good-c-term 405 elnmftalesplrGslllllsavhaffshGdGpapsercsllaamlllylepar..afcclcamldahffkhfvkGGaetpqrswrlscaeklldre 499
+                   el  + + +  l G+ ++ l +   +  hG      +  ++l a+l l  e     a   l  +++  +++ +      +  rs+ l   + ll   
+  KAG8461992.1 306 ELSALFTSDGELYGACVFALRSCALLSPHGWWCGYVQGQTFLGAVLSLNCEGDEllAAQMLANLMNRPLLRALYSMEPTARTRSFEL--HDELLALA 400
+                   77665556999*********99999999**********************9876224556777888888888777666666677766..699***** PP
+
+   good-c-term 500 lpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleckqr.ehclrllsqpstaGGv 587
+                   lp +   +    +  e ++  w+ tlf  +l ld a rlwd  l +G+a  +ra++ +l   ap +l+ +   +  +rl+s+      v
+  KAG8461992.1 401 LPRVRARFCGAGVRAEQYVLDWFLTLFAKALPLDVAVRLWDLILVEGDAALFRAAIGMLGHHAPLLLDAQLEdDELMRLVSRLPPPATV 489
+                   ********************************************************************986514677999875444444 PP
+
+>> KAG8458271.1  hypothetical protein KFE25_001563 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.5   0.5   3.2e-09   3.6e-06     157     306 ..     109     254 ..      74     270 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 25.5 bits;  conditional E-value: 3.2e-09
+   good-c-term 157 lpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsrieskrchscrlwladnqlrylnlsgrhkpekavqlsaieqvlegpqsdvflrngi 253
+                   + +e++++++ + + e+ +  +   +++l qg  f+ky +  + + r +  rl+ ++ +l + +  ++    +   +  i++v+eg +++vf r+  
+  KAG8458271.1 109 TFRETIAAEHRR-AEEARKPRALSDTQALLQGASFTKYGRAGAPHLRWVWLRLRGSALELCWAESARSRAAPTVLLVVDITDVVEGRHTEVFQRQRL 204
+                   333333333333.333444444445677888999999999999999999999999999999888887777777888899****************99 PP
+
+   good-c-term 254 ttdsaeastcfslvfhgrtldlqastreavsiwthyfrqvversqletharqv 306
+                   + + +e  +cfs+v h+rtldl a    +  +w    r++v++ q  t a  v
+  KAG8458271.1 205 NLQGEE--RCFSVVTHARTLDLEAADLPTAQLWVATLRELVKKQQR-TAAASV 254
+                   988876..8********************************98775.555555 PP
+
+>> KAG8464611.1  hypothetical protein KFE25_009979 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   0.1   7.2e-08     8e-05     487     548 ..     315     373 ..     276     375 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 7.2e-08
+   good-c-term 487 wrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGea 548
+                   +rl    + +dr    l  hl +  i+   f  rw+  l+m  l+l   +r+wd yl +G a
+  KAG8464611.1 315 FRLKEIVQRIDRP---LHAHLASQGIQYIQFAFRWMNCLLMRELALPMISRMWDTYLAEGAA 373
+                   5665555555554...678***************************************9987 PP
+
+>> KAG8468176.1  hypothetical protein KFE25_013259 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   2.5   1.2e-07   0.00013     446     564 ..      93     209 ..      72     223 .. 0.82
+   2 ?    1.1   0.1     0.076        84     546     562 ..     341     357 ..     317     367 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 1.2e-07
+   good-c-term 446 laamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcy 542
+                   +a++ll  +e   af  +c +++  +   f     e       +    +l+ r lp++   l   s+ le f   w+  lf+  l l     +wd  
+  KAG8468176.1  93 IASLLLTVVEEEEAFWLVCLLVEDILPPGFYST--ELHGSKAEVHVLTQLVARYLPNINPLLARWSLTLEPFAFAWIMCLFVGELPLHLLLDVWDRL 187
+                   666777777777777777776666666666543..333334455667899*********************************************** PP
+
+   good-c-term 543 lrdGeafawratleilrllapa 564
+                   l+dG +   ra l +lr+   a
+  KAG8468176.1 188 LKDGVTVLSRAGLSLLRIHEKA 209
+                   *****************86655 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.076
+   good-c-term 546 Geafawratleilrlla 562
+                    ea+ wr t+e lrll 
+  KAG8468176.1 341 EEALGWRQTVEALRLLD 357
+                   599************95 PP
+
+>> KAG8461188.1  hypothetical protein KFE25_002377 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   5.6   1.9e-06    0.0021     495     576 ..     240     321 ..      84     329 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 1.9e-06
+   good-c-term 495 lldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleckqrehclr 576
+                   l+ + lp l  hl a     e +  +wl   f++++ + t  r+wd  + dG+a  +ra++ +l     ++l   ++   l 
+  KAG8461188.1 240 LVGQRLPRLARHLDAAGALPEVYSTKWLLCAFVAAMPVHTVLRIWDALFADGNAALFRAAIALLASHERTLLATSDQSELLT 321
+                   56788*******************************************************9999766666666555555555 PP
+
+>> KAG8462178.1  hypothetical protein KFE25_011628 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   1.6   3.6e-06     0.004     495     550 ..     407     462 ..     369     476 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 3.6e-06
+   good-c-term 495 lldrelpellchlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafa 550
+                   ll    pel  hl a  +  + f  rwlt l+   + l    r+wd ++ d   f 
+  KAG8462178.1 407 LLAIADPELHAHLHAEKVSAQFFSFRWLTLLLSQEFDLPDILRIWDSFFADERRFR 462
+                   666677*******************************************9988775 PP
+
+>> KAG8465079.1  hypothetical protein KFE25_012442 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   1.2   1.1e-05     0.012     505     574 ..     247     316 ..     227     328 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.1e-05
+   good-c-term 505 chlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGeafawratleilrllapavleckqrehc 574
+                    hl a  +  + +   w+  lf+  l   t  r++d +l +G    +r  + +l+    a+l c   eh 
+  KAG8465079.1 247 AHLAALGVRTDELCAPWFRRLFVGVLPYPTVVRVFDSFLLEGAKVLFRVGIALLQRHKAALLACTSAEHV 316
+                   699999999999*********************************************************6 PP
+
+>> KAG8459939.1  hypothetical protein KFE25_010988 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8  11.9   1.1e-05     0.012     322     560 ..     106     347 ..      85     364 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.1e-05
+   good-c-term 322 qlwcdeilphweenrslprtqmlw...weGvpsalrpqlwplaiG.dalqlGeGGytkwaaaaqpadre.....aarclleeeivqaedlppelnmf 409
+                     w   + p w      pr  +l      Gvpsa+r  +w l  G  al      y    aa     re       r + e  +  a +l p   + 
+  KAG8459939.1 106 HKWLKMLGPSWPAWCKGPRRLLLKrrvRRGVPSAVRAHVWDLLAGvPALHPTLPPYEELVAACPAEVREeieldVRRTFPEHALFAAGELEPGARVR 202
+                   45777777888888888888777522257***********99877469*9999***99988765555662222246888889999999999999999 PP
+
+   good-c-term 410 tale.splrGslllllsavhaffshGdGpapsercsllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellc 505
+                    a + + l G ll  l    a   + +G         +  +lll++   ra+c l a++    ++     G   p     +   + ll   lp l  
+  KAG8459939.1 203 GAPDgAELLGRLLAALGGYDAEVGYCQG------LNYVGGLLLLFMPEDRALCLLVALFTNCGLRASYLPGL--PGLRASIDAFDELLAASLPALHA 291
+                   8876256888888888888887777776......4678999*****************98888877666664..5555568899************* PP
+
+   good-c-term 506 hlrahsielehfiprwlttlfmstlsldtaarlwdcylrdGea.fawratleilrl 560
+                   hl    +e   +  rw+ tlf+  l ++   r  d    d +a   +r +l +l l
+  KAG8459939.1 292 HLERELVEPSSYCTRWFMTLFIGCLPFEGCLRALDSIALDRDAkVLFRLALAVLAL 347
+                   **********************************9988887773457888887766 PP
+
+>> KAG8461857.1  hypothetical protein KFE25_013876 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   5.2   0.00011      0.12     430     546 ..     224     339 ..     115     359 .. 0.70
+   2 ?   -0.9   0.0      0.32   3.6e+02     554     583 ..     399     428 ..     391     432 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 0.00011
+   good-c-term 430 ffshGdGpapsercsllaamlllyleparafcclcamldahffkhfvkGGaetpqrswrlscaeklldrelpellchlrahsielehfiprwlttlf 526
+                   f +       ++   ++aamlll ++  raf  l am++   ++ +     ++   + +l      l   lp +  hl a  + +      w+  lf
+  KAG8461857.1 224 FAAAEPQIGYTQSMNFVAAMLLLLMDEERAFWVLRAMINGRALRGYYADSMDAAV-ADQLVFK-DALASALPSVSAHLHALGVAVPLVSTAWFLCLF 318
+                   44444444455667889***************************99887776654.3455544.456789*************************** PP
+
+   good-c-term 527 mstlsldtaarlwdcyl.rdG 546
+                   +  l l     +wd  l  dG
+  KAG8461857.1 319 VCCLPLPVLLPVWDLLLfYDG 339
+                   **************8762455 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.32
+   good-c-term 554 tleilrllapavleckqrehclrllsqpst 583
+                    +e++rl a a+l c   e    +ls+  t
+  KAG8461857.1 399 GIELVRLNADALLRCESLEAAYTVLSRAGT 428
+                   689*********************999877 PP
+
+>> KAG8459690.1  hypothetical protein KFE25_003142 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4  18.5   0.00047      0.52     102     209 ..    1004    1117 ..     925    1146 .. 0.49
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.00047
+   good-c-term  102 e.......qslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgs 189 
+                    +       q+ +s+ ++++s+a+q++ +a+ +a+++   ++ + +++++++++++ + +gsd+ +++ +++ +q++++ +++++++   ++ q++
+  KAG8459690.1 1004 QsqaqsqaQQAQSQVQQAQSQAQQAQSQAQ-QAQSQVQQAQSQVQQQQQQQQQQQYRDVGSDALQQQLQQQLQQQAQQQQQMAAMQQQLVVIQQQ 1097
+                    121211112222211122222222221111.2222222222222233333333334445555555555555555444444443333333333334 PP
+
+   good-c-term  190 vfkkyahsrieskrchscrl 209 
+                    +++++ah +++++++++++ 
+  KAG8459690.1 1098 QAQQHAHYQMQHQQQQQQQQ 1117
+                    44444444443333333222 PP
+
+>> KAG8459609.1  hypothetical protein KFE25_000965 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.6  20.8    0.0033       3.7      41     230 ..      69     245 ..      26     262 .. 0.41
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.0033
+   good-c-term  41 lgsrlelal.eallgergvaaasrrraaevgcewledagaellpdfpelalppiprllpsleeqslvsaedlhgspaeqeavdakakagkrrilgav 136
+                   l s+ ++a  +a++++++   a+ ++++e++   l+ +++++  ++++l+  +i +l +  e q+ + ++++++++a+ +a ++k ++++++ ++a+
+  KAG8459609.1  69 LVSKEQTAAlNAQSEKQT---AALNAQSEKQTAALNAQSEKQTTALNALS-EKINALSK--E-QTAALNAQSEKQTAALNAQSEKVNTQSEKQTAAL 158
+                   223322222122222111...11112222222222221111122222221.12222221..1.1111112222222222233333333344444555 PP
+
+   good-c-term 137 raflspfrlpgeadtaagsdlpeefvyddiiqtgmefdnislgelvellrqgsvfkkyahsrieskrchscrlwladnqlrylnlsgrhkpeka 230
+                   +a +++ ++++e++taa ++l+e+++++++ qt      ++l  l e ++++s  ++ a +  +s++++++   l+++q++ ln  ++ +++  
+  KAG8459609.1 159 NALSEKINAQSEKQTAALKALSEKVITQSEKQT------AALNALSEKINAQSEKQTAALNA-QSEKQTAALNALSKEQTAALNELSERQTAAL 245
+                   555555555555555555555555544444333......33333333333333333333332.3333333333444444444444444444444 PP
+
+>> KAG8459706.1  hypothetical protein KFE25_003158 [Diacronema lutheri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8  15.6    0.0014       1.6      84     188 ..     281     378 ..     221     415 .. 0.36
+   2 ?    4.2  11.7    0.0088       9.7      84     163 ..     700     772 ..     674     803 .. 0.37
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.0014
+   good-c-term  84 dfpelalppiprllpslee............qslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvyddiiq 168
+                   +  +la   +p+ l ++              q++++a+++++++++q++v+++  a+k++  ++v++++++++++++a+++a++++++++       
+  KAG8459706.1 281 SAAALAGGGLPAHLHRMAAahhhhagaaqvqQQQQQAQQQAQQQQQQQQVQQQ--AQKQAQQQQVQQVQAQQQAQQQAQQQAQQQAQQQQ------- 368
+                   22222222222222222111111111111111111111111111111111111..11111111122221111111111111111111111....... PP
+
+   good-c-term 169 tgmefdnislgelvellrqg 188
+                              + v+ ++q+
+  KAG8459706.1 369 ----------VQQVQQVQQV 378
+                   ..........1112222222 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0088
+   good-c-term  84 dfpelalppiprllpsleeqslvsaedlhgspaeqeavdakakagkrrilgavraflspfrlpgeadtaagsdlpeefvy 163
+                   + ++l+lp+ p+  ++ +   +++   +++++++q+  +++  ++++++l++  +++++ +++++++ +++++l++ + +
+  KAG8459706.1 700 NQQQLQLPQHPQQQQQQQ---QQQ---QQQQQQQQQ-QQQQLPQQQQHLLQQHPQQQHQYQHQQQQHLQQQQQLMQMQQM 772
+                   112233333222221111...111...111111111.1111111112222222222222222222222222222221111 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (713 nodes)
+Target sequences:                      14446  (8860175 residues searched)
+Passed MSV filter:                      1704  (0.117957); expected 288.9 (0.02)
+Passed bias filter:                      287  (0.0198671); expected 288.9 (0.02)
+Passed Vit filter:                        90  (0.0062301); expected 14.4 (0.001)
+Passed Fwd filter:                        17  (0.0011768); expected 0.1 (1e-05)
+Initial search space (Z):              14446  [actual number of targets]
+Domain search space  (domZ):              13  [number of targets reported over threshold]
+# CPU time: 0.35u 0.00s 00:00:00.35 Elapsed: 00:00:00.16
+# Mc/sec: 37325.27
+//
+[ok]

@@ -1,0 +1,1 @@
+(Chrysochromulina_tobinii_KOO53350.1:0.203757,((Emiliania_huxleyi_EOD28707.1:0.982172,Prymnesium_parvum_KAL1523233.1:0.221801):0.274515,(Emiliania_huxleyi_EOD24237.1:0,Emiliania_huxleyi_EOD27837.1:0):0.72795):0.203757);

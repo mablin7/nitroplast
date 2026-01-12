@@ -1,0 +1,29 @@
+Full Proteome Analysis Summary
+==================================================
+
+Dataset:
+  uTP proteins: 933
+  Non-uTP proteins: 43430
+  Total: 44363
+
+Classification Results:
+  Accuracy:  89.1%
+  Precision: 13.9%
+  Recall:    80.3%
+  F1 Score:  0.24
+  ROC AUC:   0.920
+
+Embedding Visualization:
+  t-SNE silhouette: 0.092
+  UMAP silhouette: 0.270
+  Subsample size: 933 per class
+
+Significant Property Differences:
+  length: higher in uTP, medium effect (d=0.51)
+  molecular_weight: higher in uTP, medium effect (d=0.52)
+  isoelectric_point: lower in uTP, medium effect (d=-0.68)
+  gravy: higher in uTP, small effect (d=0.11)
+  instability_index: lower in uTP, small effect (d=-0.33)
+  fraction_helix: higher in uTP, small effect (d=0.22)
+  fraction_sheet: higher in uTP, small effect (d=0.02)
+  fraction_coil: higher in uTP, small effect (d=0.27)
