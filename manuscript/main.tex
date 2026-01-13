@@ -1,0 +1,106 @@
+\documentclass[11pt, a4paper]{article}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+
+% Typography and layout
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[margin=2.5cm]{geometry}
+
+% Math and symbols
+\usepackage{amsmath, amssymb}
+
+% Figures and tables
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+
+% References and links
+\usepackage[colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black, urlcolor=blue!60!black]{hyperref}
+\usepackage[round, sort&compress]{natbib}
+
+% Line numbers (comment out for final version)
+\usepackage{lineno}
+\linenumbers
+
+% Better captions
+\usepackage[font=small, labelfont=bf]{caption}
+
+% Section styling - minimal but clean
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.5ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+
+% Paragraph spacing
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+
+% ============================================================================
+% DOCUMENT INFO
+% ============================================================================
+
+\title{\textbf{The UCYN-A transit peptide: a novel C-terminal targeting system with distinctive biophysical substrate signatures}}
+
+\author{
+    Author One\textsuperscript{1,*}, 
+    Author Two\textsuperscript{2}
+    \\[1em]
+    \small\textsuperscript{1}Institution One, City, Country \\
+    \small\textsuperscript{2}Institution Two, City, Country \\[0.5em]
+    \small\textsuperscript{*}Corresponding author: email@example.com
+}
+
+\date{}
+
+% ============================================================================
+% DOCUMENT
+% ============================================================================
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+UCYN-A is a nitrogen-fixing cyanobacterial endosymbiont that has evolved into an organelle-like structure (nitroplast) in the marine alga \textit{Braarudosphaera bigelowii}. Approximately 900 host-encoded proteins are imported into UCYN-A via a novel C-terminal transit peptide (uTP), unlike the N-terminal signals used by mitochondria and chloroplasts.
+\end{abstract}
+
+\newpage
+
+% ----------------------------------------------------------------------------
+\input{sections/introduction}
+
+% ----------------------------------------------------------------------------
+\input{sections/results}
+
+% ----------------------------------------------------------------------------
+\input{sections/discussion}
+
+% ----------------------------------------------------------------------------
+\input{sections/methods}
+
+% ----------------------------------------------------------------------------
+\section*{Acknowledgements}
+
+[To be added]
+
+% ----------------------------------------------------------------------------
+\section*{Author Contributions}
+
+[To be added]
+
+% ----------------------------------------------------------------------------
+\section*{Data Availability}
+
+[To be added]
+
+% ----------------------------------------------------------------------------
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}

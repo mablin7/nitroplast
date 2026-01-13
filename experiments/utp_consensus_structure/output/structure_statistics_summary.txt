@@ -1,0 +1,22 @@
+============================================================
+uTP Structure Analysis - Statistics Summary
+For use in manuscript methods/results sections
+============================================================
+
+## RMSD Analysis
+- Number of structures: 47
+- Pairwise comparisons: 1081
+- Mean RMSD: 19.29 ± 5.07 Å
+- RMSD range: 5.77 - 46.08 Å
+- Median RMSD: 19.50 Å
+
+## Consensus Structure
+- Reference structure: kc1_p2_n3_k61_locus_1728_transcript_1_1_c_term
+- Conserved region: residues 1 - 83
+- Consensus length: 82 residues
+- Mean positional variance: 0.90 Å
+- Variance range: 0.60 - 1.38 Å
+
+## Suggested Methods Text
+----------------------------------------
+AlphaFold3 structures were predicted for proteins containing uTP sequences. 47 structures with strong C-terminal sequence similarity were selected and aligned using PyMOL's CE alignment algorithm. Pairwise RMSD was calculated for all structure pairs using BioPython's Superimposer after aligning on Cα atoms. A consensus structure was built by computing the mean atomic position for each aligned residue across all structures (within 3.0 Å radius), with positional variance recorded as standard deviation. Hierarchical clustering (average linkage) was performed on the RMSD distance matrix.

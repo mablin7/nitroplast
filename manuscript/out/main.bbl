@@ -1,0 +1,20 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Coale et~al.(2024)Coale, Loconte, Turk-Kubo, Zehr, and Bhattacharya]{coale2024}
+T.~H. Coale, V.~Loconte, K.~A. Turk-Kubo, J.~P. Zehr, and D.~Bhattacharya.
+\newblock Nitrogen-fixing organelle in a marine alga.
+\newblock \emph{Science}, 384\penalty0 (6692):\penalty0 217--222, 2024.
+\newblock \doi{10.1126/science.adk1075}.
+
+\bibitem[Frail and Others(2025)]{frail2025}
+S.~Frail and Others.
+\newblock Genomes of nitrogen-fixing eukaryotes reveal an alternate path for organellogenesis.
+\newblock \emph{Nature}, 2025.
+\newblock In press.
+
+\end{thebibliography}

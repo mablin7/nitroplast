@@ -1,0 +1,77 @@
+\section{Results}
+
+% ============================================================================
+\subsection{uTP comprises conserved motif architecture with invariant anchor sequences}
+% ============================================================================
+
+To systematically characterize the uTP system, we applied the HMM profile from Coale et al. to the full \textit{B. bigelowii} proteome, identifying 933 proteins with putative uTP sequences. The uTP region spans 58--1091 amino acids (median $\sim$206 aa), located at the C-terminus of each protein.
+
+De novo motif discovery using MEME identified 8 conserved motifs within the uTP region (Table~\ref{tab:motifs}). Two motifs showed near-universal prevalence: motif 2 (93\% of sequences) and motif 1 (91\%). These ``anchor motifs'' appear in a stereotyped order, with motif 2 consistently preceding motif 1 at the N-terminal end of the uTP region. The remaining motifs (3--9) appear in variable combinations downstream, creating combinatorial diversity among uTP sequences.
+
+Extended scanning with MAST across all 933 HMM-predicted proteins confirmed this architecture. Of 745 proteins with detectable motif hits, 81.5\% showed one of four canonical terminal motif patterns (ending with motif 4, 5, 7, or 9), with terminal motif 7 being most common (61.7\%). The remaining proteins either lacked detectable motifs (20.2\%) or showed non-canonical patterns.
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=\textwidth]{figures/figure1_motif_architecture.pdf}
+% \caption{\textbf{uTP motif architecture.} (A) Schematic of protein with mature domain and C-terminal uTP. (B) Motif prevalence across uTP sequences. (C) Stereotyped motif arrangement showing anchor motifs 2 and 1 followed by variable combinations.}
+% \label{fig:motifs}
+% \end{figure}
+
+% ============================================================================
+\subsection{uTP adopts a conserved U-bend structure}
+% ============================================================================
+
+To assess structural conservation, we predicted three-dimensional structures for representative uTP sequences using AlphaFold2. Despite sequence variation in the variable motif region, all predicted structures converged on a conserved fold: two $\alpha$-helices connected by a turn, forming a characteristic ``U-bend'' configuration.
+
+Structural alignment across predictions revealed low variance, with pairwise RMSD values consistently below 4~\AA. This structural conservation suggests that the U-bend fold is functionally constrained, potentially reflecting requirements for recognition by the import machinery.
+
+% TODO: Add structure figure
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=0.6\textwidth]{figures/figure1_ubend_structure.pdf}
+% \caption{\textbf{Conserved U-bend structure of uTP.} (A) Representative AlphaFold2 prediction showing two-helix U-bend. (B) RMSD distribution across structural alignments.}
+% \label{fig:structure}
+% \end{figure}
+
+% ============================================================================
+\subsection{No uTP homologs detected in related haptophyte genomes}
+% ============================================================================
+
+To investigate the evolutionary origin of uTP, we searched for homologous sequences in related haptophyte species. We compiled proteomes from seven haptophyte species spanning estimated divergence times of 330--920 million years from \textit{B. bigelowii} (Table~\ref{tab:haptophytes}).
+
+Profile HMM search with the uTP model yielded 84 total hits across all haptophyte proteomes. However, detailed analysis of hit coordinates revealed that all 33 significant hits (E-value $< 0.01$) aligned exclusively to the mature domain region of the HMM (positions 100--713), not the uTP-specific region (positions 1--100). These hits represent orthologs of the mature protein domains, not uTP homologs.
+
+We also searched for individual uTP motifs using position weight matrices (MAST). While 530 individual motif hits were detected across haptophyte proteomes, the defining feature of uTP—co-occurrence of the two anchor motifs (MEME-1 and MEME-2) at the C-terminus—was completely absent. Only one protein in any haptophyte genome contained both anchor motifs, and these were located internally (not C-terminal), in a protein 1269 amino acids long.
+
+As a control, we performed the same motif search against the \textit{Arabidopsis thaliana} proteome. Similar hit rates confirmed that individual motif matches represent generic sequence patterns, not uTP-specific features.
+
+The complete absence of proteins with the uTP motif architecture in any haptophyte genome strongly supports de novo evolution of uTP in the \textit{B. bigelowii} lineage, likely after establishment of the UCYN-A symbiosis.
+
+% ============================================================================
+\subsection{uTP-containing proteins have distinctive biophysical properties}
+% ============================================================================
+
+To identify features distinguishing uTP-containing proteins from the general proteome, we constructed a carefully controlled comparison. From each uTP protein, we extracted the mature domain by removing the uTP region identified by HMM. We then selected length-matched control proteins from the \textit{B. bigelowii} proteome, filtering by subcellular localization prediction (CELLO) to exclude proteins with other targeting signals (signal peptides, mitochondrial/chloroplast transit peptides). This yielded 605 uTP mature domains and 773 cytoplasmic/nuclear controls.
+
+We trained binary classifiers using ProtT5 protein language model embeddings as features. Logistic regression achieved 92.8\% accuracy (F1 = 0.92), with significance confirmed by permutation testing (p = 0.002, 1000 permutations). The ROC AUC was 0.92, indicating strong discriminative power.
+
+To understand what drives this classification, we computed biophysical properties for all proteins. Three properties showed large effect sizes distinguishing uTP from control proteins (Table~\ref{tab:biophysical}):
+
+\begin{itemize}
+    \item \textbf{Intrinsic disorder:} uTP proteins have significantly higher predicted coil/disordered content (Cohen's $d$ = +1.05, p $<$ 0.006)
+    \item \textbf{Isoelectric point:} uTP proteins are more acidic (mean pI = 6.5 vs 8.5; $d$ = --0.89, p $<$ 0.006)
+    \item \textbf{Stability:} uTP proteins have lower instability index, indicating greater stability ($d$ = --0.81, p $<$ 0.006)
+\end{itemize}
+
+All p-values were Bonferroni-corrected for 8 tests.
+
+To validate these findings at scale, we applied the trained classifier to the entire \textit{B. bigelowii} proteome (933 uTP vs 43,430 non-uTP proteins). Despite the extreme class imbalance, the classifier maintained strong performance (ROC AUC = 0.920, recall = 80.3%), confirming that uTP proteins are genuinely distinguishable by their mature domain properties.
+
+These biophysical signatures have plausible mechanistic interpretations. Increased disorder may facilitate protein unfolding during translocation across the nitroplast membrane. The acidic character could mediate electrostatic interactions with positively charged components of the import machinery. The greater stability may reflect selection for function in the nitroplast environment.
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=\textwidth]{figures/figure2_biophysical.pdf}
+% \caption{\textbf{Distinctive biophysical properties of uTP proteins.} (A) ROC curve for binary classification. (B) t-SNE visualization colored by class. (C) Violin plots for key properties. (D) Effect size summary.}
+% \label{fig:biophysical}
+% \end{figure}
