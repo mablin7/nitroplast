@@ -1160,6 +1160,7 @@ dependencies = [
     { name = "matplotlib-venn" },
     { name = "pandas" },
     { name = "pyopa" },
+    { name = "python-louvain" },
     { name = "scikit-learn" },
     { name = "seaborn" },
     { name = "sentencepiece" },
@@ -1181,6 +1182,7 @@ requires-dist = [
     { name = "matplotlib-venn", specifier = ">=1.1.1" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "pyopa", specifier = ">=0.8.4" },
+    { name = "python-louvain", specifier = ">=0.16" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "sentencepiece", specifier = ">=0.2.1" },
@@ -1685,6 +1687,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/4f/da/95963cebfc578dabd
 wheels = [
     { url = "https://files.pythonhosted.org/packages/35/a6/145655273568ee78a581e734cf35beb9e33a370b29c5d3c8fee3744de29f/python_json_logger-2.0.7-py3-none-any.whl", hash = "sha256:f380b826a991ebbe3de4d897aeec42760035ac760345e57b812938dc8b35e2bd", size = 8067 },
 ]
+
+[[package]]
+name = "python-louvain"
+version = "0.16"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "networkx" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7c/0d/8787b021d52eb8764c0bb18ab95f720cf554902044c6a5cb1865daf45763/python-louvain-0.16.tar.gz", hash = "sha256:b7ba2df5002fd28d3ee789a49532baad11fe648e4f2117cf0798e7520a1da56b", size = 204641 }
 
 [[package]]
 name = "pytz"
