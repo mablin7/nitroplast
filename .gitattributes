@@ -29,3 +29,7 @@
 # Large HTML files (MAST results)
 **/mast*.html filter=lfs diff=lfs merge=lfs -text
 data/CLUSTALW[[:space:]]Result filter=lfs diff=lfs merge=lfs -text
+# uTP structure files
+data/utp-structures/**/*.json filter=lfs diff=lfs merge=lfs -text
+data/utp-structures/**/*.cif filter=lfs diff=lfs merge=lfs -text
+data/utp-structures/**/*.pdb filter=lfs diff=lfs merge=lfs -text

@@ -176,18 +176,26 @@ def variance_partitioning(data, property_name, group_col):
         return None
 
 
-def matched_pairs_analysis(data, property_name, group_col):
+def matched_pairs_analysis(data, property_name, group_col, random_seed=42):
     """
     Match uTP proteins to controls by COG category, then compare properties.
     
     This is the most stringent test: comparing proteins with identical functions.
+    Uses random sampling without replacement to create pairs.
+    
+    Returns both paired Cohen's d (mean_diff/std_diff) and independent Cohen's d
+    for comparability with within-category analysis.
     """
+    np.random.seed(random_seed)  # For reproducibility
+    
     analysis_data = data[['is_uTP', 'primary_cog', property_name, 'original_id']].dropna().copy()
     
     # Find categories with both uTP and control proteins
     category_counts = analysis_data.groupby(['primary_cog', 'is_uTP']).size().unstack(fill_value=0)
     
     matched_pairs = []
+    all_utp_matched = []
+    all_ctrl_matched = []
     
     for cog in category_counts.index:
         n_utp = category_counts.loc[cog, 1] if 1 in category_counts.columns else 0
@@ -199,15 +207,23 @@ def matched_pairs_analysis(data, property_name, group_col):
             ctrl_vals = analysis_data[(analysis_data['primary_cog'] == cog) & 
                                       (analysis_data['is_uTP'] == 0)][property_name].values
             
-            # Pair by random sampling (with replacement if necessary)
+            # Random sampling without replacement
             n_pairs = min(len(utp_vals), len(ctrl_vals))
+            utp_sample_idx = np.random.choice(len(utp_vals), n_pairs, replace=False)
+            ctrl_sample_idx = np.random.choice(len(ctrl_vals), n_pairs, replace=False)
+            
+            utp_sample = utp_vals[utp_sample_idx]
+            ctrl_sample = ctrl_vals[ctrl_sample_idx]
             
             for i in range(n_pairs):
                 matched_pairs.append({
                     'cog': cog,
-                    'utp_value': utp_vals[i % len(utp_vals)],
-                    'ctrl_value': ctrl_vals[i % len(ctrl_vals)],
+                    'utp_value': utp_sample[i],
+                    'ctrl_value': ctrl_sample[i],
                 })
+            
+            all_utp_matched.extend(utp_sample)
+            all_ctrl_matched.extend(ctrl_sample)
     
     if len(matched_pairs) == 0:
         return None
@@ -218,10 +234,19 @@ def matched_pairs_analysis(data, property_name, group_col):
     # Paired t-test (or Wilcoxon signed-rank)
     stat, pval = stats.wilcoxon(pairs_df['difference'])
     
-    # Effect size (mean difference / std)
+    # Paired effect size (Cohen's d for paired samples = mean_diff / std_diff)
     mean_diff = pairs_df['difference'].mean()
     std_diff = pairs_df['difference'].std()
-    effect_size = mean_diff / std_diff if std_diff > 0 else 0
+    paired_effect_size = mean_diff / std_diff if std_diff > 0 else 0
+    
+    # Independent Cohen's d (for comparability with within-category analysis)
+    # Uses pooled standard deviation
+    utp_arr = np.array(all_utp_matched)
+    ctrl_arr = np.array(all_ctrl_matched)
+    n1, n2 = len(utp_arr), len(ctrl_arr)
+    var1, var2 = utp_arr.var(ddof=1), ctrl_arr.var(ddof=1)
+    pooled_std = np.sqrt(((n1-1)*var1 + (n2-1)*var2) / (n1+n2-2))
+    independent_cohens_d = (utp_arr.mean() - ctrl_arr.mean()) / pooled_std if pooled_std > 0 else 0
     
     return {
         'property': property_name,
@@ -229,7 +254,8 @@ def matched_pairs_analysis(data, property_name, group_col):
         'n_categories': pairs_df['cog'].nunique(),
         'mean_difference': mean_diff,
         'std_difference': std_diff,
-        'effect_size': effect_size,
+        'paired_effect_size': paired_effect_size,
+        'independent_cohens_d': independent_cohens_d,
         'wilcoxon_stat': stat,
         'wilcoxon_p': pval,
         'pct_positive_diff': 100 * (pairs_df['difference'] > 0).mean(),
@@ -321,7 +347,8 @@ def main():
             print(f"\n{prop}:{sig_marker}")
             print(f"  {result['n_pairs']} pairs across {result['n_categories']} categories")
             print(f"  Mean difference: {result['mean_difference']:+.4f}")
-            print(f"  Effect size: {result['effect_size']:+.3f}")
+            print(f"  Paired effect size (d): {result['paired_effect_size']:+.3f}")
+            print(f"  Independent Cohen's d: {result['independent_cohens_d']:+.3f}")
             print(f"  Wilcoxon p-value: {result['wilcoxon_p']:.4f}")
     
     if matched_results:

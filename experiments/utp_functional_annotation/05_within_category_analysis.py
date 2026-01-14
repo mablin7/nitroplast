@@ -57,7 +57,7 @@ KEY_PROPERTIES = [
 ]
 
 # Minimum samples per category per group for reliable statistics
-MIN_SAMPLES = 5
+MIN_SAMPLES = 10
 
 COG_DESCRIPTIONS = {
     'A': 'RNA processing',
@@ -278,11 +278,46 @@ def main():
         n_significant = prop_data['significant'].sum()
         
         # Percentage of effect explained by function
-        # If within-category d is smaller than overall d, function explains part of the effect
+        # Report actual value (can be negative if within-category effect is larger than overall)
         if abs(overall_d) > 0:
-            pct_explained = max(0, (1 - abs(weighted_avg_d) / abs(overall_d))) * 100
+            # If signs differ, report as 100% (function explains direction)
+            if np.sign(weighted_avg_d) != np.sign(overall_d) and weighted_avg_d != 0:
+                pct_explained = 100.0
+                pct_explained_raw = 100.0
+            else:
+                pct_explained_raw = (1 - abs(weighted_avg_d) / abs(overall_d)) * 100
+                pct_explained = max(0, pct_explained_raw)  # Floored version for summary
         else:
             pct_explained = np.nan
+            pct_explained_raw = np.nan
+        
+        # I² heterogeneity statistic
+        # I² = (Q - df) / Q * 100, where Q is Cochran's Q
+        k = len(prop_data)
+        if k >= 2:
+            # Standard error of each effect size (approximate: SE ≈ sqrt(1/n_uTP + 1/n_ctrl))
+            prop_data = prop_data.copy()
+            prop_data['se'] = np.sqrt(1/prop_data['n_uTP'] + 1/prop_data['n_Control'])
+            prop_data['weight'] = 1 / (prop_data['se'] ** 2)
+            
+            # Fixed-effect weighted mean
+            weighted_mean = np.average(prop_data['cohens_d'], weights=prop_data['weight'])
+            
+            # Cochran's Q
+            Q = np.sum(prop_data['weight'] * (prop_data['cohens_d'] - weighted_mean) ** 2)
+            df = k - 1
+            
+            # I² 
+            if Q > df:
+                I_squared = ((Q - df) / Q) * 100
+            else:
+                I_squared = 0
+            
+            # p-value for heterogeneity (chi-squared test)
+            hetero_p = 1 - stats.chi2.cdf(Q, df)
+        else:
+            I_squared = np.nan
+            hetero_p = np.nan
         
         meta_results.append({
             'property': prop,
@@ -294,6 +329,9 @@ def main():
             'n_same_direction': same_direction,
             'n_significant': n_significant,
             'pct_explained_by_function': pct_explained,
+            'pct_explained_raw': pct_explained_raw,
+            'I_squared': I_squared,
+            'heterogeneity_p': hetero_p,
         })
         
         print(f"\n{prop}:")
@@ -301,14 +339,71 @@ def main():
         print(f"  Within-category effect: d = {weighted_avg_d:+.3f} (weighted avg)")
         print(f"  Effect consistency: {same_direction}/{len(prop_data)} categories same direction")
         print(f"  Significant within-category: {n_significant}/{len(prop_data)}")
-        print(f"  % effect explained by function: {pct_explained:.1f}%")
+        print(f"  % effect explained by function: {pct_explained_raw:.1f}% (raw), {pct_explained:.1f}% (floored)")
+        print(f"  Heterogeneity: I²={I_squared:.1f}%, p={hetero_p:.4f}")
     
     meta_df = pd.DataFrame(meta_results)
     meta_df.to_csv(META_ANALYSIS_RESULTS, index=False)
     print(f"\nSaved meta-analysis results to: {META_ANALYSIS_RESULTS}")
     
     # =========================================================================
-    # Step 4: Interpretation
+    # Step 4: Sensitivity Analysis - Excluding "Function Unknown" (S)
+    # =========================================================================
+    print("\n" + "=" * 70)
+    print("STEP 4: Sensitivity Analysis (Excluding 'S' = Function Unknown)")
+    print("=" * 70)
+    
+    # Repeat meta-analysis excluding category S
+    within_df_no_S = within_df[within_df['COG'] != 'S']
+    
+    sensitivity_results = []
+    for prop in KEY_PROPERTIES:
+        prop_data = within_df_no_S[within_df_no_S['property'] == prop]
+        
+        if len(prop_data) < 2:
+            continue
+        
+        overall_d = overall_df[overall_df['property'] == prop]['cohens_d'].values[0]
+        
+        weights = prop_data['n_uTP'] + prop_data['n_Control']
+        weighted_avg_d = np.average(prop_data['cohens_d'], weights=weights)
+        same_direction = (np.sign(prop_data['cohens_d']) == np.sign(overall_d)).sum()
+        n_significant = prop_data['significant'].sum()
+        
+        if abs(overall_d) > 0:
+            pct_explained_raw = (1 - abs(weighted_avg_d) / abs(overall_d)) * 100
+            pct_explained = max(0, pct_explained_raw)
+        else:
+            pct_explained = np.nan
+            pct_explained_raw = np.nan
+        
+        sensitivity_results.append({
+            'property': prop,
+            'overall_d': overall_d,
+            'weighted_avg_within_d_excl_S': weighted_avg_d,
+            'n_categories_excl_S': len(prop_data),
+            'n_same_direction_excl_S': same_direction,
+            'n_significant_excl_S': n_significant,
+            'pct_explained_excl_S': pct_explained,
+            'pct_explained_raw_excl_S': pct_explained_raw,
+        })
+        
+        print(f"\n{prop}:")
+        print(f"  Within-category (excl S): d = {weighted_avg_d:+.3f}")
+        print(f"  Categories: {same_direction}/{len(prop_data)} same direction")
+        print(f"  % explained by function: {pct_explained_raw:.1f}%")
+    
+    sensitivity_df = pd.DataFrame(sensitivity_results)
+    
+    # Merge with main meta results
+    meta_df = meta_df.merge(sensitivity_df[['property', 'weighted_avg_within_d_excl_S', 
+                                            'n_categories_excl_S', 'pct_explained_excl_S',
+                                            'pct_explained_raw_excl_S']], 
+                            on='property', how='left')
+    meta_df.to_csv(META_ANALYSIS_RESULTS, index=False)
+    
+    # =========================================================================
+    # Step 5: Interpretation
     # =========================================================================
     print("\n" + "=" * 70)
     print("INTERPRETATION")
@@ -316,8 +411,20 @@ def main():
     
     # Average effect reduction across properties
     avg_pct_explained = meta_df['pct_explained_by_function'].mean()
+    avg_pct_explained_excl_S = meta_df['pct_explained_excl_S'].mean()
     
     print(f"\nAverage % of effect explained by functional enrichment: {avg_pct_explained:.1f}%")
+    print(f"Average % explained (excluding 'Function Unknown'): {avg_pct_explained_excl_S:.1f}%")
+    
+    # Report heterogeneity
+    avg_I_squared = meta_df['I_squared'].mean()
+    print(f"\nAverage heterogeneity (I²): {avg_I_squared:.1f}%")
+    if avg_I_squared < 25:
+        print("  → Low heterogeneity: effects are consistent across categories")
+    elif avg_I_squared < 75:
+        print("  → Moderate heterogeneity: some variation across categories")
+    else:
+        print("  → High heterogeneity: substantial variation across categories")
     
     if avg_pct_explained > 75:
         print("\n→ HYPOTHESIS A SUPPORTED: Most of the effect is explained by functional enrichment")

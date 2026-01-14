@@ -152,14 +152,31 @@ uv run python experiments/utp_functional_annotation/06_ancova_analysis.py
 
 #### Within-Category Analysis (Critical Test)
 
-| Property          | Overall d | Within-Cat d | % Explained by Function | Categories Same Direction |
-| ----------------- | --------- | ------------ | ----------------------- | ------------------------- |
-| fraction_coil     | +0.96     | +0.96        | 0%                      | 9/9 (100%)                |
-| instability_index | -0.76     | -0.79        | 0%                      | 9/9 (100%)                |
-| isoelectric_point | -0.66     | -0.54        | 18%                     | 9/9 (100%)                |
-| gravy             | +0.35     | +0.38        | 0%                      | 7/9 (78%)                 |
+Analysis restricted to COG categories with n≥10 samples in both groups (8 categories).
 
-**Interpretation**: The effect sizes are essentially unchanged when comparing uTP vs control proteins _within the same functional category_. This rules out functional enrichment as the explanation.
+| Property          | Overall d | Within-Cat d | % Explained (raw) | I² Heterogeneity | Direction Consistency |
+| ----------------- | --------- | ------------ | ----------------- | ---------------- | --------------------- |
+| fraction_coil     | +0.96     | +0.98        | -1.7%             | 0.0%             | 8/8 (100%)            |
+| instability_index | -0.76     | -0.80        | -5.7%             | 20.5%            | 8/8 (100%)            |
+| isoelectric_point | -0.66     | -0.55        | +17.2%            | 46.1%            | 8/8 (100%)            |
+| gravy             | +0.35     | +0.40        | -15.5%            | 51.2%            | 7/8 (88%)             |
+
+**Note**: Negative "% explained" values indicate within-category effects are *larger* than overall effects. This occurs when controlling for function reveals a stronger uTP signal.
+
+**Interpretation**: Effect sizes are essentially unchanged (or even increased) when comparing uTP vs control proteins _within the same functional category_. All 8 categories show the same direction for the three key properties. This rules out functional enrichment as the explanation.
+
+#### Sensitivity Analysis (Excluding "Function Unknown")
+
+Excluding COG category S ("Function unknown", which is not a true functional category):
+
+| Property          | Within-Cat d (all) | Within-Cat d (excl S) | % Explained (excl S) |
+| ----------------- | ------------------ | --------------------- | -------------------- |
+| fraction_coil     | +0.98              | +1.04                 | -8.6%                |
+| instability_index | -0.80              | -0.81                 | -6.9%                |
+| isoelectric_point | -0.55              | -0.52                 | +21.9%               |
+| gravy             | +0.40              | +0.41                 | -19.8%               |
+
+Effects persist (or strengthen) when excluding the ambiguous "Function unknown" category.
 
 #### Variance Partitioning
 
@@ -170,18 +187,20 @@ uv run python experiments/utp_functional_annotation/06_ancova_analysis.py
 | Shared          | 3.4%               |
 | Unexplained     | 83.9%              |
 
-Interpretation: uTP status explains **more unique variance** than is shared with function. The biophysical signature is genuinely associated with uTP status, not confounded by function.
+**Interpretation**: uTP status explains **more unique variance** (7.3%) than is shared with function (3.4%). The biophysical signature is genuinely associated with uTP status, not confounded by function.
 
 #### Matched-Pairs Analysis
 
-Comparing uTP vs control proteins **with identical COG categories**:
+Comparing uTP vs control proteins **with identical COG categories** using random sampling without replacement:
 
-| Property          | n pairs | Effect Size | p-value |
-| ----------------- | ------- | ----------- | ------- |
-| fraction_coil     | 209     | +0.57       | <0.0001 |
-| isoelectric_point | 209     | -0.43       | <0.0001 |
-| instability_index | 209     | -0.47       | <0.0001 |
-| gravy             | 209     | +0.23       | 0.001   |
+| Property          | n pairs | Paired d | Independent d | p-value  |
+| ----------------- | ------- | -------- | ------------- | -------- |
+| fraction_coil     | 209     | +0.60    | +0.85         | <0.0001  |
+| isoelectric_point | 209     | -0.48    | -0.67         | <0.0001  |
+| instability_index | 209     | -0.46    | -0.60         | <0.0001  |
+| gravy             | 209     | +0.22    | +0.30         | 0.008    |
+
+**Methodological note**: "Paired d" uses mean difference / SD of differences (more conservative). "Independent d" uses pooled SD (comparable to within-category analysis). Both are reported for transparency.
 
 **All 4 properties remain significantly different** even when comparing same-function proteins.
 
@@ -201,6 +220,22 @@ These properties likely represent **evolutionary constraints** on proteins that 
 - Recognized by the uTP import system
 - Translocated across membranes
 - Functional inside the nitroplast
+
+---
+
+## Statistical Notes
+
+### Effect Size Interpretation (Cohen's d)
+- Small: |d| = 0.2
+- Medium: |d| = 0.5
+- Large: |d| = 0.8
+
+### Heterogeneity (I²)
+- Low: I² < 25%
+- Moderate: 25% ≤ I² < 75%
+- High: I² ≥ 75%
+
+The low-to-moderate heterogeneity observed (I² = 0-51%) indicates that effects are reasonably consistent across functional categories.
 
 ---
 
