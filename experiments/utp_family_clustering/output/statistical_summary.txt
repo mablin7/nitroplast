@@ -1,0 +1,40 @@
+======================================================================
+STATISTICAL INTERPRETATION
+======================================================================
+
+## Key Question
+Are uTP proteins more related to each other than expected by chance?
+(i.e., do they cluster into fewer gene families?)
+
+## Observed vs Expected
+
+1. Fraction of uTP proteins sharing a family with another uTP:
+   Observed: 25.4%
+   Expected (random): 1.9%
+   p-value: 0.0000
+   → SIGNIFICANT: uTP proteins share families MORE than expected
+
+2. Number of distinct families containing uTP proteins:
+   Observed: 624
+   Expected (random): 716
+   p-value: 0.0000
+   → SIGNIFICANT: uTP in FEWER families than expected (clustered)
+
+3. Effective number of families (diversity measure):
+   Observed: 548.5
+   Expected (random): 708.2
+   p-value: 0.0000
+
+4. Maximum uTP proteins in any single family:
+   Observed: 4
+   Expected (random): 2.4
+   p-value: 0.0523
+
+======================================================================
+CONCLUSION
+======================================================================
+
+★ Model A SUPPORTED: uTP proteins are significantly CLUSTERED
+  → Consistent with FOUNDER EFFECT hypothesis
+  → uTP may have originated in a few ancestral proteins
+  → These expanded through gene duplication
