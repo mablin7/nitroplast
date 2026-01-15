@@ -8,9 +8,26 @@ After the anchor elements, sequences diverge into a variable linker region. This
 
 Despite this sequence diversity, structure predictions reveal that the anchor motifs encode a conserved three-dimensional fold. We predicted structures for 47 uTP-containing proteins using AlphaFold3. The anchor region adopts a three-helix bundle architecture in 98\% of structures (46/47; Figure~\ref{fig:utp_architecture}B). Anchor 2 forms the first alpha-helix, while anchor 1 folds into a helix-turn-helix motif comprising two additional helices. Together these elements create a characteristic U-bend configuration, with the anchor 2 helix forming one arm and the anchor 1 helix-turn-helix forming the other. Positional variance in this structural core averages less than 1~\AA{} (mean 0.90~\AA{}, range 0.60--1.38~\AA{}), demonstrating strong structural conservation. The high pairwise root mean square deviation across full structures (19.3~\AA{}) reflects variation in linker length rather than divergence of the conserved core.
 
-We next asked whether uTP sequences form discrete subtypes or vary continuously. We applied four clustering methods to uTP sequences: hierarchical clustering, spectral clustering, k-means, and DBSCAN. All methods produced low silhouette scores (0.01--0.08), indicating weak cluster structure. Different methods assigned sequences to completely different groupings, with adjusted Rand indices near zero between methods. Visualization by UMAP shows a continuous distribution with no clear gaps or boundaries (Figure~\ref{fig:utp_architecture}C). To test whether any structure exists beyond what random sequences would show, we compared real uTP sequences to shuffled controls that preserve amino acid composition. Real sequences show significantly lower silhouette scores than shuffled controls (0.096 versus 0.135, permutation test p = 0.01), indicating anti-clustering: uTP sequences are more uniformly distributed than expected by chance. Real sequences also show lower distance variance than controls (84.6 versus 106.7), confirming that sequences spread uniformly across a constrained region of sequence space.
+We next asked whether uTP sequences form discrete subtypes or vary continuously. We applied four clustering methods to uTP sequences: hierarchical clustering, spectral clustering, k-means, and DBSCAN. All methods produced low silhouette scores (0.01--0.08), indicating weak cluster structure. Different methods assigned sequences to completely different groupings, with adjusted Rand indices near zero between methods. Visualization by UMAP shows a continuous distribution with no clear gaps or boundaries (Figure~\ref{fig:utp_architecture}C). Comparison to shuffled controls that preserve amino acid composition confirmed that real sequences show lower silhouette scores (0.096 versus 0.135, permutation test p = 0.01) and lower distance variance (84.6 versus 106.7). This pattern indicates that uTP sequences spread uniformly across a constrained region of sequence space rather than forming discrete subtypes.
 
-The combination of conserved anchors, structural convergence, and continuous sequence variation suggests a model for uTP evolution. The anchor motifs are not merely sequence signatures but structural determinants that encode the conserved three-helix bundle required for recognition by import machinery, explaining their near-universal conservation. The variable linker accumulates mutations freely because it does not participate in recognition. The anti-clustering pattern argues against discrete acquisition events; instead, uTP appears to have spread gradually across the host proteome, with each new acquisition diverging from existing sequences rather than forming distinct subtypes.
+The combination of conserved anchors, structural convergence, and continuous sequence variation suggests a model for uTP architecture. The anchor motifs are not merely sequence signatures but structural determinants that encode the conserved three-helix bundle required for recognition by import machinery, explaining their near-universal conservation. The variable linker accumulates mutations freely because it does not participate in recognition. The uniform distribution of sequences in the variable region, with no discrete subtypes, indicates that primary sequence identity in the linker is not under strong selective constraint.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/figure1.pdf}
+    \caption[uTP architecture and biophysical signature]{%
+    \textbf{The uTP region combines conserved structural elements with a distinctive biophysical signature in mature domains.}
+    \textbf{(A)}~Schematic of uTP organization showing the conserved anchor motifs that form a three-helix bundle, followed by a variable linker region.
+    \textbf{(B)}~Positional variance along the structural core. The anchor region shows low variance, demonstrating strong structural conservation.
+    \textbf{(C)}~UMAP visualization shows a continuous distribution without discrete clusters.
+    \textbf{(D)}~ROC curve for predicting uTP presence from mature domain sequences (AUC~=~0.92).
+    \textbf{(E)}~Effect sizes for biophysical properties: elevated disorder (+1.05), lower pI (-0.89), and lower instability (-0.81).
+    \textbf{(F)}~Within-category effect sizes for intrinsic disorder. All eight functional categories show effects in the same direction.
+    \textbf{(G)}~Variance partitioning: uTP status explains more unique variance (7.3\%) than is shared with function (3.4\%).
+    \textbf{(H)}~Gene family analysis: 25\% of uTP proteins share families versus 2\% expected, but 624 distinct families with 75\% singletons.
+    }
+    \label{fig:utp_architecture}
+    \end{figure}
 
 \subsection{Mature domain biophysical properties predict uTP presence independently of ancestry and function}
 
@@ -26,3 +43,47 @@ Second, uTP proteins might concentrate in functional categories that happen to s
 
 These findings point to dual constraints on uTP-mediated import. The transit peptide must present the conserved three-helix bundle formed by the anchor motifs for recognition by import machinery. The cargo protein must possess compatible biophysical properties: elevated disorder, acidity, and stability. This dual requirement suggests that the evolution of uTP-bearing proteins was shaped not only by the need for a targeting signal but also by selection for cargo properties compatible with transport into the nitroplast.
 
+% Placeholder sections
+
+\subsection{The biophysical signature suggests mechanistic constraints on membrane translocation}
+
+% TODO: This section interprets WHY disorder, acidity, and stability matter
+% 
+% Paragraph ideas:
+% 1. Elevated disorder may facilitate unfolding during membrane translocation
+%    - Compare to chloroplast/mitochondrial import where unfolding is required
+%    - Disordered proteins unfold more readily
+% 2. Acidity (low pI) could mediate electrostatic interactions with import machinery
+%    - Positively charged import channels?
+%    - Compare to other systems
+% 3. Thermodynamic stability may be required for function in the nitroplast environment
+%    - Or for surviving the import process
+% 4. These constraints are not mutually exclusive
+
+
+\subsection{Imported proteins complement specific metabolic gaps in UCYN-A}
+
+% TODO: This section covers functional analysis of what gets imported
+%
+% Paragraph ideas:
+% 1. Functional enrichment analysis - what categories are over/underrepresented
+%    - Energy metabolism, amino acid biosynthesis enriched
+%    - Transcription, trafficking depleted
+% 2. Pathway-level analysis - which pathways are completed by host proteins
+%    - Threonine, serine, proline biosynthesis
+%    - Pyrimidine biosynthesis
+%    - Tetrahydrofolate synthesis
+
+\subsection{The uTP system represents a novel protein targeting mechanism}
+
+% TODO: This section compares uTP to other known transit peptide systems
+%
+% Paragraph ideas:
+% 1. C-terminal location is unusual (most transit peptides are N-terminal)
+%    - Exceptions: peroxisomal PTS1, some bacterial secretion
+% 2. No sequence or structural homologs in databases
+%    - BLAST/HMM searches against UniProt, PDB
+% 3. Comparison to diazoplast system in Epithemia
+%    - Similar nitrogen-fixing organelle, different host
+%    - Does it use similar targeting?
+% 4. Implications for understanding organellogenesis

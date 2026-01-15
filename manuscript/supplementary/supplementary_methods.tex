@@ -1,0 +1,431 @@
+\documentclass[11pt, a4paper]{article}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black, urlcolor=blue!60!black]{hyperref}
+\usepackage[round, sort&compress]{natbib}
+\usepackage[font=small, labelfont=bf]{caption}
+
+% Section styling
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{S\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{S\thesubsection}{1em}{}
+
+% Paragraph spacing
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+
+% ============================================================================
+% DOCUMENT
+% ============================================================================
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Supplementary Methods}\\[1em]
+{\large The UCYN-A transit peptide: a novel C-terminal targeting system\\ with distinctive biophysical substrate signatures}
+\end{center}
+
+\vspace{2em}
+
+\tableofcontents
+
+\newpage
+
+% ============================================================================
+\section{Computational Environment}
+% ============================================================================
+
+All analyses were performed using Python 3.12. Package management used uv (version 0.5.x). Key dependencies and versions:
+
+\begin{longtable}{ll}
+\toprule
+\textbf{Package} & \textbf{Version} \\
+\midrule
+\endhead
+BioPython & 1.84 \\
+NumPy & 2.0.x \\
+pandas & 2.2.x \\
+scikit-learn & 1.5.x \\
+SciPy & 1.14.x \\
+matplotlib & 3.9.x \\
+seaborn & 0.13.x \\
+PyTorch & 2.4.x \\
+transformers & 4.44.x \\
+h5py & 3.11.x \\
+statsmodels & 0.14.x \\
+\bottomrule
+\end{longtable}
+
+% ============================================================================
+\section{Data Sources and Preprocessing}
+% ============================================================================
+
+\subsection{uTP protein identification}
+
+We used the uTP HMM profile from Coale et al. to scan the \textit{B.~bigelowii} transcriptome using HMMER 3.4. Parameters:
+
+\begin{itemize}
+\item E-value threshold: 0.01
+\item Minimum bit score: 30.0
+\item HMM coverage requirement: match must start within first 50 positions of the profile
+\end{itemize}
+
+This identified 933 import candidates. The HMM hit position was used to define the boundary between mature domain and uTP region for each protein.
+
+\subsection{Sequence datasets}
+
+\begin{longtable}{lrl}
+\toprule
+\textbf{Dataset} & \textbf{Count} & \textbf{Description} \\
+\midrule
+\endhead
+Import candidates & 933 & HMM-predicted uTP proteins \\
+Experimentally validated & 206 & Enriched in UCYN-A proteomics \\
+\textit{B.~bigelowii} proteome & 44,363 & Full predicted proteome \\
+\bottomrule
+\end{longtable}
+
+% ============================================================================
+\section{uTP Sequence Organization}
+% ============================================================================
+
+\subsection{Motif discovery}
+
+Motif discovery was performed using MEME Suite 5.5.5 on 206 experimentally validated uTP sequences. The C-terminal regions were extracted and filtered using Gblocks to remove poorly aligned positions. MEME parameters:
+
+\begin{itemize}
+\item Mode: zoops (zero or one occurrence per sequence)
+\item Number of motifs: 10
+\item Minimum motif width: 6
+\item Maximum motif width: 50
+\item Background model: order-0 Markov from input sequences
+\end{itemize}
+
+\subsection{Motif scanning}
+
+We scanned all 933 import candidates for the discovered motifs using MAST (Motif Alignment and Search Tool). Parameters:
+
+\begin{itemize}
+\item E-value threshold: 10.0 (permissive, to detect weak hits)
+\item Output: hit positions, p-values, and motif order
+\end{itemize}
+
+Motif patterns were classified by terminal motif identity:
+\begin{itemize}
+\item terminal\_4: sequences ending with motif 4
+\item terminal\_5: sequences ending with motif 5
+\item terminal\_7: sequences ending with motif 7
+\item terminal\_9: sequences ending with motif 9
+\item other: sequences with non-standard terminal motifs
+\end{itemize}
+
+% ============================================================================
+\section{Structure Prediction and Analysis}
+% ============================================================================
+
+\subsection{AlphaFold3 structure prediction}
+
+Structures were predicted using AlphaFold3 via the AlphaFold Server (\url{https://alphafoldserver.com}). We selected 47 proteins with high-confidence uTP regions (good C-terminal alignment in the multiple sequence alignment).
+
+\subsection{Structural alignment}
+
+Structures were aligned using the CE (Combinatorial Extension) algorithm implemented in PyMOL. The C-terminal uTP regions (approximately 120 residues) were extracted and aligned to the structure with the longest C-terminal chain as reference.
+
+Pairwise RMSD was computed using BioPython's Superimposer class on C$\alpha$ atoms.
+
+\subsection{Consensus structure}
+
+The consensus structure was built as follows:
+
+\begin{enumerate}
+\item Identify reference structure (longest chain)
+\item For each reference residue position, find spatially corresponding residues across all structures (within 3.0~\AA{} of the reference position)
+\item Compute consensus position as the mean of all corresponding C$\alpha$ coordinates
+\item Record positional standard deviation as a measure of variance
+\end{enumerate}
+
+\subsection{Secondary structure assignment}
+
+Secondary structure was assigned using DSSP algorithm criteria applied to backbone dihedral angles. Helices were defined as regions with $\geq$4 consecutive residues in helical conformation ($\phi \approx -60°$, $\psi \approx -45°$).
+
+% ============================================================================
+\section{Sequence Space Analysis}
+% ============================================================================
+
+\subsection{Sequence embeddings}
+
+Protein sequences were encoded using the ProtT5-XL-UniRef50 model. For each sequence:
+
+\begin{enumerate}
+\item Tokenize sequence using the ProtT5 tokenizer
+\item Pass through the encoder (no decoder)
+\item Extract per-residue embeddings from the final hidden layer
+\item Mean-pool across residue positions to obtain a single 1024-dimensional vector
+\end{enumerate}
+
+Embeddings were computed on GPU (NVIDIA RTX PRO 6000) and cached in HDF5 format.
+
+\subsection{Clustering methods}
+
+Four clustering methods were applied:
+
+\begin{longtable}{lll}
+\toprule
+\textbf{Method} & \textbf{Implementation} & \textbf{Parameters} \\
+\midrule
+\endhead
+Hierarchical & scipy.cluster.hierarchy & k=4,5,6,7; linkage=average \\
+Spectral & sklearn.cluster.SpectralClustering & k=4,5,6,7; affinity=rbf \\
+K-means & sklearn.cluster.KMeans & k=4,5,6,7; n\_init=10 \\
+DBSCAN & sklearn.cluster.DBSCAN & eps=0.5,1.0,2.0; min\_samples=5 \\
+\bottomrule
+\end{longtable}
+
+For hierarchical clustering, pairwise distances were computed as Jaccard distance on k-mer frequency vectors (k=4).
+
+\subsection{Clustering evaluation}
+
+Cluster quality was assessed using:
+
+\begin{itemize}
+\item \textbf{Silhouette score}: Mean silhouette coefficient across all samples. Range $[-1, +1]$; values $>0.5$ indicate strong cluster structure.
+\item \textbf{Adjusted Rand Index (ARI)}: Agreement between two clusterings, adjusted for chance. Range $[-1, +1]$; values near 0 indicate random agreement.
+\end{itemize}
+
+\subsection{Null model comparison}
+
+To test whether uTP sequences show more structure than expected by chance:
+
+\begin{enumerate}
+\item For each real uTP sequence, generate a null sequence by randomly shuffling amino acids (preserving exact composition)
+\item Compute ProtT5 embeddings for all null sequences
+\item Apply k-means clustering (k=4) and compute silhouette score
+\item Repeat for 100 independent null sequence sets
+\item Compare observed silhouette score to null distribution using one-sided permutation test
+\end{enumerate}
+
+Additional metrics computed: Hopkins statistic, mean pairwise distance, distance variance.
+
+% ============================================================================
+\section{Mature Domain Classification}
+% ============================================================================
+
+\subsection{Mature domain extraction}
+
+For each uTP protein, the mature domain was defined as the sequence from the N-terminus to the start of the HMM hit position. Proteins with mature domains $<$30 or $>$3000 amino acids were excluded.
+
+\subsection{Control group selection}
+
+Control proteins were selected from the \textit{B.~bigelowii} proteome:
+
+\begin{enumerate}
+\item Exclude all proteins with HMM hits (uTP candidates)
+\item Select candidates with lengths matching the mature domain length distribution
+\item Submit to CELLO 2.5 (\url{http://cello.life.nctu.edu.tw/}) for subcellular localization prediction
+\item Organism type: Eukaryote
+\item Retain only proteins predicted as cytoplasmic or nuclear
+\end{enumerate}
+
+This yielded 773 control proteins.
+
+\subsection{Feature extraction}
+
+Features were extracted using ProtT5-XL-UniRef50 as described above, yielding 1024-dimensional embeddings for each mature domain.
+
+\subsection{Classifier training}
+
+\begin{longtable}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+\endhead
+Algorithm & Logistic Regression \\
+Regularization & L2 (C=1.0) \\
+Class weights & Balanced \\
+Cross-validation & 5-fold stratified \\
+Scaling & StandardScaler (mean=0, std=1) \\
+\bottomrule
+\end{longtable}
+
+\subsection{Statistical validation}
+
+\textbf{Permutation test}: Labels were randomly shuffled 1000 times. For each permutation, a classifier was trained and evaluated using 5-fold CV. The p-value is the fraction of permuted accuracies $\geq$ observed accuracy.
+
+\textbf{Bootstrap confidence intervals}: 1000 bootstrap samples were drawn with replacement. For each sample, the classifier was trained and evaluated, yielding a distribution of accuracy estimates. 95\% CI computed as the 2.5th and 97.5th percentiles.
+
+\textbf{Full proteome validation}: The classifier trained on the balanced dataset was applied to predict uTP status for all 44,363 \textit{B.~bigelowii} proteins. ROC AUC was computed using true labels (933 uTP, 43,430 non-uTP).
+
+% ============================================================================
+\section{Biophysical Property Analysis}
+% ============================================================================
+
+\subsection{Property calculation}
+
+Properties were computed using BioPython's ProteinAnalysis class:
+
+\begin{longtable}{lll}
+\toprule
+\textbf{Property} & \textbf{Method} & \textbf{Description} \\
+\midrule
+\endhead
+Isoelectric point & isoelectric\_point() & pH at which net charge = 0 \\
+Instability index & instability\_index() & Guruprasad et al. formula \\
+GRAVY & gravy() & Grand average of hydropathy \\
+Molecular weight & molecular\_weight() & Sum of residue masses \\
+\bottomrule
+\end{longtable}
+
+\subsection{Disorder prediction}
+
+Intrinsic disorder was estimated using secondary structure propensity. Fraction coil was computed as the proportion of residues with low helix and sheet propensity based on the Chou-Fasman parameters.
+
+\subsection{Effect size calculation}
+
+Cohen's d was computed as:
+\[
+d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}
+\]
+
+where $s_{\text{pooled}} = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}$
+
+Interpretation: $|d| = 0.2$ (small), $|d| = 0.5$ (medium), $|d| = 0.8$ (large).
+
+\subsection{Multiple testing correction}
+
+Bonferroni correction was applied for 8 pre-specified property comparisons ($\alpha = 0.05/8 = 0.00625$).
+
+% ============================================================================
+\section{Gene Family Analysis}
+% ============================================================================
+
+\subsection{Sequence representation}
+
+Each protein was represented as a k-mer frequency vector:
+
+\begin{itemize}
+\item k-mer size: 3
+\item Vector dimension: $20^3 = 8000$
+\item Normalization: L1 (frequencies sum to 1)
+\end{itemize}
+
+\subsection{Distance calculation}
+
+Pairwise Jaccard distance was computed:
+\[
+d(A, B) = 1 - \frac{|A \cap B|}{|A \cup B|}
+\]
+
+where $A$ and $B$ are the sets of k-mers present in each sequence (frequency $>$ 0).
+
+\subsection{Hierarchical clustering}
+
+Clustering was performed using scipy.cluster.hierarchy with:
+
+\begin{itemize}
+\item Method: average linkage
+\item Distance threshold: 0.7 (corresponding approximately to 40\% sequence identity)
+\end{itemize}
+
+\subsection{Permutation test}
+
+To test whether uTP proteins cluster more than expected by chance:
+
+\begin{enumerate}
+\item Compute observed metrics:
+\begin{itemize}
+\item Fraction of uTP proteins sharing a family with another uTP protein
+\item Number of distinct families containing uTP proteins
+\item Maximum uTP proteins in any single family
+\end{itemize}
+\item Randomly reassign uTP labels among all proteins (preserving total count)
+\item Recompute metrics
+\item Repeat 10,000 times
+\item P-value = fraction of permuted values $\geq$ observed (for clustering metrics) or $\leq$ observed (for diversity metrics)
+\end{enumerate}
+
+% ============================================================================
+\section{Functional Enrichment and Within-Category Analysis}
+% ============================================================================
+
+\subsection{Functional annotation}
+
+Proteins were annotated using the existing \textit{B.~bigelowii} transcriptome annotations from Coale et al., which include COG (Clusters of Orthologous Groups) categories assigned via eggNOG-mapper.
+
+\subsection{Within-category comparison}
+
+For each COG category with $\geq$10 uTP proteins and $\geq$10 control proteins:
+
+\begin{enumerate}
+\item Compute Cohen's d for each biophysical property within the category
+\item Compare to overall effect size (pooling across categories)
+\item Compute percent of effect explained by function:
+\[
+\text{\% explained} = \frac{d_{\text{overall}} - d_{\text{within}}}{d_{\text{overall}}} \times 100
+\]
+\end{enumerate}
+
+Eight categories met the sample size criterion.
+
+\subsection{Variance partitioning}
+
+Variance partitioning was performed using Type II ANOVA:
+
+\[
+\text{Property} \sim \text{uTP\_status} + \text{COG\_category}
+\]
+
+Variance components:
+\begin{itemize}
+\item \textbf{uTP unique}: $\text{SS}_{\text{uTP}} / \text{SS}_{\text{total}}$
+\item \textbf{Function unique}: $\text{SS}_{\text{COG}} / \text{SS}_{\text{total}}$
+\item \textbf{Shared}: Computed via sequential decomposition
+\item \textbf{Unexplained}: $\text{SS}_{\text{residual}} / \text{SS}_{\text{total}}$
+\end{itemize}
+
+\subsection{Meta-analysis of within-category effects}
+
+Heterogeneity across categories was assessed using the $I^2$ statistic:
+\[
+I^2 = \frac{Q - (k-1)}{Q} \times 100\%
+\]
+
+where $Q$ is Cochran's Q statistic and $k$ is the number of categories.
+
+Interpretation: $I^2 < 25\%$ (low), $25\% \leq I^2 < 75\%$ (moderate), $I^2 \geq 75\%$ (high heterogeneity).
+
+% ============================================================================
+\section{Code Availability}
+% ============================================================================
+
+All analysis scripts are available at [repository URL]. The repository includes:
+
+\begin{itemize}
+\item \texttt{experiments/utp\_motif\_analysis/} -- Motif discovery and coverage
+\item \texttt{experiments/utp\_consensus\_structure/} -- Structure prediction and alignment
+\item \texttt{experiments/utp\_sequence\_clustering/} -- Sequence space analysis
+\item \texttt{experiments/utp\_structure\_vs\_null/} -- Null model comparison
+\item \texttt{experiments/utp\_presence\_classifier/} -- Mature domain classifier
+\item \texttt{experiments/utp\_family\_clustering/} -- Gene family analysis
+\item \texttt{experiments/utp\_functional\_annotation/} -- Functional enrichment
+\end{itemize}
+
+Each experiment directory contains a README.md with execution instructions and expected outputs.
+
+% ============================================================================
+% REFERENCES (if needed)
+% ============================================================================
+
+% \bibliographystyle{abbrvnat}
+% \bibliography{../references}
+
+\end{document}

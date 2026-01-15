@@ -1,0 +1,45 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Coale et~al.(2024)Coale, Loconte, Turk-Kubo, Vanslembrouck, Mak, Cheung, Ekman, Chen, Hagino, Takano, Nishimura, Adachi, Le~Gros, Larabell, and Zehr]{coaleNitrogenfixingOrganelleMarine2024}
+T.~H. Coale, V.~Loconte, K.~A. Turk-Kubo, B.~Vanslembrouck, W.~K.~E. Mak, S.~Cheung, A.~Ekman, J.-H. Chen, K.~Hagino, Y.~Takano, T.~Nishimura, M.~Adachi, M.~Le~Gros, C.~Larabell, and J.~P. Zehr.
+\newblock Nitrogen-fixing organelle in a marine alga.
+\newblock \emph{Science}, 384\penalty0 (6692):\penalty0 217--222, Apr. 2024.
+\newblock \doi{10.1126/science.adk1075}.
+\newblock URL \url{https://www.science.org/doi/10.1126/science.adk1075}.
+\newblock Publisher: American Association for the Advancement of Science.
+
+\bibitem[Frail et~al.(2025)Frail, Steele-Ogus, Doenier, Moulin, Braukmann, Xu, and Yeh]{frailGenomesNitrogenfixingEukaryotes2025}
+S.~Frail, M.~Steele-Ogus, J.~Doenier, S.~L.~Y. Moulin, T.~Braukmann, S.~Xu, and E.~Yeh.
+\newblock Genomes of nitrogen-fixing eukaryotes reveal an alternate path for organellogenesis.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 122\penalty0 (33):\penalty0 e2507237122, Aug. 2025.
+\newblock \doi{10.1073/pnas.2507237122}.
+\newblock URL \url{https://www.pnas.org/doi/10.1073/pnas.2507237122}.
+\newblock Publisher: Proceedings of the National Academy of Sciences.
+
+\bibitem[Masuda et~al.(2024)Masuda, Mareš, Shiozaki, Inomura, Fujiwara, and Prášil]{masudaCrocosphaeraWatsoniiWidespread2024}
+T.~Masuda, J.~Mareš, T.~Shiozaki, K.~Inomura, A.~Fujiwara, and O.~Prášil.
+\newblock \textit{{Crocosphaera} watsonii} – {A} widespread nitrogen‐fixing unicellular marine cyanobacterium.
+\newblock \emph{Journal of Phycology}, 60\penalty0 (3):\penalty0 604--620, June 2024.
+\newblock ISSN 0022-3646, 1529-8817.
+\newblock \doi{10.1111/jpy.13450}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1111/jpy.13450}.
+
+\bibitem[Pi()]{piOriginEvolutionNitrogen}
+H.-W. Pi.
+\newblock Origin and {Evolution} of {Nitrogen} {Fixation} in {Prokaryotes}.
+\newblock \doi{10.1093/molbev/msac181}.
+
+\bibitem[Turk-Kubo et~al.(2023)Turk-Kubo, Loconte, Vanslembrouck, Mak, Ekman, Chen, Takano, Horiguchi, Nishimura, Adachi, Gros, Hagino, Zehr, and Larabell]{turk-kuboSoftXrayTomography2023}
+K.~A. Turk-Kubo, V.~Loconte, B.~Vanslembrouck, W.~K.~E. Mak, A.~Ekman, J.-H. Chen, Y.~Takano, T.~Horiguchi, T.~Nishimura, M.~Adachi, M.~L. Gros, K.~Hagino, J.~P. Zehr, and C.~Larabell.
+\newblock Soft {X}-ray {Tomography} {Enables} {New} {Insights} into the {Coordinated} {Division} of {Organelle}-like {Symbiont} in a {Globally} {Distributed} {Unicellular} {Marine} {Haptophyte} {Alga}.
+\newblock \emph{Microscopy and Microanalysis}, 29\penalty0 (Supplement\_1):\penalty0 1165, Aug. 2023.
+\newblock ISSN 1431-9276.
+\newblock \doi{10.1093/micmic/ozad067.596}.
+\newblock URL \url{https://doi.org/10.1093/micmic/ozad067.596}.
+
+\end{thebibliography}
